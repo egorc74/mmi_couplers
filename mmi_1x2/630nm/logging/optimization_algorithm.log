@@ -1,0 +1,129 @@
+2025-09-24 09:47:57,451 - INFO - Starting optimization algorith with number of tries: 5 
+2025-09-24 09:47:57,453 - INFO - Optimization itteration 0 
+ min_width_1condition: 5.181347150259067e-06
+ min_width_2condition: 6.2565761770203345e-06
+ min_width: 6.2565761770203345e-06
+ mmi_width_span: [5.8e-06 5.9e-06 6.0e-06]...[7.4e-06 7.5e-06 7.6e-06]
+ taper start_width: 2e-06
+2025-09-24 09:47:57,453 - INFO - Starting core_sweep with data_filename: core_sweep_from_5756nm_to_7642nm_with_taper_2000nm 
+2025-09-24 09:48:18,465 - ERROR - Error occured 'NoneType' object is not subscriptable. Start saving transmission_matrix
+2025-09-24 09:50:40,217 - INFO - Starting optimization algorith with number of tries: 5 
+2025-09-24 09:50:40,217 - INFO - Optimization itteration 0 
+ min_width_1condition: 5.181347150259067e-06
+ min_width_2condition: 6.2565761770203345e-06
+ min_width: 6.2565761770203345e-06
+ mmi_width_span: [5.8e-06 5.9e-06 6.0e-06]...[7.4e-06 7.5e-06 7.6e-06]
+ taper start_width: 2e-06
+2025-09-24 09:50:40,217 - INFO - Starting core_sweep with data_filename: core_sweep_from_5756nm_to_7642nm_with_taper_2000nm 
+2025-09-24 09:51:00,367 - ERROR - Error occured 'NoneType' object is not subscriptable. Start saving transmission_matrix
+2025-09-24 09:54:40,181 - INFO - Starting optimization algorith with number of tries: 5 
+2025-09-24 09:54:40,182 - INFO - Optimization itteration 0 
+ min_width_1condition: 5.181347150259067e-06
+ min_width_2condition: 6.2565761770203345e-06
+ min_width: 6.2565761770203345e-06
+ mmi_width_span: [5.8e-06 5.9e-06 6.0e-06]...[7.4e-06 7.5e-06 7.6e-06]
+ taper start_width: 2e-06
+2025-09-24 09:54:40,182 - INFO - Starting core_sweep with data_filename: core_sweep_from_5756nm_to_7642nm_with_taper_2000nm 
+2025-09-24 09:54:42,726 - ERROR - Error occured 'NoneType' object is not subscriptable. Start saving transmission_matrix
+2025-09-24 09:59:18,921 - INFO - Starting optimization algorith with number of tries: 5 
+2025-09-24 09:59:18,921 - INFO - Optimization itteration 0 
+ min_width_1condition: 5.181347150259067e-06
+ min_width_2condition: 6.2565761770203345e-06
+ min_width: 6.2565761770203345e-06
+ mmi_width_span: [5.8e-06 5.9e-06 6.0e-06]...[7.4e-06 7.5e-06 7.6e-06]
+ taper start_width: 2e-06
+2025-09-24 09:59:18,921 - INFO - Starting core_sweep with data_filename: core_sweep_from_5756nm_to_7642nm_with_taper_2000nm 
+2025-09-24 11:54:07,892 - INFO - After core_evaluation
+ trimmed_curve: [0.41995444 0.41800228 0.41607432]...[0.40982884 0.40814827 0.40632401]
+ optimal_curve: [[0.42104659]
+ [0.42102257]
+ [0.42207385]]...[[0.408305  ]
+ [0.40869414]
+ [0.40603229]]
+ max_value_from_core_sweep: 0.41995444060409104
+ opt_width_from_core_sweep: 6.3e-06
+2025-09-24 11:54:07,892 - INFO - Starting taper_width_colormap with data_filename: taper_width_colormap_2000_6300nm 
+2025-09-24 12:00:28,245 - ERROR - Error occured cannot unpack non-iterable NoneType object. Start saving transmission_matrix
+2025-09-24 12:17:37,321 - INFO - Starting optimization algorith with number of tries: 5 
+2025-09-24 12:17:37,322 - INFO - Optimization itteration 0 
+ min_width_1condition: 5.181347150259067e-06
+ min_width_2condition: 6.2565761770203345e-06
+ min_width: 6.2565761770203345e-06
+ mmi_width_span: [5.8e-06 5.9e-06 6.0e-06]...[7.4e-06 7.5e-06 7.6e-06]
+ taper start_width: 2e-06
+2025-09-24 12:17:37,322 - INFO - Starting core_sweep with data_filename: core_sweep_from_5756nm_to_7642nm_with_taper_2000nm 
+2025-09-24 12:17:37,568 - INFO - After core_evaluation
+ trimmed_curve: [0.41995444 0.41800228 0.41607432]...[0.40982884 0.40814827 0.40632401]
+ optimal_curve: [[0.42104659]
+ [0.42102257]
+ [0.42207385]]...[[0.408305  ]
+ [0.40869414]
+ [0.40603229]]
+ max_value_from_core_sweep: 0.41995444060409104
+ opt_width_from_core_sweep: 6.3e-06
+2025-09-24 12:17:37,568 - INFO - Starting taper_width_colormap with data_filename: taper_width_colormap_2000_6300nm 
+2025-09-24 14:29:23,900 - INFO - After taper_width_colormap
+ optimal_curve: [0.35425917 0.37349057 0.38759818]...[0.44449515 0.44908305 0.45352942]
+ max_value_from_core_sweep: 0.4535294155704399
+ opt_width_from_core_sweep: 2.4999999999999998e-06
+2025-09-24 14:29:23,900 - INFO - In 0 itteration colormap gave better results
+ max_value_from_colormap0.4535294155704399
+ opt_taper_width_from_colormap2.4999999999999998e-06
+ opt_width_from_colormap6.3e-06
+2025-09-24 14:29:23,901 - INFO - Optimization itteration 1 
+ min_width_1condition: 6.476683937823833e-06
+ min_width_2condition: 7.256576177020334e-06
+ min_width: 7.256576177020334e-06
+ mmi_width_span: [6.8e-06 6.9e-06 7.0e-06]...[9.2e-06 9.3e-06 9.4e-06]
+ taper start_width: 2.4999999999999998e-06
+2025-09-24 14:29:23,901 - INFO - Starting core_sweep with data_filename: core_sweep_from_6756nm_to_9428nm_with_taper_2500nm 
+2025-09-24 14:34:33,738 - ERROR - Error occured 'NoneType' object is not subscriptable. Start saving transmission_matrix
+2025-09-24 15:05:44,609 - INFO - Starting optimization algorith with number of tries: 5 
+2025-09-24 15:05:44,613 - INFO - Optimization itteration 0 
+ min_width_1condition: 6.476683937823834e-06
+ min_width_2condition: 7.4e-06
+ min_width: 7.4e-06
+ mmi_width_span: [6.9e-06 7.0e-06 7.1e-06]...[9.2e-06 9.3e-06 9.4e-06]
+ taper start_width: 2.5e-06
+2025-09-24 15:05:44,614 - INFO - Starting core_sweep with data_filename: core_sweep_from_6900nm_to_9428nm_with_taper_2500nm 
+2025-09-24 22:00:42,934 - INFO - Starting optimization algorith with number of tries: 5 
+2025-09-24 22:00:42,935 - INFO - Optimization itteration 0 
+ min_width_1condition: 6.476683937823834e-06
+ min_width_2condition: 7.4e-06
+ min_width: 7.4e-06
+ mmi_width_span: [6.9e-06 7.0e-06 7.1e-06]...[9.2e-06 9.3e-06 9.4e-06]
+ taper start_width: 2.5e-06
+2025-09-24 22:00:42,935 - INFO - Starting core_sweep with data_filename: core_sweep_from_6900nm_to_9428nm_with_taper_2500nm 
+2025-09-25 00:43:15,785 - INFO - After core_evaluation
+ trimmed_curve: [0.44182891 0.44042241 0.43965047]...[0.42512849 0.4145392  0.39823743]
+ optimal_curve: [[0.44532064]
+ [0.44464994]
+ [0.44338958]]...[[0.39014134]
+ [0.3745288 ]
+ [0.34391698]]
+ max_value_from_core_sweep: 0.4418289124703072
+ opt_width_from_core_sweep: 7.4e-06
+2025-09-25 00:43:15,785 - INFO - Starting taper_width_colormap with data_filename: taper_width_colormap_2500_7400nm 
+2025-09-25 02:50:04,190 - INFO - After taper_width_colormap
+ optimal_curve: [0.40198639 0.414604   0.41967412]...[0.45454458 0.45789878 0.45918917]
+ max_value_from_core_sweep: 0.4591891672711512
+ opt_width_from_core_sweep: 3e-06
+2025-09-25 02:50:04,190 - INFO - In 0 itteration colormap gave better results
+ max_value_from_colormap0.4591891672711512
+ opt_taper_width_from_colormap3e-06
+ opt_width_from_colormap7.4e-06
+2025-09-25 02:50:04,191 - INFO - Optimization itteration 1 
+ min_width_1condition: 7.772020725388602e-06
+ min_width_2condition: 8.400000000000001e-06
+ min_width: 8.400000000000001e-06
+ mmi_width_span: [7.9e-06 8.0e-06 8.1e-06]...[1.10e-05 1.11e-05 1.12e-05]
+ taper start_width: 3e-06
+2025-09-25 02:50:04,191 - INFO - Starting core_sweep with data_filename: core_sweep_from_7900nm_to_11214nm_with_taper_3000nm 
+2025-09-25 18:00:50,449 - INFO - Starting optimization algorith with number of tries: 5 
+2025-09-25 18:00:50,451 - INFO - Optimization itteration 0 
+ min_width_1condition: 7.772020725388602e-06
+ min_width_2condition: 8.400000000000001e-06
+ min_width: 8.400000000000001e-06
+ mmi_width_span: [7.9e-06 8.0e-06 8.1e-06]...[1.10e-05 1.11e-05 1.12e-05]
+ taper start_width: 3e-06
+2025-09-25 18:00:50,451 - INFO - Starting core_sweep with data_filename: core_sweep_from_7900nm_to_11214nm_with_taper_3000nm 

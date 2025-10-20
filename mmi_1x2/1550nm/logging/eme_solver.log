@@ -1,0 +1,3082 @@
+2025-09-25 22:15:23,592 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 8.3e-06, 
+ mmi_length:7e-05,
+ taper_width=2.7e-06,
+ delta_y:0
+2025-09-25 22:19:24,554 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 8.3e-06, 
+ mmi_length:7e-05,
+ taper_width=2.7e-06,
+ delta_y:0
+2025-09-25 22:24:05,332 - INFO - In find_optimal_length: Optimal length : 6.54e-05 , with max transmission 0.4934442555527056
+2025-09-25 22:24:05,441 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 8.3e-06, 
+ mmi_length:7e-05,
+ taper_width=2.2e-06,
+ delta_y:0
+2025-09-25 22:26:11,375 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 7.8e-06, 
+ mmi_length:6.560000000000001e-05,
+ taper_width=2.2e-06,
+ delta_y:0
+2025-09-25 22:26:44,928 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 7.9e-06, 
+ mmi_length:6.560000000000001e-05,
+ taper_width=2.2e-06,
+ delta_y:0
+2025-09-25 22:27:18,747 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 8e-06, 
+ mmi_length:6.560000000000001e-05,
+ taper_width=2.2e-06,
+ delta_y:0
+2025-09-25 22:27:52,544 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 8.1e-06, 
+ mmi_length:6.560000000000001e-05,
+ taper_width=2.2e-06,
+ delta_y:0
+2025-09-25 22:28:26,702 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 8.2e-06, 
+ mmi_length:6.560000000000001e-05,
+ taper_width=2.2e-06,
+ delta_y:0
+2025-09-25 22:29:00,958 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 8.3e-06, 
+ mmi_length:6.560000000000001e-05,
+ taper_width=2.2e-06,
+ delta_y:0
+2025-09-25 22:29:35,576 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 8.400000000000001e-06, 
+ mmi_length:6.560000000000001e-05,
+ taper_width=2.2e-06,
+ delta_y:0
+2025-09-25 22:30:09,888 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 8.5e-06, 
+ mmi_length:6.560000000000001e-05,
+ taper_width=2.2e-06,
+ delta_y:0
+2025-09-25 22:30:44,853 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 8.6e-06, 
+ mmi_length:6.560000000000001e-05,
+ taper_width=2.2e-06,
+ delta_y:0
+2025-09-25 22:31:20,197 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 8.7e-06, 
+ mmi_length:6.560000000000001e-05,
+ taper_width=2.2e-06,
+ delta_y:0
+2025-09-25 22:31:54,925 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 8.8e-06, 
+ mmi_length:6.560000000000001e-05,
+ taper_width=2.2e-06,
+ delta_y:0
+2025-09-25 22:32:30,823 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 8.3e-06, 
+ mmi_length:6.560000000000001e-05,
+ taper_width=2.3e-06,
+ delta_y:0
+2025-09-25 22:34:36,454 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 7.8e-06, 
+ mmi_length:6.53e-05,
+ taper_width=2.3e-06,
+ delta_y:0
+2025-09-25 22:35:09,985 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 7.9e-06, 
+ mmi_length:6.53e-05,
+ taper_width=2.3e-06,
+ delta_y:0
+2025-09-25 22:35:44,227 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 8e-06, 
+ mmi_length:6.53e-05,
+ taper_width=2.3e-06,
+ delta_y:0
+2025-09-25 22:36:17,305 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 8.1e-06, 
+ mmi_length:6.53e-05,
+ taper_width=2.3e-06,
+ delta_y:0
+2025-09-25 22:36:50,949 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 8.2e-06, 
+ mmi_length:6.53e-05,
+ taper_width=2.3e-06,
+ delta_y:0
+2025-09-25 22:37:25,058 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 8.3e-06, 
+ mmi_length:6.53e-05,
+ taper_width=2.3e-06,
+ delta_y:0
+2025-09-25 22:37:59,287 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 8.400000000000001e-06, 
+ mmi_length:6.53e-05,
+ taper_width=2.3e-06,
+ delta_y:0
+2025-09-25 22:38:34,404 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 8.5e-06, 
+ mmi_length:6.53e-05,
+ taper_width=2.3e-06,
+ delta_y:0
+2025-09-25 22:39:09,969 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 8.6e-06, 
+ mmi_length:6.53e-05,
+ taper_width=2.3e-06,
+ delta_y:0
+2025-09-25 22:39:44,911 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 8.7e-06, 
+ mmi_length:6.53e-05,
+ taper_width=2.3e-06,
+ delta_y:0
+2025-09-25 22:40:20,426 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 8.8e-06, 
+ mmi_length:6.53e-05,
+ taper_width=2.3e-06,
+ delta_y:0
+2025-09-25 22:40:56,689 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 8.3e-06, 
+ mmi_length:6.53e-05,
+ taper_width=2.4e-06,
+ delta_y:0
+2025-09-25 22:43:05,050 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 7.8e-06, 
+ mmi_length:6.54e-05,
+ taper_width=2.4e-06,
+ delta_y:0
+2025-09-25 22:43:38,116 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 7.9e-06, 
+ mmi_length:6.54e-05,
+ taper_width=2.4e-06,
+ delta_y:0
+2025-09-25 22:44:11,328 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 8e-06, 
+ mmi_length:6.54e-05,
+ taper_width=2.4e-06,
+ delta_y:0
+2025-09-25 22:44:44,635 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 8.1e-06, 
+ mmi_length:6.54e-05,
+ taper_width=2.4e-06,
+ delta_y:0
+2025-09-25 22:45:18,774 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 8.2e-06, 
+ mmi_length:6.54e-05,
+ taper_width=2.4e-06,
+ delta_y:0
+2025-09-25 22:45:53,116 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 8.3e-06, 
+ mmi_length:6.54e-05,
+ taper_width=2.4e-06,
+ delta_y:0
+2025-09-25 22:46:27,483 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 8.400000000000001e-06, 
+ mmi_length:6.54e-05,
+ taper_width=2.4e-06,
+ delta_y:0
+2025-09-25 22:47:02,377 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 8.5e-06, 
+ mmi_length:6.54e-05,
+ taper_width=2.4e-06,
+ delta_y:0
+2025-09-25 22:47:37,149 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 8.6e-06, 
+ mmi_length:6.54e-05,
+ taper_width=2.4e-06,
+ delta_y:0
+2025-09-25 22:48:12,623 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 8.7e-06, 
+ mmi_length:6.54e-05,
+ taper_width=2.4e-06,
+ delta_y:0
+2025-09-25 22:48:48,395 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 8.8e-06, 
+ mmi_length:6.54e-05,
+ taper_width=2.4e-06,
+ delta_y:0
+2025-09-25 22:49:23,367 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 8.3e-06, 
+ mmi_length:6.54e-05,
+ taper_width=2.4999999999999998e-06,
+ delta_y:0
+2025-09-25 22:51:32,681 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 7.8e-06, 
+ mmi_length:6.560000000000001e-05,
+ taper_width=2.4999999999999998e-06,
+ delta_y:0
+2025-09-25 22:52:06,054 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 7.9e-06, 
+ mmi_length:6.560000000000001e-05,
+ taper_width=2.4999999999999998e-06,
+ delta_y:0
+2025-09-25 22:52:39,061 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 8e-06, 
+ mmi_length:6.560000000000001e-05,
+ taper_width=2.4999999999999998e-06,
+ delta_y:0
+2025-09-25 22:53:12,554 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 8.1e-06, 
+ mmi_length:6.560000000000001e-05,
+ taper_width=2.4999999999999998e-06,
+ delta_y:0
+2025-09-25 22:53:45,927 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 8.2e-06, 
+ mmi_length:6.560000000000001e-05,
+ taper_width=2.4999999999999998e-06,
+ delta_y:0
+2025-09-25 22:54:19,323 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 8.3e-06, 
+ mmi_length:6.560000000000001e-05,
+ taper_width=2.4999999999999998e-06,
+ delta_y:0
+2025-09-25 22:54:53,722 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 8.400000000000001e-06, 
+ mmi_length:6.560000000000001e-05,
+ taper_width=2.4999999999999998e-06,
+ delta_y:0
+2025-09-25 22:55:29,766 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 8.5e-06, 
+ mmi_length:6.560000000000001e-05,
+ taper_width=2.4999999999999998e-06,
+ delta_y:0
+2025-09-25 22:56:07,381 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 8.6e-06, 
+ mmi_length:6.560000000000001e-05,
+ taper_width=2.4999999999999998e-06,
+ delta_y:0
+2025-09-25 22:56:19,098 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 7.499999999999999e-06, 
+ mmi_length:0.000101,
+ taper_width=3e-06,
+ delta_y:0
+2025-09-25 22:57:18,768 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 8.3e-06, 
+ mmi_length:7e-05,
+ taper_width=2.7e-06,
+ delta_y:0
+2025-09-25 23:02:07,473 - INFO - In find_optimal_length: Optimal length : 6.54e-05 , with max transmission 0.49344425555270666
+2025-09-25 23:02:07,638 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 8.3e-06, 
+ mmi_length:7e-05,
+ taper_width=2.2e-06,
+ delta_y:0
+2025-09-25 23:04:16,230 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 7.8e-06, 
+ mmi_length:6.560000000000001e-05,
+ taper_width=2.2e-06,
+ delta_y:0
+2025-09-25 23:04:50,534 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 7.9e-06, 
+ mmi_length:6.560000000000001e-05,
+ taper_width=2.2e-06,
+ delta_y:0
+2025-09-25 23:05:23,652 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 8e-06, 
+ mmi_length:6.560000000000001e-05,
+ taper_width=2.2e-06,
+ delta_y:0
+2025-09-25 23:05:57,151 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 8.1e-06, 
+ mmi_length:6.560000000000001e-05,
+ taper_width=2.2e-06,
+ delta_y:0
+2025-09-25 23:06:31,242 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 8.2e-06, 
+ mmi_length:6.560000000000001e-05,
+ taper_width=2.2e-06,
+ delta_y:0
+2025-09-25 23:07:05,563 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 8.3e-06, 
+ mmi_length:6.560000000000001e-05,
+ taper_width=2.2e-06,
+ delta_y:0
+2025-09-25 23:07:39,788 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 8.400000000000001e-06, 
+ mmi_length:6.560000000000001e-05,
+ taper_width=2.2e-06,
+ delta_y:0
+2025-09-25 23:08:14,464 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 8.5e-06, 
+ mmi_length:6.560000000000001e-05,
+ taper_width=2.2e-06,
+ delta_y:0
+2025-09-25 23:08:52,282 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 8.6e-06, 
+ mmi_length:6.560000000000001e-05,
+ taper_width=2.2e-06,
+ delta_y:0
+2025-09-25 23:09:39,143 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 8.7e-06, 
+ mmi_length:6.560000000000001e-05,
+ taper_width=2.2e-06,
+ delta_y:0
+2025-09-25 23:10:20,018 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 8.8e-06, 
+ mmi_length:6.560000000000001e-05,
+ taper_width=2.2e-06,
+ delta_y:0
+2025-09-25 23:10:56,191 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 8.3e-06, 
+ mmi_length:6.560000000000001e-05,
+ taper_width=2.3e-06,
+ delta_y:0
+2025-09-25 23:13:03,353 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 7.8e-06, 
+ mmi_length:6.53e-05,
+ taper_width=2.3e-06,
+ delta_y:0
+2025-09-25 23:13:36,453 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 7.9e-06, 
+ mmi_length:6.53e-05,
+ taper_width=2.3e-06,
+ delta_y:0
+2025-09-25 23:14:10,770 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 8e-06, 
+ mmi_length:6.53e-05,
+ taper_width=2.3e-06,
+ delta_y:0
+2025-09-25 23:14:43,909 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 8.1e-06, 
+ mmi_length:6.53e-05,
+ taper_width=2.3e-06,
+ delta_y:0
+2025-09-25 23:15:17,702 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 8.2e-06, 
+ mmi_length:6.53e-05,
+ taper_width=2.3e-06,
+ delta_y:0
+2025-09-25 23:15:51,559 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 8.3e-06, 
+ mmi_length:6.53e-05,
+ taper_width=2.3e-06,
+ delta_y:0
+2025-09-25 23:16:25,887 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 8.400000000000001e-06, 
+ mmi_length:6.53e-05,
+ taper_width=2.3e-06,
+ delta_y:0
+2025-09-25 23:17:00,372 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 8.5e-06, 
+ mmi_length:6.53e-05,
+ taper_width=2.3e-06,
+ delta_y:0
+2025-09-25 23:17:35,106 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 8.6e-06, 
+ mmi_length:6.53e-05,
+ taper_width=2.3e-06,
+ delta_y:0
+2025-09-25 23:18:10,427 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 8.7e-06, 
+ mmi_length:6.53e-05,
+ taper_width=2.3e-06,
+ delta_y:0
+2025-09-25 23:18:45,614 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 8.8e-06, 
+ mmi_length:6.53e-05,
+ taper_width=2.3e-06,
+ delta_y:0
+2025-09-25 23:19:20,892 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 8.3e-06, 
+ mmi_length:6.53e-05,
+ taper_width=2.4e-06,
+ delta_y:0
+2025-09-25 23:21:29,072 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 7.8e-06, 
+ mmi_length:6.54e-05,
+ taper_width=2.4e-06,
+ delta_y:0
+2025-09-25 23:22:02,091 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 7.9e-06, 
+ mmi_length:6.54e-05,
+ taper_width=2.4e-06,
+ delta_y:0
+2025-09-25 23:22:36,194 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 8e-06, 
+ mmi_length:6.54e-05,
+ taper_width=2.4e-06,
+ delta_y:0
+2025-09-25 23:23:10,390 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 8.1e-06, 
+ mmi_length:6.54e-05,
+ taper_width=2.4e-06,
+ delta_y:0
+2025-09-25 23:23:44,869 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 8.2e-06, 
+ mmi_length:6.54e-05,
+ taper_width=2.4e-06,
+ delta_y:0
+2025-09-25 23:24:21,033 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 8.3e-06, 
+ mmi_length:6.54e-05,
+ taper_width=2.4e-06,
+ delta_y:0
+2025-09-25 23:24:55,413 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 8.400000000000001e-06, 
+ mmi_length:6.54e-05,
+ taper_width=2.4e-06,
+ delta_y:0
+2025-09-25 23:25:29,950 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 8.5e-06, 
+ mmi_length:6.54e-05,
+ taper_width=2.4e-06,
+ delta_y:0
+2025-09-25 23:26:05,792 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 8.6e-06, 
+ mmi_length:6.54e-05,
+ taper_width=2.4e-06,
+ delta_y:0
+2025-09-25 23:26:40,712 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 8.7e-06, 
+ mmi_length:6.54e-05,
+ taper_width=2.4e-06,
+ delta_y:0
+2025-09-25 23:27:16,234 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 8.8e-06, 
+ mmi_length:6.54e-05,
+ taper_width=2.4e-06,
+ delta_y:0
+2025-09-25 23:27:52,453 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 8.3e-06, 
+ mmi_length:6.54e-05,
+ taper_width=2.4999999999999998e-06,
+ delta_y:0
+2025-09-25 23:29:58,278 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 7.8e-06, 
+ mmi_length:6.560000000000001e-05,
+ taper_width=2.4999999999999998e-06,
+ delta_y:0
+2025-09-25 23:30:31,702 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 7.9e-06, 
+ mmi_length:6.560000000000001e-05,
+ taper_width=2.4999999999999998e-06,
+ delta_y:0
+2025-09-25 23:31:05,817 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 8e-06, 
+ mmi_length:6.560000000000001e-05,
+ taper_width=2.4999999999999998e-06,
+ delta_y:0
+2025-09-25 23:31:39,974 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 8.1e-06, 
+ mmi_length:6.560000000000001e-05,
+ taper_width=2.4999999999999998e-06,
+ delta_y:0
+2025-09-25 23:32:14,235 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 8.2e-06, 
+ mmi_length:6.560000000000001e-05,
+ taper_width=2.4999999999999998e-06,
+ delta_y:0
+2025-09-25 23:32:48,500 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 8.3e-06, 
+ mmi_length:6.560000000000001e-05,
+ taper_width=2.4999999999999998e-06,
+ delta_y:0
+2025-09-25 23:33:23,076 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 8.400000000000001e-06, 
+ mmi_length:6.560000000000001e-05,
+ taper_width=2.4999999999999998e-06,
+ delta_y:0
+2025-09-25 23:33:57,715 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 8.5e-06, 
+ mmi_length:6.560000000000001e-05,
+ taper_width=2.4999999999999998e-06,
+ delta_y:0
+2025-09-25 23:34:32,252 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 8.6e-06, 
+ mmi_length:6.560000000000001e-05,
+ taper_width=2.4999999999999998e-06,
+ delta_y:0
+2025-09-25 23:35:07,447 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 8.7e-06, 
+ mmi_length:6.560000000000001e-05,
+ taper_width=2.4999999999999998e-06,
+ delta_y:0
+2025-09-25 23:35:42,133 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 8.8e-06, 
+ mmi_length:6.560000000000001e-05,
+ taper_width=2.4999999999999998e-06,
+ delta_y:0
+2025-09-25 23:36:17,981 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 8.3e-06, 
+ mmi_length:6.560000000000001e-05,
+ taper_width=2.6e-06,
+ delta_y:0
+2025-09-25 23:38:23,626 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 7.8e-06, 
+ mmi_length:6.54e-05,
+ taper_width=2.6e-06,
+ delta_y:0
+2025-09-25 23:38:57,116 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 7.9e-06, 
+ mmi_length:6.54e-05,
+ taper_width=2.6e-06,
+ delta_y:0
+2025-09-25 23:39:32,150 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 8e-06, 
+ mmi_length:6.54e-05,
+ taper_width=2.6e-06,
+ delta_y:0
+2025-09-25 23:40:05,649 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 8.1e-06, 
+ mmi_length:6.54e-05,
+ taper_width=2.6e-06,
+ delta_y:0
+2025-09-25 23:40:39,811 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 8.2e-06, 
+ mmi_length:6.54e-05,
+ taper_width=2.6e-06,
+ delta_y:0
+2025-09-25 23:41:14,159 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 8.3e-06, 
+ mmi_length:6.54e-05,
+ taper_width=2.6e-06,
+ delta_y:0
+2025-09-25 23:41:48,560 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 8.400000000000001e-06, 
+ mmi_length:6.54e-05,
+ taper_width=2.6e-06,
+ delta_y:0
+2025-09-25 23:42:23,035 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 8.5e-06, 
+ mmi_length:6.54e-05,
+ taper_width=2.6e-06,
+ delta_y:0
+2025-09-25 23:42:58,870 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 8.6e-06, 
+ mmi_length:6.54e-05,
+ taper_width=2.6e-06,
+ delta_y:0
+2025-09-25 23:43:33,723 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 8.7e-06, 
+ mmi_length:6.54e-05,
+ taper_width=2.6e-06,
+ delta_y:0
+2025-09-25 23:44:11,402 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 8.8e-06, 
+ mmi_length:6.54e-05,
+ taper_width=2.6e-06,
+ delta_y:0
+2025-09-25 23:44:46,313 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 8.3e-06, 
+ mmi_length:6.54e-05,
+ taper_width=2.7e-06,
+ delta_y:0
+2025-09-25 23:46:51,797 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 7.8e-06, 
+ mmi_length:6.54e-05,
+ taper_width=2.7e-06,
+ delta_y:0
+2025-09-25 23:47:24,799 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 7.9e-06, 
+ mmi_length:6.54e-05,
+ taper_width=2.7e-06,
+ delta_y:0
+2025-09-25 23:47:57,869 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 8e-06, 
+ mmi_length:6.54e-05,
+ taper_width=2.7e-06,
+ delta_y:0
+2025-09-25 23:48:31,378 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 8.1e-06, 
+ mmi_length:6.54e-05,
+ taper_width=2.7e-06,
+ delta_y:0
+2025-09-25 23:49:05,542 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 8.2e-06, 
+ mmi_length:6.54e-05,
+ taper_width=2.7e-06,
+ delta_y:0
+2025-09-25 23:49:39,772 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 8.3e-06, 
+ mmi_length:6.54e-05,
+ taper_width=2.7e-06,
+ delta_y:0
+2025-09-25 23:50:14,305 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 8.400000000000001e-06, 
+ mmi_length:6.54e-05,
+ taper_width=2.7e-06,
+ delta_y:0
+2025-09-25 23:50:48,521 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 8.5e-06, 
+ mmi_length:6.54e-05,
+ taper_width=2.7e-06,
+ delta_y:0
+2025-09-25 23:51:23,422 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 8.6e-06, 
+ mmi_length:6.54e-05,
+ taper_width=2.7e-06,
+ delta_y:0
+2025-09-25 23:51:58,797 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 8.7e-06, 
+ mmi_length:6.54e-05,
+ taper_width=2.7e-06,
+ delta_y:0
+2025-09-25 23:52:33,461 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 8.8e-06, 
+ mmi_length:6.54e-05,
+ taper_width=2.7e-06,
+ delta_y:0
+2025-09-25 23:53:09,334 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 8.3e-06, 
+ mmi_length:6.54e-05,
+ taper_width=2.8e-06,
+ delta_y:0
+2025-09-25 23:55:15,796 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 7.8e-06, 
+ mmi_length:6.52e-05,
+ taper_width=2.8e-06,
+ delta_y:0
+2025-09-25 23:55:50,746 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 7.9e-06, 
+ mmi_length:6.52e-05,
+ taper_width=2.8e-06,
+ delta_y:0
+2025-09-25 23:56:25,114 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 8e-06, 
+ mmi_length:6.52e-05,
+ taper_width=2.8e-06,
+ delta_y:0
+2025-09-25 23:56:59,000 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 8.1e-06, 
+ mmi_length:6.52e-05,
+ taper_width=2.8e-06,
+ delta_y:0
+2025-09-25 23:57:33,083 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 8.2e-06, 
+ mmi_length:6.52e-05,
+ taper_width=2.8e-06,
+ delta_y:0
+2025-09-25 23:58:07,808 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 8.3e-06, 
+ mmi_length:6.52e-05,
+ taper_width=2.8e-06,
+ delta_y:0
+2025-09-25 23:58:41,707 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 8.400000000000001e-06, 
+ mmi_length:6.52e-05,
+ taper_width=2.8e-06,
+ delta_y:0
+2025-09-25 23:59:16,508 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 8.5e-06, 
+ mmi_length:6.52e-05,
+ taper_width=2.8e-06,
+ delta_y:0
+2025-09-25 23:59:51,146 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 8.6e-06, 
+ mmi_length:6.52e-05,
+ taper_width=2.8e-06,
+ delta_y:0
+2025-09-26 00:00:26,479 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 8.7e-06, 
+ mmi_length:6.52e-05,
+ taper_width=2.8e-06,
+ delta_y:0
+2025-09-26 00:01:01,393 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 8.8e-06, 
+ mmi_length:6.52e-05,
+ taper_width=2.8e-06,
+ delta_y:0
+2025-09-26 00:01:37,044 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 8.3e-06, 
+ mmi_length:6.52e-05,
+ taper_width=2.8999999999999998e-06,
+ delta_y:0
+2025-09-26 00:03:42,632 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 7.8e-06, 
+ mmi_length:6.560000000000001e-05,
+ taper_width=2.8999999999999998e-06,
+ delta_y:0
+2025-09-26 00:04:16,353 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 7.9e-06, 
+ mmi_length:6.560000000000001e-05,
+ taper_width=2.8999999999999998e-06,
+ delta_y:0
+2025-09-26 00:04:49,313 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 8e-06, 
+ mmi_length:6.560000000000001e-05,
+ taper_width=2.8999999999999998e-06,
+ delta_y:0
+2025-09-26 00:05:22,979 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 8.1e-06, 
+ mmi_length:6.560000000000001e-05,
+ taper_width=2.8999999999999998e-06,
+ delta_y:0
+2025-09-26 00:05:56,980 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 8.2e-06, 
+ mmi_length:6.560000000000001e-05,
+ taper_width=2.8999999999999998e-06,
+ delta_y:0
+2025-09-26 00:06:31,235 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 8.3e-06, 
+ mmi_length:6.560000000000001e-05,
+ taper_width=2.8999999999999998e-06,
+ delta_y:0
+2025-09-26 00:07:05,545 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 8.400000000000001e-06, 
+ mmi_length:6.560000000000001e-05,
+ taper_width=2.8999999999999998e-06,
+ delta_y:0
+2025-09-26 00:07:39,812 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 8.5e-06, 
+ mmi_length:6.560000000000001e-05,
+ taper_width=2.8999999999999998e-06,
+ delta_y:0
+2025-09-26 00:08:14,352 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 8.6e-06, 
+ mmi_length:6.560000000000001e-05,
+ taper_width=2.8999999999999998e-06,
+ delta_y:0
+2025-09-26 00:08:48,707 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 8.7e-06, 
+ mmi_length:6.560000000000001e-05,
+ taper_width=2.8999999999999998e-06,
+ delta_y:0
+2025-09-26 00:09:24,657 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 8.8e-06, 
+ mmi_length:6.560000000000001e-05,
+ taper_width=2.8999999999999998e-06,
+ delta_y:0
+2025-09-26 00:10:01,009 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 8.3e-06, 
+ mmi_length:6.560000000000001e-05,
+ taper_width=3e-06,
+ delta_y:0
+2025-09-26 00:12:13,759 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 7.8e-06, 
+ mmi_length:6.53e-05,
+ taper_width=3e-06,
+ delta_y:0
+2025-09-26 00:12:47,997 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 7.9e-06, 
+ mmi_length:6.53e-05,
+ taper_width=3e-06,
+ delta_y:0
+2025-09-26 00:13:22,320 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 8e-06, 
+ mmi_length:6.53e-05,
+ taper_width=3e-06,
+ delta_y:0
+2025-09-26 00:13:55,433 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 8.1e-06, 
+ mmi_length:6.53e-05,
+ taper_width=3e-06,
+ delta_y:0
+2025-09-26 00:14:29,137 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 8.2e-06, 
+ mmi_length:6.53e-05,
+ taper_width=3e-06,
+ delta_y:0
+2025-09-26 00:15:03,757 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 8.3e-06, 
+ mmi_length:6.53e-05,
+ taper_width=3e-06,
+ delta_y:0
+2025-09-26 00:15:37,971 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 8.400000000000001e-06, 
+ mmi_length:6.53e-05,
+ taper_width=3e-06,
+ delta_y:0
+2025-09-26 00:16:13,592 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 8.5e-06, 
+ mmi_length:6.53e-05,
+ taper_width=3e-06,
+ delta_y:0
+2025-09-26 00:16:48,549 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 8.6e-06, 
+ mmi_length:6.53e-05,
+ taper_width=3e-06,
+ delta_y:0
+2025-09-26 00:17:24,004 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 8.7e-06, 
+ mmi_length:6.53e-05,
+ taper_width=3e-06,
+ delta_y:0
+2025-09-26 00:17:58,599 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 8.8e-06, 
+ mmi_length:6.53e-05,
+ taper_width=3e-06,
+ delta_y:0
+2025-09-26 00:18:34,526 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 8.3e-06, 
+ mmi_length:6.53e-05,
+ taper_width=3.1e-06,
+ delta_y:0
+2025-09-26 00:20:40,534 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 7.8e-06, 
+ mmi_length:6.53e-05,
+ taper_width=3.1e-06,
+ delta_y:0
+2025-09-26 00:21:13,571 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 7.9e-06, 
+ mmi_length:6.53e-05,
+ taper_width=3.1e-06,
+ delta_y:0
+2025-09-26 00:21:47,843 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 8e-06, 
+ mmi_length:6.53e-05,
+ taper_width=3.1e-06,
+ delta_y:0
+2025-09-26 00:22:21,265 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 8.1e-06, 
+ mmi_length:6.53e-05,
+ taper_width=3.1e-06,
+ delta_y:0
+2025-09-26 00:22:54,495 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 8.2e-06, 
+ mmi_length:6.53e-05,
+ taper_width=3.1e-06,
+ delta_y:0
+2025-09-26 00:23:28,450 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 8.3e-06, 
+ mmi_length:6.53e-05,
+ taper_width=3.1e-06,
+ delta_y:0
+2025-09-26 00:24:02,781 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 8.400000000000001e-06, 
+ mmi_length:6.53e-05,
+ taper_width=3.1e-06,
+ delta_y:0
+2025-09-26 00:24:37,349 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 8.5e-06, 
+ mmi_length:6.53e-05,
+ taper_width=3.1e-06,
+ delta_y:0
+2025-09-26 00:25:11,922 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 8.6e-06, 
+ mmi_length:6.53e-05,
+ taper_width=3.1e-06,
+ delta_y:0
+2025-09-26 00:25:46,538 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 8.7e-06, 
+ mmi_length:6.53e-05,
+ taper_width=3.1e-06,
+ delta_y:0
+2025-09-26 00:26:21,882 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 8.8e-06, 
+ mmi_length:6.53e-05,
+ taper_width=3.1e-06,
+ delta_y:0
+2025-09-26 00:26:56,909 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 8.3e-06, 
+ mmi_length:6.53e-05,
+ taper_width=3.2e-06,
+ delta_y:0
+2025-09-26 00:29:02,686 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 7.8e-06, 
+ mmi_length:6.48e-05,
+ taper_width=3.2e-06,
+ delta_y:0
+2025-09-26 00:29:36,170 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 7.9e-06, 
+ mmi_length:6.48e-05,
+ taper_width=3.2e-06,
+ delta_y:0
+2025-09-26 00:30:09,459 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 8e-06, 
+ mmi_length:6.48e-05,
+ taper_width=3.2e-06,
+ delta_y:0
+2025-09-26 00:30:43,705 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 8.1e-06, 
+ mmi_length:6.48e-05,
+ taper_width=3.2e-06,
+ delta_y:0
+2025-09-26 00:31:17,930 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 8.2e-06, 
+ mmi_length:6.48e-05,
+ taper_width=3.2e-06,
+ delta_y:0
+2025-09-26 00:31:52,197 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 8.3e-06, 
+ mmi_length:6.48e-05,
+ taper_width=3.2e-06,
+ delta_y:0
+2025-09-26 00:32:27,355 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 8.400000000000001e-06, 
+ mmi_length:6.48e-05,
+ taper_width=3.2e-06,
+ delta_y:0
+2025-09-26 00:33:01,744 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 8.5e-06, 
+ mmi_length:6.48e-05,
+ taper_width=3.2e-06,
+ delta_y:0
+2025-09-26 00:33:36,997 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 8.6e-06, 
+ mmi_length:6.48e-05,
+ taper_width=3.2e-06,
+ delta_y:0
+2025-09-26 00:34:11,307 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 8.7e-06, 
+ mmi_length:6.48e-05,
+ taper_width=3.2e-06,
+ delta_y:0
+2025-09-26 00:34:46,166 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 8.8e-06, 
+ mmi_length:6.48e-05,
+ taper_width=3.2e-06,
+ delta_y:0
+2025-09-26 00:35:28,763 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 7.499999999999999e-06, 
+ mmi_length:0.000101,
+ taper_width=3e-06,
+ delta_y:0
+2025-09-26 00:40:37,259 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 7.599999999999999e-06, 
+ mmi_length:0.000101,
+ taper_width=3e-06,
+ delta_y:0
+2025-09-26 00:45:38,824 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 7.699999999999999e-06, 
+ mmi_length:0.000101,
+ taper_width=3e-06,
+ delta_y:0
+2025-09-26 00:50:35,316 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 7.8e-06, 
+ mmi_length:0.000101,
+ taper_width=3e-06,
+ delta_y:0
+2025-09-26 00:55:52,929 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 7.9e-06, 
+ mmi_length:0.000101,
+ taper_width=3e-06,
+ delta_y:0
+2025-09-26 01:01:09,126 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 8e-06, 
+ mmi_length:0.000101,
+ taper_width=3e-06,
+ delta_y:0
+2025-09-26 01:06:22,587 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 8.099999999999999e-06, 
+ mmi_length:0.000101,
+ taper_width=3e-06,
+ delta_y:0
+2025-09-26 01:11:21,435 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 8.2e-06, 
+ mmi_length:0.000101,
+ taper_width=3e-06,
+ delta_y:0
+2025-09-26 01:16:34,502 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 8.3e-06, 
+ mmi_length:0.000101,
+ taper_width=3e-06,
+ delta_y:0
+2025-09-26 01:22:03,150 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 8.4e-06, 
+ mmi_length:0.000101,
+ taper_width=3e-06,
+ delta_y:0
+2025-09-26 01:27:13,121 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 8.5e-06, 
+ mmi_length:0.000101,
+ taper_width=3e-06,
+ delta_y:0
+2025-09-26 01:32:18,045 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 8.599999999999999e-06, 
+ mmi_length:0.000101,
+ taper_width=3e-06,
+ delta_y:0
+2025-09-26 01:37:50,380 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 8.7e-06, 
+ mmi_length:0.000101,
+ taper_width=3e-06,
+ delta_y:0
+2025-09-26 01:42:52,182 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 8.8e-06, 
+ mmi_length:0.000101,
+ taper_width=3e-06,
+ delta_y:0
+2025-09-26 01:48:34,468 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 8.9e-06, 
+ mmi_length:0.000101,
+ taper_width=3e-06,
+ delta_y:0
+2025-09-26 01:53:52,028 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 9e-06, 
+ mmi_length:0.000101,
+ taper_width=3e-06,
+ delta_y:0
+2025-09-26 01:59:25,774 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 9.1e-06, 
+ mmi_length:0.000101,
+ taper_width=3e-06,
+ delta_y:0
+2025-09-26 02:04:53,409 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 9.199999999999998e-06, 
+ mmi_length:0.000101,
+ taper_width=3e-06,
+ delta_y:0
+2025-09-26 02:10:00,184 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 9.3e-06, 
+ mmi_length:0.000101,
+ taper_width=3e-06,
+ delta_y:0
+2025-09-26 02:15:25,973 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 9.4e-06, 
+ mmi_length:0.000101,
+ taper_width=3e-06,
+ delta_y:0
+2025-09-26 02:20:29,628 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 9.499999999999999e-06, 
+ mmi_length:0.000101,
+ taper_width=3e-06,
+ delta_y:0
+2025-09-26 02:25:41,187 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 9.6e-06, 
+ mmi_length:0.000101,
+ taper_width=3e-06,
+ delta_y:0
+2025-09-26 02:31:15,769 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 9.699999999999999e-06, 
+ mmi_length:0.000101,
+ taper_width=3e-06,
+ delta_y:0
+2025-09-26 02:36:36,395 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 9.800000000000001e-06, 
+ mmi_length:0.000101,
+ taper_width=3e-06,
+ delta_y:0
+2025-09-26 02:41:59,144 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 9.9e-06, 
+ mmi_length:0.000101,
+ taper_width=3e-06,
+ delta_y:0
+2025-09-26 02:47:22,241 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 9.999999999999999e-06, 
+ mmi_length:0.000101,
+ taper_width=3e-06,
+ delta_y:0
+2025-09-26 02:52:37,946 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 1.01e-05, 
+ mmi_length:0.000101,
+ taper_width=3e-06,
+ delta_y:0
+2025-09-26 02:57:54,279 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 1.0199999999999999e-05, 
+ mmi_length:0.000101,
+ taper_width=3e-06,
+ delta_y:0
+2025-09-26 03:03:23,229 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 1.03e-05, 
+ mmi_length:0.000101,
+ taper_width=3e-06,
+ delta_y:0
+2025-09-26 03:08:48,428 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 1.04e-05, 
+ mmi_length:0.000101,
+ taper_width=3e-06,
+ delta_y:0
+2025-09-26 03:14:13,936 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 1.05e-05, 
+ mmi_length:0.000101,
+ taper_width=3e-06,
+ delta_y:0
+2025-09-26 10:04:12,004 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 8.2e-06, 
+ mmi_length:6e-05,
+ taper_width=2.7e-06,
+ delta_y:0
+2025-09-26 10:09:01,842 - INFO - In find_optimal_length: Optimal length : 3.46e-05 , with max transmission 0.48676237102476594
+2025-09-26 10:09:01,938 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 8.2e-06, 
+ mmi_length:6e-05,
+ taper_width=2.2e-06,
+ delta_y:0
+2025-09-26 10:10:56,994 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 8.2e-06, 
+ mmi_length:6e-05,
+ taper_width=2.7e-06,
+ delta_y:0
+2025-09-26 10:15:59,888 - INFO - In find_optimal_length: Optimal length : 3.46e-05 , with max transmission 0.4867623710247715
+2025-09-26 10:15:59,963 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 8.2e-06, 
+ mmi_length:6e-05,
+ taper_width=2.2e-06,
+ delta_y:0
+2025-09-26 10:17:56,994 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 7.699999999999999e-06, 
+ mmi_length:3.38e-05,
+ taper_width=2.2e-06,
+ delta_y:0
+2025-09-26 10:18:22,812 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 7.8e-06, 
+ mmi_length:3.38e-05,
+ taper_width=2.2e-06,
+ delta_y:0
+2025-09-26 10:18:46,917 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 7.899999999999999e-06, 
+ mmi_length:3.38e-05,
+ taper_width=2.2e-06,
+ delta_y:0
+2025-09-26 10:19:15,548 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 8e-06, 
+ mmi_length:3.38e-05,
+ taper_width=2.2e-06,
+ delta_y:0
+2025-09-26 10:19:39,392 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 8.099999999999999e-06, 
+ mmi_length:3.38e-05,
+ taper_width=2.2e-06,
+ delta_y:0
+2025-09-26 10:20:06,017 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 8.2e-06, 
+ mmi_length:3.38e-05,
+ taper_width=2.2e-06,
+ delta_y:0
+2025-09-26 10:20:39,031 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 8.3e-06, 
+ mmi_length:3.38e-05,
+ taper_width=2.2e-06,
+ delta_y:0
+2025-09-26 10:21:10,823 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 8.4e-06, 
+ mmi_length:3.38e-05,
+ taper_width=2.2e-06,
+ delta_y:0
+2025-09-26 10:21:38,147 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 8.5e-06, 
+ mmi_length:3.38e-05,
+ taper_width=2.2e-06,
+ delta_y:0
+2025-09-26 10:22:02,449 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 8.599999999999999e-06, 
+ mmi_length:3.38e-05,
+ taper_width=2.2e-06,
+ delta_y:0
+2025-09-26 10:22:29,484 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 8.7e-06, 
+ mmi_length:3.38e-05,
+ taper_width=2.2e-06,
+ delta_y:0
+2025-09-26 10:22:56,924 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 8.2e-06, 
+ mmi_length:3.38e-05,
+ taper_width=2.3e-06,
+ delta_y:0
+2025-09-26 10:25:00,833 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 7.699999999999999e-06, 
+ mmi_length:3.4200000000000005e-05,
+ taper_width=2.3e-06,
+ delta_y:0
+2025-09-26 10:25:24,105 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 7.8e-06, 
+ mmi_length:3.4200000000000005e-05,
+ taper_width=2.3e-06,
+ delta_y:0
+2025-09-26 10:25:48,245 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 7.899999999999999e-06, 
+ mmi_length:3.4200000000000005e-05,
+ taper_width=2.3e-06,
+ delta_y:0
+2025-09-26 10:26:13,166 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 8e-06, 
+ mmi_length:3.4200000000000005e-05,
+ taper_width=2.3e-06,
+ delta_y:0
+2025-09-26 10:26:37,654 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 8.099999999999999e-06, 
+ mmi_length:3.4200000000000005e-05,
+ taper_width=2.3e-06,
+ delta_y:0
+2025-09-26 10:27:02,884 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 8.2e-06, 
+ mmi_length:3.4200000000000005e-05,
+ taper_width=2.3e-06,
+ delta_y:0
+2025-09-26 10:27:27,094 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 8.3e-06, 
+ mmi_length:3.4200000000000005e-05,
+ taper_width=2.3e-06,
+ delta_y:0
+2025-09-26 10:27:53,634 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 8.4e-06, 
+ mmi_length:3.4200000000000005e-05,
+ taper_width=2.3e-06,
+ delta_y:0
+2025-09-26 10:28:30,894 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 8.5e-06, 
+ mmi_length:3.4200000000000005e-05,
+ taper_width=2.3e-06,
+ delta_y:0
+2025-09-26 10:29:00,779 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 8.599999999999999e-06, 
+ mmi_length:3.4200000000000005e-05,
+ taper_width=2.3e-06,
+ delta_y:0
+2025-09-26 10:29:26,073 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 8.7e-06, 
+ mmi_length:3.4200000000000005e-05,
+ taper_width=2.3e-06,
+ delta_y:0
+2025-09-26 10:29:51,076 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 8.2e-06, 
+ mmi_length:3.4200000000000005e-05,
+ taper_width=2.4e-06,
+ delta_y:0
+2025-09-26 10:31:57,222 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 7.699999999999999e-06, 
+ mmi_length:3.38e-05,
+ taper_width=2.4e-06,
+ delta_y:0
+2025-09-26 10:32:26,494 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 7.8e-06, 
+ mmi_length:3.38e-05,
+ taper_width=2.4e-06,
+ delta_y:0
+2025-09-26 10:32:53,460 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 7.899999999999999e-06, 
+ mmi_length:3.38e-05,
+ taper_width=2.4e-06,
+ delta_y:0
+2025-09-26 10:33:17,661 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 8e-06, 
+ mmi_length:3.38e-05,
+ taper_width=2.4e-06,
+ delta_y:0
+2025-09-26 10:33:42,298 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 8.099999999999999e-06, 
+ mmi_length:3.38e-05,
+ taper_width=2.4e-06,
+ delta_y:0
+2025-09-26 10:34:12,404 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 8.2e-06, 
+ mmi_length:3.38e-05,
+ taper_width=2.4e-06,
+ delta_y:0
+2025-09-26 10:34:40,237 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 8.3e-06, 
+ mmi_length:3.38e-05,
+ taper_width=2.4e-06,
+ delta_y:0
+2025-09-26 10:35:04,964 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 8.4e-06, 
+ mmi_length:3.38e-05,
+ taper_width=2.4e-06,
+ delta_y:0
+2025-09-26 10:35:34,677 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 8.5e-06, 
+ mmi_length:3.38e-05,
+ taper_width=2.4e-06,
+ delta_y:0
+2025-09-26 10:36:03,374 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 8.599999999999999e-06, 
+ mmi_length:3.38e-05,
+ taper_width=2.4e-06,
+ delta_y:0
+2025-09-26 10:36:35,778 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 8.7e-06, 
+ mmi_length:3.38e-05,
+ taper_width=2.4e-06,
+ delta_y:0
+2025-09-26 10:37:03,335 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 8.2e-06, 
+ mmi_length:3.38e-05,
+ taper_width=2.4999999999999998e-06,
+ delta_y:0
+2025-09-26 10:39:20,160 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 7.699999999999999e-06, 
+ mmi_length:3.37e-05,
+ taper_width=2.4999999999999998e-06,
+ delta_y:0
+2025-09-26 10:39:44,571 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 7.8e-06, 
+ mmi_length:3.37e-05,
+ taper_width=2.4999999999999998e-06,
+ delta_y:0
+2025-09-26 10:40:10,636 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 7.899999999999999e-06, 
+ mmi_length:3.37e-05,
+ taper_width=2.4999999999999998e-06,
+ delta_y:0
+2025-09-26 10:40:36,363 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 8e-06, 
+ mmi_length:3.37e-05,
+ taper_width=2.4999999999999998e-06,
+ delta_y:0
+2025-09-26 10:41:01,386 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 8.099999999999999e-06, 
+ mmi_length:3.37e-05,
+ taper_width=2.4999999999999998e-06,
+ delta_y:0
+2025-09-26 10:41:26,686 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 8.2e-06, 
+ mmi_length:3.37e-05,
+ taper_width=2.4999999999999998e-06,
+ delta_y:0
+2025-09-26 10:41:53,315 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 8.3e-06, 
+ mmi_length:3.37e-05,
+ taper_width=2.4999999999999998e-06,
+ delta_y:0
+2025-09-26 10:42:22,047 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 8.4e-06, 
+ mmi_length:3.37e-05,
+ taper_width=2.4999999999999998e-06,
+ delta_y:0
+2025-09-26 10:42:47,432 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 8.5e-06, 
+ mmi_length:3.37e-05,
+ taper_width=2.4999999999999998e-06,
+ delta_y:0
+2025-09-26 10:43:14,425 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 8.599999999999999e-06, 
+ mmi_length:3.37e-05,
+ taper_width=2.4999999999999998e-06,
+ delta_y:0
+2025-09-26 10:43:39,699 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 8.7e-06, 
+ mmi_length:3.37e-05,
+ taper_width=2.4999999999999998e-06,
+ delta_y:0
+2025-09-26 10:44:04,694 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 8.2e-06, 
+ mmi_length:3.37e-05,
+ taper_width=2.6e-06,
+ delta_y:0
+2025-09-26 10:46:06,168 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 7.699999999999999e-06, 
+ mmi_length:3.41e-05,
+ taper_width=2.6e-06,
+ delta_y:0
+2025-09-26 10:46:29,228 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 7.8e-06, 
+ mmi_length:3.41e-05,
+ taper_width=2.6e-06,
+ delta_y:0
+2025-09-26 10:46:53,533 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 7.899999999999999e-06, 
+ mmi_length:3.41e-05,
+ taper_width=2.6e-06,
+ delta_y:0
+2025-09-26 10:47:17,773 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 8e-06, 
+ mmi_length:3.41e-05,
+ taper_width=2.6e-06,
+ delta_y:0
+2025-09-26 10:47:41,894 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 8.099999999999999e-06, 
+ mmi_length:3.41e-05,
+ taper_width=2.6e-06,
+ delta_y:0
+2025-09-26 10:48:05,971 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 8.2e-06, 
+ mmi_length:3.41e-05,
+ taper_width=2.6e-06,
+ delta_y:0
+2025-09-26 10:48:30,275 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 8.3e-06, 
+ mmi_length:3.41e-05,
+ taper_width=2.6e-06,
+ delta_y:0
+2025-09-26 10:48:54,314 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 8.4e-06, 
+ mmi_length:3.41e-05,
+ taper_width=2.6e-06,
+ delta_y:0
+2025-09-26 10:49:18,582 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 8.5e-06, 
+ mmi_length:3.41e-05,
+ taper_width=2.6e-06,
+ delta_y:0
+2025-09-26 10:49:43,048 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 8.599999999999999e-06, 
+ mmi_length:3.41e-05,
+ taper_width=2.6e-06,
+ delta_y:0
+2025-09-26 10:50:07,214 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 8.7e-06, 
+ mmi_length:3.41e-05,
+ taper_width=2.6e-06,
+ delta_y:0
+2025-09-26 10:50:53,532 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 8.2e-06, 
+ mmi_length:3.41e-05,
+ taper_width=2.7e-06,
+ delta_y:0
+2025-09-26 10:53:01,754 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 7.699999999999999e-06, 
+ mmi_length:3.46e-05,
+ taper_width=2.7e-06,
+ delta_y:0
+2025-09-26 10:53:25,671 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 7.8e-06, 
+ mmi_length:3.46e-05,
+ taper_width=2.7e-06,
+ delta_y:0
+2025-09-26 10:53:49,863 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 7.899999999999999e-06, 
+ mmi_length:3.46e-05,
+ taper_width=2.7e-06,
+ delta_y:0
+2025-09-26 10:54:14,081 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 8e-06, 
+ mmi_length:3.46e-05,
+ taper_width=2.7e-06,
+ delta_y:0
+2025-09-26 10:54:38,173 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 8.099999999999999e-06, 
+ mmi_length:3.46e-05,
+ taper_width=2.7e-06,
+ delta_y:0
+2025-09-26 10:55:02,346 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 8.2e-06, 
+ mmi_length:3.46e-05,
+ taper_width=2.7e-06,
+ delta_y:0
+2025-09-26 10:55:26,706 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 8.3e-06, 
+ mmi_length:3.46e-05,
+ taper_width=2.7e-06,
+ delta_y:0
+2025-09-26 10:55:51,285 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 8.4e-06, 
+ mmi_length:3.46e-05,
+ taper_width=2.7e-06,
+ delta_y:0
+2025-09-26 10:56:15,369 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 8.5e-06, 
+ mmi_length:3.46e-05,
+ taper_width=2.7e-06,
+ delta_y:0
+2025-09-26 10:56:41,235 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 8.599999999999999e-06, 
+ mmi_length:3.46e-05,
+ taper_width=2.7e-06,
+ delta_y:0
+2025-09-26 10:57:08,347 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 8.7e-06, 
+ mmi_length:3.46e-05,
+ taper_width=2.7e-06,
+ delta_y:0
+2025-09-26 10:57:34,092 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 8.2e-06, 
+ mmi_length:3.46e-05,
+ taper_width=2.8e-06,
+ delta_y:0
+2025-09-26 10:59:31,781 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 7.699999999999999e-06, 
+ mmi_length:3.4200000000000005e-05,
+ taper_width=2.8e-06,
+ delta_y:0
+2025-09-26 10:59:55,199 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 7.8e-06, 
+ mmi_length:3.4200000000000005e-05,
+ taper_width=2.8e-06,
+ delta_y:0
+2025-09-26 11:00:19,072 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 7.899999999999999e-06, 
+ mmi_length:3.4200000000000005e-05,
+ taper_width=2.8e-06,
+ delta_y:0
+2025-09-26 11:00:43,313 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 8e-06, 
+ mmi_length:3.4200000000000005e-05,
+ taper_width=2.8e-06,
+ delta_y:0
+2025-09-26 11:01:07,721 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 8.099999999999999e-06, 
+ mmi_length:3.4200000000000005e-05,
+ taper_width=2.8e-06,
+ delta_y:0
+2025-09-26 11:01:31,469 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 8.2e-06, 
+ mmi_length:3.4200000000000005e-05,
+ taper_width=2.8e-06,
+ delta_y:0
+2025-09-26 11:02:02,671 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 8.3e-06, 
+ mmi_length:3.4200000000000005e-05,
+ taper_width=2.8e-06,
+ delta_y:0
+2025-09-26 11:02:30,464 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 8.4e-06, 
+ mmi_length:3.4200000000000005e-05,
+ taper_width=2.8e-06,
+ delta_y:0
+2025-09-26 11:02:55,915 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 8.5e-06, 
+ mmi_length:3.4200000000000005e-05,
+ taper_width=2.8e-06,
+ delta_y:0
+2025-09-26 11:03:20,496 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 8.599999999999999e-06, 
+ mmi_length:3.4200000000000005e-05,
+ taper_width=2.8e-06,
+ delta_y:0
+2025-09-26 11:03:46,186 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 8.7e-06, 
+ mmi_length:3.4200000000000005e-05,
+ taper_width=2.8e-06,
+ delta_y:0
+2025-09-26 11:04:11,145 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 8.2e-06, 
+ mmi_length:3.4200000000000005e-05,
+ taper_width=2.8999999999999998e-06,
+ delta_y:0
+2025-09-26 11:06:17,284 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 7.699999999999999e-06, 
+ mmi_length:3.34e-05,
+ taper_width=2.8999999999999998e-06,
+ delta_y:0
+2025-09-26 11:06:43,076 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 7.8e-06, 
+ mmi_length:3.34e-05,
+ taper_width=2.8999999999999998e-06,
+ delta_y:0
+2025-09-26 11:07:07,280 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 7.899999999999999e-06, 
+ mmi_length:3.34e-05,
+ taper_width=2.8999999999999998e-06,
+ delta_y:0
+2025-09-26 11:07:32,036 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 8e-06, 
+ mmi_length:3.34e-05,
+ taper_width=2.8999999999999998e-06,
+ delta_y:0
+2025-09-26 11:07:55,902 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 8.099999999999999e-06, 
+ mmi_length:3.34e-05,
+ taper_width=2.8999999999999998e-06,
+ delta_y:0
+2025-09-26 11:08:20,629 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 8.2e-06, 
+ mmi_length:3.34e-05,
+ taper_width=2.8999999999999998e-06,
+ delta_y:0
+2025-09-26 11:08:45,999 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 8.3e-06, 
+ mmi_length:3.34e-05,
+ taper_width=2.8999999999999998e-06,
+ delta_y:0
+2025-09-26 11:09:10,804 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 8.4e-06, 
+ mmi_length:3.34e-05,
+ taper_width=2.8999999999999998e-06,
+ delta_y:0
+2025-09-26 11:09:36,315 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 8.5e-06, 
+ mmi_length:3.34e-05,
+ taper_width=2.8999999999999998e-06,
+ delta_y:0
+2025-09-26 11:10:01,209 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 8.599999999999999e-06, 
+ mmi_length:3.34e-05,
+ taper_width=2.8999999999999998e-06,
+ delta_y:0
+2025-09-26 11:10:26,565 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 8.7e-06, 
+ mmi_length:3.34e-05,
+ taper_width=2.8999999999999998e-06,
+ delta_y:0
+2025-09-26 11:10:52,783 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 8.2e-06, 
+ mmi_length:3.34e-05,
+ taper_width=3e-06,
+ delta_y:0
+2025-09-26 11:12:51,086 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 7.699999999999999e-06, 
+ mmi_length:3.35e-05,
+ taper_width=3e-06,
+ delta_y:0
+2025-09-26 11:13:14,492 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 7.8e-06, 
+ mmi_length:3.35e-05,
+ taper_width=3e-06,
+ delta_y:0
+2025-09-26 11:13:38,477 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 7.899999999999999e-06, 
+ mmi_length:3.35e-05,
+ taper_width=3e-06,
+ delta_y:0
+2025-09-26 11:14:02,267 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 8e-06, 
+ mmi_length:3.35e-05,
+ taper_width=3e-06,
+ delta_y:0
+2025-09-26 11:14:26,382 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 8.099999999999999e-06, 
+ mmi_length:3.35e-05,
+ taper_width=3e-06,
+ delta_y:0
+2025-09-26 11:14:51,934 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 8.2e-06, 
+ mmi_length:3.35e-05,
+ taper_width=3e-06,
+ delta_y:0
+2025-09-26 11:15:16,210 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 8.3e-06, 
+ mmi_length:3.35e-05,
+ taper_width=3e-06,
+ delta_y:0
+2025-09-26 11:15:40,901 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 8.4e-06, 
+ mmi_length:3.35e-05,
+ taper_width=3e-06,
+ delta_y:0
+2025-09-26 11:16:05,046 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 8.5e-06, 
+ mmi_length:3.35e-05,
+ taper_width=3e-06,
+ delta_y:0
+2025-09-26 11:16:29,558 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 8.599999999999999e-06, 
+ mmi_length:3.35e-05,
+ taper_width=3e-06,
+ delta_y:0
+2025-09-26 11:16:54,845 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 8.7e-06, 
+ mmi_length:3.35e-05,
+ taper_width=3e-06,
+ delta_y:0
+2025-09-26 11:17:21,019 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 8.2e-06, 
+ mmi_length:3.35e-05,
+ taper_width=3.1e-06,
+ delta_y:0
+2025-09-26 11:19:18,620 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 7.699999999999999e-06, 
+ mmi_length:3.37e-05,
+ taper_width=3.1e-06,
+ delta_y:0
+2025-09-26 11:19:42,881 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 7.8e-06, 
+ mmi_length:3.37e-05,
+ taper_width=3.1e-06,
+ delta_y:0
+2025-09-26 11:20:07,972 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 7.899999999999999e-06, 
+ mmi_length:3.37e-05,
+ taper_width=3.1e-06,
+ delta_y:0
+2025-09-26 11:20:32,164 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 8e-06, 
+ mmi_length:3.37e-05,
+ taper_width=3.1e-06,
+ delta_y:0
+2025-09-26 11:20:56,316 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 8.099999999999999e-06, 
+ mmi_length:3.37e-05,
+ taper_width=3.1e-06,
+ delta_y:0
+2025-09-26 11:21:20,433 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 8.2e-06, 
+ mmi_length:3.37e-05,
+ taper_width=3.1e-06,
+ delta_y:0
+2025-09-26 11:21:44,773 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 8.3e-06, 
+ mmi_length:3.37e-05,
+ taper_width=3.1e-06,
+ delta_y:0
+2025-09-26 11:22:09,403 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 8.4e-06, 
+ mmi_length:3.37e-05,
+ taper_width=3.1e-06,
+ delta_y:0
+2025-09-26 11:22:33,789 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 8.5e-06, 
+ mmi_length:3.37e-05,
+ taper_width=3.1e-06,
+ delta_y:0
+2025-09-26 11:22:59,189 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 8.599999999999999e-06, 
+ mmi_length:3.37e-05,
+ taper_width=3.1e-06,
+ delta_y:0
+2025-09-26 11:23:25,305 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 8.7e-06, 
+ mmi_length:3.37e-05,
+ taper_width=3.1e-06,
+ delta_y:0
+2025-09-26 11:23:50,099 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 8.2e-06, 
+ mmi_length:3.37e-05,
+ taper_width=3.2e-06,
+ delta_y:0
+2025-09-26 11:25:47,917 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 7.699999999999999e-06, 
+ mmi_length:3.39e-05,
+ taper_width=3.2e-06,
+ delta_y:0
+2025-09-26 11:26:11,248 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 7.8e-06, 
+ mmi_length:3.39e-05,
+ taper_width=3.2e-06,
+ delta_y:0
+2025-09-26 11:26:35,299 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 7.899999999999999e-06, 
+ mmi_length:3.39e-05,
+ taper_width=3.2e-06,
+ delta_y:0
+2025-09-26 11:27:00,635 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 8e-06, 
+ mmi_length:3.39e-05,
+ taper_width=3.2e-06,
+ delta_y:0
+2025-09-26 11:27:24,752 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 8.099999999999999e-06, 
+ mmi_length:3.39e-05,
+ taper_width=3.2e-06,
+ delta_y:0
+2025-09-26 11:27:49,789 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 8.2e-06, 
+ mmi_length:3.39e-05,
+ taper_width=3.2e-06,
+ delta_y:0
+2025-09-26 11:28:15,041 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 8.3e-06, 
+ mmi_length:3.39e-05,
+ taper_width=3.2e-06,
+ delta_y:0
+2025-09-26 11:28:39,887 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 8.4e-06, 
+ mmi_length:3.39e-05,
+ taper_width=3.2e-06,
+ delta_y:0
+2025-09-26 11:29:05,386 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 8.5e-06, 
+ mmi_length:3.39e-05,
+ taper_width=3.2e-06,
+ delta_y:0
+2025-09-26 11:29:31,545 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 8.599999999999999e-06, 
+ mmi_length:3.39e-05,
+ taper_width=3.2e-06,
+ delta_y:0
+2025-09-26 11:29:57,759 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 8.7e-06, 
+ mmi_length:3.39e-05,
+ taper_width=3.2e-06,
+ delta_y:0
+2025-09-26 12:02:11,098 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 9.5e-06, 
+ mmi_length:6e-05,
+ taper_width=3.5e-06,
+ delta_y:0
+2025-09-26 12:06:41,362 - INFO - In find_optimal_length: Optimal length : 4.46e-05 , with max transmission 0.48173988111298943
+2025-09-26 12:06:41,439 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 9.5e-06, 
+ mmi_length:6e-05,
+ taper_width=3e-06,
+ delta_y:0
+2025-09-26 12:08:39,297 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 9e-06, 
+ mmi_length:4.53e-05,
+ taper_width=3e-06,
+ delta_y:0
+2025-09-26 12:09:02,237 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 9.100000000000001e-06, 
+ mmi_length:4.53e-05,
+ taper_width=3e-06,
+ delta_y:0
+2025-09-26 12:09:26,617 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 9.2e-06, 
+ mmi_length:4.53e-05,
+ taper_width=3e-06,
+ delta_y:0
+2025-09-26 12:09:50,614 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 9.3e-06, 
+ mmi_length:4.53e-05,
+ taper_width=3e-06,
+ delta_y:0
+2025-09-26 12:10:14,543 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 9.4e-06, 
+ mmi_length:4.53e-05,
+ taper_width=3e-06,
+ delta_y:0
+2025-09-26 12:10:38,581 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 9.5e-06, 
+ mmi_length:4.53e-05,
+ taper_width=3e-06,
+ delta_y:0
+2025-09-26 12:11:03,128 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 9.600000000000001e-06, 
+ mmi_length:4.53e-05,
+ taper_width=3e-06,
+ delta_y:0
+2025-09-26 12:11:31,605 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 9.7e-06, 
+ mmi_length:4.53e-05,
+ taper_width=3e-06,
+ delta_y:0
+2025-09-26 12:11:56,768 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 9.800000000000001e-06, 
+ mmi_length:4.53e-05,
+ taper_width=3e-06,
+ delta_y:0
+2025-09-26 12:12:21,342 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 9.9e-06, 
+ mmi_length:4.53e-05,
+ taper_width=3e-06,
+ delta_y:0
+2025-09-26 12:12:51,008 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 1e-05, 
+ mmi_length:4.53e-05,
+ taper_width=3e-06,
+ delta_y:0
+2025-09-26 12:13:17,169 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 9.5e-06, 
+ mmi_length:4.53e-05,
+ taper_width=3.1e-06,
+ delta_y:0
+2025-09-26 12:15:19,790 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 9e-06, 
+ mmi_length:4.55e-05,
+ taper_width=3.1e-06,
+ delta_y:0
+2025-09-26 12:15:44,626 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 9.100000000000001e-06, 
+ mmi_length:4.55e-05,
+ taper_width=3.1e-06,
+ delta_y:0
+2025-09-26 12:16:14,266 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 9.2e-06, 
+ mmi_length:4.55e-05,
+ taper_width=3.1e-06,
+ delta_y:0
+2025-09-26 12:16:38,982 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 9.3e-06, 
+ mmi_length:4.55e-05,
+ taper_width=3.1e-06,
+ delta_y:0
+2025-09-26 12:17:02,846 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 9.4e-06, 
+ mmi_length:4.55e-05,
+ taper_width=3.1e-06,
+ delta_y:0
+2025-09-26 12:17:26,904 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 9.5e-06, 
+ mmi_length:4.55e-05,
+ taper_width=3.1e-06,
+ delta_y:0
+2025-09-26 12:17:51,317 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 9.600000000000001e-06, 
+ mmi_length:4.55e-05,
+ taper_width=3.1e-06,
+ delta_y:0
+2025-09-26 12:18:17,406 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 9.7e-06, 
+ mmi_length:4.55e-05,
+ taper_width=3.1e-06,
+ delta_y:0
+2025-09-26 12:19:10,474 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 9.800000000000001e-06, 
+ mmi_length:4.55e-05,
+ taper_width=3.1e-06,
+ delta_y:0
+2025-09-26 12:19:33,690 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 9.9e-06, 
+ mmi_length:4.55e-05,
+ taper_width=3.1e-06,
+ delta_y:0
+2025-09-26 12:19:59,999 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 1e-05, 
+ mmi_length:4.55e-05,
+ taper_width=3.1e-06,
+ delta_y:0
+2025-09-26 12:20:32,095 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 9.5e-06, 
+ mmi_length:4.55e-05,
+ taper_width=3.2e-06,
+ delta_y:0
+2025-09-26 12:22:38,502 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 9e-06, 
+ mmi_length:4.5900000000000004e-05,
+ taper_width=3.2e-06,
+ delta_y:0
+2025-09-26 12:23:01,998 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 9.100000000000001e-06, 
+ mmi_length:4.5900000000000004e-05,
+ taper_width=3.2e-06,
+ delta_y:0
+2025-09-26 12:23:27,650 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 9.2e-06, 
+ mmi_length:4.5900000000000004e-05,
+ taper_width=3.2e-06,
+ delta_y:0
+2025-09-26 12:23:52,375 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 9.3e-06, 
+ mmi_length:4.5900000000000004e-05,
+ taper_width=3.2e-06,
+ delta_y:0
+2025-09-26 12:24:16,463 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 9.4e-06, 
+ mmi_length:4.5900000000000004e-05,
+ taper_width=3.2e-06,
+ delta_y:0
+2025-09-26 12:24:41,219 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 9.5e-06, 
+ mmi_length:4.5900000000000004e-05,
+ taper_width=3.2e-06,
+ delta_y:0
+2025-09-26 12:25:09,263 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 9.600000000000001e-06, 
+ mmi_length:4.5900000000000004e-05,
+ taper_width=3.2e-06,
+ delta_y:0
+2025-09-26 12:25:34,698 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 9.7e-06, 
+ mmi_length:4.5900000000000004e-05,
+ taper_width=3.2e-06,
+ delta_y:0
+2025-09-26 12:26:01,595 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 9.800000000000001e-06, 
+ mmi_length:4.5900000000000004e-05,
+ taper_width=3.2e-06,
+ delta_y:0
+2025-09-26 12:26:29,112 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 9.9e-06, 
+ mmi_length:4.5900000000000004e-05,
+ taper_width=3.2e-06,
+ delta_y:0
+2025-09-26 12:26:57,591 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 1e-05, 
+ mmi_length:4.5900000000000004e-05,
+ taper_width=3.2e-06,
+ delta_y:0
+2025-09-26 12:27:24,095 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 9.5e-06, 
+ mmi_length:4.5900000000000004e-05,
+ taper_width=3.2999999999999997e-06,
+ delta_y:0
+2025-09-26 12:29:25,548 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 9e-06, 
+ mmi_length:4.5900000000000004e-05,
+ taper_width=3.2999999999999997e-06,
+ delta_y:0
+2025-09-26 12:29:48,671 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 9.100000000000001e-06, 
+ mmi_length:4.5900000000000004e-05,
+ taper_width=3.2999999999999997e-06,
+ delta_y:0
+2025-09-26 12:30:35,091 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 9.2e-06, 
+ mmi_length:4.5900000000000004e-05,
+ taper_width=3.2999999999999997e-06,
+ delta_y:0
+2025-09-26 12:30:57,166 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 9.3e-06, 
+ mmi_length:4.5900000000000004e-05,
+ taper_width=3.2999999999999997e-06,
+ delta_y:0
+2025-09-26 12:31:21,220 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 9.4e-06, 
+ mmi_length:4.5900000000000004e-05,
+ taper_width=3.2999999999999997e-06,
+ delta_y:0
+2025-09-26 12:31:45,876 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 9.5e-06, 
+ mmi_length:4.5900000000000004e-05,
+ taper_width=3.2999999999999997e-06,
+ delta_y:0
+2025-09-26 12:32:12,197 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 9.600000000000001e-06, 
+ mmi_length:4.5900000000000004e-05,
+ taper_width=3.2999999999999997e-06,
+ delta_y:0
+2025-09-26 12:32:38,718 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 9.7e-06, 
+ mmi_length:4.5900000000000004e-05,
+ taper_width=3.2999999999999997e-06,
+ delta_y:0
+2025-09-26 12:33:04,317 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 9.800000000000001e-06, 
+ mmi_length:4.5900000000000004e-05,
+ taper_width=3.2999999999999997e-06,
+ delta_y:0
+2025-09-26 12:33:30,965 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 9.9e-06, 
+ mmi_length:4.5900000000000004e-05,
+ taper_width=3.2999999999999997e-06,
+ delta_y:0
+2025-09-26 12:33:59,040 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 1e-05, 
+ mmi_length:4.5900000000000004e-05,
+ taper_width=3.2999999999999997e-06,
+ delta_y:0
+2025-09-26 12:34:26,901 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 9.5e-06, 
+ mmi_length:4.5900000000000004e-05,
+ taper_width=3.4e-06,
+ delta_y:0
+2025-09-26 12:36:34,026 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 9e-06, 
+ mmi_length:4.51e-05,
+ taper_width=3.4e-06,
+ delta_y:0
+2025-09-26 12:36:58,178 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 9.100000000000001e-06, 
+ mmi_length:4.51e-05,
+ taper_width=3.4e-06,
+ delta_y:0
+2025-09-26 12:37:23,818 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 9.2e-06, 
+ mmi_length:4.51e-05,
+ taper_width=3.4e-06,
+ delta_y:0
+2025-09-26 12:37:50,947 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 9.3e-06, 
+ mmi_length:4.51e-05,
+ taper_width=3.4e-06,
+ delta_y:0
+2025-09-26 12:38:17,263 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 9.4e-06, 
+ mmi_length:4.51e-05,
+ taper_width=3.4e-06,
+ delta_y:0
+2025-09-26 12:38:41,391 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 9.5e-06, 
+ mmi_length:4.51e-05,
+ taper_width=3.4e-06,
+ delta_y:0
+2025-09-26 12:39:07,161 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 9.600000000000001e-06, 
+ mmi_length:4.51e-05,
+ taper_width=3.4e-06,
+ delta_y:0
+2025-09-26 12:39:33,463 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 9.7e-06, 
+ mmi_length:4.51e-05,
+ taper_width=3.4e-06,
+ delta_y:0
+2025-09-26 12:40:01,487 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 9.800000000000001e-06, 
+ mmi_length:4.51e-05,
+ taper_width=3.4e-06,
+ delta_y:0
+2025-09-26 12:40:32,178 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 9.9e-06, 
+ mmi_length:4.51e-05,
+ taper_width=3.4e-06,
+ delta_y:0
+2025-09-26 12:40:59,680 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 1e-05, 
+ mmi_length:4.51e-05,
+ taper_width=3.4e-06,
+ delta_y:0
+2025-09-26 12:41:25,278 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 9.5e-06, 
+ mmi_length:4.51e-05,
+ taper_width=3.5e-06,
+ delta_y:0
+2025-09-26 12:43:30,929 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 9e-06, 
+ mmi_length:4.46e-05,
+ taper_width=3.5e-06,
+ delta_y:0
+2025-09-26 12:43:55,302 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 9.100000000000001e-06, 
+ mmi_length:4.46e-05,
+ taper_width=3.5e-06,
+ delta_y:0
+2025-09-26 12:44:20,365 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 9.2e-06, 
+ mmi_length:4.46e-05,
+ taper_width=3.5e-06,
+ delta_y:0
+2025-09-26 12:44:44,950 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 9.3e-06, 
+ mmi_length:4.46e-05,
+ taper_width=3.5e-06,
+ delta_y:0
+2025-09-26 12:45:11,950 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 9.4e-06, 
+ mmi_length:4.46e-05,
+ taper_width=3.5e-06,
+ delta_y:0
+2025-09-26 12:45:38,059 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 9.5e-06, 
+ mmi_length:4.46e-05,
+ taper_width=3.5e-06,
+ delta_y:0
+2025-09-26 12:46:02,857 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 9.600000000000001e-06, 
+ mmi_length:4.46e-05,
+ taper_width=3.5e-06,
+ delta_y:0
+2025-09-26 12:46:29,512 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 9.7e-06, 
+ mmi_length:4.46e-05,
+ taper_width=3.5e-06,
+ delta_y:0
+2025-09-26 12:46:56,778 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 9.800000000000001e-06, 
+ mmi_length:4.46e-05,
+ taper_width=3.5e-06,
+ delta_y:0
+2025-09-26 12:47:23,209 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 9.9e-06, 
+ mmi_length:4.46e-05,
+ taper_width=3.5e-06,
+ delta_y:0
+2025-09-26 12:47:49,887 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 1e-05, 
+ mmi_length:4.46e-05,
+ taper_width=3.5e-06,
+ delta_y:0
+2025-09-26 12:48:16,595 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 9.5e-06, 
+ mmi_length:4.46e-05,
+ taper_width=3.6e-06,
+ delta_y:0
+2025-09-26 12:50:23,736 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 9e-06, 
+ mmi_length:4.49e-05,
+ taper_width=3.6e-06,
+ delta_y:0
+2025-09-26 12:50:48,684 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 9.100000000000001e-06, 
+ mmi_length:4.49e-05,
+ taper_width=3.6e-06,
+ delta_y:0
+2025-09-26 12:51:13,857 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 9.2e-06, 
+ mmi_length:4.49e-05,
+ taper_width=3.6e-06,
+ delta_y:0
+2025-09-26 12:51:37,881 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 9.3e-06, 
+ mmi_length:4.49e-05,
+ taper_width=3.6e-06,
+ delta_y:0
+2025-09-26 12:52:04,134 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 9.4e-06, 
+ mmi_length:4.49e-05,
+ taper_width=3.6e-06,
+ delta_y:0
+2025-09-26 12:52:27,952 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 9.5e-06, 
+ mmi_length:4.49e-05,
+ taper_width=3.6e-06,
+ delta_y:0
+2025-09-26 12:52:53,362 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 9.600000000000001e-06, 
+ mmi_length:4.49e-05,
+ taper_width=3.6e-06,
+ delta_y:0
+2025-09-26 12:53:25,674 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 9.7e-06, 
+ mmi_length:4.49e-05,
+ taper_width=3.6e-06,
+ delta_y:0
+2025-09-26 12:53:50,089 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 9.800000000000001e-06, 
+ mmi_length:4.49e-05,
+ taper_width=3.6e-06,
+ delta_y:0
+2025-09-26 12:54:16,354 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 9.9e-06, 
+ mmi_length:4.49e-05,
+ taper_width=3.6e-06,
+ delta_y:0
+2025-09-26 12:54:41,091 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 1e-05, 
+ mmi_length:4.49e-05,
+ taper_width=3.6e-06,
+ delta_y:0
+2025-09-26 12:55:06,459 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 9.5e-06, 
+ mmi_length:4.49e-05,
+ taper_width=3.6999999999999997e-06,
+ delta_y:0
+2025-09-26 12:57:07,449 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 9e-06, 
+ mmi_length:4.49e-05,
+ taper_width=3.6999999999999997e-06,
+ delta_y:0
+2025-09-26 12:57:31,852 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 9.100000000000001e-06, 
+ mmi_length:4.49e-05,
+ taper_width=3.6999999999999997e-06,
+ delta_y:0
+2025-09-26 12:57:55,059 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 9.2e-06, 
+ mmi_length:4.49e-05,
+ taper_width=3.6999999999999997e-06,
+ delta_y:0
+2025-09-26 12:58:19,309 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 9.3e-06, 
+ mmi_length:4.49e-05,
+ taper_width=3.6999999999999997e-06,
+ delta_y:0
+2025-09-26 12:58:44,273 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 9.4e-06, 
+ mmi_length:4.49e-05,
+ taper_width=3.6999999999999997e-06,
+ delta_y:0
+2025-09-26 12:59:08,919 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 9.5e-06, 
+ mmi_length:4.49e-05,
+ taper_width=3.6999999999999997e-06,
+ delta_y:0
+2025-09-26 12:59:33,401 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 9.600000000000001e-06, 
+ mmi_length:4.49e-05,
+ taper_width=3.6999999999999997e-06,
+ delta_y:0
+2025-09-26 12:59:58,833 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 9.7e-06, 
+ mmi_length:4.49e-05,
+ taper_width=3.6999999999999997e-06,
+ delta_y:0
+2025-09-26 13:00:25,057 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 9.800000000000001e-06, 
+ mmi_length:4.49e-05,
+ taper_width=3.6999999999999997e-06,
+ delta_y:0
+2025-09-26 13:00:50,521 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 9.9e-06, 
+ mmi_length:4.49e-05,
+ taper_width=3.6999999999999997e-06,
+ delta_y:0
+2025-09-26 13:01:18,719 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 1e-05, 
+ mmi_length:4.49e-05,
+ taper_width=3.6999999999999997e-06,
+ delta_y:0
+2025-09-26 13:01:45,834 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 9.5e-06, 
+ mmi_length:4.49e-05,
+ taper_width=3.8e-06,
+ delta_y:0
+2025-09-26 13:04:00,102 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 9e-06, 
+ mmi_length:4.53e-05,
+ taper_width=3.8e-06,
+ delta_y:0
+2025-09-26 13:04:24,151 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 9.100000000000001e-06, 
+ mmi_length:4.53e-05,
+ taper_width=3.8e-06,
+ delta_y:0
+2025-09-26 13:04:47,561 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 9.2e-06, 
+ mmi_length:4.53e-05,
+ taper_width=3.8e-06,
+ delta_y:0
+2025-09-26 13:05:11,660 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 9.3e-06, 
+ mmi_length:4.53e-05,
+ taper_width=3.8e-06,
+ delta_y:0
+2025-09-26 13:05:35,991 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 9.4e-06, 
+ mmi_length:4.53e-05,
+ taper_width=3.8e-06,
+ delta_y:0
+2025-09-26 13:05:59,874 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 9.5e-06, 
+ mmi_length:4.53e-05,
+ taper_width=3.8e-06,
+ delta_y:0
+2025-09-26 13:06:24,344 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 9.600000000000001e-06, 
+ mmi_length:4.53e-05,
+ taper_width=3.8e-06,
+ delta_y:0
+2025-09-26 13:06:51,482 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 9.7e-06, 
+ mmi_length:4.53e-05,
+ taper_width=3.8e-06,
+ delta_y:0
+2025-09-26 13:07:17,592 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 9.800000000000001e-06, 
+ mmi_length:4.53e-05,
+ taper_width=3.8e-06,
+ delta_y:0
+2025-09-26 13:07:43,204 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 9.9e-06, 
+ mmi_length:4.53e-05,
+ taper_width=3.8e-06,
+ delta_y:0
+2025-09-26 13:08:08,506 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 1e-05, 
+ mmi_length:4.53e-05,
+ taper_width=3.8e-06,
+ delta_y:0
+2025-09-26 13:08:33,404 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 9.5e-06, 
+ mmi_length:4.53e-05,
+ taper_width=3.9e-06,
+ delta_y:0
+2025-09-26 13:10:29,786 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 9e-06, 
+ mmi_length:4.54e-05,
+ taper_width=3.9e-06,
+ delta_y:0
+2025-09-26 13:10:52,852 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 9.100000000000001e-06, 
+ mmi_length:4.54e-05,
+ taper_width=3.9e-06,
+ delta_y:0
+2025-09-26 13:11:31,458 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 9.2e-06, 
+ mmi_length:4.54e-05,
+ taper_width=3.9e-06,
+ delta_y:0
+2025-09-26 13:12:03,432 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 9.3e-06, 
+ mmi_length:4.54e-05,
+ taper_width=3.9e-06,
+ delta_y:0
+2025-09-26 13:12:28,986 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 9.4e-06, 
+ mmi_length:4.54e-05,
+ taper_width=3.9e-06,
+ delta_y:0
+2025-09-26 13:12:54,020 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 9.5e-06, 
+ mmi_length:4.54e-05,
+ taper_width=3.9e-06,
+ delta_y:0
+2025-09-26 13:13:19,336 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 9.600000000000001e-06, 
+ mmi_length:4.54e-05,
+ taper_width=3.9e-06,
+ delta_y:0
+2025-09-26 13:13:45,480 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 9.7e-06, 
+ mmi_length:4.54e-05,
+ taper_width=3.9e-06,
+ delta_y:0
+2025-09-26 13:14:11,694 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 9.800000000000001e-06, 
+ mmi_length:4.54e-05,
+ taper_width=3.9e-06,
+ delta_y:0
+2025-09-26 13:14:37,937 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 9.9e-06, 
+ mmi_length:4.54e-05,
+ taper_width=3.9e-06,
+ delta_y:0
+2025-09-26 13:15:02,845 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 1e-05, 
+ mmi_length:4.54e-05,
+ taper_width=3.9e-06,
+ delta_y:0
+2025-09-26 13:15:28,645 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 9.5e-06, 
+ mmi_length:4.54e-05,
+ taper_width=4e-06,
+ delta_y:0
+2025-09-26 13:17:27,684 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 9e-06, 
+ mmi_length:4.55e-05,
+ taper_width=4e-06,
+ delta_y:0
+2025-09-26 13:17:52,001 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 9.100000000000001e-06, 
+ mmi_length:4.55e-05,
+ taper_width=4e-06,
+ delta_y:0
+2025-09-26 13:18:16,750 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 9.2e-06, 
+ mmi_length:4.55e-05,
+ taper_width=4e-06,
+ delta_y:0
+2025-09-26 13:18:42,518 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 9.3e-06, 
+ mmi_length:4.55e-05,
+ taper_width=4e-06,
+ delta_y:0
+2025-09-26 13:19:06,252 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 9.4e-06, 
+ mmi_length:4.55e-05,
+ taper_width=4e-06,
+ delta_y:0
+2025-09-26 13:19:30,556 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 9.5e-06, 
+ mmi_length:4.55e-05,
+ taper_width=4e-06,
+ delta_y:0
+2025-09-26 13:19:54,943 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 9.600000000000001e-06, 
+ mmi_length:4.55e-05,
+ taper_width=4e-06,
+ delta_y:0
+2025-09-26 13:20:21,134 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 9.7e-06, 
+ mmi_length:4.55e-05,
+ taper_width=4e-06,
+ delta_y:0
+2025-09-26 13:20:47,487 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 9.800000000000001e-06, 
+ mmi_length:4.55e-05,
+ taper_width=4e-06,
+ delta_y:0
+2025-09-26 13:21:12,298 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 9.9e-06, 
+ mmi_length:4.55e-05,
+ taper_width=4e-06,
+ delta_y:0
+2025-09-26 13:21:37,682 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 1e-05, 
+ mmi_length:4.55e-05,
+ taper_width=4e-06,
+ delta_y:0
+2025-09-26 13:40:41,195 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 1.1e-05, 
+ mmi_length:6e-05,
+ taper_width=4.4e-06,
+ delta_y:0
+2025-09-26 13:45:36,988 - INFO - In find_optimal_length: Optimal length : 6.03e-05 , with max transmission 0.4876052620507241
+2025-09-26 13:45:37,071 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 1.1e-05, 
+ mmi_length:6e-05,
+ taper_width=3.9e-06,
+ delta_y:0
+2025-09-26 13:47:47,246 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 1.05e-05, 
+ mmi_length:6.08e-05,
+ taper_width=3.9e-06,
+ delta_y:0
+2025-09-26 13:48:16,650 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 1.06e-05, 
+ mmi_length:6.08e-05,
+ taper_width=3.9e-06,
+ delta_y:0
+2025-09-26 13:48:44,973 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 1.07e-05, 
+ mmi_length:6.08e-05,
+ taper_width=3.9e-06,
+ delta_y:0
+2025-09-26 13:49:13,213 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 1.08e-05, 
+ mmi_length:6.08e-05,
+ taper_width=3.9e-06,
+ delta_y:0
+2025-09-26 13:49:41,941 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 1.0899999999999999e-05, 
+ mmi_length:6.08e-05,
+ taper_width=3.9e-06,
+ delta_y:0
+2025-09-26 13:50:10,019 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 1.1e-05, 
+ mmi_length:6.08e-05,
+ taper_width=3.9e-06,
+ delta_y:0
+2025-09-26 13:50:41,926 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 1.11e-05, 
+ mmi_length:6.08e-05,
+ taper_width=3.9e-06,
+ delta_y:0
+2025-09-26 13:51:10,074 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 1.12e-05, 
+ mmi_length:6.08e-05,
+ taper_width=3.9e-06,
+ delta_y:0
+2025-09-26 13:51:39,463 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 1.13e-05, 
+ mmi_length:6.08e-05,
+ taper_width=3.9e-06,
+ delta_y:0
+2025-09-26 13:52:08,702 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 1.14e-05, 
+ mmi_length:6.08e-05,
+ taper_width=3.9e-06,
+ delta_y:0
+2025-09-26 13:52:37,580 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 1.15e-05, 
+ mmi_length:6.08e-05,
+ taper_width=3.9e-06,
+ delta_y:0
+2025-09-26 13:53:06,033 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 1.1e-05, 
+ mmi_length:6.08e-05,
+ taper_width=4e-06,
+ delta_y:0
+2025-09-26 13:55:11,565 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 1.05e-05, 
+ mmi_length:6.08e-05,
+ taper_width=4e-06,
+ delta_y:0
+2025-09-26 13:55:38,253 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 1.06e-05, 
+ mmi_length:6.08e-05,
+ taper_width=4e-06,
+ delta_y:0
+2025-09-26 13:56:05,782 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 1.07e-05, 
+ mmi_length:6.08e-05,
+ taper_width=4e-06,
+ delta_y:0
+2025-09-26 13:56:32,827 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 1.08e-05, 
+ mmi_length:6.08e-05,
+ taper_width=4e-06,
+ delta_y:0
+2025-09-26 13:57:01,809 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 1.0899999999999999e-05, 
+ mmi_length:6.08e-05,
+ taper_width=4e-06,
+ delta_y:0
+2025-09-26 13:57:29,272 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 1.1e-05, 
+ mmi_length:6.08e-05,
+ taper_width=4e-06,
+ delta_y:0
+2025-09-26 13:57:57,484 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 1.11e-05, 
+ mmi_length:6.08e-05,
+ taper_width=4e-06,
+ delta_y:0
+2025-09-26 13:58:25,815 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 1.12e-05, 
+ mmi_length:6.08e-05,
+ taper_width=4e-06,
+ delta_y:0
+2025-09-26 13:58:55,536 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 1.13e-05, 
+ mmi_length:6.08e-05,
+ taper_width=4e-06,
+ delta_y:0
+2025-09-26 13:59:30,629 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 1.14e-05, 
+ mmi_length:6.08e-05,
+ taper_width=4e-06,
+ delta_y:0
+2025-09-26 14:00:10,199 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 1.15e-05, 
+ mmi_length:6.08e-05,
+ taper_width=4e-06,
+ delta_y:0
+2025-09-26 14:00:42,973 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 1.1e-05, 
+ mmi_length:6.08e-05,
+ taper_width=4.1e-06,
+ delta_y:0
+2025-09-26 14:02:53,087 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 1.05e-05, 
+ mmi_length:6.06e-05,
+ taper_width=4.1e-06,
+ delta_y:0
+2025-09-26 14:03:33,895 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 1.06e-05, 
+ mmi_length:6.06e-05,
+ taper_width=4.1e-06,
+ delta_y:0
+2025-09-26 14:04:06,607 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 1.07e-05, 
+ mmi_length:6.06e-05,
+ taper_width=4.1e-06,
+ delta_y:0
+2025-09-26 14:04:32,786 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 1.08e-05, 
+ mmi_length:6.06e-05,
+ taper_width=4.1e-06,
+ delta_y:0
+2025-09-26 14:05:00,628 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 1.0899999999999999e-05, 
+ mmi_length:6.06e-05,
+ taper_width=4.1e-06,
+ delta_y:0
+2025-09-26 14:05:29,268 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 1.1e-05, 
+ mmi_length:6.06e-05,
+ taper_width=4.1e-06,
+ delta_y:0
+2025-09-26 14:05:57,360 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 1.11e-05, 
+ mmi_length:6.06e-05,
+ taper_width=4.1e-06,
+ delta_y:0
+2025-09-26 14:06:25,524 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 1.12e-05, 
+ mmi_length:6.06e-05,
+ taper_width=4.1e-06,
+ delta_y:0
+2025-09-26 14:06:53,890 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 1.13e-05, 
+ mmi_length:6.06e-05,
+ taper_width=4.1e-06,
+ delta_y:0
+2025-09-26 14:07:24,512 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 1.14e-05, 
+ mmi_length:6.06e-05,
+ taper_width=4.1e-06,
+ delta_y:0
+2025-09-26 14:07:54,209 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 1.15e-05, 
+ mmi_length:6.06e-05,
+ taper_width=4.1e-06,
+ delta_y:0
+2025-09-26 14:08:24,430 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 1.1e-05, 
+ mmi_length:6.06e-05,
+ taper_width=4.2000000000000004e-06,
+ delta_y:0
+2025-09-26 14:10:27,383 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 1.05e-05, 
+ mmi_length:6.08e-05,
+ taper_width=4.2000000000000004e-06,
+ delta_y:0
+2025-09-26 14:10:55,583 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 1.06e-05, 
+ mmi_length:6.08e-05,
+ taper_width=4.2000000000000004e-06,
+ delta_y:0
+2025-09-26 14:11:24,806 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 1.07e-05, 
+ mmi_length:6.08e-05,
+ taper_width=4.2000000000000004e-06,
+ delta_y:0
+2025-09-26 14:11:52,475 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 1.08e-05, 
+ mmi_length:6.08e-05,
+ taper_width=4.2000000000000004e-06,
+ delta_y:0
+2025-09-26 14:12:20,368 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 1.0899999999999999e-05, 
+ mmi_length:6.08e-05,
+ taper_width=4.2000000000000004e-06,
+ delta_y:0
+2025-09-26 14:12:47,828 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 1.1e-05, 
+ mmi_length:6.08e-05,
+ taper_width=4.2000000000000004e-06,
+ delta_y:0
+2025-09-26 14:13:15,066 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 1.11e-05, 
+ mmi_length:6.08e-05,
+ taper_width=4.2000000000000004e-06,
+ delta_y:0
+2025-09-26 14:13:44,030 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 1.12e-05, 
+ mmi_length:6.08e-05,
+ taper_width=4.2000000000000004e-06,
+ delta_y:0
+2025-09-26 14:14:11,408 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 1.13e-05, 
+ mmi_length:6.08e-05,
+ taper_width=4.2000000000000004e-06,
+ delta_y:0
+2025-09-26 14:14:39,568 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 1.14e-05, 
+ mmi_length:6.08e-05,
+ taper_width=4.2000000000000004e-06,
+ delta_y:0
+2025-09-26 14:15:25,953 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 1.15e-05, 
+ mmi_length:6.08e-05,
+ taper_width=4.2000000000000004e-06,
+ delta_y:0
+2025-09-26 14:15:54,089 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 1.1e-05, 
+ mmi_length:6.08e-05,
+ taper_width=4.3e-06,
+ delta_y:0
+2025-09-26 14:17:56,232 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 1.05e-05, 
+ mmi_length:6.06e-05,
+ taper_width=4.3e-06,
+ delta_y:0
+2025-09-26 14:18:23,463 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 1.06e-05, 
+ mmi_length:6.06e-05,
+ taper_width=4.3e-06,
+ delta_y:0
+2025-09-26 14:18:50,534 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 1.07e-05, 
+ mmi_length:6.06e-05,
+ taper_width=4.3e-06,
+ delta_y:0
+2025-09-26 14:19:20,886 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 1.08e-05, 
+ mmi_length:6.06e-05,
+ taper_width=4.3e-06,
+ delta_y:0
+2025-09-26 14:19:49,175 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 1.0899999999999999e-05, 
+ mmi_length:6.06e-05,
+ taper_width=4.3e-06,
+ delta_y:0
+2025-09-26 14:20:16,508 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 1.1e-05, 
+ mmi_length:6.06e-05,
+ taper_width=4.3e-06,
+ delta_y:0
+2025-09-26 14:20:44,328 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 1.11e-05, 
+ mmi_length:6.06e-05,
+ taper_width=4.3e-06,
+ delta_y:0
+2025-09-26 14:21:12,463 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 1.12e-05, 
+ mmi_length:6.06e-05,
+ taper_width=4.3e-06,
+ delta_y:0
+2025-09-26 14:21:40,691 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 1.13e-05, 
+ mmi_length:6.06e-05,
+ taper_width=4.3e-06,
+ delta_y:0
+2025-09-26 14:22:08,660 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 1.14e-05, 
+ mmi_length:6.06e-05,
+ taper_width=4.3e-06,
+ delta_y:0
+2025-09-26 14:22:36,831 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 1.15e-05, 
+ mmi_length:6.06e-05,
+ taper_width=4.3e-06,
+ delta_y:0
+2025-09-26 14:23:05,338 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 1.1e-05, 
+ mmi_length:6.06e-05,
+ taper_width=4.4e-06,
+ delta_y:0
+2025-09-26 14:25:07,392 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 1.05e-05, 
+ mmi_length:6.03e-05,
+ taper_width=4.4e-06,
+ delta_y:0
+2025-09-26 14:25:34,195 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 1.06e-05, 
+ mmi_length:6.03e-05,
+ taper_width=4.4e-06,
+ delta_y:0
+2025-09-26 14:26:03,484 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 1.07e-05, 
+ mmi_length:6.03e-05,
+ taper_width=4.4e-06,
+ delta_y:0
+2025-09-26 14:26:30,556 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 1.08e-05, 
+ mmi_length:6.03e-05,
+ taper_width=4.4e-06,
+ delta_y:0
+2025-09-26 14:26:57,725 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 1.0899999999999999e-05, 
+ mmi_length:6.03e-05,
+ taper_width=4.4e-06,
+ delta_y:0
+2025-09-26 14:27:24,753 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 1.1e-05, 
+ mmi_length:6.03e-05,
+ taper_width=4.4e-06,
+ delta_y:0
+2025-09-26 14:27:52,017 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 1.11e-05, 
+ mmi_length:6.03e-05,
+ taper_width=4.4e-06,
+ delta_y:0
+2025-09-26 14:28:20,013 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 1.12e-05, 
+ mmi_length:6.03e-05,
+ taper_width=4.4e-06,
+ delta_y:0
+2025-09-26 14:28:48,142 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 1.13e-05, 
+ mmi_length:6.03e-05,
+ taper_width=4.4e-06,
+ delta_y:0
+2025-09-26 14:29:16,228 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 1.14e-05, 
+ mmi_length:6.03e-05,
+ taper_width=4.4e-06,
+ delta_y:0
+2025-09-26 14:29:44,362 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 1.15e-05, 
+ mmi_length:6.03e-05,
+ taper_width=4.4e-06,
+ delta_y:0
+2025-09-26 14:30:12,488 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 1.1e-05, 
+ mmi_length:6.03e-05,
+ taper_width=4.5e-06,
+ delta_y:0
+2025-09-26 14:32:14,536 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 1.05e-05, 
+ mmi_length:6.050000000000001e-05,
+ taper_width=4.5e-06,
+ delta_y:0
+2025-09-26 14:32:42,976 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 1.06e-05, 
+ mmi_length:6.050000000000001e-05,
+ taper_width=4.5e-06,
+ delta_y:0
+2025-09-26 14:33:11,158 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 1.07e-05, 
+ mmi_length:6.050000000000001e-05,
+ taper_width=4.5e-06,
+ delta_y:0
+2025-09-26 14:33:39,261 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 1.08e-05, 
+ mmi_length:6.050000000000001e-05,
+ taper_width=4.5e-06,
+ delta_y:0
+2025-09-26 14:34:07,333 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 1.0899999999999999e-05, 
+ mmi_length:6.050000000000001e-05,
+ taper_width=4.5e-06,
+ delta_y:0
+2025-09-26 14:34:38,449 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 1.1e-05, 
+ mmi_length:6.050000000000001e-05,
+ taper_width=4.5e-06,
+ delta_y:0
+2025-09-26 14:35:07,892 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 1.11e-05, 
+ mmi_length:6.050000000000001e-05,
+ taper_width=4.5e-06,
+ delta_y:0
+2025-09-26 14:35:36,805 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 1.12e-05, 
+ mmi_length:6.050000000000001e-05,
+ taper_width=4.5e-06,
+ delta_y:0
+2025-09-26 14:36:05,021 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 1.13e-05, 
+ mmi_length:6.050000000000001e-05,
+ taper_width=4.5e-06,
+ delta_y:0
+2025-09-26 14:36:32,403 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 1.14e-05, 
+ mmi_length:6.050000000000001e-05,
+ taper_width=4.5e-06,
+ delta_y:0
+2025-09-26 14:37:00,244 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 1.15e-05, 
+ mmi_length:6.050000000000001e-05,
+ taper_width=4.5e-06,
+ delta_y:0
+2025-09-26 14:37:28,212 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 1.1e-05, 
+ mmi_length:6.050000000000001e-05,
+ taper_width=4.6e-06,
+ delta_y:0
+2025-09-26 14:39:30,037 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 1.05e-05, 
+ mmi_length:6.0400000000000004e-05,
+ taper_width=4.6e-06,
+ delta_y:0
+2025-09-26 14:39:56,775 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 1.06e-05, 
+ mmi_length:6.0400000000000004e-05,
+ taper_width=4.6e-06,
+ delta_y:0
+2025-09-26 14:40:24,720 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 1.07e-05, 
+ mmi_length:6.0400000000000004e-05,
+ taper_width=4.6e-06,
+ delta_y:0
+2025-09-26 14:40:51,588 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 1.08e-05, 
+ mmi_length:6.0400000000000004e-05,
+ taper_width=4.6e-06,
+ delta_y:0
+2025-09-26 14:41:19,427 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 1.0899999999999999e-05, 
+ mmi_length:6.0400000000000004e-05,
+ taper_width=4.6e-06,
+ delta_y:0
+2025-09-26 14:41:47,585 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 1.1e-05, 
+ mmi_length:6.0400000000000004e-05,
+ taper_width=4.6e-06,
+ delta_y:0
+2025-09-26 14:42:17,513 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 1.11e-05, 
+ mmi_length:6.0400000000000004e-05,
+ taper_width=4.6e-06,
+ delta_y:0
+2025-09-26 14:42:50,208 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 1.12e-05, 
+ mmi_length:6.0400000000000004e-05,
+ taper_width=4.6e-06,
+ delta_y:0
+2025-09-26 14:43:16,735 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 1.13e-05, 
+ mmi_length:6.0400000000000004e-05,
+ taper_width=4.6e-06,
+ delta_y:0
+2025-09-26 14:43:43,938 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 1.14e-05, 
+ mmi_length:6.0400000000000004e-05,
+ taper_width=4.6e-06,
+ delta_y:0
+2025-09-26 14:44:14,331 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 1.15e-05, 
+ mmi_length:6.0400000000000004e-05,
+ taper_width=4.6e-06,
+ delta_y:0
+2025-09-26 14:44:41,869 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 1.1e-05, 
+ mmi_length:6.0400000000000004e-05,
+ taper_width=4.700000000000001e-06,
+ delta_y:0
+2025-09-26 14:46:47,918 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 1.05e-05, 
+ mmi_length:5.9900000000000006e-05,
+ taper_width=4.700000000000001e-06,
+ delta_y:0
+2025-09-26 14:47:14,522 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 1.06e-05, 
+ mmi_length:5.9900000000000006e-05,
+ taper_width=4.700000000000001e-06,
+ delta_y:0
+2025-09-26 14:47:42,394 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 1.07e-05, 
+ mmi_length:5.9900000000000006e-05,
+ taper_width=4.700000000000001e-06,
+ delta_y:0
+2025-09-26 14:48:10,939 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 1.08e-05, 
+ mmi_length:5.9900000000000006e-05,
+ taper_width=4.700000000000001e-06,
+ delta_y:0
+2025-09-26 14:48:37,877 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 1.0899999999999999e-05, 
+ mmi_length:5.9900000000000006e-05,
+ taper_width=4.700000000000001e-06,
+ delta_y:0
+2025-09-26 14:49:05,970 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 1.1e-05, 
+ mmi_length:5.9900000000000006e-05,
+ taper_width=4.700000000000001e-06,
+ delta_y:0
+2025-09-26 14:49:33,399 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 1.11e-05, 
+ mmi_length:5.9900000000000006e-05,
+ taper_width=4.700000000000001e-06,
+ delta_y:0
+2025-09-26 14:50:02,341 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 1.12e-05, 
+ mmi_length:5.9900000000000006e-05,
+ taper_width=4.700000000000001e-06,
+ delta_y:0
+2025-09-26 14:50:31,874 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 1.13e-05, 
+ mmi_length:5.9900000000000006e-05,
+ taper_width=4.700000000000001e-06,
+ delta_y:0
+2025-09-26 14:50:59,362 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 1.14e-05, 
+ mmi_length:5.9900000000000006e-05,
+ taper_width=4.700000000000001e-06,
+ delta_y:0
+2025-09-26 14:51:29,545 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 1.15e-05, 
+ mmi_length:5.9900000000000006e-05,
+ taper_width=4.700000000000001e-06,
+ delta_y:0
+2025-09-26 14:51:57,581 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 1.1e-05, 
+ mmi_length:5.9900000000000006e-05,
+ taper_width=4.800000000000001e-06,
+ delta_y:0
+2025-09-26 14:54:00,856 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 1.05e-05, 
+ mmi_length:5.9900000000000006e-05,
+ taper_width=4.800000000000001e-06,
+ delta_y:0
+2025-09-26 14:54:27,924 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 1.06e-05, 
+ mmi_length:5.9900000000000006e-05,
+ taper_width=4.800000000000001e-06,
+ delta_y:0
+2025-09-26 14:54:54,096 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 1.07e-05, 
+ mmi_length:5.9900000000000006e-05,
+ taper_width=4.800000000000001e-06,
+ delta_y:0
+2025-09-26 14:55:22,518 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 1.08e-05, 
+ mmi_length:5.9900000000000006e-05,
+ taper_width=4.800000000000001e-06,
+ delta_y:0
+2025-09-26 14:55:50,516 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 1.0899999999999999e-05, 
+ mmi_length:5.9900000000000006e-05,
+ taper_width=4.800000000000001e-06,
+ delta_y:0
+2025-09-26 14:56:18,684 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 1.1e-05, 
+ mmi_length:5.9900000000000006e-05,
+ taper_width=4.800000000000001e-06,
+ delta_y:0
+2025-09-26 14:56:46,814 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 1.11e-05, 
+ mmi_length:5.9900000000000006e-05,
+ taper_width=4.800000000000001e-06,
+ delta_y:0
+2025-09-26 14:57:14,759 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 1.12e-05, 
+ mmi_length:5.9900000000000006e-05,
+ taper_width=4.800000000000001e-06,
+ delta_y:0
+2025-09-26 14:57:42,693 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 1.13e-05, 
+ mmi_length:5.9900000000000006e-05,
+ taper_width=4.800000000000001e-06,
+ delta_y:0
+2025-09-26 14:58:10,801 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 1.14e-05, 
+ mmi_length:5.9900000000000006e-05,
+ taper_width=4.800000000000001e-06,
+ delta_y:0
+2025-09-26 14:58:39,876 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 1.15e-05, 
+ mmi_length:5.9900000000000006e-05,
+ taper_width=4.800000000000001e-06,
+ delta_y:0
+2025-09-26 14:59:07,122 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 1.1e-05, 
+ mmi_length:5.9900000000000006e-05,
+ taper_width=4.9000000000000005e-06,
+ delta_y:0
+2025-09-26 15:01:11,867 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 1.05e-05, 
+ mmi_length:6.02e-05,
+ taper_width=4.9000000000000005e-06,
+ delta_y:0
+2025-09-26 15:02:08,477 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 1.06e-05, 
+ mmi_length:6.02e-05,
+ taper_width=4.9000000000000005e-06,
+ delta_y:0
+2025-09-26 15:02:33,774 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 1.07e-05, 
+ mmi_length:6.02e-05,
+ taper_width=4.9000000000000005e-06,
+ delta_y:0
+2025-09-26 15:03:02,179 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 1.08e-05, 
+ mmi_length:6.02e-05,
+ taper_width=4.9000000000000005e-06,
+ delta_y:0
+2025-09-26 15:03:29,220 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 1.0899999999999999e-05, 
+ mmi_length:6.02e-05,
+ taper_width=4.9000000000000005e-06,
+ delta_y:0
+2025-09-26 15:03:56,339 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 1.1e-05, 
+ mmi_length:6.02e-05,
+ taper_width=4.9000000000000005e-06,
+ delta_y:0
+2025-09-26 15:04:24,480 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 1.11e-05, 
+ mmi_length:6.02e-05,
+ taper_width=4.9000000000000005e-06,
+ delta_y:0
+2025-09-26 15:04:52,586 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 1.12e-05, 
+ mmi_length:6.02e-05,
+ taper_width=4.9000000000000005e-06,
+ delta_y:0
+2025-09-26 15:05:20,695 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 1.13e-05, 
+ mmi_length:6.02e-05,
+ taper_width=4.9000000000000005e-06,
+ delta_y:0
+2025-09-26 15:05:48,766 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 1.14e-05, 
+ mmi_length:6.02e-05,
+ taper_width=4.9000000000000005e-06,
+ delta_y:0
+2025-09-26 15:06:16,853 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 1.15e-05, 
+ mmi_length:6.02e-05,
+ taper_width=4.9000000000000005e-06,
+ delta_y:0
+2025-10-10 15:45:48,037 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 9.5e-06, 
+ mmi_length:5e-05,
+ taper_width=3.6e-06,
+ delta_y:0.0
+2025-10-10 15:50:30,237 - INFO - In find_optimal_length: Optimal length : 4.5e-05 , with max transmission 0.4870011703910293

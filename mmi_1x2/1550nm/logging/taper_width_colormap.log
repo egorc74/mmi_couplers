@@ -1,0 +1,209 @@
+2025-09-25 22:15:23,590 - INFO - Starting taper_width_colormap() 
+ data_filename: taper_width_colormap_2700_8300nm 
+ width_ridge: 8.3e-06, 
+ mmi_length:7e-05,
+ taper_width=2.7e-06,
+ delta_y:0
+2025-09-25 22:15:23,591 - INFO -  In taper_width_colormap() width_span [7.8e-06 7.9e-06 8.0e-06 8.1e-06 8.2e-06 8.3e-06 8.4e-06 8.5e-06 8.6e-06
+ 8.7e-06 8.8e-06],with taper span [2.2e-06 2.3e-06 2.4e-06 2.5e-06 2.6e-06 2.7e-06 2.8e-06 2.9e-06 3.0e-06
+ 3.1e-06 3.2e-06]
+2025-09-25 22:19:24,551 - INFO - Starting taper_width_colormap() 
+ data_filename: taper_width_colormap_2700_8300nm 
+ width_ridge: 8.3e-06, 
+ mmi_length:7e-05,
+ taper_width=2.7e-06,
+ delta_y:0
+2025-09-25 22:19:24,553 - INFO -  In taper_width_colormap() width_span [7.8e-06 7.9e-06 8.0e-06 8.1e-06 8.2e-06 8.3e-06 8.4e-06 8.5e-06 8.6e-06
+ 8.7e-06 8.8e-06],with taper span [2.2e-06 2.3e-06 2.4e-06 2.5e-06 2.6e-06 2.7e-06 2.8e-06 2.9e-06 3.0e-06
+ 3.1e-06 3.2e-06]
+2025-09-25 22:24:37,206 - INFO - Propagated from  5.0400000000000005e-05 to 8.04e-05
+2025-09-25 22:26:11,269 - INFO - In taper_width_colormap obtained max_trans:0.4916761147865732,optimal_length: 6.560000000000001e-05 for width_ridge8.3e-06
+2025-09-25 22:32:30,720 - INFO - In taper_width_colormap obtained transmission_matrix with shape (11, 11)
+2025-09-25 22:33:02,987 - INFO - Propagated from  5.0400000000000005e-05 to 8.04e-05
+2025-09-25 22:34:36,350 - INFO - In taper_width_colormap obtained max_trans:0.49271089378972693,optimal_length: 6.53e-05 for width_ridge8.3e-06
+2025-09-25 22:40:56,597 - INFO - In taper_width_colormap obtained transmission_matrix with shape (11, 11)
+2025-09-25 22:41:28,986 - INFO - Propagated from  5.0400000000000005e-05 to 8.04e-05
+2025-09-25 22:43:04,941 - INFO - In taper_width_colormap obtained max_trans:0.49607850782190566,optimal_length: 6.54e-05 for width_ridge8.3e-06
+2025-09-25 22:49:23,260 - INFO - In taper_width_colormap obtained transmission_matrix with shape (11, 11)
+2025-09-25 22:49:55,270 - INFO - Propagated from  5.0400000000000005e-05 to 8.04e-05
+2025-09-25 22:51:32,573 - INFO - In taper_width_colormap obtained max_trans:0.4923522216731031,optimal_length: 6.560000000000001e-05 for width_ridge8.3e-06
+2025-09-25 22:56:13,551 - ERROR - in taper_width_colormap() error occured:'emepropagate cannot be used while in layout mode.'
+2025-09-25 22:57:18,766 - INFO - Starting taper_width_colormap() 
+ data_filename: taper_width_colormap_2700_8300nm 
+ width_ridge: 8.3e-06, 
+ mmi_length:7e-05,
+ taper_width=2.7e-06,
+ delta_y:0
+2025-09-25 22:57:18,767 - INFO -  In taper_width_colormap() width_span [7.8e-06 7.9e-06 8.0e-06 8.1e-06 8.2e-06 8.3e-06 8.4e-06 8.5e-06 8.6e-06
+ 8.7e-06 8.8e-06],with taper span [2.2e-06 2.3e-06 2.4e-06 2.5e-06 2.6e-06 2.7e-06 2.8e-06 2.9e-06 3.0e-06
+ 3.1e-06 3.2e-06]
+2025-09-25 23:02:41,323 - INFO - Propagated from  5.0400000000000005e-05 to 8.04e-05
+2025-09-25 23:04:16,125 - INFO - In taper_width_colormap obtained max_trans:0.4916761147865649,optimal_length: 6.560000000000001e-05 for width_ridge8.3e-06
+2025-09-25 23:10:56,063 - INFO - In taper_width_colormap obtained transmission_matrix with shape (11, 11)
+2025-09-25 23:11:29,252 - INFO - Propagated from  5.0400000000000005e-05 to 8.04e-05
+2025-09-25 23:13:03,233 - INFO - In taper_width_colormap obtained max_trans:0.49271089378972177,optimal_length: 6.53e-05 for width_ridge8.3e-06
+2025-09-25 23:19:20,795 - INFO - In taper_width_colormap obtained transmission_matrix with shape (11, 11)
+2025-09-25 23:19:52,881 - INFO - Propagated from  5.0400000000000005e-05 to 8.04e-05
+2025-09-25 23:21:28,965 - INFO - In taper_width_colormap obtained max_trans:0.49607850782191143,optimal_length: 6.54e-05 for width_ridge8.3e-06
+2025-09-25 23:27:52,343 - INFO - In taper_width_colormap obtained transmission_matrix with shape (11, 11)
+2025-09-25 23:28:24,386 - INFO - Propagated from  5.0400000000000005e-05 to 8.04e-05
+2025-09-25 23:29:58,161 - INFO - In taper_width_colormap obtained max_trans:0.4923522216731089,optimal_length: 6.560000000000001e-05 for width_ridge8.3e-06
+2025-09-25 23:36:17,886 - INFO - In taper_width_colormap obtained transmission_matrix with shape (11, 11)
+2025-09-25 23:36:49,880 - INFO - Propagated from  5.0400000000000005e-05 to 8.04e-05
+2025-09-25 23:38:23,519 - INFO - In taper_width_colormap obtained max_trans:0.49302364757726136,optimal_length: 6.54e-05 for width_ridge8.3e-06
+2025-09-25 23:44:46,194 - INFO - In taper_width_colormap obtained transmission_matrix with shape (11, 11)
+2025-09-25 23:45:17,964 - INFO - Propagated from  5.0400000000000005e-05 to 8.04e-05
+2025-09-25 23:46:51,690 - INFO - In taper_width_colormap obtained max_trans:0.4934442555527018,optimal_length: 6.54e-05 for width_ridge8.3e-06
+2025-09-25 23:53:09,235 - INFO - In taper_width_colormap obtained transmission_matrix with shape (11, 11)
+2025-09-25 23:53:41,297 - INFO - Propagated from  5.0400000000000005e-05 to 8.04e-05
+2025-09-25 23:55:15,690 - INFO - In taper_width_colormap obtained max_trans:0.49248291673893874,optimal_length: 6.52e-05 for width_ridge8.3e-06
+2025-09-26 00:01:36,942 - INFO - In taper_width_colormap obtained transmission_matrix with shape (11, 11)
+2025-09-26 00:02:08,854 - INFO - Propagated from  5.0400000000000005e-05 to 8.04e-05
+2025-09-26 00:03:42,524 - INFO - In taper_width_colormap obtained max_trans:0.49462919575763753,optimal_length: 6.560000000000001e-05 for width_ridge8.3e-06
+2025-09-26 00:10:00,906 - INFO - In taper_width_colormap obtained transmission_matrix with shape (11, 11)
+2025-09-26 00:10:33,077 - INFO - Propagated from  5.0400000000000005e-05 to 8.04e-05
+2025-09-26 00:12:13,643 - INFO - In taper_width_colormap obtained max_trans:0.49407905336929453,optimal_length: 6.53e-05 for width_ridge8.3e-06
+2025-09-26 00:18:34,410 - INFO - In taper_width_colormap obtained transmission_matrix with shape (11, 11)
+2025-09-26 00:19:06,247 - INFO - Propagated from  5.0400000000000005e-05 to 8.04e-05
+2025-09-26 00:20:40,422 - INFO - In taper_width_colormap obtained max_trans:0.491007484812693,optimal_length: 6.53e-05 for width_ridge8.3e-06
+2025-09-26 00:26:56,801 - INFO - In taper_width_colormap obtained transmission_matrix with shape (11, 11)
+2025-09-26 00:27:28,623 - INFO - Propagated from  5.0400000000000005e-05 to 8.04e-05
+2025-09-26 00:29:02,563 - INFO - In taper_width_colormap obtained max_trans:0.4893077786717944,optimal_length: 6.48e-05 for width_ridge8.3e-06
+2025-09-26 00:35:21,758 - INFO - In taper_width_colormap obtained transmission_matrix with shape (11, 11)
+2025-09-26 10:04:12,002 - INFO - Starting taper_width_colormap() 
+ data_filename: taper_width_colormap_2700_8300nm 
+ width_ridge: 8.2e-06, 
+ mmi_length:6e-05,
+ taper_width=2.7e-06,
+ delta_y:0
+2025-09-26 10:04:12,003 - INFO -  In taper_width_colormap() width_span [7.7e-06 7.8e-06 7.9e-06 8.0e-06 8.1e-06 8.2e-06 8.3e-06 8.4e-06 8.5e-06
+ 8.6e-06 8.7e-06],with taper span [2.2e-06 2.3e-06 2.4e-06 2.5e-06 2.6e-06 2.7e-06 2.8e-06 2.9e-06 3.0e-06
+ 3.1e-06 3.2e-06]
+2025-09-26 10:09:07,986 - INFO - Propagated from  1.9600000000000002e-05 to 4.96e-05
+2025-09-26 10:09:07,987 - ERROR - in taper_width_colormap() error occured:'emesweep cannot be used while in layout mode.'
+2025-09-26 10:10:56,986 - INFO - Starting taper_width_colormap() 
+ data_filename: taper_width_colormap_2700_8300nm 
+ width_ridge: 8.2e-06, 
+ mmi_length:6e-05,
+ taper_width=2.7e-06,
+ delta_y:0
+2025-09-26 10:10:56,992 - INFO -  In taper_width_colormap() width_span [7.7e-06 7.8e-06 7.9e-06 8.0e-06 8.1e-06 8.2e-06 8.3e-06 8.4e-06 8.5e-06
+ 8.6e-06 8.7e-06],with taper span [2.2e-06 2.3e-06 2.4e-06 2.5e-06 2.6e-06 2.7e-06 2.8e-06 2.9e-06 3.0e-06
+ 3.1e-06 3.2e-06]
+2025-09-26 10:16:24,313 - INFO - Propagated from  1.9600000000000002e-05 to 4.96e-05
+2025-09-26 10:17:56,913 - INFO - In taper_width_colormap obtained max_trans:0.47653793576911585,optimal_length: 3.38e-05 for width_ridge8.2e-06
+2025-09-26 10:22:56,843 - INFO - In taper_width_colormap obtained transmission_matrix with shape (11, 11)
+2025-09-26 10:23:25,364 - INFO - Propagated from  1.9600000000000002e-05 to 4.96e-05
+2025-09-26 10:25:00,755 - INFO - In taper_width_colormap obtained max_trans:0.48390303220785774,optimal_length: 3.4200000000000005e-05 for width_ridge8.2e-06
+2025-09-26 10:29:50,977 - INFO - In taper_width_colormap obtained transmission_matrix with shape (11, 11)
+2025-09-26 10:30:13,375 - INFO - Propagated from  1.9600000000000002e-05 to 4.96e-05
+2025-09-26 10:31:57,054 - INFO - In taper_width_colormap obtained max_trans:0.4805583447406209,optimal_length: 3.38e-05 for width_ridge8.2e-06
+2025-09-26 10:37:03,232 - INFO - In taper_width_colormap obtained transmission_matrix with shape (11, 11)
+2025-09-26 10:37:29,546 - INFO - Propagated from  1.9600000000000002e-05 to 4.96e-05
+2025-09-26 10:39:20,073 - INFO - In taper_width_colormap obtained max_trans:0.48444307366656725,optimal_length: 3.37e-05 for width_ridge8.2e-06
+2025-09-26 10:44:04,618 - INFO - In taper_width_colormap obtained transmission_matrix with shape (11, 11)
+2025-09-26 10:44:28,180 - INFO - Propagated from  1.9600000000000002e-05 to 4.96e-05
+2025-09-26 10:46:06,089 - INFO - In taper_width_colormap obtained max_trans:0.48639334647881927,optimal_length: 3.41e-05 for width_ridge8.2e-06
+2025-09-26 10:50:53,456 - INFO - In taper_width_colormap obtained transmission_matrix with shape (11, 11)
+2025-09-26 10:51:15,051 - INFO - Propagated from  1.9600000000000002e-05 to 4.96e-05
+2025-09-26 10:53:01,676 - INFO - In taper_width_colormap obtained max_trans:0.4867623710247707,optimal_length: 3.46e-05 for width_ridge8.2e-06
+2025-09-26 10:57:34,007 - INFO - In taper_width_colormap obtained transmission_matrix with shape (11, 11)
+2025-09-26 10:57:57,708 - INFO - Propagated from  1.9600000000000002e-05 to 4.96e-05
+2025-09-26 10:59:31,700 - INFO - In taper_width_colormap obtained max_trans:0.4775318372399198,optimal_length: 3.4200000000000005e-05 for width_ridge8.2e-06
+2025-09-26 11:04:11,049 - INFO - In taper_width_colormap obtained transmission_matrix with shape (11, 11)
+2025-09-26 11:04:34,598 - INFO - Propagated from  1.9600000000000002e-05 to 4.96e-05
+2025-09-26 11:06:17,211 - INFO - In taper_width_colormap obtained max_trans:0.486737679331979,optimal_length: 3.34e-05 for width_ridge8.2e-06
+2025-09-26 11:10:52,696 - INFO - In taper_width_colormap obtained transmission_matrix with shape (11, 11)
+2025-09-26 11:11:15,678 - INFO - Propagated from  1.9600000000000002e-05 to 4.96e-05
+2025-09-26 11:12:50,999 - INFO - In taper_width_colormap obtained max_trans:0.486870149997981,optimal_length: 3.35e-05 for width_ridge8.2e-06
+2025-09-26 11:17:20,932 - INFO - In taper_width_colormap obtained transmission_matrix with shape (11, 11)
+2025-09-26 11:17:44,071 - INFO - Propagated from  1.9600000000000002e-05 to 4.96e-05
+2025-09-26 11:19:18,542 - INFO - In taper_width_colormap obtained max_trans:0.4859442568286253,optimal_length: 3.37e-05 for width_ridge8.2e-06
+2025-09-26 11:23:50,013 - INFO - In taper_width_colormap obtained transmission_matrix with shape (11, 11)
+2025-09-26 11:24:12,570 - INFO - Propagated from  1.9600000000000002e-05 to 4.96e-05
+2025-09-26 11:25:47,834 - INFO - In taper_width_colormap obtained max_trans:0.4864055526034615,optimal_length: 3.39e-05 for width_ridge8.2e-06
+2025-09-26 11:30:23,826 - INFO - In taper_width_colormap obtained transmission_matrix with shape (11, 11)
+2025-09-26 12:02:11,097 - INFO - Starting taper_width_colormap() 
+ data_filename: taper_width_colormap_3500_9500nm 
+ width_ridge: 9.5e-06, 
+ mmi_length:6e-05,
+ taper_width=3.5e-06,
+ delta_y:0
+2025-09-26 12:02:11,098 - INFO -  In taper_width_colormap() width_span [9.0e-06 9.1e-06 9.2e-06 9.3e-06 9.4e-06 9.5e-06 9.6e-06 9.7e-06 9.8e-06
+ 9.9e-06 1.0e-05],with taper span [3.0e-06 3.1e-06 3.2e-06 3.3e-06 3.4e-06 3.5e-06 3.6e-06 3.7e-06 3.8e-06
+ 3.9e-06 4.0e-06]
+2025-09-26 12:07:04,242 - INFO - Propagated from  2.96e-05 to 5.96e-05
+2025-09-26 12:08:39,211 - INFO - In taper_width_colormap obtained max_trans:0.48235197689285664,optimal_length: 4.53e-05 for width_ridge9.5e-06
+2025-09-26 12:13:17,101 - INFO - In taper_width_colormap obtained transmission_matrix with shape (11, 11)
+2025-09-26 12:13:40,383 - INFO - Propagated from  2.96e-05 to 5.96e-05
+2025-09-26 12:15:19,710 - INFO - In taper_width_colormap obtained max_trans:0.48400307185267916,optimal_length: 4.55e-05 for width_ridge9.5e-06
+2025-09-26 12:20:32,024 - INFO - In taper_width_colormap obtained transmission_matrix with shape (11, 11)
+2025-09-26 12:20:55,521 - INFO - Propagated from  2.96e-05 to 5.96e-05
+2025-09-26 12:22:38,409 - INFO - In taper_width_colormap obtained max_trans:0.48396758133627843,optimal_length: 4.5900000000000004e-05 for width_ridge9.5e-06
+2025-09-26 12:27:24,002 - INFO - In taper_width_colormap obtained transmission_matrix with shape (11, 11)
+2025-09-26 12:27:47,747 - INFO - Propagated from  2.96e-05 to 5.96e-05
+2025-09-26 12:29:25,469 - INFO - In taper_width_colormap obtained max_trans:0.4841126126990443,optimal_length: 4.5900000000000004e-05 for width_ridge9.5e-06
+2025-09-26 12:34:26,828 - INFO - In taper_width_colormap obtained transmission_matrix with shape (11, 11)
+2025-09-26 12:34:49,547 - INFO - Propagated from  2.96e-05 to 5.96e-05
+2025-09-26 12:36:33,949 - INFO - In taper_width_colormap obtained max_trans:0.48419031053787137,optimal_length: 4.51e-05 for width_ridge9.5e-06
+2025-09-26 12:41:25,163 - INFO - In taper_width_colormap obtained transmission_matrix with shape (11, 11)
+2025-09-26 12:41:50,373 - INFO - Propagated from  2.96e-05 to 5.96e-05
+2025-09-26 12:43:30,847 - INFO - In taper_width_colormap obtained max_trans:0.4817398811129876,optimal_length: 4.46e-05 for width_ridge9.5e-06
+2025-09-26 12:48:16,511 - INFO - In taper_width_colormap obtained transmission_matrix with shape (11, 11)
+2025-09-26 12:48:38,475 - INFO - Propagated from  2.96e-05 to 5.96e-05
+2025-09-26 12:50:23,654 - INFO - In taper_width_colormap obtained max_trans:0.4845873504145476,optimal_length: 4.49e-05 for width_ridge9.5e-06
+2025-09-26 12:55:06,381 - INFO - In taper_width_colormap obtained transmission_matrix with shape (11, 11)
+2025-09-26 12:55:29,403 - INFO - Propagated from  2.96e-05 to 5.96e-05
+2025-09-26 12:57:07,374 - INFO - In taper_width_colormap obtained max_trans:0.48523709928064035,optimal_length: 4.49e-05 for width_ridge9.5e-06
+2025-09-26 13:01:45,751 - INFO - In taper_width_colormap obtained transmission_matrix with shape (11, 11)
+2025-09-26 13:02:10,803 - INFO - Propagated from  2.96e-05 to 5.96e-05
+2025-09-26 13:04:00,015 - INFO - In taper_width_colormap obtained max_trans:0.4867682433620766,optimal_length: 4.53e-05 for width_ridge9.5e-06
+2025-09-26 13:08:33,323 - INFO - In taper_width_colormap obtained transmission_matrix with shape (11, 11)
+2025-09-26 13:08:55,609 - INFO - Propagated from  2.96e-05 to 5.96e-05
+2025-09-26 13:10:29,705 - INFO - In taper_width_colormap obtained max_trans:0.48938408810570583,optimal_length: 4.54e-05 for width_ridge9.5e-06
+2025-09-26 13:15:28,570 - INFO - In taper_width_colormap obtained transmission_matrix with shape (11, 11)
+2025-09-26 13:15:50,812 - INFO - Propagated from  2.96e-05 to 5.96e-05
+2025-09-26 13:17:27,596 - INFO - In taper_width_colormap obtained max_trans:0.4930180679838457,optimal_length: 4.55e-05 for width_ridge9.5e-06
+2025-09-26 13:22:04,249 - INFO - In taper_width_colormap obtained transmission_matrix with shape (11, 11)
+2025-09-26 13:40:41,193 - INFO - Starting taper_width_colormap() 
+ data_filename: taper_width_colormap_4400_11000nm 
+ width_ridge: 1.1e-05, 
+ mmi_length:6e-05,
+ taper_width=4.4e-06,
+ delta_y:0
+2025-09-26 13:40:41,194 - INFO -  In taper_width_colormap() width_span [1.05e-05 1.06e-05 1.07e-05 1.08e-05 1.09e-05 1.10e-05 1.11e-05 1.12e-05
+ 1.13e-05 1.14e-05 1.15e-05],with taper span [3.9e-06 4.0e-06 4.1e-06 4.2e-06 4.3e-06 4.4e-06 4.5e-06 4.6e-06 4.7e-06
+ 4.8e-06 4.9e-06]
+2025-09-26 13:46:03,625 - INFO - Propagated from  4.53e-05 to 7.53e-05
+2025-09-26 13:47:47,128 - INFO - In taper_width_colormap obtained max_trans:0.4898320118464022,optimal_length: 6.08e-05 for width_ridge1.1e-05
+2025-09-26 13:53:05,921 - INFO - In taper_width_colormap obtained transmission_matrix with shape (11, 11)
+2025-09-26 13:53:33,522 - INFO - Propagated from  4.53e-05 to 7.53e-05
+2025-09-26 13:55:11,479 - INFO - In taper_width_colormap obtained max_trans:0.4924688329456856,optimal_length: 6.08e-05 for width_ridge1.1e-05
+2025-09-26 14:00:42,883 - INFO - In taper_width_colormap obtained transmission_matrix with shape (11, 11)
+2025-09-26 14:01:09,443 - INFO - Propagated from  4.53e-05 to 7.53e-05
+2025-09-26 14:02:52,985 - INFO - In taper_width_colormap obtained max_trans:0.492192094637967,optimal_length: 6.06e-05 for width_ridge1.1e-05
+2025-09-26 14:08:24,344 - INFO - In taper_width_colormap obtained transmission_matrix with shape (11, 11)
+2025-09-26 14:08:51,242 - INFO - Propagated from  4.53e-05 to 7.53e-05
+2025-09-26 14:10:27,292 - INFO - In taper_width_colormap obtained max_trans:0.4916927962960936,optimal_length: 6.08e-05 for width_ridge1.1e-05
+2025-09-26 14:15:54,010 - INFO - In taper_width_colormap obtained transmission_matrix with shape (11, 11)
+2025-09-26 14:16:19,540 - INFO - Propagated from  4.53e-05 to 7.53e-05
+2025-09-26 14:17:56,141 - INFO - In taper_width_colormap obtained max_trans:0.48820047314205384,optimal_length: 6.06e-05 for width_ridge1.1e-05
+2025-09-26 14:23:05,255 - INFO - In taper_width_colormap obtained transmission_matrix with shape (11, 11)
+2025-09-26 14:23:31,173 - INFO - Propagated from  4.53e-05 to 7.53e-05
+2025-09-26 14:25:07,300 - INFO - In taper_width_colormap obtained max_trans:0.4876052620507241,optimal_length: 6.03e-05 for width_ridge1.1e-05
+2025-09-26 14:30:12,403 - INFO - In taper_width_colormap obtained transmission_matrix with shape (11, 11)
+2025-09-26 14:30:38,777 - INFO - Propagated from  4.53e-05 to 7.53e-05
+2025-09-26 14:32:14,443 - INFO - In taper_width_colormap obtained max_trans:0.4883904084725435,optimal_length: 6.050000000000001e-05 for width_ridge1.1e-05
+2025-09-26 14:37:28,130 - INFO - In taper_width_colormap obtained transmission_matrix with shape (11, 11)
+2025-09-26 14:37:54,387 - INFO - Propagated from  4.53e-05 to 7.53e-05
+2025-09-26 14:39:29,933 - INFO - In taper_width_colormap obtained max_trans:0.4880508394539202,optimal_length: 6.0400000000000004e-05 for width_ridge1.1e-05
+2025-09-26 14:44:41,784 - INFO - In taper_width_colormap obtained transmission_matrix with shape (11, 11)
+2025-09-26 14:45:12,080 - INFO - Propagated from  4.53e-05 to 7.53e-05
+2025-09-26 14:46:47,826 - INFO - In taper_width_colormap obtained max_trans:0.48747300190030096,optimal_length: 5.9900000000000006e-05 for width_ridge1.1e-05
+2025-09-26 14:51:57,496 - INFO - In taper_width_colormap obtained transmission_matrix with shape (11, 11)
+2025-09-26 14:52:24,202 - INFO - Propagated from  4.53e-05 to 7.53e-05
+2025-09-26 14:54:00,756 - INFO - In taper_width_colormap obtained max_trans:0.48666925209607237,optimal_length: 5.9900000000000006e-05 for width_ridge1.1e-05
+2025-09-26 14:59:07,040 - INFO - In taper_width_colormap obtained transmission_matrix with shape (11, 11)
+2025-09-26 14:59:33,381 - INFO - Propagated from  4.53e-05 to 7.53e-05
+2025-09-26 15:01:11,776 - INFO - In taper_width_colormap obtained max_trans:0.4874457313685226,optimal_length: 6.02e-05 for width_ridge1.1e-05
+2025-09-26 15:06:44,915 - INFO - In taper_width_colormap obtained transmission_matrix with shape (11, 11)

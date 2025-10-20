@@ -1,0 +1,240 @@
+2025-10-11 17:25:34,437 - INFO - Starting fdtd_solver() 
+ width_ridge: 1.1e-05, 
+ mmi_length:8.1e-05,
+ taper_width=2.5e-06,
+ ratio:0.5
+2025-10-11 17:25:52,601 - INFO - Starting fdtd_solver() 
+ width_ridge: 1.1e-05, 
+ mmi_length:8.1e-05,
+ taper_width=2.5e-06,
+ ratio:0.5
+2025-10-11 17:26:30,163 - INFO - Starting fdtd_solver() 
+ width_ridge: 1.1e-05, 
+ mmi_length:8.1e-05,
+ taper_width=2.5e-06,
+ ratio:0.5
+2025-10-11 17:26:53,200 - INFO - Starting fdtd_solver() 
+ width_ridge: 1.1e-05, 
+ mmi_length:8.1e-05,
+ taper_width=2.5e-06,
+ ratio:0.5
+2025-10-11 17:27:35,726 - INFO - Starting fdtd_solver() 
+ width_ridge: 1.1e-05, 
+ mmi_length:8.1e-05,
+ taper_width=2.5e-06,
+ ratio:0.5
+2025-10-11 17:27:54,471 - INFO - Starting fdtd_solver() 
+ width_ridge: 1.1e-05, 
+ mmi_length:8.1e-05,
+ taper_width=2.5e-06,
+ ratio:0.5
+2025-10-11 17:28:22,255 - INFO - Starting fdtd_solver() 
+ width_ridge: 1.1e-05, 
+ mmi_length:8.1e-05,
+ taper_width=2.5e-06,
+ ratio:0.5
+2025-10-11 17:29:00,742 - INFO - Starting fdtd_solver() 
+ width_ridge: 1.1e-05, 
+ mmi_length:8.1e-05,
+ taper_width=2.5e-06,
+ ratio:0.5
+2025-10-11 17:33:10,803 - INFO - Starting fdtd_solver() 
+ width_ridge: 1.1e-05, 
+ mmi_length:8.1e-05,
+ taper_width=2.5e-06,
+ ratio:0.5
+2025-10-11 17:34:51,290 - INFO - Starting fdtd_solver() 
+ width_ridge: 1.1e-05, 
+ mmi_length:8.1e-05,
+ taper_width=2.5e-06,
+ ratio:0.5
+2025-10-11 17:36:46,740 - INFO - Starting fdtd_solver() 
+ width_ridge: 1.1e-05, 
+ mmi_length:8.1e-05,
+ taper_width=2.5e-06,
+ ratio:0.5
+2025-10-11 17:38:57,466 - INFO - Starting fdtd_solver() 
+ width_ridge: 1.1e-05, 
+ mmi_length:8.1e-05,
+ taper_width=2.5e-06,
+ ratio:0.5
+2025-10-11 18:59:32,435 - INFO - Starting fdtd_solver() 
+ width_ridge: 1.1e-05, 
+ mmi_length:8.1e-05,
+ taper_width=2.5e-06,
+ ratio:0.85
+2025-10-12 11:38:55,516 - INFO - Starting fdtd_solver() 
+ width_ridge: 1.1e-05, 
+ mmi_length:8.1e-05,
+ taper_width=2.5e-06,
+ ratio:0.85
+2025-10-12 18:05:03,179 - INFO - Starting fdtd_solver() 
+ width_ridge: 1.1e-05, 
+ mmi_length:8.1e-05,
+ taper_width=2.5e-06,
+ ratio:0.85
+2025-10-12 18:07:47,955 - INFO - Starting fdtd_solver() 
+ width_ridge: 1.1e-05, 
+ mmi_length:8.1e-05,
+ taper_width=2.5e-06,
+ ratio:0.85
+2025-10-12 19:08:30,051 - INFO - Starting fdtd_solver() 
+ width_ridge: 1.1e-05, 
+ mmi_length:8.1e-05,
+ taper_width=2.5e-06,
+ ratio:0.85
+2025-10-12 19:55:59,260 - INFO - Starting fdtd_solver() 
+ width_ridge: 1.1e-05, 
+ mmi_length:8.9e-05,
+ taper_width=2.5e-06,
+ ratio:0.85
+2025-10-12 20:26:51,374 - INFO - Starting fdtd_solver() 
+ width_ridge: 1.1e-05, 
+ mmi_length:0.0001,
+ taper_width=2.5e-06,
+ ratio:0.85
+2025-10-12 21:48:57,356 - INFO - Starting fdtd_solver() 
+ width_ridge: 1.1e-05, 
+ mmi_length:8.1e-05,
+ taper_width=2.5e-06,
+ ratio:0.85
+2025-10-13 17:31:54,744 - INFO - Starting fdtd_solver() 
+ width_ridge: 8e-06, 
+ mmi_length:4.3e-05,
+ taper_width=2.1e-06,
+ ratio:0.85
+2025-10-13 17:38:04,844 - INFO - Starting fdtd_solver() 
+ width_ridge: 8e-06, 
+ mmi_length:4.3e-05,
+ taper_width=2.1e-06,
+ ratio:0.85
+2025-10-13 17:44:11,323 - INFO - Starting fdtd_solver() 
+ width_ridge: 8e-06, 
+ mmi_length:4.3e-05,
+ taper_width=2.1e-06,
+ ratio:0.85
+2025-10-13 18:03:18,002 - INFO - Starting fdtd_solver() 
+ width_ridge: 8e-06, 
+ mmi_length:8.8e-05,
+ taper_width=2.1e-06,
+ ratio:0.85
+2025-10-13 18:49:41,892 - INFO - Starting fdtd_solver() 
+ width_ridge: 8e-06, 
+ mmi_length:8.8e-05,
+ taper_width=2.1e-06,
+ ratio:0.85
+2025-10-14 08:22:36,599 - INFO - Starting fdtd_solver() 
+ width_ridge: 8e-06, 
+ mmi_length:8.7e-05,
+ taper_width=2.1e-06,
+ ratio:0.85
+2025-10-14 09:01:43,544 - INFO - Starting fdtd_solver() 
+ width_ridge: 8e-06, 
+ mmi_length:8.7e-05,
+ taper_width=1.8e-06,
+ ratio:0.85
+2025-10-14 09:49:58,683 - INFO - Starting fdtd_solver() 
+ width_ridge: 1e-05, 
+ mmi_length:0.000136,
+ taper_width=2.6e-06,
+ ratio:0.85
+2025-10-14 09:51:55,714 - INFO - Starting fdtd_solver() 
+ width_ridge: 1e-05, 
+ mmi_length:0.000136,
+ taper_width=2.6e-06,
+ ratio:0.85
+2025-10-14 09:52:56,675 - INFO - Starting fdtd_solver() 
+ width_ridge: 1e-05, 
+ mmi_length:0.000136,
+ taper_width=2.6e-06,
+ ratio:0.85
+2025-10-14 09:55:45,930 - INFO - Starting fdtd_solver() 
+ width_ridge: 1e-05, 
+ mmi_length:0.000136,
+ taper_width=2.6e-06,
+ ratio:0.85
+2025-10-14 09:56:20,779 - INFO - Starting fdtd_solver() 
+ width_ridge: 1e-05, 
+ mmi_length:0.000136,
+ taper_width=2.6e-06,
+ ratio:0.85
+2025-10-14 09:59:21,531 - INFO - Starting fdtd_solver() 
+ width_ridge: 1e-05, 
+ mmi_length:0.000136,
+ taper_width=2.6e-06,
+ ratio:0.85
+2025-10-14 10:01:10,644 - INFO - Starting fdtd_solver() 
+ width_ridge: 1e-05, 
+ mmi_length:0.000136,
+ taper_width=2.6e-06,
+ ratio:0.85
+2025-10-14 11:45:32,231 - INFO - Starting fdtd_solver() 
+ width_ridge: 8e-06, 
+ mmi_length:8.7e-05,
+ taper_width=2e-06,
+ ratio:0.85
+2025-10-14 11:48:17,457 - INFO - Starting fdtd_solver() 
+ width_ridge: 8e-06, 
+ mmi_length:8.7e-05,
+ taper_width=2e-06,
+ ratio:0.85
+2025-10-14 11:49:03,386 - INFO - Starting fdtd_solver() 
+ width_ridge: 8e-06, 
+ mmi_length:8.7e-05,
+ taper_width=2e-06,
+ ratio:0.85
+2025-10-14 22:14:49,097 - INFO - Starting fdtd_solver() 
+ width_ridge: 8e-06, 
+ mmi_length:8.7e-05,
+ taper_width=2e-06,
+ ratio:0.45
+2025-10-14 22:15:56,428 - INFO - Starting fdtd_solver() 
+ width_ridge: 8e-06, 
+ mmi_length:8.7e-05,
+ taper_width=2e-06,
+ ratio:0.45
+2025-10-16 13:19:09,461 - INFO - Starting fdtd_solver() 
+ width_ridge: 8e-06, 
+ mmi_length:8.7e-05,
+ taper_width=2e-06,
+ ratio:0.85
+2025-10-16 13:28:57,036 - INFO - Starting fdtd_solver() 
+ width_ridge: 8e-06, 
+ mmi_length:8.7e-05,
+ taper_width=2e-06,
+ ratio:0.85
+2025-10-16 13:29:16,344 - INFO - Starting fdtd_solver() 
+ width_ridge: 8e-06, 
+ mmi_length:8.7e-05,
+ taper_width=2e-06,
+ ratio:0.85
+2025-10-16 13:30:49,442 - INFO - Starting fdtd_solver() 
+ width_ridge: 8e-06, 
+ mmi_length:8.7e-05,
+ taper_width=2e-06,
+ ratio:0.85
+2025-10-16 15:58:40,697 - INFO - Starting fdtd_solver() 
+ width_ridge: 8e-06, 
+ mmi_length:8.7e-05,
+ taper_width=2e-06,
+ ratio:0.85
+2025-10-16 15:59:28,730 - INFO - Starting fdtd_solver() 
+ width_ridge: 8e-06, 
+ mmi_length:8.7e-05,
+ taper_width=2e-06,
+ ratio:0.85
+2025-10-19 13:32:57,538 - INFO - Starting fdtd_solver() 
+ width_ridge: 8e-06, 
+ mmi_length:8.7e-05,
+ taper_width=2e-06,
+ ratio:0.85
+2025-10-19 13:36:45,827 - INFO - Starting fdtd_solver() 
+ width_ridge: 8e-06, 
+ mmi_length:8.7e-05,
+ taper_width=2e-06,
+ ratio:0.85
+2025-10-19 13:46:56,794 - INFO - Starting fdtd_solver() 
+ width_ridge: 8e-06, 
+ mmi_length:8.7e-05,
+ taper_width=2e-06,
+ ratio:0.85
