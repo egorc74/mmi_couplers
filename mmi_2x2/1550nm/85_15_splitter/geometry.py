@@ -1,6 +1,6 @@
 from variables import *
 from mode_solver import mode_solver
-def geometry(sim, filename,y,width_ridge,mmi_length,wg_length,wg_width,taper_width,taper_width_in,ratio,cut_angle):
+def geometry(sim, filename,y,width_ridge,Radius,mmi_length,wg_length,wg_width,taper_width,taper_width_in,ratio,cut_angle):
     #Loger setup
     delta_y=0
     log = setup_logger("geometry", "logging/geometry.log")
@@ -19,6 +19,8 @@ def geometry(sim, filename,y,width_ridge,mmi_length,wg_length,wg_width,taper_wid
 
 
     #### Geometry calculation #####
+    ##Wg bent
+
 
     ##Twist angle
     d_phase=2*np.arccos(np.sqrt(ratio)) #phase calculation
@@ -26,15 +28,15 @@ def geometry(sim, filename,y,width_ridge,mmi_length,wg_length,wg_width,taper_wid
     S=width_ridge/3
 
     #Calculate neff of launching mode
-    filename_mode="mode_effective_index"
-    import os
-    if os.path.isfile(f"{filename_mode}.lms"):
-        MODE_SIMULATION=lumapi.MODE(filename=filename_mode)
-    else:
-        MODE_SIMULATION=lumapi.MODE()
+    # filename_mode="mode_effective_index"
+    # import os
+    # if os.path.isfile(f"{filename_mode}.lms"):
+    #     MODE_SIMULATION=lumapi.MODE(filename=filename_mode)
+    # else:
+    #     MODE_SIMULATION=lumapi.MODE()
 
-    N_eff=mode_solver(sim=MODE_SIMULATION,filename=filename_mode,width_ridge=taper_width)[0]
-    # N_eff=1.600       #Neff of 3rd order mode, if W=Wmmi
+    # N_eff=mode_solver(sim=MODE_SIMULATION,filename=filename_mode,width_ridge=taper_width)[0]
+    N_eff=1.600       #Neff of 3rd order mode, if W=Wmmi
     k_0=2*np.pi/wavelength*N_eff
     twist_angle=np.arctan(d_phase/(2*S*k_0))    #use n_eff
     # twist_angle=0 
@@ -170,18 +172,45 @@ def geometry(sim, filename,y,width_ridge,mmi_length,wg_length,wg_width,taper_wid
         sim.set("mesh order",1)
         sim.addtogroup("::model::left_part")
 
+        
+
+
     #Draw waveguides
     for ii in range(N_out):
+        # bend end of wg to make right angle
+
+        sim.addring()
+        sim.set("name",f"bent_output_wg{ii}") 
+        sim.set("material",material_Si3N4)
+        sim.set("y",(distance_wg+delta_y)*(-1)**ii+Radius)  
+        outer_radius=Radius+wg_width/2
+        inner_radius=Radius-wg_width/2
+        sim.set("outer radius",outer_radius)
+        sim.set("inner radius",inner_radius)
+        sim.set("theta start",-90-twist_angle*180/np.pi)
+        sim.set("theta stop",-90)
+        sim.set("z",0)     
+        sim.set("z span", thick_Si3N4)
+        sim.set("x",-A/2-B-wg_length)  
+        sim.addtogroup("::model::left_part")
+
+        
         sim.addrect() 
         sim.set("name",f"output_wg{ii}") 
         sim.set("material",material_Si3N4)
-        sim.set("y",(distance_wg+delta_y)*(-1)**ii)         
+        sim.set("y",(distance_wg+delta_y)*(-1)**ii+wg_length/2*np.tan(twist_angle)+Radius/2*np.tan(twist_angle)*np.sin(twist_angle))         
         sim.set("y span",wg_width)
         sim.set("z",0)     
         sim.set("z span", thick_Si3N4)
-        sim.set("x min",-A/2-B-x_span/2-wg_length)  
-        sim.set("x max",-A/2-B-x_span/2)
+        start=x-x_span/2
+        sim.set("x max",start-Radius*np.sin(twist_angle)+(1-np.cos(twist_angle))*wg_length/2)
+        sim.set("x min",start-wg_length-Radius*np.tan(twist_angle)*np.cos(twist_angle))  
+        sim.set("first axis","z")
+        sim.set("rotation 1",-twist_angle*180/np.pi)
         sim.addtogroup("::model::left_part")
+        sim.save()
+
+
 
     
 
@@ -322,18 +351,42 @@ def geometry(sim, filename,y,width_ridge,mmi_length,wg_length,wg_width,taper_wid
         sim.set("mesh order",1)
         sim.addtogroup("::model::right_part")
 
-    # Draw waveguides
+
+    #Draw waveguides
     for ii in range(N_out):
+        # bend end of wg to make right angle
+
+        sim.addring()
+        sim.set("name",f"bent_output_wg{ii}") 
+        sim.set("material",material_Si3N4)
+        sim.set("y",(distance_wg+delta_y)*(-1)**ii-Radius)  
+        outer_radius=Radius+wg_width/2
+        inner_radius=Radius-wg_width/2
+        sim.set("outer radius",outer_radius)
+        sim.set("inner radius",inner_radius)
+        sim.set("theta start",90)
+        sim.set("theta stop",90+twist_angle*180/np.pi)
+        sim.set("z",0)     
+        sim.set("z span", thick_Si3N4)
+        sim.set("x",-A/2-B-wg_length)
+      
+        sim.addtogroup("::model::right_part")
+
+        
         sim.addrect() 
         sim.set("name",f"output_wg{ii}") 
         sim.set("material",material_Si3N4)
-        sim.set("y",(distance_wg+delta_y)*(-1)**ii)         
+        sim.set("y",-((distance_wg+delta_y)*(-1)**ii+wg_length/2*np.tan(twist_angle)+Radius/2*np.tan(twist_angle)*np.sin(twist_angle)))         
         sim.set("y span",wg_width)
         sim.set("z",0)     
         sim.set("z span", thick_Si3N4)
-        sim.set("x min",-A/2-B-x_span/2-wg_length)  
-        sim.set("x max",-A/2-B-x_span/2)
+        start=x-x_span/2
+        sim.set("x max",start-Radius*np.sin(twist_angle)+(1-np.cos(twist_angle))*wg_length/2)
+        sim.set("x min",start-wg_length-Radius*np.tan(twist_angle)*np.cos(twist_angle))  
+        sim.set("first axis","z")
+        sim.set("rotation 1",+twist_angle*180/np.pi)
         sim.addtogroup("::model::right_part")
+        sim.save()
 
     
     ## GROUP ROTATIONS
@@ -419,7 +472,7 @@ def geometry(sim, filename,y,width_ridge,mmi_length,wg_length,wg_width,taper_wid
     sim.set("x max",Xmax_waffer)
     sim.set("alpha",0.1)
     sim.save(filename)
-    return twist_angle
+    return X , twist_angle
 
 
 

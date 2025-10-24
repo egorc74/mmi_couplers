@@ -1,13 +1,13 @@
 from variables import *
 from geometry import geometry
 import plotly.graph_objects as go
-def fdtd_solver(sim, filename,y,width_ridge,mmi_length,wg_length,wg_width,taper_width,taper_width_in,ratio,mesh_accuracy,cut_angle):
+def fdtd_solver(sim,Radius,filename,y,width_ridge,mmi_length,wg_length,wg_width,taper_width,taper_width_in,ratio,mesh_accuracy,cut_angle):
 
     log = setup_logger("fdtd_solver", "logging/fdtd_solver.log")
     delta_y=0
 
     log.info(f"Starting fdtd_solver() \n width_ridge: {width_ridge}, \n mmi_length:{mmi_length},\n taper_width={taper_width},\n ratio:{ratio}")
-    twist_angle=geometry(sim=sim,filename=filename,wg_length=wg_length,wg_width=wg_width,width_ridge=width_ridge,
+    X,twist_angle=geometry(sim=sim,filename=filename,Radius=Radius,wg_length=wg_length,wg_width=wg_width,width_ridge=width_ridge,
             mmi_length=mmi_length,taper_width=taper_width,taper_width_in=taper_width_in,ratio=ratio,y=y,cut_angle=cut_angle)
   
 
@@ -67,39 +67,37 @@ def fdtd_solver(sim, filename,y,width_ridge,mmi_length,wg_length,wg_width,taper_
     sim.set("name","source_port")
     sim.set("injection axis","x-axis")
     sim.set("direction","forward")
-    sim.set("y",(Xmin+3e-6)*np.sin(twist_angle)+distance_wg-delta_y) 
+    sim.set("y",(Xmin+3e-6)*np.sin(twist_angle)+distance_wg+delta_y) 
     wg_spacing=(width_ridge/6-wg_width/2)*2
     sim.set("y span",wg_width+wg_spacing)
-    sim.set("theta",twist_angle*180/np.pi)
-    sim.set("x",Xmin+3e-6) 
+    sim.set("x",Xmin+2e-6) 
     sim.set("z min",Zmin) 
     sim.set("z max",Zmax)
 
 
 
-    ##Cross port 
+    ##Through port
+
     sim.addport()
     sim.set("name","through-port")
     sim.set("injection axis","x-axis")
     sim.set("direction","backward")
             
-    sim.set("y span",wg_width+2e-6)
+    sim.set("y span",wg_width+wg_spacing)
     sim.set("y",(Xmin+3e-6)*np.sin(twist_angle)+distance_wg+delta_y) 
     sim.set("y span",wg_width+wg_spacing)
-    sim.set("theta",-twist_angle*180/np.pi)
-    sim.set("x",Xmax-3e-6) 
+    sim.set("x",Xmax-2e-6) 
     sim.set("z min",Zmin) 
     sim.set("z max",Zmax)
 
-    ##Through port
+    ##Cross port 
     sim.addport()
     sim.set("name","cross_port")
     sim.set("injection axis","x-axis")
     sim.set("direction","backward")
     sim.set("y span",wg_width+wg_spacing)
     sim.set("y",(Xmin+3e-6)*np.sin(twist_angle)-distance_wg+delta_y) 
-    sim.set("theta",-twist_angle*180/np.pi)
-    sim.set("x",Xmax-3e-6)
+    sim.set("x",Xmax-2e-6)
     sim.set("z min",Zmin) 
     sim.set("z max",Zmax) 
 
@@ -133,6 +131,8 @@ if __name__=="__main__":
     delta_y=0e-6
     n_core=1.9963
     cladding=0
+
+    Radius=80e-6
     #define ratio
     ratio=85/100
     #define middle section width
@@ -141,11 +141,11 @@ if __name__=="__main__":
     cut_angle=80   #(degrees)  90==no cut
     mesh_accuracy=2
     if os.path.isfile(f"{filename}.fsp"):
-        fdtd_solver(sim=lumapi.FDTD(filename),filename=filename,wg_length=wg_length,wg_width=wg_width,width_ridge=width_ridge,
+        fdtd_solver(sim=lumapi.FDTD(filename),filename=filename,wg_length=wg_length,Radius=Radius,wg_width=wg_width,width_ridge=width_ridge,
              mmi_length=mmi_length,taper_width=taper_width,taper_width_in=taper_width_in,ratio=ratio,y=y,mesh_accuracy=mesh_accuracy,cut_angle=cut_angle)
 
     else:
-        fdtd_solver(sim=lumapi.FDTD(),filename=filename,wg_length=wg_length,wg_width=wg_width,width_ridge=width_ridge,
+        fdtd_solver(sim=lumapi.FDTD(),Radius=Radius,filename=filename,wg_length=wg_length,wg_width=wg_width,width_ridge=width_ridge,
              mmi_length=mmi_length,taper_width=taper_width,taper_width_in=taper_width_in,ratio=ratio,y=y,mesh_accuracy=mesh_accuracy,cut_angle=cut_angle)
 
 
