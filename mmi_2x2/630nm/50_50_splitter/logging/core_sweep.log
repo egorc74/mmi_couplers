@@ -1,0 +1,53 @@
+2025-09-25 22:56:19,017 - INFO - Starting core_sweep() 
+ data_filename: core_sweep_from_7500nm_to_10500nm_with_taper_3000nm 
+ mmi_width_span: [7.50e-06 7.60e-06 7.70e-06 7.80e-06 7.90e-06 8.00e-06 8.10e-06 8.20e-06
+ 8.30e-06 8.40e-06 8.50e-06 8.60e-06 8.70e-06 8.80e-06 8.90e-06 9.00e-06
+ 9.10e-06 9.20e-06 9.30e-06 9.40e-06 9.50e-06 9.60e-06 9.70e-06 9.80e-06
+ 9.90e-06 1.00e-05 1.01e-05 1.02e-05 1.03e-05 1.04e-05 1.05e-05]
+ width_ridge: 8.3e-06, 
+ mmi_length:0.000101,
+ taper_width=3e-06,
+ delta_y:0
+2025-09-25 22:56:24,179 - ERROR - in core_sweep error occured:'emepropagate cannot be used while in layout mode.'
+2025-09-26 00:35:28,639 - INFO - Starting core_sweep() 
+ data_filename: core_sweep_from_7500nm_to_10500nm_with_taper_3000nm 
+ mmi_width_span: [7.50e-06 7.60e-06 7.70e-06 7.80e-06 7.90e-06 8.00e-06 8.10e-06 8.20e-06
+ 8.30e-06 8.40e-06 8.50e-06 8.60e-06 8.70e-06 8.80e-06 8.90e-06 9.00e-06
+ 9.10e-06 9.20e-06 9.30e-06 9.40e-06 9.50e-06 9.60e-06 9.70e-06 9.80e-06
+ 9.90e-06 1.00e-05 1.01e-05 1.02e-05 1.03e-05 1.04e-05 1.05e-05]
+ width_ridge: 8.3e-06, 
+ mmi_length:0.000101,
+ taper_width=3e-06,
+ delta_y:0
+2025-09-26 00:40:37,128 - INFO - obtained S matrix for 7.499999999999999e-06 with shape (801,)
+2025-09-26 00:45:38,681 - INFO - obtained S matrix for 7.599999999999999e-06 with shape (801,)
+2025-09-26 00:50:35,178 - INFO - obtained S matrix for 7.699999999999999e-06 with shape (801,)
+2025-09-26 00:55:52,797 - INFO - obtained S matrix for 7.8e-06 with shape (801,)
+2025-09-26 01:01:08,998 - INFO - obtained S matrix for 7.9e-06 with shape (801,)
+2025-09-26 01:06:22,445 - INFO - obtained S matrix for 8e-06 with shape (801,)
+2025-09-26 01:11:21,295 - INFO - obtained S matrix for 8.099999999999999e-06 with shape (801,)
+2025-09-26 01:16:34,358 - INFO - obtained S matrix for 8.2e-06 with shape (801,)
+2025-09-26 01:22:03,020 - INFO - obtained S matrix for 8.3e-06 with shape (801,)
+2025-09-26 01:27:12,979 - INFO - obtained S matrix for 8.4e-06 with shape (801,)
+2025-09-26 01:32:17,900 - INFO - obtained S matrix for 8.5e-06 with shape (801,)
+2025-09-26 01:37:50,233 - INFO - obtained S matrix for 8.599999999999999e-06 with shape (801,)
+2025-09-26 01:42:52,034 - INFO - obtained S matrix for 8.7e-06 with shape (801,)
+2025-09-26 01:48:34,309 - INFO - obtained S matrix for 8.8e-06 with shape (801,)
+2025-09-26 01:53:51,844 - INFO - obtained S matrix for 8.9e-06 with shape (801,)
+2025-09-26 01:59:25,642 - INFO - obtained S matrix for 9e-06 with shape (801,)
+2025-09-26 02:04:53,252 - INFO - obtained S matrix for 9.1e-06 with shape (801,)
+2025-09-26 02:10:00,041 - INFO - obtained S matrix for 9.199999999999998e-06 with shape (801,)
+2025-09-26 02:15:25,834 - INFO - obtained S matrix for 9.3e-06 with shape (801,)
+2025-09-26 02:20:29,485 - INFO - obtained S matrix for 9.4e-06 with shape (801,)
+2025-09-26 02:25:41,046 - INFO - obtained S matrix for 9.499999999999999e-06 with shape (801,)
+2025-09-26 02:31:15,629 - INFO - obtained S matrix for 9.6e-06 with shape (801,)
+2025-09-26 02:36:36,232 - INFO - obtained S matrix for 9.699999999999999e-06 with shape (801,)
+2025-09-26 02:41:58,987 - INFO - obtained S matrix for 9.800000000000001e-06 with shape (801,)
+2025-09-26 02:47:22,092 - INFO - obtained S matrix for 9.9e-06 with shape (801,)
+2025-09-26 02:52:37,807 - INFO - obtained S matrix for 9.999999999999999e-06 with shape (801,)
+2025-09-26 02:57:54,139 - INFO - obtained S matrix for 1.01e-05 with shape (801,)
+2025-09-26 03:03:23,065 - INFO - obtained S matrix for 1.0199999999999999e-05 with shape (801,)
+2025-09-26 03:08:48,289 - INFO - obtained S matrix for 1.03e-05 with shape (801,)
+2025-09-26 03:14:13,780 - INFO - obtained S matrix for 1.04e-05 with shape (801,)
+2025-09-26 03:19:46,312 - INFO - obtained S matrix for 1.05e-05 with shape (801,)
+2025-09-26 03:19:46,322 - INFO - data from core_sweep is saved in core_sweep_from_7500nm_to_10500nm_with_taper_3000nmwith transmission_matrix.shape= (31, 801, 2)

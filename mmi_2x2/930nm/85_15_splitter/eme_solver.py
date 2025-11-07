@@ -250,14 +250,18 @@ def find_optimal_length(sim,plot=None):
 
 if __name__=="__main__":
     filename="mmi_simulations_2x2"
-    width_ridge=27.5e-6
-    mmi_length=500e-6
-    taper_width=8e-6
-    taper_width_in=8e-6
+    width_ridge=11e-6
+    mmi_length=50e-6
+    taper_width=2.5e-6
+    taper_width_in=2.5e-6
     delta_y=0e-6
-    sim=lumapi.MODE(filename)
+    import os
+    if os.path.isfile(f"{filename}.lms"):
+            sim=lumapi.MODE(filename)
+    else:
+            sim=lumapi.MODE()            
     eme_solver_prep(sim=sim,filename=filename,width_ridge=width_ridge,
                     mmi_length=mmi_length,taper_width=taper_width,taper_width_in=taper_width_in,
                         delta_y=delta_y)
-    # print(find_optimal_length(sim=sim,plot=1))
+    find_optimal_length(sim=sim,plot=1)
   

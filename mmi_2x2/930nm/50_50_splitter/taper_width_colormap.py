@@ -269,10 +269,9 @@ def taper_width_colormap_3db(
 if __name__=="__main__":
     data_filename="taper_width_colormap_3db_2500_11000nm"
     filename="mmi_simulations_2x2"
-    width_ridge=17.5e-6
-    mmi_length=205e-6
-    taper_width=4.7e-6
-    taper_width_in=4.7e-6
+    width_ridge=14e-6
+    taper_width=3.5e-6
+    mmi_length=81e-6
    
 
     import os
