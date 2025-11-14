@@ -8195,3 +8195,164 @@
  delta_y:0.0
 2025-10-14 09:45:44,797 - INFO - width_eff: 1e-05
 2025-10-14 09:45:44,797 - INFO - mmi_pi_length: 0.00017290322580645163
+2025-10-24 19:38:38,028 - INFO - Starting geometry() built 
+ width_ridge: 1e-05, 
+ mmi_length:2e-05,
+ taper_width=2.6e-06,
+ delta_y:0.0
+2025-10-24 19:38:38,174 - INFO - width_eff: 1e-05
+2025-10-24 19:38:38,174 - INFO - mmi_pi_length: 0.00017290322580645163
+2025-10-24 19:40:12,927 - INFO - Starting geometry() built 
+ width_ridge: 1.6e-05, 
+ mmi_length:4e-05,
+ taper_width=4.2e-06,
+ delta_y:0.0
+2025-10-24 19:40:13,075 - INFO - width_eff: 1.6e-05
+2025-10-24 19:40:13,075 - INFO - mmi_pi_length: 0.00044263225806451603
+2025-10-24 19:41:46,094 - INFO - Starting geometry() built 
+ width_ridge: 1.6e-05, 
+ mmi_length:0.0001,
+ taper_width=4.2e-06,
+ delta_y:0.0
+2025-10-24 19:41:46,261 - INFO - width_eff: 1.6e-05
+2025-10-24 19:41:46,261 - INFO - mmi_pi_length: 0.00044263225806451603
+2025-10-24 20:20:55,089 - INFO - Starting geometry() built 
+ width_ridge: 1.75e-05, 
+ mmi_length:0.0001,
+ taper_width=4.7e-06,
+ delta_y:0.0
+2025-10-24 20:20:55,308 - INFO - width_eff: 1.75e-05
+2025-10-24 20:20:55,308 - INFO - mmi_pi_length: 0.0005295161290322579
+2025-10-24 20:23:20,735 - INFO - Starting geometry() built 
+ width_ridge: 1.75e-05, 
+ mmi_length:0.0001,
+ taper_width=4.7e-06,
+ delta_y:0.0
+2025-10-24 20:23:20,879 - INFO - width_eff: 1.75e-05
+2025-10-24 20:23:20,880 - INFO - mmi_pi_length: 0.0005295161290322579
+2025-11-07 15:27:01,910 - INFO - Starting geometry() built 
+ width_ridge: 2.75e-05, 
+ mmi_length:0.0005,
+ taper_width=8e-06,
+ delta_y:0.0
+2025-11-07 15:27:02,001 - INFO - width_eff: 2.75e-05
+2025-11-07 15:27:02,001 - INFO - mmi_pi_length: 0.0012986682795698924
+2025-11-07 15:44:47,507 - INFO - Starting geometry() built 
+ width_ridge: 2.75e-05, 
+ mmi_length:0.0005,
+ taper_width=8e-06,
+ delta_y:0.0
+2025-11-07 15:44:47,651 - INFO - width_eff: 2.75e-05
+2025-11-07 15:44:47,651 - INFO - mmi_pi_length: 0.0012986682795698924
+2025-11-12 11:55:54,515 - INFO - Starting geometry() built 
+ width_ridge: 2.75e-05, 
+ mmi_length:0.000497,
+ taper_width=8e-06,
+ delta_y:0.0
+2025-11-12 11:55:54,696 - INFO - width_eff: 2.75e-05
+2025-11-12 11:55:54,696 - INFO - mmi_pi_length: 0.0012986682795698924
+2025-11-12 11:58:07,221 - INFO - Starting geometry() built 
+ width_ridge: 1.1e-05, 
+ mmi_length:0.00015999999999999999,
+ taper_width=2.5e-06,
+ delta_y:0.0
+2025-11-12 11:58:07,436 - INFO - width_eff: 1.1e-05
+2025-11-12 11:58:07,436 - INFO - mmi_pi_length: 0.00020778692473118277
+2025-11-12 13:09:42,386 - INFO - Starting geometry() built 
+ width_ridge: 1.1e-05, 
+ mmi_length:0.000158,
+ taper_width=2.5e-06,
+ delta_y:0
+2025-11-12 13:09:42,419 - INFO - width_eff: 1.1e-05
+2025-11-12 13:09:42,420 - INFO - mmi_pi_length: 0.00020778692473118277
+2025-11-12 13:09:42,420 - INFO - phase must be achieved, to get ratio 0.5 : 1.5707963267948966
+2025-11-12 13:09:53,650 - INFO - Angle of twist is calculated: 0.033314679014077295
+2025-11-12 13:10:16,934 - INFO - Starting geometry() built 
+ width_ridge: 1.1e-05, 
+ mmi_length:0.000158,
+ taper_width=2.5e-06,
+ delta_y:0
+2025-11-12 13:10:16,968 - INFO - width_eff: 1.1e-05
+2025-11-12 13:10:16,968 - INFO - mmi_pi_length: 0.00020778692473118277
+2025-11-12 13:10:16,968 - INFO - phase must be achieved, to get ratio 0.5 : 1.5707963267948966
+2025-11-12 13:10:29,230 - INFO - Angle of twist is calculated: 0.0333146790140773
+2025-11-12 13:10:45,378 - INFO - Starting geometry() built 
+ width_ridge: 1.1e-05, 
+ mmi_length:0.000158,
+ taper_width=2.5e-06,
+ delta_y:0
+2025-11-12 13:10:45,483 - INFO - width_eff: 1.1e-05
+2025-11-12 13:10:45,483 - INFO - mmi_pi_length: 0.00020778692473118277
+2025-11-12 13:10:45,484 - INFO - phase must be achieved, to get ratio 0.5 : 1.5707963267948966
+2025-11-12 13:10:57,189 - INFO - Angle of twist is calculated: 0.033314679014077316
+2025-11-12 13:11:43,448 - INFO - Starting geometry() built 
+ width_ridge: 1.1e-05, 
+ mmi_length:0.000158,
+ taper_width=2.5e-06,
+ delta_y:0
+2025-11-12 13:11:43,542 - INFO - width_eff: 1.1e-05
+2025-11-12 13:11:43,542 - INFO - mmi_pi_length: 0.00020778692473118277
+2025-11-12 13:11:43,542 - INFO - phase must be achieved, to get ratio 0.5 : 1.5707963267948966
+2025-11-12 13:11:54,702 - INFO - Angle of twist is calculated: 0.033314679014077316
+2025-11-12 13:12:15,248 - INFO - Starting geometry() built 
+ width_ridge: 1.1e-05, 
+ mmi_length:0.000158,
+ taper_width=2.5e-06,
+ delta_y:0
+2025-11-12 13:12:15,307 - INFO - width_eff: 1.1e-05
+2025-11-12 13:12:15,309 - INFO - mmi_pi_length: 0.00020778692473118277
+2025-11-12 13:12:15,309 - INFO - phase must be achieved, to get ratio 0.5 : 1.5707963267948966
+2025-11-12 13:13:42,414 - INFO - Starting geometry() built 
+ width_ridge: 1.1e-05, 
+ mmi_length:0.000158,
+ taper_width=2.5e-06,
+ delta_y:0
+2025-11-12 13:13:42,460 - INFO - width_eff: 1.1e-05
+2025-11-12 13:13:42,460 - INFO - mmi_pi_length: 0.00020778692473118277
+2025-11-12 13:15:22,664 - INFO - Starting geometry() built 
+ width_ridge: 1.1e-05, 
+ mmi_length:0.000158,
+ taper_width=2.5e-06,
+ delta_y:0
+2025-11-12 13:15:22,740 - INFO - width_eff: 1.1e-05
+2025-11-12 13:15:22,741 - INFO - mmi_pi_length: 0.00020778692473118277
+2025-11-13 10:22:48,817 - INFO - Starting geometry() built 
+ width_ridge: 1.1e-05, 
+ mmi_length:0.00015999999999999999,
+ taper_width=2.5e-06,
+ delta_y:0.0
+2025-11-13 10:22:49,031 - INFO - width_eff: 1.1e-05
+2025-11-13 10:22:49,032 - INFO - mmi_pi_length: 0.00034986781362007167
+2025-11-13 18:46:50,202 - INFO - Starting geometry() built 
+ width_ridge: 1.1e-05, 
+ mmi_length:0.00015999999999999999,
+ taper_width=2.5e-06,
+ delta_y:0.0
+2025-11-13 18:46:50,439 - INFO - width_eff: 1.1e-05
+2025-11-13 18:46:50,439 - INFO - mmi_pi_length: 0.0005223614814814815
+2025-11-13 18:57:29,655 - INFO - Starting geometry() built 
+ width_ridge: 1.1e-05, 
+ mmi_length:0.000478,
+ taper_width=2.5e-06,
+ delta_y:0
+2025-11-13 18:57:29,745 - INFO - width_eff: 1.1e-05
+2025-11-13 18:57:29,745 - INFO - mmi_pi_length: 0.0005223614814814815
+2025-11-13 18:57:29,746 - INFO - phase must be achieved, to get ratio 0.5 : 1.5707963267948966
+2025-11-13 18:57:45,328 - INFO - Angle of twist is calculated: 0.011465864354242003
+2025-11-13 18:59:37,417 - INFO - Starting geometry() built 
+ width_ridge: 1.1e-05, 
+ mmi_length:0.000478,
+ taper_width=2.5e-06,
+ delta_y:0
+2025-11-13 18:59:37,534 - INFO - width_eff: 1.1e-05
+2025-11-13 18:59:37,535 - INFO - mmi_pi_length: 0.0005223614814814815
+2025-11-13 18:59:37,536 - INFO - phase must be achieved, to get ratio 0.5 : 1.5707963267948966
+2025-11-13 19:01:22,733 - INFO - Starting geometry() built 
+ width_ridge: 1.1e-05, 
+ mmi_length:8.7e-05,
+ taper_width=2.5e-06,
+ delta_y:0
+2025-11-13 19:01:22,761 - INFO - width_eff: 1.1e-05
+2025-11-13 19:01:22,763 - INFO - mmi_pi_length: 0.0005223614814814815
+2025-11-13 19:01:22,763 - INFO - phase must be achieved, to get ratio 0.5 : 1.5707963267948966
+2025-11-13 19:01:37,367 - INFO - Angle of twist is calculated: 0.011465864354242003

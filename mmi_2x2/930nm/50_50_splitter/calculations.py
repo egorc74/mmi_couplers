@@ -8,8 +8,8 @@ import mplcursors
 
 
 # Constants
-wavelength = 0.93
-n_core=2.001
+wavelength = 1.55
+n_core=1.9963
 propagation_loss=0.2  #DB/mm
 def calculate_loss(propagation_loss,length):
     loss=10**(-propagation_loss/1000/10*length)
@@ -38,7 +38,7 @@ def Z(T):
 N=2
 M=1
 a=1
-fabrication_error=0.5
+fabrication_error=0.3
 def calculate_Z_for_given_K(K,Width):
     z=fabrication_error*(16*M)/(np.pi*a*N*Width*K**2)
     return z
@@ -122,7 +122,7 @@ results = pd.DataFrame({
     'Transm': transmissions
     
 })
-target_length = 300
+target_length = 500
 closest_idx = (results['Length'] - target_length).abs().idxmin()
 
 # Get corresponding row
@@ -151,12 +151,12 @@ plt.plot(
     f_len,
     transmissions,
     marker='o',
-    label="Estimated transmission curve (Transmission with 0.5µm deviations in width) vs Length"
+    label=f"Estimated transmission curve (Transmission with {fabrication_error}µm deviations in width) vs Length"
 )
 
 # Labels and title
-plt.xlabel("Length")
-plt.ylabel("Coefficient")
+plt.xlabel("K")
+plt.ylabel("W")
 plt.title(f"Pareto Frontier (Length vs Coefficient) for wavelength: {wavelength}")
 plt.grid(True)
 plt.legend(loc='upper center', bbox_to_anchor=(0.5, -0.15), ncol=1)

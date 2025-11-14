@@ -1,8 +1,7 @@
 from variables import *
 from mode_solver import mode_solver
-def geometry(sim, filename,y,width_ridge,Radius,mmi_length,wg_length,wg_width,taper_width,taper_width_in,ratio,cut_angle):
+def geometry(sim, filename,y,width_ridge,Radius,mmi_length,wg_length,wg_width,taper_width,taper_width_in,ratio,cut_angle,delta_y,twist_angle=None):
     #Loger setup
-    delta_y=0
     log = setup_logger("geometry", "logging/geometry.log")
     log.info(f"Starting geometry() built \n width_ridge: {width_ridge}, \n mmi_length:{mmi_length},\n taper_width={taper_width},\n delta_y:{delta_y}")
     #Clean
@@ -23,24 +22,29 @@ def geometry(sim, filename,y,width_ridge,Radius,mmi_length,wg_length,wg_width,ta
 
 
     ##Twist angle
-    d_phase=2*np.arccos(np.sqrt(ratio)) #phase calculation
-    log.info(f"phase must be achieved, to get ratio {ratio} : {d_phase}")
-    S=width_ridge/3
+    if not twist_angle:
+        d_phase=2*np.arccos(np.sqrt(ratio)) #phase calculation
+        log.info(f"phase must be achieved, to get ratio {ratio} : {d_phase}")
+        S=width_ridge/3
 
-    #Calculate neff of launching mode
-    # filename_mode="mode_effective_index"
-    # import os
-    # if os.path.isfile(f"{filename_mode}.lms"):
-    #     MODE_SIMULATION=lumapi.MODE(filename=filename_mode)
-    # else:
-    #     MODE_SIMULATION=lumapi.MODE()
+        # Calculate neff of launching mode
+        filename_mode="mode_effective_index"
+        import os
+        if os.path.isfile(f"{filename_mode}.lms"):
+            MODE_SIMULATION=lumapi.MODE(filename=filename_mode)
+        else:
+            MODE_SIMULATION=lumapi.MODE()
 
-    # N_eff=mode_solver(sim=MODE_SIMULATION,filename=filename_mode,width_ridge=taper_width)[0]
-    N_eff=1.600       #Neff of 3rd order mode, if W=Wmmi
-    k_0=2*np.pi/wavelength*N_eff
-    twist_angle=np.arctan(d_phase/(2*S*k_0))    #use n_eff
-    # twist_angle=0 
-    log.info(f"Angle of twist is calculated: {twist_angle}")
+        N_eff=mode_solver(sim=MODE_SIMULATION,filename=filename_mode,width_ridge=taper_width)[0]
+        # N_eff=1.600       #Neff of 3rd order mode, if W=Wmmi
+        k_0=2*np.pi/wavelength*N_eff
+        twist_angle=np.arctan(d_phase/(2*S*k_0))    #use n_eff
+        # twist_angle=0 
+        log.info(f"Angle of twist is calculated: {twist_angle}")
+    else:
+        # if already defined
+        S=width_ridge/3
+        twist_angle=twist_angle
 
     #Lenghts
     Y=y #middle section
@@ -160,7 +164,7 @@ def geometry(sim, filename,y,width_ridge,Radius,mmi_length,wg_length,wg_width,ta
     for ii in range(N_out):
         sim.addpoly()
         sim.set("x",x)
-        sim.set("y",(distance_wg+delta_y)*(-1)**ii)
+        sim.set("y",(distance_wg-delta_y)*(-1)**ii)
         sim.set("z",z)
         sim.set("z span",z_span)
         sim.set("vertices",V)
@@ -182,7 +186,7 @@ def geometry(sim, filename,y,width_ridge,Radius,mmi_length,wg_length,wg_width,ta
         sim.addring()
         sim.set("name",f"bent_output_wg{ii}") 
         sim.set("material",material_Si3N4)
-        sim.set("y",(distance_wg+delta_y)*(-1)**ii+Radius)  
+        sim.set("y",(distance_wg-delta_y)*(-1)**ii+Radius)  
         outer_radius=Radius+wg_width/2
         inner_radius=Radius-wg_width/2
         sim.set("outer radius",outer_radius)
@@ -198,7 +202,7 @@ def geometry(sim, filename,y,width_ridge,Radius,mmi_length,wg_length,wg_width,ta
         sim.addrect() 
         sim.set("name",f"output_wg{ii}") 
         sim.set("material",material_Si3N4)
-        sim.set("y",(distance_wg+delta_y)*(-1)**ii+wg_length/2*np.tan(twist_angle)+Radius/2*np.tan(twist_angle)*np.sin(twist_angle))         
+        sim.set("y",(distance_wg-delta_y)*(-1)**ii+wg_length/2*np.tan(twist_angle)+Radius/2*np.tan(twist_angle)*np.sin(twist_angle))         
         sim.set("y span",wg_width)
         sim.set("z",0)     
         sim.set("z span", thick_Si3N4)
@@ -208,7 +212,6 @@ def geometry(sim, filename,y,width_ridge,Radius,mmi_length,wg_length,wg_width,ta
         sim.set("first axis","z")
         sim.set("rotation 1",-twist_angle*180/np.pi)
         sim.addtogroup("::model::left_part")
-        sim.save()
 
 
 
@@ -339,7 +342,7 @@ def geometry(sim, filename,y,width_ridge,Radius,mmi_length,wg_length,wg_width,ta
     for ii in range(N_out):
         sim.addpoly()
         sim.set("x",x)
-        sim.set("y",(distance_wg+delta_y)*(-1)**ii)
+        sim.set("y",(distance_wg-delta_y)*(-1)**ii)
         sim.set("z",z)
         sim.set("z span",z_span)
         sim.set("vertices",V)
@@ -359,7 +362,7 @@ def geometry(sim, filename,y,width_ridge,Radius,mmi_length,wg_length,wg_width,ta
         sim.addring()
         sim.set("name",f"bent_output_wg{ii}") 
         sim.set("material",material_Si3N4)
-        sim.set("y",(distance_wg+delta_y)*(-1)**ii-Radius)  
+        sim.set("y",(distance_wg-delta_y)*(-1)**ii-Radius)  
         outer_radius=Radius+wg_width/2
         inner_radius=Radius-wg_width/2
         sim.set("outer radius",outer_radius)
@@ -376,7 +379,7 @@ def geometry(sim, filename,y,width_ridge,Radius,mmi_length,wg_length,wg_width,ta
         sim.addrect() 
         sim.set("name",f"output_wg{ii}") 
         sim.set("material",material_Si3N4)
-        sim.set("y",-((distance_wg+delta_y)*(-1)**ii+wg_length/2*np.tan(twist_angle)+Radius/2*np.tan(twist_angle)*np.sin(twist_angle)))         
+        sim.set("y",-((distance_wg-delta_y)*(-1)**ii+wg_length/2*np.tan(twist_angle)+Radius/2*np.tan(twist_angle)*np.sin(twist_angle)))         
         sim.set("y span",wg_width)
         sim.set("z",0)     
         sim.set("z span", thick_Si3N4)
@@ -386,7 +389,6 @@ def geometry(sim, filename,y,width_ridge,Radius,mmi_length,wg_length,wg_width,ta
         sim.set("first axis","z")
         sim.set("rotation 1",+twist_angle*180/np.pi)
         sim.addtogroup("::model::right_part")
-        sim.save()
 
     
     ## GROUP ROTATIONS
@@ -471,7 +473,6 @@ def geometry(sim, filename,y,width_ridge,Radius,mmi_length,wg_length,wg_width,ta
     sim.set("x min",Xmin_waffer)  
     sim.set("x max",Xmax_waffer)
     sim.set("alpha",0.1)
-    sim.save(filename)
     return X , twist_angle
 
 
