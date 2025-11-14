@@ -1,0 +1,49 @@
+2025-11-14 15:47:11,497 - INFO - Starting Width sweep
+ Width_span: [1.05e-05 1.06e-05 1.07e-05 1.08e-05 1.09e-05 1.10e-05 1.11e-05 1.12e-05
+ 1.13e-05 1.14e-05 1.15e-05], 
+ width_ridge: 1.1e-05, 
+ mmi_length:0.000158,
+ taper_width=2.5e-06,
+ ratio:0.5
+2025-11-14 15:51:58,579 - INFO - Starting Width sweep
+ Width_span: [1.05e-05 1.06e-05 1.07e-05 1.08e-05 1.09e-05 1.10e-05 1.11e-05 1.12e-05
+ 1.13e-05 1.14e-05 1.15e-05], 
+ width_ridge: 1.1e-05, 
+ mmi_length:0.000158,
+ taper_width=2.5e-06,
+ ratio:0.5
+2025-11-14 15:54:23,860 - INFO - Starting Width sweep
+ Width_span: [1.05e-05 1.06e-05 1.07e-05 1.08e-05 1.09e-05 1.10e-05 1.11e-05 1.12e-05
+ 1.13e-05 1.14e-05 1.15e-05], 
+ width_ridge: 1.1e-05, 
+ mmi_length:0.000158,
+ taper_width=2.5e-06,
+ ratio:0.5
+2025-11-14 15:57:23,718 - INFO - Starting Width sweep
+ Width_span: [1.05e-05 1.06e-05 1.07e-05 1.08e-05 1.09e-05 1.10e-05 1.11e-05 1.12e-05
+ 1.13e-05 1.14e-05 1.15e-05], 
+ width_ridge: 1.1e-05, 
+ mmi_length:0.000158,
+ taper_width=2.5e-06,
+ ratio:0.5
+2025-11-14 16:01:34,312 - INFO - Starting Width sweep
+ Width_span: [1.05e-05 1.06e-05 1.07e-05 1.08e-05 1.09e-05 1.10e-05 1.11e-05 1.12e-05
+ 1.13e-05 1.14e-05 1.15e-05], 
+ width_ridge: 1.1e-05, 
+ mmi_length:0.000158,
+ taper_width=2.5e-06,
+ ratio:0.5
+2025-11-14 16:02:57,274 - INFO - Starting Twist angle sweep 
+ Twist_angles_span: [0.03293115 0.03303115 0.03313115 0.03323115 0.03333115 0.03343115
+ 0.03353115 0.03363115 0.03373115 0.03383115 0.03393115], 
+ width_ridge: 1.1e-05, 
+ mmi_length:0.000158,
+ taper_width=2.5e-06,
+ ratio:0.5
+2025-11-14 16:07:32,371 - INFO - Starting Twist angle sweep 
+ Twist_angles_span: [0.03293115 0.03303115 0.03313115 0.03323115 0.03333115 0.03343115
+ 0.03353115 0.03363115 0.03373115 0.03383115 0.03393115], 
+ width_ridge: 1.1e-05, 
+ mmi_length:0.000158,
+ taper_width=2.5e-06,
+ ratio:0.5

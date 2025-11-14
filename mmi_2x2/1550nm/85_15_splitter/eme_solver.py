@@ -263,5 +263,5 @@ if __name__=="__main__":
     eme_solver_prep(sim=sim,filename=filename,width_ridge=width_ridge,
                     mmi_length=mmi_length,taper_width=taper_width,taper_width_in=taper_width_in,
                         delta_y=delta_y)
-    find_optimal_length(sim=sim,plot=1)
+    # find_optimal_length(sim=sim,plot=1)
   

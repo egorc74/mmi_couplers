@@ -488,3 +488,366 @@
  mmi_length:8.7e-05,
  taper_width=2e-06,
  ratio:0.85
+2025-11-11 09:13:18,001 - INFO - Starting fdtd_solver() 
+ width_ridge: 8e-06, 
+ mmi_length:8.7e-05,
+ taper_width=2e-06,
+ ratio:0.85
+2025-11-11 09:14:43,860 - INFO - Starting fdtd_solver() 
+ width_ridge: 8e-06, 
+ mmi_length:8.7e-05,
+ taper_width=2e-06,
+ ratio:0.85
+2025-11-11 09:20:18,755 - INFO - Starting fdtd_solver() 
+ width_ridge: 8e-06, 
+ mmi_length:8.7e-05,
+ taper_width=2e-06,
+ ratio:0.85
+2025-11-11 09:26:40,903 - INFO - Starting fdtd_solver() 
+ width_ridge: 7.499999999999999e-06, 
+ mmi_length:8.7e-05,
+ taper_width=2e-06,
+ ratio:0.85
+2025-11-11 09:31:09,398 - INFO - Starting fdtd_solver() 
+ width_ridge: 7.499999999999999e-06, 
+ mmi_length:8.7e-05,
+ taper_width=2e-06,
+ ratio:0.85
+2025-11-11 09:31:46,119 - INFO - Starting fdtd_solver() 
+ width_ridge: 7.699999999999999e-06, 
+ mmi_length:8.7e-05,
+ taper_width=2e-06,
+ ratio:0.85
+2025-11-11 09:32:02,638 - INFO - Starting fdtd_solver() 
+ width_ridge: 7.9e-06, 
+ mmi_length:8.7e-05,
+ taper_width=2e-06,
+ ratio:0.85
+2025-11-11 09:32:20,521 - INFO - Starting fdtd_solver() 
+ width_ridge: 8.099999999999999e-06, 
+ mmi_length:8.7e-05,
+ taper_width=2e-06,
+ ratio:0.85
+2025-11-11 09:32:36,277 - INFO - Starting fdtd_solver() 
+ width_ridge: 8.3e-06, 
+ mmi_length:8.7e-05,
+ taper_width=2e-06,
+ ratio:0.85
+2025-11-11 09:32:56,881 - INFO - Starting fdtd_solver() 
+ width_ridge: 8.5e-06, 
+ mmi_length:8.7e-05,
+ taper_width=2e-06,
+ ratio:0.85
+2025-11-11 09:34:27,425 - INFO - Starting fdtd_solver() 
+ width_ridge: 7.499999999999999e-06, 
+ mmi_length:8.7e-05,
+ taper_width=2e-06,
+ ratio:0.85
+2025-11-11 09:36:57,237 - INFO - Starting fdtd_solver() 
+ width_ridge: 7.699999999999999e-06, 
+ mmi_length:8.7e-05,
+ taper_width=2e-06,
+ ratio:0.85
+2025-11-11 09:38:18,329 - INFO - Starting fdtd_solver() 
+ width_ridge: 7.499999999999999e-06, 
+ mmi_length:8.7e-05,
+ taper_width=2e-06,
+ ratio:0.85
+2025-11-11 09:39:19,479 - INFO - Starting fdtd_solver() 
+ width_ridge: 7.699999999999999e-06, 
+ mmi_length:8.7e-05,
+ taper_width=2e-06,
+ ratio:0.85
+2025-11-11 09:39:41,802 - INFO - Starting fdtd_solver() 
+ width_ridge: 7.9e-06, 
+ mmi_length:8.7e-05,
+ taper_width=2e-06,
+ ratio:0.85
+2025-11-11 09:40:26,939 - INFO - Starting fdtd_solver() 
+ width_ridge: 8.099999999999999e-06, 
+ mmi_length:8.7e-05,
+ taper_width=2e-06,
+ ratio:0.85
+2025-11-11 09:40:56,824 - INFO - Starting fdtd_solver() 
+ width_ridge: 7.499999999999999e-06, 
+ mmi_length:8.7e-05,
+ taper_width=2e-06,
+ ratio:0.85
+2025-11-11 09:41:28,998 - INFO - Starting fdtd_solver() 
+ width_ridge: 9.499999999999999e-06, 
+ mmi_length:8.7e-05,
+ taper_width=2e-06,
+ ratio:0.85
+2025-11-11 09:52:20,567 - INFO - Starting fdtd_solver() 
+ width_ridge: 8e-06, 
+ mmi_length:7.7e-05,
+ taper_width=2e-06,
+ ratio:0.85
+2025-11-11 09:54:53,378 - INFO - Starting fdtd_solver() 
+ width_ridge: 8e-06, 
+ mmi_length:7.7e-05,
+ taper_width=2e-06,
+ ratio:0.85
+2025-11-11 10:00:29,380 - INFO - Starting fdtd_solver() 
+ width_ridge: 8e-06, 
+ mmi_length:7.7e-05,
+ taper_width=2e-06,
+ ratio:0.85
+2025-11-11 10:05:05,056 - INFO - Starting fdtd_solver() 
+ width_ridge: 8e-06, 
+ mmi_length:7.7e-05,
+ taper_width=2e-06,
+ ratio:0.85
+2025-11-11 10:06:36,362 - INFO - Starting fdtd_solver() 
+ width_ridge: 8e-06, 
+ mmi_length:7.7e-05,
+ taper_width=2e-06,
+ ratio:0.85
+2025-11-11 10:07:22,311 - INFO - Starting fdtd_solver() 
+ width_ridge: 8e-06, 
+ mmi_length:7.7e-05,
+ taper_width=2e-06,
+ ratio:0.85
+2025-11-12 11:14:53,587 - INFO - Starting fdtd_solver() 
+ width_ridge: 8e-06, 
+ mmi_length:7.7e-05,
+ taper_width=2e-06,
+ ratio:0.85
+2025-11-12 11:19:23,447 - INFO - Starting fdtd_solver() 
+ width_ridge: 8e-06, 
+ mmi_length:8.7e-05,
+ taper_width=2e-06,
+ ratio:0.85
+2025-11-12 11:27:30,567 - INFO - Starting fdtd_solver() 
+ width_ridge: 8e-06, 
+ mmi_length:8.7e-05,
+ taper_width=2e-06,
+ ratio:0.85
+2025-11-12 11:28:15,206 - INFO - Starting fdtd_solver() 
+ width_ridge: 8e-06, 
+ mmi_length:8.75e-05,
+ taper_width=2e-06,
+ ratio:0.85
+2025-11-12 11:33:26,499 - INFO - Starting fdtd_solver() 
+ width_ridge: 8e-06, 
+ mmi_length:8.7e-05,
+ taper_width=2e-06,
+ ratio:0.85
+2025-11-12 11:36:26,257 - INFO - Starting fdtd_solver() 
+ width_ridge: 7.499999999999999e-06, 
+ mmi_length:8.7e-05,
+ taper_width=2e-06,
+ ratio:0.85
+2025-11-12 11:39:12,105 - INFO - Starting fdtd_solver() 
+ width_ridge: 7.499999999999999e-06, 
+ mmi_length:8.7e-05,
+ taper_width=1.5666666666666663e-06,
+ ratio:0.85
+2025-11-12 12:07:35,932 - INFO - Starting fdtd_solver() 
+ width_ridge: 1.1e-05, 
+ mmi_length:0.000158,
+ taper_width=2.5666666666666665e-06,
+ ratio:0.85
+2025-11-12 12:08:08,142 - INFO - Starting fdtd_solver() 
+ width_ridge: 1.1e-05, 
+ mmi_length:0.000158,
+ taper_width=2.5666666666666665e-06,
+ ratio:0.85
+2025-11-12 12:10:36,901 - INFO - Starting fdtd_solver() 
+ width_ridge: 1.1e-05, 
+ mmi_length:0.000158,
+ taper_width=2.5666666666666665e-06,
+ ratio:0.85
+2025-11-12 12:14:15,037 - INFO - Starting fdtd_solver() 
+ width_ridge: 1.1e-05, 
+ mmi_length:0.000158,
+ taper_width=2.5666666666666665e-06,
+ ratio:0.85
+2025-11-12 12:14:49,168 - INFO - Starting fdtd_solver() 
+ width_ridge: 1.1e-05, 
+ mmi_length:0.000158,
+ taper_width=2.5666666666666665e-06,
+ ratio:0.85
+2025-11-12 12:18:10,731 - INFO - Starting fdtd_solver() 
+ width_ridge: 1.1e-05, 
+ mmi_length:8.7e-05,
+ taper_width=2.5666666666666665e-06,
+ ratio:0.85
+2025-11-12 12:21:43,900 - INFO - Starting fdtd_solver() 
+ width_ridge: 7.499999999999999e-06, 
+ mmi_length:0.000158,
+ taper_width=2.5e-06,
+ ratio:0.85
+2025-11-12 12:24:50,535 - INFO - Starting fdtd_solver() 
+ width_ridge: 1.05e-11, 
+ mmi_length:0.000158,
+ taper_width=2.5e-06,
+ ratio:0.85
+2025-11-12 12:25:41,326 - INFO - Starting fdtd_solver() 
+ width_ridge: 1.05e-05, 
+ mmi_length:0.000158,
+ taper_width=2.5e-06,
+ ratio:0.85
+2025-11-12 12:26:43,033 - INFO - Starting fdtd_solver() 
+ width_ridge: 1.0549999999999999e-05, 
+ mmi_length:0.000158,
+ taper_width=2.5e-06,
+ ratio:0.85
+2025-11-12 12:41:44,587 - INFO - Starting fdtd_solver() 
+ width_ridge: 1.1e-05, 
+ mmi_length:0.000158,
+ taper_width=2.5e-06,
+ ratio:0.85
+2025-11-12 12:43:04,201 - INFO - Starting fdtd_solver() 
+ width_ridge: 1.1e-05, 
+ mmi_length:0.000158,
+ taper_width=2.5e-06,
+ ratio:0.85
+2025-11-12 12:44:13,176 - INFO - Starting fdtd_solver() 
+ width_ridge: 1.1e-05, 
+ mmi_length:0.000158,
+ taper_width=2.5e-06,
+ ratio:0.85
+2025-11-12 12:44:24,277 - INFO - Starting fdtd_solver() 
+ width_ridge: 1.1e-05, 
+ mmi_length:0.000158,
+ taper_width=2.5e-06,
+ ratio:0.85
+2025-11-12 12:44:47,241 - INFO - Starting fdtd_solver() 
+ width_ridge: 1.1e-05, 
+ mmi_length:0.000158,
+ taper_width=2.5e-06,
+ ratio:0.85
+2025-11-12 12:45:41,621 - INFO - Starting fdtd_solver() 
+ width_ridge: 1.1e-05, 
+ mmi_length:0.000158,
+ taper_width=2.5e-06,
+ ratio:0.85
+2025-11-12 12:46:02,738 - INFO - Starting fdtd_solver() 
+ width_ridge: 1.1e-05, 
+ mmi_length:0.000158,
+ taper_width=2.5e-06,
+ ratio:0.85
+2025-11-12 12:47:09,862 - INFO - Starting fdtd_solver() 
+ width_ridge: 1.1e-05, 
+ mmi_length:0.000158,
+ taper_width=2.5e-06,
+ ratio:0.85
+2025-11-12 12:47:31,259 - INFO - Starting fdtd_solver() 
+ width_ridge: 1.1e-05, 
+ mmi_length:0.000158,
+ taper_width=2.5e-06,
+ ratio:0.85
+2025-11-12 12:49:21,718 - INFO - Starting fdtd_solver() 
+ width_ridge: 1.1e-05, 
+ mmi_length:0.000158,
+ taper_width=2.5e-06,
+ ratio:0.85
+2025-11-12 12:49:43,603 - INFO - Starting fdtd_solver() 
+ width_ridge: 1.1e-05, 
+ mmi_length:0.000158,
+ taper_width=2.5e-06,
+ ratio:0.85
+2025-11-12 12:50:25,512 - INFO - Starting fdtd_solver() 
+ width_ridge: 1.1e-05, 
+ mmi_length:0.000158,
+ taper_width=2.5e-06,
+ ratio:0.85
+2025-11-12 12:51:23,123 - INFO - Starting fdtd_solver() 
+ width_ridge: 1.1e-05, 
+ mmi_length:0.000158,
+ taper_width=2.5e-06,
+ ratio:0.85
+2025-11-12 12:51:54,839 - INFO - Starting fdtd_solver() 
+ width_ridge: 1.1e-05, 
+ mmi_length:0.000158,
+ taper_width=2.5e-06,
+ ratio:0.85
+2025-11-12 12:52:31,177 - INFO - Starting fdtd_solver() 
+ width_ridge: 1.1e-05, 
+ mmi_length:0.000158,
+ taper_width=2.5e-06,
+ ratio:0.85
+2025-11-13 10:53:36,612 - INFO - Starting fdtd_solver() 
+ width_ridge: 1.1e-05, 
+ mmi_length:0.000158,
+ taper_width=2.5e-06,
+ ratio:0.85
+2025-11-14 13:27:30,958 - INFO - Starting fdtd_solver() 
+ width_ridge: 8.1e-06, 
+ mmi_length:8.4e-05,
+ taper_width=1.6e-06,
+ ratio:0.85
+2025-11-14 14:35:08,147 - INFO - Starting fdtd_solver() 
+ width_ridge: 1.1e-05, 
+ mmi_length:0.000158,
+ taper_width=2.5e-06,
+ ratio:0.85
+2025-11-14 15:03:02,558 - INFO - Starting fdtd_solver() 
+ width_ridge: 1.05e-05, 
+ mmi_length:0.000158,
+ taper_width=2.5e-06,
+ ratio:0.85
+2025-11-14 15:04:34,549 - INFO - Starting fdtd_solver() 
+ width_ridge: 1.06e-05, 
+ mmi_length:0.000158,
+ taper_width=2.5e-06,
+ ratio:0.85
+2025-11-14 15:07:02,977 - INFO - Starting fdtd_solver() 
+ width_ridge: 1.1e-05, 
+ mmi_length:0.000158,
+ taper_width=2.5e-06,
+ ratio:0.85
+2025-11-14 15:13:19,652 - INFO - Starting fdtd_solver() 
+ width_ridge: 1.1e-05, 
+ mmi_length:0.000158,
+ taper_width=2.5e-06,
+ ratio:0.85
+2025-11-14 15:17:58,079 - INFO - Starting fdtd_solver() 
+ width_ridge: 1.1e-05, 
+ mmi_length:0.000158,
+ taper_width=2.5e-06,
+ ratio:0.85
+2025-11-14 15:18:47,286 - INFO - Starting fdtd_solver() 
+ width_ridge: 1.1e-05, 
+ mmi_length:0.000158,
+ taper_width=2.5e-06,
+ ratio:0.85
+2025-11-14 15:21:25,627 - INFO - Starting fdtd_solver() 
+ width_ridge: 1.1e-05, 
+ mmi_length:0.000158,
+ taper_width=2.5e-06,
+ ratio:0.85
+2025-11-14 15:23:26,101 - INFO - Starting fdtd_solver() 
+ width_ridge: 1.1e-05, 
+ mmi_length:0.000158,
+ taper_width=2.5e-06,
+ ratio:0.85
+2025-11-14 15:58:56,275 - INFO - Starting fdtd_solver() 
+ width_ridge: 1.05e-05, 
+ mmi_length:0.000158,
+ taper_width=2.5e-06,
+ ratio:0.85
+2025-11-14 15:59:45,179 - ERROR - Error occured: "Can not find result 'T' in the result provider 'cross_port'" Obtained T_cross 0 and T_bar=0
+2025-11-14 15:59:45,515 - INFO - Starting fdtd_solver() 
+ width_ridge: 1.06e-05, 
+ mmi_length:0.000158,
+ taper_width=2.5e-06,
+ ratio:0.85
+2025-11-14 16:01:04,011 - ERROR - Error occured: "Can not find result 'T' in the result provider 'cross_port'" Obtained T_cross 0 and T_bar=0
+2025-11-14 16:01:04,338 - INFO - Starting fdtd_solver() 
+ width_ridge: 1.07e-05, 
+ mmi_length:0.000158,
+ taper_width=2.5e-06,
+ ratio:0.85
+2025-11-14 16:09:05,883 - INFO - Starting fdtd_solver() 
+ width_ridge: 1.1e-05, 
+ mmi_length:0.000158,
+ taper_width=2.5e-06,
+ ratio:0.85
+2025-11-14 16:09:25,743 - ERROR - Error occured: "Can not find result 'T' in the result provider 'cross_port'" Obtained T_cross 0 and T_bar=0
+2025-11-14 16:09:26,059 - INFO - Starting fdtd_solver() 
+ width_ridge: 1.1e-05, 
+ mmi_length:0.000158,
+ taper_width=2.5e-06,
+ ratio:0.85

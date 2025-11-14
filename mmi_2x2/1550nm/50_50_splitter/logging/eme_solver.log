@@ -5897,3 +5897,23 @@
  mmi_length:0.0005,
  taper_width=8e-06,
  delta_y:0.0
+2025-11-07 15:44:47,506 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 2.75e-05, 
+ mmi_length:0.0005,
+ taper_width=8e-06,
+ delta_y:0.0
+2025-11-12 11:55:54,514 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 2.75e-05, 
+ mmi_length:0.000497,
+ taper_width=8e-06,
+ delta_y:0.0
+2025-11-12 11:58:07,220 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 1.1e-05, 
+ mmi_length:0.00015999999999999999,
+ taper_width=2.5e-06,
+ delta_y:0.0
+2025-11-14 13:14:24,544 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 9e-06, 
+ mmi_length:0.00015999999999999999,
+ taper_width=1.9e-06,
+ delta_y:0.0

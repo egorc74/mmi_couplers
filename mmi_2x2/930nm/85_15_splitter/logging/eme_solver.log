@@ -5832,3 +5832,34 @@
  mmi_length:8.125e-05,
  taper_width=3e-06,
  delta_y:0
+2025-11-12 11:47:27,631 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 1.1e-05, 
+ mmi_length:5e-05,
+ taper_width=2.5e-06,
+ delta_y:0.0
+2025-11-12 11:47:27,632 - INFO - Error occured: geometry() got an unexpected keyword argument 'delta_y'
+2025-11-12 11:50:39,070 - INFO - In find_optimal_length: Optimal length : 0.000109 , with max transmission 0.3604542808440683
+2025-11-12 11:53:49,637 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 1.1e-05, 
+ mmi_length:5e-05,
+ taper_width=2.5e-06,
+ delta_y:0.0
+2025-11-12 11:53:49,637 - INFO - Error occured: geometry() got an unexpected keyword argument 'delta_y'
+2025-11-12 11:54:01,585 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 1.1e-05, 
+ mmi_length:5e-05,
+ taper_width=2.5e-06,
+ delta_y:0.0
+2025-11-12 11:54:01,585 - INFO - Error occured: geometry() got an unexpected keyword argument 'delta_y'
+2025-11-12 13:27:49,675 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 1.1e-05, 
+ mmi_length:5e-05,
+ taper_width=2.5e-06,
+ delta_y:0.0
+2025-11-12 13:27:49,676 - INFO - Error occured: geometry() got an unexpected keyword argument 'delta_y'
+2025-11-12 13:29:05,925 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 1.1e-05, 
+ mmi_length:5e-05,
+ taper_width=2.5e-06,
+ delta_y:0.0
+2025-11-12 13:29:05,926 - INFO - Error occured: geometry() got an unexpected keyword argument 'delta_y'

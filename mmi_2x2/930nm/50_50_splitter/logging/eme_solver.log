@@ -5867,3 +5867,53 @@
  mmi_length:2e-05,
  taper_width=2.6e-06,
  delta_y:0.0
+2025-10-24 19:38:38,027 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 1e-05, 
+ mmi_length:2e-05,
+ taper_width=2.6e-06,
+ delta_y:0.0
+2025-10-24 19:40:12,925 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 1.6e-05, 
+ mmi_length:4e-05,
+ taper_width=4.2e-06,
+ delta_y:0.0
+2025-10-24 19:41:46,093 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 1.6e-05, 
+ mmi_length:0.0001,
+ taper_width=4.2e-06,
+ delta_y:0.0
+2025-10-24 20:20:55,086 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 1.75e-05, 
+ mmi_length:0.0001,
+ taper_width=4.7e-06,
+ delta_y:0.0
+2025-10-24 20:23:20,734 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 1.75e-05, 
+ mmi_length:0.0001,
+ taper_width=4.7e-06,
+ delta_y:0.0
+2025-11-07 15:27:01,909 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 2.75e-05, 
+ mmi_length:0.0005,
+ taper_width=8e-06,
+ delta_y:0.0
+2025-11-07 15:44:47,506 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 2.75e-05, 
+ mmi_length:0.0005,
+ taper_width=8e-06,
+ delta_y:0.0
+2025-11-12 11:55:54,514 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 2.75e-05, 
+ mmi_length:0.000497,
+ taper_width=8e-06,
+ delta_y:0.0
+2025-11-12 11:58:07,220 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 1.1e-05, 
+ mmi_length:0.00015999999999999999,
+ taper_width=2.5e-06,
+ delta_y:0.0
+2025-11-13 10:22:48,816 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 1.1e-05, 
+ mmi_length:0.00015999999999999999,
+ taper_width=2.5e-06,
+ delta_y:0.0

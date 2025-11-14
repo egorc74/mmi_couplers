@@ -23,7 +23,7 @@ def setup_logger(name, log_file, level=logging.INFO):
     return logger
 
 wavelength=1.55e-6
-wg_length=100e-6 
+wg_length=15e-6 
 wg_width=1.6e-6
 thick_Clad=2.0e-6
 thick_Si3N4=0.3e-6
@@ -44,8 +44,8 @@ with_mesh=0
 N_in=2
 N_out=2
 
-width_margin = 2.0e-6
-height_margin = 1.0e-6
+width_margin = 4.0e-6
+height_margin = 0.8e-6
 
 
 
