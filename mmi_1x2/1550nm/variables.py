@@ -23,7 +23,7 @@ def setup_logger(name, log_file, level=logging.INFO):
     return logger
 
 wavelength=1.55e-6
-wg_length=30e-6 
+wg_length=40e-6 
 wg_width=1.6e-6
 thick_Clad=2.0e-6
 thick_Si3N4=0.3e-6
@@ -35,7 +35,7 @@ material_BOX="SiO2 (Glass) - Palik"
 material_Si="Si (Silicon) - Palik"
 material_Si3N4="Si3N4 (Silicon Nitride) - Phillip"
 
-n_core=2.01
+n_core=1.9963
 n_clad=1.444
 cladding=0
 

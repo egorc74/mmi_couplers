@@ -62,7 +62,7 @@ def geometry(sim, filename,width_ridge,mmi_length,taper_width,taper_width_in, de
     sim.set("y span",wg_width)
     sim.set("z",0)     
     sim.set("z span", thick_Si3N4)
-    sim.set("x min",Xmin_waffer)  
+    sim.set("x min",Xmin_waffer-4e-6)  
     sim.set("x max",Xmin_waffer+wg_length)
 
 
@@ -75,12 +75,12 @@ def geometry(sim, filename,width_ridge,mmi_length,taper_width,taper_width_in, de
         sim.addrect() 
         sim.set("name",f"output_wg{ii}") 
         sim.set("material",material_Si3N4)
-        sim.set("y",(distance_wg+delta_y)*(-1)**ii)         
+        sim.set("y",(distance_wg-delta_y)*(-1)**ii)         
         sim.set("y span",wg_width)
         sim.set("z",0)     
         sim.set("z span", thick_Si3N4)
         sim.set("x min",Xmax_waffer-wg_length)  
-        sim.set("x max",Xmax_waffer)
+        sim.set("x max",Xmax_waffer+4e-6)
         
 
 
@@ -137,7 +137,7 @@ def geometry(sim, filename,width_ridge,mmi_length,taper_width,taper_width_in, de
     for ii in range(N_out+1):
         sim.addpoly()
         sim.set("x",x)
-        sim.set("y",(distance_wg+delta_y)*(-1)**ii)
+        sim.set("y",(distance_wg-delta_y)*(-1)**ii)
         sim.set("z",z)
         sim.set("z span",z_span)
         sim.set("vertices",V)
@@ -158,8 +158,8 @@ def geometry(sim, filename,width_ridge,mmi_length,taper_width,taper_width_in, de
     sim.set("y span",Y_span+5e-6)
     sim.set("z min",-thick_BOX)     
     sim.set("z max", 0-thick_Si3N4/2)
-    sim.set("x min",Xmin_waffer)  
-    sim.set("x max",Xmax_waffer)
+    sim.set("x min",Xmin_waffer-4e-6)  
+    sim.set("x max",Xmax_waffer+4e-6)
     sim.set("alpha",0.05)
 
     #draw waffer
@@ -170,8 +170,8 @@ def geometry(sim, filename,width_ridge,mmi_length,taper_width,taper_width_in, de
     sim.set("y span",Y_span+5e-6)
     sim.set("z min",-thick_BOX-thick_Substrate)     
     sim.set("z max", -thick_BOX)
-    sim.set("x min",Xmin_waffer)  
-    sim.set("x max",Xmax_waffer)
+    sim.set("x min",Xmin_waffer-4e-6)  
+    sim.set("x max",Xmax_waffer+4e-6)
     sim.set("alpha",0.1)
     sim.save(filename)
 

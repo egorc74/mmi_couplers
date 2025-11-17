@@ -1,0 +1,48 @@
+2025-11-17 15:26:44,163 - INFO - Starting Length Sweep 
+ Length_span: [5.1e-05 5.2e-05 5.3e-05 5.4e-05 5.5e-05 5.6e-05 5.7e-05 5.8e-05 5.9e-05
+ 6.0e-05 6.1e-05 6.2e-05 6.3e-05 6.4e-05 6.5e-05 6.6e-05 6.7e-05 6.8e-05
+ 6.9e-05 7.0e-05 7.1e-05], 
+ width_ridge: 1.1e-05, 
+ mmi_length:6.1e-05,
+ taper_width=4.4e-06
+2025-11-17 15:27:34,867 - INFO - Starting Length Sweep 
+ Length_span: [5.1e-05 5.2e-05 5.3e-05 5.4e-05 5.5e-05 5.6e-05 5.7e-05 5.8e-05 5.9e-05
+ 6.0e-05 6.1e-05 6.2e-05 6.3e-05 6.4e-05 6.5e-05 6.6e-05 6.7e-05 6.8e-05
+ 6.9e-05 7.0e-05 7.1e-05], 
+ width_ridge: 1.1e-05, 
+ mmi_length:6.1e-05,
+ taper_width=4.4e-06
+2025-11-17 15:29:02,214 - INFO - Starting Length Sweep 
+ Length_span: [5.1e-05 7.1e-05], 
+ width_ridge: 1.1e-05, 
+ mmi_length:6.1e-05,
+ taper_width=4.4e-06
+2025-11-17 15:35:51,408 - INFO - Starting Length Sweep 
+ Length_span: [5.1e-05 7.1e-05], 
+ width_ridge: 1.1e-05, 
+ mmi_length:6.1e-05,
+ taper_width=4.4e-06
+2025-11-17 15:39:35,206 - INFO - Starting Width sweep
+ Width_span: [1.05e-05 1.06e-05 1.07e-05 1.08e-05 1.09e-05 1.10e-05 1.11e-05 1.12e-05
+ 1.13e-05 1.14e-05 1.15e-05], 
+ width_ridge: 1.1e-05, 
+ mmi_length:6.1e-05,
+ taper_width=4.4e-06
+2025-11-17 15:44:33,852 - INFO - Starting Width sweep
+ Width_span: [3.9e-06 4.0e-06 4.1e-06 4.2e-06 4.3e-06 4.4e-06 4.5e-06 4.6e-06 4.7e-06
+ 4.8e-06 4.9e-06], 
+ width_ridge: 1.1e-05, 
+ mmi_length:6.1e-05,
+ taper_width=4.4e-06
+2025-11-17 15:46:43,912 - INFO - Starting Width sweep
+ Width_span: [1.05e-05 1.06e-05 1.07e-05 1.08e-05 1.09e-05 1.10e-05 1.11e-05 1.12e-05
+ 1.13e-05 1.14e-05 1.15e-05], 
+ width_ridge: 1.1e-05, 
+ mmi_length:6.1e-05,
+ taper_width=4.4e-06
+2025-11-17 15:47:57,666 - INFO - Starting Width sweep
+ Width_span: [1.05e-05 1.06e-05 1.07e-05 1.08e-05 1.09e-05 1.10e-05 1.11e-05 1.12e-05
+ 1.13e-05 1.14e-05 1.15e-05], 
+ width_ridge: 1.1e-05, 
+ mmi_length:6.1e-05,
+ taper_width=4.4e-06

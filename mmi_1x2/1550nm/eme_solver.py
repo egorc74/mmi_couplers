@@ -163,6 +163,7 @@ def eme_solver_prep(sim, filename,width_ridge,mmi_length,taper_width,taper_width
 
         sim.save(filename)
         sim.run()
+        input("press enter ...")
     except Exception as e:
         log.info(f"Error occured: {e}")
 
@@ -215,13 +216,13 @@ def find_optimal_length(sim):
 
 if __name__=="__main__":
     filename="mmi_simulations_1x2"
-    width_ridge=9.5e-6
-    mmi_length=50e-6
-    taper_width=3.6e-6
-    taper_width_in=3.6e-6
+    width_ridge=11e-6
+    mmi_length=61e-6
+    taper_width=4.4e-6
+    taper_width_in=4.4e-6
     delta_y=0e-6
 
     eme_solver_prep(sim=lumapi.MODE(filename),filename=filename,width_ridge=width_ridge,
                     mmi_length=mmi_length,taper_width=taper_width,taper_width_in=taper_width_in,
                         delta_y=delta_y)
-    print(find_optimal_length(sim=lumapi.MODE(filename=filename)))
+    # print(find_optimal_length(sim=lumapi.MODE(filename=filename)))
