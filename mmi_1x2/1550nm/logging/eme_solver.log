@@ -3080,3 +3080,18 @@
  taper_width=3.6e-06,
  delta_y:0.0
 2025-10-10 15:50:30,237 - INFO - In find_optimal_length: Optimal length : 4.5e-05 , with max transmission 0.4870011703910293
+2025-11-17 15:09:53,300 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 1.1e-05, 
+ mmi_length:5e-05,
+ taper_width=4.4e-06,
+ delta_y:0.0
+2025-11-17 15:10:59,675 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 1.1e-05, 
+ mmi_length:5e-05,
+ taper_width=4.4e-06,
+ delta_y:0.0
+2025-11-17 15:16:32,234 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 1.1e-05, 
+ mmi_length:5e-05,
+ taper_width=4.4e-06,
+ delta_y:0.0
