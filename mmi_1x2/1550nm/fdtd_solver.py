@@ -111,7 +111,7 @@ def fdtd_solver(sim,filename,width_ridge,mmi_length,taper_width,taper_width_in,m
     
     #run fdtd
 
-    # sim.run()
+    sim.run()
 
     # #get results from both monitors
     m1_name="cross_port"
@@ -126,7 +126,7 @@ def fdtd_solver(sim,filename,width_ridge,mmi_length,taper_width,taper_width_in,m
         T_bar=0
         log.error(f"Error occured: {e} Obtained T_cross {T_cross} and T_bar={T_bar}")
 
-    input("Press Enter to continue...")
+    # input("Press Enter to continue...")
 
     sim.save(f"{filename}.fsp")
 
