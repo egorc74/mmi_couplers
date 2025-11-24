@@ -4457,3 +4457,108 @@
  delta_y:-1.250000000000005e-07
 2025-11-17 15:57:04,706 - INFO - width_eff: 1.05e-05
 2025-11-17 15:57:04,706 - INFO - mmi_pi_length: 0.00018932651612903225
+2025-11-24 16:14:36,843 - INFO - Starting geometry() built 
+ width_ridge: 1.05e-05, 
+ mmi_length:6.1e-05,
+ taper_width=4.4e-06,
+ delta_y:-1.250000000000005e-07
+2025-11-24 16:14:36,942 - INFO - width_eff: 1.05e-05
+2025-11-24 16:14:36,944 - INFO - mmi_pi_length: 0.00018932651612903225
+2025-11-24 16:15:27,142 - INFO - Starting geometry() built 
+ width_ridge: 1.05e-05, 
+ mmi_length:6.1e-05,
+ taper_width=4.4e-06,
+ delta_y:-1.250000000000005e-07
+2025-11-24 16:15:27,285 - INFO - width_eff: 1.05e-05
+2025-11-24 16:15:27,285 - INFO - mmi_pi_length: 0.00018932651612903225
+2025-11-24 16:17:39,164 - INFO - Starting geometry() built 
+ width_ridge: 1.05e-05, 
+ mmi_length:6.1e-05,
+ taper_width=4.4e-06,
+ delta_y:-1.250000000000005e-07
+2025-11-24 16:17:39,246 - INFO - width_eff: 1.05e-05
+2025-11-24 16:17:39,246 - INFO - mmi_pi_length: 0.00018932651612903225
+2025-11-24 16:17:55,172 - INFO - Starting geometry() built 
+ width_ridge: 1.06e-05, 
+ mmi_length:6.1e-05,
+ taper_width=4.4e-06,
+ delta_y:-9.999999999999989e-08
+2025-11-24 16:17:55,258 - INFO - width_eff: 1.06e-05
+2025-11-24 16:17:55,259 - INFO - mmi_pi_length: 0.00019294990795698926
+2025-11-24 16:18:08,095 - INFO - Starting geometry() built 
+ width_ridge: 1.07e-05, 
+ mmi_length:6.1e-05,
+ taper_width=4.4e-06,
+ delta_y:-7.500000000000013e-08
+2025-11-24 16:18:08,376 - INFO - width_eff: 1.07e-05
+2025-11-24 16:18:08,376 - INFO - mmi_pi_length: 0.00019660764473118279
+2025-11-24 16:18:20,110 - INFO - Starting geometry() built 
+ width_ridge: 1.08e-05, 
+ mmi_length:6.1e-05,
+ taper_width=4.4e-06,
+ delta_y:-5.000000000000037e-08
+2025-11-24 16:18:20,194 - INFO - width_eff: 1.08e-05
+2025-11-24 16:18:20,194 - INFO - mmi_pi_length: 0.0002002997264516129
+2025-11-24 16:18:32,720 - INFO - Starting geometry() built 
+ width_ridge: 1.0899999999999999e-05, 
+ mmi_length:6.1e-05,
+ taper_width=4.4e-06,
+ delta_y:-2.5000000000000608e-08
+2025-11-24 16:18:32,838 - INFO - width_eff: 1.0899999999999999e-05
+2025-11-24 16:18:32,838 - INFO - mmi_pi_length: 0.00020402615311827956
+2025-11-24 16:33:19,816 - INFO - Starting geometry() built 
+ width_ridge: 9.5e-06, 
+ mmi_length:4.7e-05,
+ taper_width=3.1e-06,
+ delta_y:0.0
+2025-11-24 16:33:19,838 - INFO - width_eff: 9.5e-06
+2025-11-24 16:33:19,841 - INFO - mmi_pi_length: 0.00015498156989247316
+2025-11-24 16:36:55,917 - INFO - Starting geometry() built 
+ width_ridge: 9.5e-06, 
+ mmi_length:4.7e-05,
+ taper_width=3.1e-06,
+ delta_y:0.0
+2025-11-24 16:36:55,923 - INFO - width_eff: 9.5e-06
+2025-11-24 16:36:55,924 - INFO - mmi_pi_length: 0.00015498156989247316
+2025-11-24 16:37:36,579 - INFO - Starting geometry() built 
+ width_ridge: 9.5e-06, 
+ mmi_length:4.7e-05,
+ taper_width=3.1e-06,
+ delta_y:0.0
+2025-11-24 16:37:36,744 - INFO - width_eff: 9.5e-06
+2025-11-24 16:37:36,744 - INFO - mmi_pi_length: 0.00015498156989247316
+2025-11-24 16:38:19,987 - INFO - Starting geometry() built 
+ width_ridge: 9.5e-06, 
+ mmi_length:4.7e-05,
+ taper_width=3.2e-06,
+ delta_y:0.0
+2025-11-24 16:38:20,063 - INFO - width_eff: 9.5e-06
+2025-11-24 16:38:20,064 - INFO - mmi_pi_length: 0.00015498156989247316
+2025-11-24 16:38:37,783 - INFO - Starting geometry() built 
+ width_ridge: 9.5e-06, 
+ mmi_length:4.7e-05,
+ taper_width=3.2999999999999997e-06,
+ delta_y:0.0
+2025-11-24 16:38:37,858 - INFO - width_eff: 9.5e-06
+2025-11-24 16:38:37,859 - INFO - mmi_pi_length: 0.00015498156989247316
+2025-11-24 16:39:04,692 - INFO - Starting geometry() built 
+ width_ridge: 9.5e-06, 
+ mmi_length:4.7e-05,
+ taper_width=3.1e-06,
+ delta_y:0.0
+2025-11-24 16:39:04,872 - INFO - width_eff: 9.5e-06
+2025-11-24 16:39:04,872 - INFO - mmi_pi_length: 0.00015498156989247316
+2025-11-24 16:39:17,880 - INFO - Starting geometry() built 
+ width_ridge: 9.5e-06, 
+ mmi_length:4.7e-05,
+ taper_width=3.6e-06,
+ delta_y:0.0
+2025-11-24 16:39:17,956 - INFO - width_eff: 9.5e-06
+2025-11-24 16:39:17,957 - INFO - mmi_pi_length: 0.00015498156989247316
+2025-11-24 16:39:52,800 - INFO - Starting geometry() built 
+ width_ridge: 9.5e-06, 
+ mmi_length:4.7e-05,
+ taper_width=4.1e-06,
+ delta_y:0.0
+2025-11-24 16:39:52,870 - INFO - width_eff: 9.5e-06
+2025-11-24 16:39:52,871 - INFO - mmi_pi_length: 0.00015498156989247316

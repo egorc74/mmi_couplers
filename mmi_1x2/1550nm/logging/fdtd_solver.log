@@ -116,3 +116,92 @@
  taper_width=4.4e-06,
  
 2025-11-17 16:03:06,251 - ERROR - Error occured: "Can not find result 'T' in the result provider 'cross_port'" Obtained T_cross 0 and T_bar=0
+2025-11-24 16:14:36,840 - INFO - Starting fdtd_solver() 
+ width_ridge: 1.05e-05, 
+ mmi_length:6.1e-05,
+ taper_width=4.4e-06,
+ 
+2025-11-24 16:14:44,181 - ERROR - Error occured: "Can not find result 'T' in the result provider 'cross_port'" Obtained T_cross 0 and T_bar=0
+2025-11-24 16:15:27,141 - INFO - Starting fdtd_solver() 
+ width_ridge: 1.05e-05, 
+ mmi_length:6.1e-05,
+ taper_width=4.4e-06,
+ 
+2025-11-24 16:15:34,366 - ERROR - Error occured: "Can not find result 'T' in the result provider 'cross_port'" Obtained T_cross 0 and T_bar=0
+2025-11-24 16:17:39,160 - INFO - Starting fdtd_solver() 
+ width_ridge: 1.05e-05, 
+ mmi_length:6.1e-05,
+ taper_width=4.4e-06,
+ 
+2025-11-24 16:17:45,085 - ERROR - Error occured: "Can not find result 'T' in the result provider 'cross_port'" Obtained T_cross 0 and T_bar=0
+2025-11-24 16:17:55,171 - INFO - Starting fdtd_solver() 
+ width_ridge: 1.06e-05, 
+ mmi_length:6.1e-05,
+ taper_width=4.4e-06,
+ 
+2025-11-24 16:18:02,627 - ERROR - Error occured: "Can not find result 'T' in the result provider 'cross_port'" Obtained T_cross 0 and T_bar=0
+2025-11-24 16:18:08,095 - INFO - Starting fdtd_solver() 
+ width_ridge: 1.07e-05, 
+ mmi_length:6.1e-05,
+ taper_width=4.4e-06,
+ 
+2025-11-24 16:18:15,608 - ERROR - Error occured: "Can not find result 'T' in the result provider 'cross_port'" Obtained T_cross 0 and T_bar=0
+2025-11-24 16:18:20,110 - INFO - Starting fdtd_solver() 
+ width_ridge: 1.08e-05, 
+ mmi_length:6.1e-05,
+ taper_width=4.4e-06,
+ 
+2025-11-24 16:18:27,668 - ERROR - Error occured: "Can not find result 'T' in the result provider 'cross_port'" Obtained T_cross 0 and T_bar=0
+2025-11-24 16:18:32,719 - INFO - Starting fdtd_solver() 
+ width_ridge: 1.0899999999999999e-05, 
+ mmi_length:6.1e-05,
+ taper_width=4.4e-06,
+ 
+2025-11-24 16:18:39,744 - ERROR - Error occured: "Can not find result 'T' in the result provider 'cross_port'" Obtained T_cross 0 and T_bar=0
+2025-11-24 16:33:19,815 - INFO - Starting fdtd_solver() 
+ width_ridge: 9.5e-06, 
+ mmi_length:4.7e-05,
+ taper_width=3.1e-06,
+ 
+2025-11-24 16:36:55,916 - INFO - Starting fdtd_solver() 
+ width_ridge: 9.5e-06, 
+ mmi_length:4.7e-05,
+ taper_width=3.1e-06,
+ 
+2025-11-24 16:37:02,184 - ERROR - Error occured: "Can not find result 'T' in the result provider 'cross_port'" Obtained T_cross 0 and T_bar=0
+2025-11-24 16:37:36,578 - INFO - Starting fdtd_solver() 
+ width_ridge: 9.5e-06, 
+ mmi_length:4.7e-05,
+ taper_width=3.1e-06,
+ 
+2025-11-24 16:37:42,636 - ERROR - Error occured: "Can not find result 'T' in the result provider 'cross_port'" Obtained T_cross 0 and T_bar=0
+2025-11-24 16:38:19,987 - INFO - Starting fdtd_solver() 
+ width_ridge: 9.5e-06, 
+ mmi_length:4.7e-05,
+ taper_width=3.2e-06,
+ 
+2025-11-24 16:38:25,866 - ERROR - Error occured: "Can not find result 'T' in the result provider 'cross_port'" Obtained T_cross 0 and T_bar=0
+2025-11-24 16:38:37,782 - INFO - Starting fdtd_solver() 
+ width_ridge: 9.5e-06, 
+ mmi_length:4.7e-05,
+ taper_width=3.2999999999999997e-06,
+ 
+2025-11-24 16:38:43,912 - ERROR - Error occured: "Can not find result 'T' in the result provider 'cross_port'" Obtained T_cross 0 and T_bar=0
+2025-11-24 16:39:04,692 - INFO - Starting fdtd_solver() 
+ width_ridge: 9.5e-06, 
+ mmi_length:4.7e-05,
+ taper_width=3.1e-06,
+ 
+2025-11-24 16:39:11,645 - ERROR - Error occured: "Can not find result 'T' in the result provider 'cross_port'" Obtained T_cross 0 and T_bar=0
+2025-11-24 16:39:17,880 - INFO - Starting fdtd_solver() 
+ width_ridge: 9.5e-06, 
+ mmi_length:4.7e-05,
+ taper_width=3.6e-06,
+ 
+2025-11-24 16:39:23,687 - ERROR - Error occured: "Can not find result 'T' in the result provider 'cross_port'" Obtained T_cross 0 and T_bar=0
+2025-11-24 16:39:52,799 - INFO - Starting fdtd_solver() 
+ width_ridge: 9.5e-06, 
+ mmi_length:4.7e-05,
+ taper_width=4.1e-06,
+ 
+2025-11-24 16:39:58,029 - ERROR - Error occured: "Can not find result 'T' in the result provider 'cross_port'" Obtained T_cross 0 and T_bar=0
