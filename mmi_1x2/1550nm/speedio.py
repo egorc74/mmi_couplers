@@ -127,7 +127,7 @@ if __name__ =="__main__":
     filename="speedio_test"
     if os.path.isfile(f"{filename}.fsp"):
         # Length_sweep(sim=lumapi.FDTD(filename))
-        # Width_sweep(sim=lumapi.FDTD(filename))
+        Width_sweep(sim=lumapi.FDTD(filename))
         # Taper_width_sweep(sim=lumapi.FDTD(filename))
 
         pass

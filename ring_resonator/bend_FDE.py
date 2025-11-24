@@ -38,7 +38,8 @@ def bend_FDE(sim,filename,plot=None):
         sim.cleardcard()
 
         # solve modes in the waveguide:
-        radii = np.array([0, 200, 100, 60, 40, 20, 10, 8, 6]) * 2e-6
+        radii = np.array([0, 6, 8, 10, 20,40, 60, 100,200]) * 2e-6
+
         n=len(radii)
         Neff=np.zeros(n,dtype=complex)
         LossdB_cm=np.zeros(n) 
@@ -62,7 +63,7 @@ def bend_FDE(sim,filename,plot=None):
                 LossdB_cm[i] = sim.getdata('FDE::data::mode1','loss') # per m
                 log.info(f"LossdB_cm:{LossdB_cm}")
                 ##Loss is in cm --> convert to m
-                LossPerBend[i] = LossdB_cm[i]*1e3 * 2*np.pi*radii[i]/4
+                LossPerBend[i] = LossdB_cm[i]*1e2 * 2*np.pi*radii[i]/4  #quarter of bent
                 log.info(f"Loss per bend: {LossPerBend}")
 
                 sim.copydcard('mode1', f'radius{int(radii[i]*1e6)}')
@@ -91,7 +92,9 @@ def bend_FDE(sim,filename,plot=None):
         ### loss is in db/cm --> convert to db/m
         ## Propagation loss 
         ## Could be negative due to errors in fitting  
-        LossP=PropagationLoss*1e3*2*np.pi*radii[1:] # quarter turn
+        LossP=PropagationLoss*1e2*2*np.pi*radii[1:]/4 # quarter turn
+
+        np.savez('data/Bending_loss.npz', radii=radii,LossMM=LossMM, LossR=LossR,LossP=LossP,Loss_T=LossMM + LossR + LossP)
         log.info("Found losses: "
                  f"\n LossMM: {LossMM}"
                  f"\n LossR: {LossR}"
@@ -131,7 +134,6 @@ def bend_FDE(sim,filename,plot=None):
                 yaxis=dict(title="Loss [dB]", type="log"),
                 hovermode="x unified"  # interactive cursor
             )
-
             fig.show()
         
         

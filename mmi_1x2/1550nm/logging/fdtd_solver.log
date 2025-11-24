@@ -93,3 +93,26 @@
  taper_width=4.4e-06,
  
 2025-11-17 15:48:06,978 - ERROR - Error occured: "Can not find result 'T' in the result provider 'cross_port'" Obtained T_cross 0 and T_bar=0
+2025-11-17 15:54:48,499 - INFO - Starting fdtd_solver() 
+ width_ridge: 1.05e-05, 
+ mmi_length:6.1e-05,
+ taper_width=4.4e-06,
+ 
+2025-11-17 15:55:03,315 - ERROR - Error occured: "Can not find result 'T' in the result provider 'cross_port'" Obtained T_cross 0 and T_bar=0
+2025-11-17 15:55:07,941 - INFO - Starting fdtd_solver() 
+ width_ridge: 1.06e-05, 
+ mmi_length:6.1e-05,
+ taper_width=4.4e-06,
+ 
+2025-11-17 15:56:30,463 - ERROR - Error occured: "Can not find result 'T' in the result provider 'cross_port'" Obtained T_cross 0 and T_bar=0
+2025-11-17 15:56:36,357 - INFO - Starting fdtd_solver() 
+ width_ridge: 1.07e-05, 
+ mmi_length:6.1e-05,
+ taper_width=4.4e-06,
+ 
+2025-11-17 15:57:04,635 - INFO - Starting fdtd_solver() 
+ width_ridge: 1.05e-05, 
+ mmi_length:6.1e-05,
+ taper_width=4.4e-06,
+ 
+2025-11-17 16:03:06,251 - ERROR - Error occured: "Can not find result 'T' in the result provider 'cross_port'" Obtained T_cross 0 and T_bar=0

@@ -46,3 +46,15 @@
  width_ridge: 1.1e-05, 
  mmi_length:6.1e-05,
  taper_width=4.4e-06
+2025-11-17 15:54:44,435 - INFO - Starting Width sweep
+ Width_span: [1.05e-05 1.06e-05 1.07e-05 1.08e-05 1.09e-05 1.10e-05 1.11e-05 1.12e-05
+ 1.13e-05 1.14e-05 1.15e-05], 
+ width_ridge: 1.1e-05, 
+ mmi_length:6.1e-05,
+ taper_width=4.4e-06
+2025-11-17 15:57:01,128 - INFO - Starting Width sweep
+ Width_span: [1.05e-05 1.06e-05 1.07e-05 1.08e-05 1.09e-05 1.10e-05 1.11e-05 1.12e-05
+ 1.13e-05 1.14e-05 1.15e-05], 
+ width_ridge: 1.1e-05, 
+ mmi_length:6.1e-05,
+ taper_width=4.4e-06
