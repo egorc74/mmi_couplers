@@ -7,11 +7,11 @@ log = setup_logger("speedio", "logging/speedio.log")
 def Length_sweep(sim):
 
     filename="speedio_test"
-    wg_length=40e-6
+    wg_length=20e-6
     wg_width=1.6e-6
-    width_ridge=11e-6
-    mmi_length=61e-6
-    taper_width=4.4e-6
+    width_ridge=9.5e-6
+    mmi_length=47e-6
+    taper_width=3.6e-6
     taper_width_in=taper_width
 
     delta_y=0e-6
@@ -20,7 +20,7 @@ def Length_sweep(sim):
 
     mesh_accuracy=3
     
-    Lengths=np.linspace(mmi_length-10e-6,mmi_length+10e-6,21)
+    Lengths=np.linspace(mmi_length-5e-6,mmi_length+5e-6,11)
     T_cross_values=[]
     T_bar_values=[]
     log.info(f"Starting Length Sweep \n Length_span: {Lengths}, \n width_ridge: {width_ridge}, \n mmi_length:{mmi_length},\n taper_width={taper_width}")
@@ -44,11 +44,11 @@ def Length_sweep(sim):
 
 def Width_sweep(sim):
     filename="speedio_test"
-    wg_length=40e-6
+    wg_length=20e-6
     wg_width=1.6e-6
-    width_ridge=11e-6
-    mmi_length=61e-6
-    taper_width=4.4e-6
+    width_ridge=9.5e-6
+    mmi_length=47e-6
+    taper_width=3.6e-6
     taper_width_in=taper_width
     delta_y=0e-6
     n_core=1.9963
@@ -83,11 +83,11 @@ def Width_sweep(sim):
 
 def Taper_width_sweep(sim):
     filename="speedio_test"
-    wg_length=40e-6
+    wg_length=20e-6
     wg_width=1.6e-6
-    width_ridge=11e-6
-    mmi_length=61e-6
-    taper_width=4.4e-6
+    width_ridge=9.5e-6
+    mmi_length=47e-6
+    taper_width=3.6e-6
     taper_width_in=taper_width
     delta_y=0e-6
     n_core=1.9963
@@ -127,13 +127,13 @@ if __name__ =="__main__":
     filename="speedio_test"
     if os.path.isfile(f"{filename}.fsp"):
         # Length_sweep(sim=lumapi.FDTD(filename))
-        Width_sweep(sim=lumapi.FDTD(filename))
-        # Taper_width_sweep(sim=lumapi.FDTD(filename))
+        # Width_sweep(sim=lumapi.FDTD(filename))
+        Taper_width_sweep(sim=lumapi.FDTD(filename))
 
         pass
     else:
         # Length_sweep(sim=lumapi.FDTD())
         # Width_sweep(sim=lumapi.FDTD())
-        # Taper_width_sweep(sim=lumapi.FDTD())
-
+        Taper_width_sweep(sim=lumapi.FDTD())
+    
         pass
