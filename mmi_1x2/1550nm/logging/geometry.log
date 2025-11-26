@@ -4562,3 +4562,10 @@
  delta_y:0.0
 2025-11-24 16:39:52,870 - INFO - width_eff: 9.5e-06
 2025-11-24 16:39:52,871 - INFO - mmi_pi_length: 0.00015498156989247316
+2025-11-24 17:05:58,939 - INFO - Starting geometry() built 
+ width_ridge: 9.5e-06, 
+ mmi_length:4.7e-05,
+ taper_width=3.6e-06,
+ delta_y:0.0
+2025-11-24 17:05:59,028 - INFO - width_eff: 9.5e-06
+2025-11-24 17:05:59,028 - INFO - mmi_pi_length: 0.00015498156989247316

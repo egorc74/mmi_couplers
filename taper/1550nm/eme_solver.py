@@ -138,5 +138,5 @@ def find_optimal_length(sim):
 if __name__=="__main__":
     filename="taper_length_span"
     taper_length=15e-6
-    taper_width=2.5e-6
+    taper_width=3.6e-6
     eme_solver_prep(sim=lumapi.MODE(filename),filename=filename,taper_width=taper_width,taper_length=taper_length)

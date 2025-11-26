@@ -8450,3 +8450,17 @@
  delta_y:0.0
 2025-11-14 16:08:05,037 - INFO - width_eff: 1.1e-05
 2025-11-14 16:08:05,037 - INFO - mmi_pi_length: 0.00020778692473118277
+2025-11-26 11:35:41,546 - INFO - Starting geometry() built 
+ width_ridge: 1.1e-05, 
+ mmi_length:0.000158,
+ taper_width=2.5e-06,
+ delta_y:0.0
+2025-11-26 11:35:41,564 - INFO - width_eff: 1.1e-05
+2025-11-26 11:35:41,565 - INFO - mmi_pi_length: 0.00020778692473118277
+2025-11-26 13:22:44,264 - INFO - Starting geometry() built 
+ width_ridge: 1.1e-05, 
+ mmi_length:0.000158,
+ taper_width=2.5e-06,
+ delta_y:0.0
+2025-11-26 13:22:44,287 - INFO - width_eff: 1.1e-05
+2025-11-26 13:22:44,288 - INFO - mmi_pi_length: 0.00020778692473118277

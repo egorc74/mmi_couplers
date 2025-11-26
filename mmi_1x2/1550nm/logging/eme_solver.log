@@ -3095,3 +3095,8 @@
  mmi_length:5e-05,
  taper_width=4.4e-06,
  delta_y:0.0
+2025-11-24 17:05:58,936 - INFO - Starting eme_solver_prep()s 
+ width_ridge: 9.5e-06, 
+ mmi_length:4.7e-05,
+ taper_width=3.6e-06,
+ delta_y:0.0

@@ -216,10 +216,10 @@ def find_optimal_length(sim):
 
 if __name__=="__main__":
     filename="mmi_simulations_1x2"
-    width_ridge=11e-6
-    mmi_length=61e-6
-    taper_width=4.4e-6
-    taper_width_in=4.4e-6
+    width_ridge=9.5e-6
+    mmi_length=47e-6
+    taper_width=3.6e-6
+    taper_width_in=3.6e-6
     delta_y=0e-6
 
     eme_solver_prep(sim=lumapi.MODE(filename),filename=filename,width_ridge=width_ridge,

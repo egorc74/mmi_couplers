@@ -65,6 +65,8 @@ def fdtd_solver(sim,filename,width_ridge,mmi_length,taper_width,taper_width_in,m
     sim.set("name","source_port")
     sim.set("injection axis","x-axis")
     sim.set("direction","forward")
+    sim.set("mode selection","fundamental TE mode")
+
     sim.set("y",0) 
     wg_spacing=width_ridge/3
     sim.set("y span",wg_spacing)
@@ -80,6 +82,7 @@ def fdtd_solver(sim,filename,width_ridge,mmi_length,taper_width,taper_width_in,m
     sim.set("name","through_port")
     sim.set("injection axis","x-axis")
     sim.set("direction","backward")
+    
             
     sim.set("y span",wg_spacing)
     sim.set("y",-distance_wg+delta_y) 
