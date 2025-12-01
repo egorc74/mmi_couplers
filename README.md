@@ -12,5 +12,4 @@ venv/scripts/activate
 4)
 pip install -r requirements.txt
 
-Za pogon skript v vsakem od splitterjev pognati speedio.py  . V skripti so pripravljene 4 simulacije: dolzina sredinskega dela (Y_sweep), dolzina sklopnika, sirina sklopnika, in kot prepognjenosti. V mapi logging se tudi izpisujejo logi simulacije.   
-
+Za pogon skript v vsakem od splitterjev pognati speedio.py  . V skripti so pripravljene 4 simulacije: dolzina sredinskega dela (Y_sweep), dolzina sklopnika, sirina sklopnika, in kot prepognjenosti. V mapi logging se tudi izpisujejo logi simulacije (speedio.logs, fdtd_solver)
