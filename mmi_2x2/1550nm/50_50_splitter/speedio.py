@@ -35,14 +35,18 @@ def Y_sweep(sim):
         if os.path.isfile(f"{filename}.fsp"):
             T_cross,T_bar=fdtd_solver(sim=sim,filename=filename,wg_length=wg_length,Radius=Radius,wg_width=wg_width,width_ridge=width_ridge,
                 mmi_length=mmi_length,taper_width=taper_width,taper_width_in=taper_width_in,ratio=ratio,y=y,mesh_accuracy=mesh_accuracy,cut_angle=cut_angle,delta_y=delta_y,twist_angle=None)
+            log.info(f"T_cross: {T_cross}, T_bar: {T_bar}")
 
         else:
             T_cross,T_bar=fdtd_solver(sim=lumapi.FDTD(),Radius=Radius,filename=filename,wg_length=wg_length,wg_width=wg_width,width_ridge=width_ridge,
                 mmi_length=mmi_length,taper_width=taper_width,taper_width_in=taper_width_in,ratio=ratio,y=y,mesh_accuracy=mesh_accuracy,cut_angle=cut_angle,delta_y=delta_y,twist_angle=None)
+            log.info(f"T_cross: {T_cross}, T_bar: {T_bar}")
 
         T_cross_values.append(T_cross)
         T_bar_values.append(T_bar)
     np.savez('data/Y_sweep.npz', Y_span=Y_span,T_cross_values=T_cross_values, T_bar_values=T_bar_values)
+
+
 
 def Length_sweep(sim):
 
@@ -78,10 +82,13 @@ def Length_sweep(sim):
         if os.path.isfile(f"{filename}.fsp"):
             T_cross,T_bar=fdtd_solver(sim=sim,filename=filename,wg_length=wg_length,Radius=Radius,wg_width=wg_width,width_ridge=width_ridge,
                 mmi_length=mmi_length,taper_width=taper_width,taper_width_in=taper_width_in,ratio=ratio,y=y,mesh_accuracy=mesh_accuracy,cut_angle=cut_angle,delta_y=delta_y,twist_angle=None)
+            log.info(f"T_cross: {T_cross}, T_bar: {T_bar}")
             
         else:
             T_cross,T_bar=fdtd_solver(sim=lumapi.FDTD(),Radius=Radius,filename=filename,wg_length=wg_length,wg_width=wg_width,width_ridge=width_ridge,
                 mmi_length=mmi_length,taper_width=taper_width,taper_width_in=taper_width_in,ratio=ratio,y=y,mesh_accuracy=mesh_accuracy,cut_angle=cut_angle,delta_y=delta_y,twist_angle=None)
+            log.info(f"T_cross: {T_cross}, T_bar: {T_bar}")
+
         T_cross_values.append(T_cross)
         T_bar_values.append(T_bar)
     np.savez('data/Length_sweep.npz', Lengths=Lengths,T_cross_values=T_cross_values, T_bar_values=T_bar_values)
@@ -121,10 +128,13 @@ def Width_sweep(sim):
         if os.path.isfile(f"{filename}.fsp"):
             T_cross,T_bar=fdtd_solver(sim=sim,filename=filename,wg_length=wg_length,Radius=Radius,wg_width=wg_width,width_ridge=width_ridge,
                 mmi_length=mmi_length,taper_width=taper_width,taper_width_in=taper_width_in,ratio=ratio,y=y,mesh_accuracy=mesh_accuracy,cut_angle=cut_angle,delta_y=delta_y,twist_angle=None)
+            log.info(f"T_cross: {T_cross}, T_bar: {T_bar}")
 
         else:
             T_cross,T_bar=fdtd_solver(sim=lumapi.FDTD(),Radius=Radius,filename=filename,wg_length=wg_length,wg_width=wg_width,width_ridge=width_ridge,
                 mmi_length=mmi_length,taper_width=taper_width,taper_width_in=taper_width_in,ratio=ratio,y=y,mesh_accuracy=mesh_accuracy,cut_angle=cut_angle,delta_y=delta_y,twist_angle=None)
+            log.info(f"T_cross: {T_cross}, T_bar: {T_bar}")
+
         T_cross_values.append(T_cross)
         T_bar_values.append(T_bar)
     np.savez('data/Width_sweep.npz', Widths=Widths,T_cross_values=T_cross_values, T_bar_values=T_bar_values)
@@ -178,10 +188,13 @@ def Twist_angle_sweep(sim):
         if os.path.isfile(f"{filename}.fsp"):
             T_cross,T_bar=fdtd_solver(sim=sim,filename=filename,wg_length=wg_length,Radius=Radius,wg_width=wg_width,width_ridge=width_ridge,
                 mmi_length=mmi_length,taper_width=taper_width,taper_width_in=taper_width_in,ratio=ratio,y=y,mesh_accuracy=mesh_accuracy,cut_angle=cut_angle,twist_angle=twist_angle,delta_y=delta_y)
+            log.info(f"T_cross: {T_cross}, T_bar: {T_bar}")
 
         else:
             T_cross,T_bar=fdtd_solver(sim=lumapi.FDTD(),Radius=Radius,filename=filename,wg_length=wg_length,wg_width=wg_width,width_ridge=width_ridge,
                 mmi_length=mmi_length,taper_width=taper_width,taper_width_in=taper_width_in,ratio=ratio,y=y,mesh_accuracy=mesh_accuracy,cut_angle=cut_angle,twist_angle=twist_angle,delta_y=delta_y)
+            log.info(f"T_cross: {T_cross}, T_bar: {T_bar}")
+
         T_cross_values.append(T_cross)
         T_bar_values.append(T_bar)
     np.savez('data/Twist_angle_sweep.npz', Twist_angles=Twist_angles,T_cross_values=T_cross_values, T_bar_values=T_bar_values)
@@ -195,12 +208,12 @@ if __name__ =="__main__":
         # Y_sweep(sim=lumapi.FDTD(filename))
         # Length_sweep(sim=lumapi.FDTD(filename))
         # Width_sweep(sim=lumapi.FDTD(filename))
-        Twist_angle_sweep(sim=lumapi.FDTD())
+        # Twist_angle_sweep(sim=lumapi.FDTD())
 
         pass
     else:
         # Y_sweep(sim=lumapi.FDTD())
         # Length_sweep(sim=lumapi.FDTD())
         # Width_sweep(sim=lumapi.FDTD())
-        Twist_angle_sweep(sim=lumapi.FDTD())
+        # Twist_angle_sweep(sim=lumapi.FDTD())
         pass

@@ -851,3 +851,103 @@
  mmi_length:0.000158,
  taper_width=2.5e-06,
  ratio:0.85
+2025-12-01 16:10:31,840 - INFO - Starting fdtd_solver() 
+ width_ridge: 1e-06, 
+ mmi_length:2e-07,
+ taper_width=1e-06,
+ ratio:0.85
+2025-12-01 16:11:50,703 - INFO - Starting fdtd_solver() 
+ width_ridge: 1e-06, 
+ mmi_length:2e-07,
+ taper_width=1e-06,
+ ratio:0.85
+2025-12-01 16:12:26,147 - INFO - Obtained T_cross {'lambda': array([[1.55e-06]]), 'f': array([[1.93414489e+14]]), 'T': array([0.00024569]), 'Lumerical_dataset': {'parameters': [['lambda', 'f']], 'attributes': ['T']}} and T_bar={'lambda': array([[1.55e-06]]), 'f': array([[1.93414489e+14]]), 'T': array([0.00030621]), 'Lumerical_dataset': {'parameters': [['lambda', 'f']], 'attributes': ['T']}}
+2025-12-01 16:12:26,332 - INFO - Starting fdtd_solver() 
+ width_ridge: 1e-06, 
+ mmi_length:2e-07,
+ taper_width=1e-06,
+ ratio:0.85
+2025-12-01 16:13:02,436 - INFO - Obtained T_cross {'lambda': array([[1.55e-06]]), 'f': array([[1.93414489e+14]]), 'T': array([0.00021855]), 'Lumerical_dataset': {'parameters': [['lambda', 'f']], 'attributes': ['T']}} and T_bar={'lambda': array([[1.55e-06]]), 'f': array([[1.93414489e+14]]), 'T': array([0.0002901]), 'Lumerical_dataset': {'parameters': [['lambda', 'f']], 'attributes': ['T']}}
+2025-12-01 16:13:02,649 - INFO - Starting fdtd_solver() 
+ width_ridge: 1e-06, 
+ mmi_length:2e-07,
+ taper_width=1e-06,
+ ratio:0.85
+2025-12-01 16:13:34,680 - INFO - Obtained T_cross {'lambda': array([[1.55e-06]]), 'f': array([[1.93414489e+14]]), 'T': array([0.0001852]), 'Lumerical_dataset': {'parameters': [['lambda', 'f']], 'attributes': ['T']}} and T_bar={'lambda': array([[1.55e-06]]), 'f': array([[1.93414489e+14]]), 'T': array([0.00026822]), 'Lumerical_dataset': {'parameters': [['lambda', 'f']], 'attributes': ['T']}}
+2025-12-01 16:13:34,844 - INFO - Starting fdtd_solver() 
+ width_ridge: 1e-06, 
+ mmi_length:2e-07,
+ taper_width=1e-06,
+ ratio:0.85
+2025-12-01 16:14:05,992 - INFO - Obtained T_cross {'lambda': array([[1.55e-06]]), 'f': array([[1.93414489e+14]]), 'T': array([0.00014594]), 'Lumerical_dataset': {'parameters': [['lambda', 'f']], 'attributes': ['T']}} and T_bar={'lambda': array([[1.55e-06]]), 'f': array([[1.93414489e+14]]), 'T': array([0.00023114]), 'Lumerical_dataset': {'parameters': [['lambda', 'f']], 'attributes': ['T']}}
+2025-12-01 16:14:06,155 - INFO - Starting fdtd_solver() 
+ width_ridge: 1e-06, 
+ mmi_length:2e-07,
+ taper_width=1e-06,
+ ratio:0.85
+2025-12-01 16:14:35,241 - INFO - Obtained T_cross {'lambda': array([[1.55e-06]]), 'f': array([[1.93414489e+14]]), 'T': array([0.0001058]), 'Lumerical_dataset': {'parameters': [['lambda', 'f']], 'attributes': ['T']}} and T_bar={'lambda': array([[1.55e-06]]), 'f': array([[1.93414489e+14]]), 'T': array([0.00018314]), 'Lumerical_dataset': {'parameters': [['lambda', 'f']], 'attributes': ['T']}}
+2025-12-01 16:14:35,414 - INFO - Starting fdtd_solver() 
+ width_ridge: 1e-06, 
+ mmi_length:2e-07,
+ taper_width=1e-06,
+ ratio:0.85
+2025-12-01 16:15:02,320 - INFO - Obtained T_cross {'lambda': array([[1.55e-06]]), 'f': array([[1.93414489e+14]]), 'T': array([0.00013827]), 'Lumerical_dataset': {'parameters': [['lambda', 'f']], 'attributes': ['T']}} and T_bar={'lambda': array([[1.55e-06]]), 'f': array([[1.93414489e+14]]), 'T': array([0.00028388]), 'Lumerical_dataset': {'parameters': [['lambda', 'f']], 'attributes': ['T']}}
+2025-12-01 16:15:02,483 - INFO - Starting fdtd_solver() 
+ width_ridge: 1e-06, 
+ mmi_length:2e-07,
+ taper_width=1e-06,
+ ratio:0.85
+2025-12-01 16:15:31,717 - INFO - Obtained T_cross {'lambda': array([[1.55e-06]]), 'f': array([[1.93414489e+14]]), 'T': array([0.00057077]), 'Lumerical_dataset': {'parameters': [['lambda', 'f']], 'attributes': ['T']}} and T_bar={'lambda': array([[1.55e-06]]), 'f': array([[1.93414489e+14]]), 'T': array([0.00129915]), 'Lumerical_dataset': {'parameters': [['lambda', 'f']], 'attributes': ['T']}}
+2025-12-01 16:15:31,888 - INFO - Starting fdtd_solver() 
+ width_ridge: 1e-06, 
+ mmi_length:2e-07,
+ taper_width=1e-06,
+ ratio:0.85
+2025-12-01 16:16:02,053 - INFO - Obtained T_cross {'lambda': array([[1.55e-06]]), 'f': array([[1.93414489e+14]]), 'T': array([0.0023382]), 'Lumerical_dataset': {'parameters': [['lambda', 'f']], 'attributes': ['T']}} and T_bar={'lambda': array([[1.55e-06]]), 'f': array([[1.93414489e+14]]), 'T': array([0.00582537]), 'Lumerical_dataset': {'parameters': [['lambda', 'f']], 'attributes': ['T']}}
+2025-12-01 16:16:02,246 - INFO - Starting fdtd_solver() 
+ width_ridge: 1e-06, 
+ mmi_length:2e-07,
+ taper_width=1e-06,
+ ratio:0.85
+2025-12-01 16:16:34,323 - INFO - Obtained T_cross {'lambda': array([[1.55e-06]]), 'f': array([[1.93414489e+14]]), 'T': array([0.003109]), 'Lumerical_dataset': {'parameters': [['lambda', 'f']], 'attributes': ['T']}} and T_bar={'lambda': array([[1.55e-06]]), 'f': array([[1.93414489e+14]]), 'T': array([0.01388395]), 'Lumerical_dataset': {'parameters': [['lambda', 'f']], 'attributes': ['T']}}
+2025-12-01 16:16:34,495 - INFO - Starting fdtd_solver() 
+ width_ridge: 1e-06, 
+ mmi_length:2e-07,
+ taper_width=1e-06,
+ ratio:0.85
+2025-12-01 16:17:04,522 - INFO - Obtained T_cross {'lambda': array([[1.55e-06]]), 'f': array([[1.93414489e+14]]), 'T': array([0.00241979]), 'Lumerical_dataset': {'parameters': [['lambda', 'f']], 'attributes': ['T']}} and T_bar={'lambda': array([[1.55e-06]]), 'f': array([[1.93414489e+14]]), 'T': array([0.01188375]), 'Lumerical_dataset': {'parameters': [['lambda', 'f']], 'attributes': ['T']}}
+2025-12-01 16:17:04,688 - INFO - Starting fdtd_solver() 
+ width_ridge: 1e-06, 
+ mmi_length:2e-07,
+ taper_width=1e-06,
+ ratio:0.85
+2025-12-01 16:17:36,784 - INFO - Obtained T_cross {'lambda': array([[1.55e-06]]), 'f': array([[1.93414489e+14]]), 'T': array([0.00208647]), 'Lumerical_dataset': {'parameters': [['lambda', 'f']], 'attributes': ['T']}} and T_bar={'lambda': array([[1.55e-06]]), 'f': array([[1.93414489e+14]]), 'T': array([0.00933276]), 'Lumerical_dataset': {'parameters': [['lambda', 'f']], 'attributes': ['T']}}
+2025-12-01 16:20:19,582 - INFO - Starting fdtd_solver() 
+ width_ridge: 1.1e-05, 
+ mmi_length:0.000158,
+ taper_width=2.5e-06,
+ ratio:0.85
+2025-12-01 16:20:42,436 - ERROR - Error occured: "Can not find result 'T' in the result provider 'FDTD::ports::cross_port'" Obtained T_cross 0 and T_bar=0
+2025-12-01 16:21:17,207 - INFO - Starting fdtd_solver() 
+ width_ridge: 1.1e-05, 
+ mmi_length:0.000158,
+ taper_width=2.5e-06,
+ ratio:0.85
+2025-12-01 16:21:42,760 - INFO - Starting fdtd_solver() 
+ width_ridge: 1.05e-05, 
+ mmi_length:0.000158,
+ taper_width=2.5e-06,
+ ratio:0.85
+2025-12-01 16:22:04,374 - ERROR - Error occured: "Can not find result 'T' in the result provider 'FDTD::ports::cross_port'" Obtained T_cross 0 and T_bar=0
+2025-12-01 16:22:58,390 - INFO - Starting fdtd_solver() 
+ width_ridge: 1.1e-05, 
+ mmi_length:0.000158,
+ taper_width=2.5e-06,
+ ratio:0.85
+2025-12-01 16:23:09,394 - ERROR - Error occured: "Can not find result 'T' in the result provider 'FDTD::ports::cross_port'" Obtained T_cross 0 and T_bar=0
+2025-12-01 16:23:47,508 - INFO - Starting fdtd_solver() 
+ width_ridge: 1.1e-05, 
+ mmi_length:0.000158,
+ taper_width=2.5e-06,
+ ratio:0.85
+2025-12-01 16:23:56,374 - ERROR - Error occured: "Can not find result 'T' in the result provider 'FDTD::ports::cross_port'" Obtained T_cross 0 and T_bar=0

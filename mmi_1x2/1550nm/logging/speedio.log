@@ -99,3 +99,32 @@
  width_ridge: 9.5e-06, 
  mmi_length:4.7e-05,
  taper_width=3.6e-06
+2025-12-01 15:21:40,825 - INFO - Starting Length Sweep 
+ Length_span: [9.00e-07 9.20e-07 9.40e-07 9.60e-07 9.80e-07 1.00e-06 1.02e-06 1.04e-06
+ 1.06e-06 1.08e-06 1.10e-06], 
+ width_ridge: 1e-06, 
+ mmi_length:1e-06,
+ taper_width=1e-06
+2025-12-01 15:24:29,052 - INFO - Starting Length Sweep 
+ Length_span: [9.00e-07 9.20e-07 9.40e-07 9.60e-07 9.80e-07 1.00e-06 1.02e-06 1.04e-06
+ 1.06e-06 1.08e-06 1.10e-06], 
+ width_ridge: 1e-06, 
+ mmi_length:1e-06,
+ taper_width=1e-06
+2025-12-01 15:33:48,519 - INFO - Starting Width sweep
+ Width_span: [5.0e-07 6.0e-07 7.0e-07 8.0e-07 9.0e-07 1.0e-06 1.1e-06 1.2e-06 1.3e-06
+ 1.4e-06 1.5e-06], 
+ width_ridge: 1e-06, 
+ mmi_length:1e-06,
+ taper_width=1e-06
+2025-12-01 15:34:06,043 - INFO - T_cross: {'lambda': array([[1.55e-06]]), 'f': array([[1.93414489e+14]]), 'T': array([1.46669507e-06]), 'Lumerical_dataset': {'parameters': [['lambda', 'f']], 'attributes': ['T']}}, T_bar: {'lambda': array([[1.55e-06]]), 'f': array([[1.93414489e+14]]), 'T': array([1.46669501e-06]), 'Lumerical_dataset': {'parameters': [['lambda', 'f']], 'attributes': ['T']}}
+2025-12-01 15:34:24,106 - INFO - T_cross: {'lambda': array([[1.55e-06]]), 'f': array([[1.93414489e+14]]), 'T': array([2.60152842e-06]), 'Lumerical_dataset': {'parameters': [['lambda', 'f']], 'attributes': ['T']}}, T_bar: {'lambda': array([[1.55e-06]]), 'f': array([[1.93414489e+14]]), 'T': array([2.60152858e-06]), 'Lumerical_dataset': {'parameters': [['lambda', 'f']], 'attributes': ['T']}}
+2025-12-01 15:34:40,799 - INFO - T_cross: {'lambda': array([[1.55e-06]]), 'f': array([[1.93414489e+14]]), 'T': array([3.9633014e-06]), 'Lumerical_dataset': {'parameters': [['lambda', 'f']], 'attributes': ['T']}}, T_bar: {'lambda': array([[1.55e-06]]), 'f': array([[1.93414489e+14]]), 'T': array([3.96330159e-06]), 'Lumerical_dataset': {'parameters': [['lambda', 'f']], 'attributes': ['T']}}
+2025-12-01 15:34:58,827 - INFO - T_cross: {'lambda': array([[1.55e-06]]), 'f': array([[1.93414489e+14]]), 'T': array([4.3706121e-06]), 'Lumerical_dataset': {'parameters': [['lambda', 'f']], 'attributes': ['T']}}, T_bar: {'lambda': array([[1.55e-06]]), 'f': array([[1.93414489e+14]]), 'T': array([4.3706119e-06]), 'Lumerical_dataset': {'parameters': [['lambda', 'f']], 'attributes': ['T']}}
+2025-12-01 15:35:20,927 - INFO - T_cross: {'lambda': array([[1.55e-06]]), 'f': array([[1.93414489e+14]]), 'T': array([6.11757861e-06]), 'Lumerical_dataset': {'parameters': [['lambda', 'f']], 'attributes': ['T']}}, T_bar: {'lambda': array([[1.55e-06]]), 'f': array([[1.93414489e+14]]), 'T': array([6.11757819e-06]), 'Lumerical_dataset': {'parameters': [['lambda', 'f']], 'attributes': ['T']}}
+2025-12-01 15:35:42,455 - INFO - T_cross: {'lambda': array([[1.55e-06]]), 'f': array([[1.93414489e+14]]), 'T': array([5.39105545e-06]), 'Lumerical_dataset': {'parameters': [['lambda', 'f']], 'attributes': ['T']}}, T_bar: {'lambda': array([[1.55e-06]]), 'f': array([[1.93414489e+14]]), 'T': array([5.39105566e-06]), 'Lumerical_dataset': {'parameters': [['lambda', 'f']], 'attributes': ['T']}}
+2025-12-01 15:36:00,627 - INFO - T_cross: {'lambda': array([[1.55e-06]]), 'f': array([[1.93414489e+14]]), 'T': array([8.7073589e-06]), 'Lumerical_dataset': {'parameters': [['lambda', 'f']], 'attributes': ['T']}}, T_bar: {'lambda': array([[1.55e-06]]), 'f': array([[1.93414489e+14]]), 'T': array([8.70735827e-06]), 'Lumerical_dataset': {'parameters': [['lambda', 'f']], 'attributes': ['T']}}
+2025-12-01 15:36:18,597 - INFO - T_cross: {'lambda': array([[1.55e-06]]), 'f': array([[1.93414489e+14]]), 'T': array([7.98914149e-06]), 'Lumerical_dataset': {'parameters': [['lambda', 'f']], 'attributes': ['T']}}, T_bar: {'lambda': array([[1.55e-06]]), 'f': array([[1.93414489e+14]]), 'T': array([7.98914088e-06]), 'Lumerical_dataset': {'parameters': [['lambda', 'f']], 'attributes': ['T']}}
+2025-12-01 15:36:36,850 - INFO - T_cross: {'lambda': array([[1.55e-06]]), 'f': array([[1.93414489e+14]]), 'T': array([1.03544361e-05]), 'Lumerical_dataset': {'parameters': [['lambda', 'f']], 'attributes': ['T']}}, T_bar: {'lambda': array([[1.55e-06]]), 'f': array([[1.93414489e+14]]), 'T': array([1.03544368e-05]), 'Lumerical_dataset': {'parameters': [['lambda', 'f']], 'attributes': ['T']}}
+2025-12-01 15:36:54,831 - INFO - T_cross: {'lambda': array([[1.55e-06]]), 'f': array([[1.93414489e+14]]), 'T': array([1.10110592e-05]), 'Lumerical_dataset': {'parameters': [['lambda', 'f']], 'attributes': ['T']}}, T_bar: {'lambda': array([[1.55e-06]]), 'f': array([[1.93414489e+14]]), 'T': array([1.10110586e-05]), 'Lumerical_dataset': {'parameters': [['lambda', 'f']], 'attributes': ['T']}}
+2025-12-01 15:37:12,843 - INFO - T_cross: {'lambda': array([[1.55e-06]]), 'f': array([[1.93414489e+14]]), 'T': array([1.39239988e-05]), 'Lumerical_dataset': {'parameters': [['lambda', 'f']], 'attributes': ['T']}}, T_bar: {'lambda': array([[1.55e-06]]), 'f': array([[1.93414489e+14]]), 'T': array([1.39239992e-05]), 'Lumerical_dataset': {'parameters': [['lambda', 'f']], 'attributes': ['T']}}

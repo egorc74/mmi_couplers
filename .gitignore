@@ -2,3 +2,5 @@
 *__pycache__
 *.lms   
 *.fsp
+*.log
+*.npz

@@ -12,3 +12,40 @@
  mmi_length:0.000158,
  taper_width=2.5e-06,
  ratio:0.85
+2025-12-01 16:10:31,836 - INFO - Starting Y_sweep 
+ Y_span: [0.e+00 1.e-06 2.e-06 3.e-06 4.e-06 5.e-06 6.e-06 7.e-06 8.e-06 9.e-06
+ 1.e-05], 
+ width_ridge: 1e-06, 
+ mmi_length:2e-07,
+ taper_width=1e-06,
+ ratio:0.85
+2025-12-01 16:11:50,697 - INFO - Starting Y_sweep 
+ Y_span: [0.e+00 1.e-06 2.e-06 3.e-06 4.e-06 5.e-06 6.e-06 7.e-06 8.e-06 9.e-06
+ 1.e-05], 
+ width_ridge: 1e-06, 
+ mmi_length:2e-07,
+ taper_width=1e-06,
+ ratio:0.85
+2025-12-01 16:20:19,577 - INFO - Starting Y_sweep 
+ Y_span: [0.e+00 1.e-06 2.e-06 3.e-06 4.e-06 5.e-06 6.e-06 7.e-06 8.e-06 9.e-06
+ 1.e-05], 
+ width_ridge: 1.1e-05, 
+ mmi_length:0.000158,
+ taper_width=2.5e-06,
+ ratio:0.85
+2025-12-01 16:21:17,206 - INFO - T_cross: 0, T_bar: 0
+2025-12-01 16:21:42,756 - INFO - Starting Width sweep
+ Width_span: [1.05e-05 1.06e-05 1.07e-05 1.08e-05 1.09e-05 1.10e-05 1.11e-05 1.12e-05
+ 1.13e-05 1.14e-05 1.15e-05], 
+ width_ridge: 1.1e-05, 
+ mmi_length:0.000158,
+ taper_width=2.5e-06,
+ ratio:0.85
+2025-12-01 16:22:58,389 - INFO - Starting Twist angle sweep 
+ Twist_angles_span: [0.01643311 0.01653311 0.01663311 0.01673311 0.01683311 0.01693311
+ 0.01703311 0.01713311 0.01723311 0.01733311 0.01743311], 
+ width_ridge: 1.1e-05, 
+ mmi_length:0.000158,
+ taper_width=2.5e-06,
+ ratio:0.85
+2025-12-01 16:23:47,507 - INFO - T_cross: 0, T_bar: 0

@@ -4,6 +4,7 @@ from fdtd_solver import *
 log = setup_logger("speedio", "logging/speedio.log")
 
 
+
 def Length_sweep(sim):
 
     filename="speedio_test"
@@ -29,12 +30,14 @@ def Length_sweep(sim):
         if os.path.isfile(f"{filename}.fsp"):
             T_cross,T_bar=fdtd_solver(sim=lumapi.FDTD(filename),filename=filename,width_ridge=width_ridge,
              mmi_length=mmi_length,taper_width=taper_width,taper_width_in=taper_width_in,mesh_accuracy=mesh_accuracy,delta_y=delta_y)
+            log.info(f"T_cross: {T_cross}, T_bar: {T_bar}")
 
 
             
         else:
             T_cross,T_bar=fdtd_solver(sim=lumapi.FDTD(),filename=filename,width_ridge=width_ridge,
              mmi_length=mmi_length,taper_width=taper_width,taper_width_in=taper_width_in,mesh_accuracy=mesh_accuracy,delta_y=delta_y)
+            log.info(f"T_cross: {T_cross}, T_bar: {T_bar}")
 
         T_cross_values.append(T_cross)
         T_bar_values.append(T_bar)
@@ -69,11 +72,13 @@ def Width_sweep(sim):
         if os.path.isfile(f"{filename}.fsp"):
             T_cross,T_bar=fdtd_solver(sim=lumapi.FDTD(filename),filename=filename,width_ridge=width_ridge,
              mmi_length=mmi_length,taper_width=taper_width,taper_width_in=taper_width_in,mesh_accuracy=mesh_accuracy,delta_y=delta_y)
+            log.info(f"T_cross: {T_cross}, T_bar: {T_bar}")
 
             
         else:
             T_cross,T_bar=fdtd_solver(sim=lumapi.FDTD(),filename=filename,width_ridge=width_ridge,
              mmi_length=mmi_length,taper_width=taper_width,taper_width_in=taper_width_in,mesh_accuracy=mesh_accuracy,delta_y=delta_y)
+            log.info(f"T_cross: {T_cross}, T_bar: {T_bar}")
 
         T_cross_values.append(T_cross)
         T_bar_values.append(T_bar)
@@ -109,11 +114,13 @@ def Taper_width_sweep(sim):
         if os.path.isfile(f"{filename}.fsp"):
             T_cross,T_bar=fdtd_solver(sim=lumapi.FDTD(filename),filename=filename,width_ridge=width_ridge,
              mmi_length=mmi_length,taper_width=taper_width,taper_width_in=taper_width_in,mesh_accuracy=mesh_accuracy,delta_y=delta_y)
+            log.info(f"T_cross: {T_cross}, T_bar: {T_bar}")
 
             
         else:
             T_cross,T_bar=fdtd_solver(sim=lumapi.FDTD(),filename=filename,width_ridge=width_ridge,
              mmi_length=mmi_length,taper_width=taper_width,taper_width_in=taper_width_in,mesh_accuracy=mesh_accuracy,delta_y=delta_y)
+            log.info(f"T_cross: {T_cross}, T_bar: {T_bar}")
 
         T_cross_values.append(T_cross)
         T_bar_values.append(T_bar)
@@ -126,14 +133,10 @@ def Taper_width_sweep(sim):
 if __name__ =="__main__":
     filename="speedio_test"
     if os.path.isfile(f"{filename}.fsp"):
-        # Length_sweep(sim=lumapi.FDTD(filename))
         Width_sweep(sim=lumapi.FDTD(filename))
-        # Taper_width_sweep(sim=lumapi.FDTD(filename))
 
         pass
     else:
-        # Length_sweep(sim=lumapi.FDTD())
         Width_sweep(sim=lumapi.FDTD())
-        # Taper_width_sweep(sim=lumapi.FDTD())
     
         pass
