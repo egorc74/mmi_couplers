@@ -8464,3 +8464,12 @@
  delta_y:0.0
 2025-11-26 13:22:44,287 - INFO - width_eff: 1.1e-05
 2025-11-26 13:22:44,288 - INFO - mmi_pi_length: 0.00020778692473118277
+2025-12-01 14:45:58,701 - INFO - Starting geometry() built 
+ width_ridge: 1e-06, 
+ mmi_length:1.5799999999999998e-05,
+ taper_width=2.5e-06,
+ delta_y:1e-07
+2025-12-01 14:45:58,723 - INFO - width_eff: 1e-06
+2025-12-01 14:45:58,725 - INFO - mmi_pi_length: 1.7172473118279567e-06
+2025-12-01 14:45:58,726 - INFO - phase must be achieved, to get ratio 0.5 : 1.5707963267948966
+2025-12-01 14:46:10,661 - INFO - Angle of twist is calculated: 0.3513834738907476

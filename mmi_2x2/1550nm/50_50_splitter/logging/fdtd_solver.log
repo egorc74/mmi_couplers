@@ -133,3 +133,9 @@
  taper_width=2.5e-06,
  ratio:0.5
 2025-11-26 13:22:54,794 - ERROR - Error occured: "Can not find result 'T' in the result provider 'cross_port'" Obtained T_cross 0 and T_bar=0
+2025-12-01 14:45:58,701 - INFO - Starting fdtd_solver() 
+ width_ridge: 1e-06, 
+ mmi_length:1.5799999999999998e-05,
+ taper_width=2.5e-06,
+ ratio:0.5
+2025-12-01 14:47:43,372 - INFO - Obtained T_cross {'lambda': array([[1.55e-06]]), 'f': array([[1.93414489e+14]]), 'T': array([0.06911092]), 'Lumerical_dataset': {'parameters': [['lambda', 'f']], 'attributes': ['T']}} and T_bar={'lambda': array([[1.55e-06]]), 'f': array([[1.93414489e+14]]), 'T': array([0.07728376]), 'Lumerical_dataset': {'parameters': [['lambda', 'f']], 'attributes': ['T']}}

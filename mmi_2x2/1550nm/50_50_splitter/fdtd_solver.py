@@ -113,11 +113,11 @@ def fdtd_solver(sim,Radius,filename,y,width_ridge,mmi_length,wg_length,wg_width,
     
     #run fdtd
 
-    # sim.run()
+    sim.run()
 
     # #get results from both monitors
-    m1_name="cross_port"
-    m2_name="through_port"
+    m1_name="FDTD::ports::cross_port"
+    m2_name="FDTD::ports::through_port"
     try:
         T_cross = sim.getresult(m1_name,"T")
         T_bar = sim.getresult(m2_name,"T")
@@ -143,24 +143,24 @@ if __name__=="__main__":
     import os
 
     filename="mmi_2x2_fdtd"
-    wg_length=11e-6
+    wg_length=1e-6
     wg_width=1.6e-6
-    width_ridge=11e-6
-    mmi_length=79*2e-6
+    width_ridge=1e-6
+    mmi_length=79*2e-7
     taper_width=2.5e-6
     taper_width_in=2.5e-6
     delta_y=0.1e-6
     n_core=1.9963
     cladding=0
 
-    Radius=80e-6
+    Radius=10e-6
     #define ratio
     ratio=50/100
     #define middle section width
     y=5e-6/2
     #define cut angle at the ends of MMI core section
     cut_angle=80   #(degrees)  90==no cut
-    mesh_accuracy=3
+    mesh_accuracy=1
     if os.path.isfile(f"{filename}.fsp"):
         fdtd_solver(sim=lumapi.FDTD(filename),filename=filename,wg_length=wg_length,Radius=Radius,wg_width=wg_width,width_ridge=width_ridge,
              mmi_length=mmi_length,taper_width=taper_width,taper_width_in=taper_width_in,ratio=ratio,y=y,mesh_accuracy=mesh_accuracy,cut_angle=cut_angle,delta_y=delta_y,twist_angle=None)

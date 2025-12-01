@@ -117,8 +117,8 @@ def fdtd_solver(sim,Radius,filename,y,width_ridge,mmi_length,wg_length,wg_width,
     sim.run()
 
     # #get results from both monitors
-    m1_name="cross_port"
-    m2_name="through_port"
+    m1_name="FDTD::ports::cross_port"
+    m2_name="FDTD::ports::through_port"
     try:
         T_cross = sim.getresult(m1_name,"T")
         T_bar = sim.getresult(m2_name,"T")
