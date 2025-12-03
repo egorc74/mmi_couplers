@@ -4735,3 +4735,73 @@
  delta_y:-6.75e-07
 2025-12-01 15:36:57,937 - INFO - width_eff: 1.5e-06
 2025-12-01 15:36:57,937 - INFO - mmi_pi_length: 3.863806451612904e-06
+2025-12-03 11:14:38,968 - INFO - Starting geometry() built 
+ width_ridge: 9e-06, 
+ mmi_length:4.7e-05,
+ taper_width=3.6e-06,
+ delta_y:-9.999999999999989e-08
+2025-12-03 11:14:39,045 - INFO - width_eff: 9e-06
+2025-12-03 11:14:39,045 - INFO - mmi_pi_length: 0.00013909703225806452
+2025-12-03 12:12:29,630 - INFO - Starting geometry() built 
+ width_ridge: 9e-06, 
+ mmi_length:4.7e-05,
+ taper_width=3.6e-06,
+ delta_y:-9.999999999999989e-08
+2025-12-03 12:12:29,695 - INFO - width_eff: 9e-06
+2025-12-03 12:12:29,696 - INFO - mmi_pi_length: 0.00013909703225806452
+2025-12-03 12:37:48,323 - INFO - Starting geometry() built 
+ width_ridge: 9e-06, 
+ mmi_length:4.7e-05,
+ taper_width=3.6e-06,
+ delta_y:-9.999999999999989e-08
+2025-12-03 12:37:48,386 - INFO - width_eff: 9e-06
+2025-12-03 12:37:48,386 - INFO - mmi_pi_length: 0.00013909703225806452
+2025-12-03 12:38:25,149 - INFO - Starting geometry() built 
+ width_ridge: 9e-06, 
+ mmi_length:4.7e-05,
+ taper_width=3.6e-06,
+ delta_y:-9.999999999999989e-08
+2025-12-03 12:38:25,209 - INFO - width_eff: 9e-06
+2025-12-03 12:38:25,210 - INFO - mmi_pi_length: 0.00013909703225806452
+2025-12-03 12:39:27,683 - INFO - Starting geometry() built 
+ width_ridge: 9.100000000000001e-06, 
+ mmi_length:4.7e-05,
+ taper_width=3.6e-06,
+ delta_y:-7.49999999999997e-08
+2025-12-03 12:39:27,752 - INFO - width_eff: 9.100000000000001e-06
+2025-12-03 12:39:27,753 - INFO - mmi_pi_length: 0.00014220524989247315
+2025-12-03 12:42:26,067 - INFO - Starting geometry() built 
+ width_ridge: 9e-06, 
+ mmi_length:4.7e-05,
+ taper_width=3.6e-06,
+ delta_y:-9.999999999999989e-08
+2025-12-03 12:42:26,132 - INFO - width_eff: 9e-06
+2025-12-03 12:42:26,132 - INFO - mmi_pi_length: 0.00013909703225806452
+2025-12-03 12:42:39,974 - INFO - Starting geometry() built 
+ width_ridge: 9.100000000000001e-06, 
+ mmi_length:4.7e-05,
+ taper_width=3.6e-06,
+ delta_y:-7.49999999999997e-08
+2025-12-03 12:42:40,049 - INFO - width_eff: 9.100000000000001e-06
+2025-12-03 12:42:40,049 - INFO - mmi_pi_length: 0.00014220524989247315
+2025-12-03 12:43:04,122 - INFO - Starting geometry() built 
+ width_ridge: 9e-06, 
+ mmi_length:4.7e-05,
+ taper_width=3.6e-06,
+ delta_y:-9.999999999999989e-08
+2025-12-03 12:43:04,190 - INFO - width_eff: 9e-06
+2025-12-03 12:43:04,191 - INFO - mmi_pi_length: 0.00013909703225806452
+2025-12-03 12:44:03,883 - INFO - Starting geometry() built 
+ width_ridge: 9e-06, 
+ mmi_length:4.7e-05,
+ taper_width=3.6e-06,
+ delta_y:-9.999999999999989e-08
+2025-12-03 12:44:03,956 - INFO - width_eff: 9e-06
+2025-12-03 12:44:03,957 - INFO - mmi_pi_length: 0.00013909703225806452
+2025-12-03 12:47:01,977 - INFO - Starting geometry() built 
+ width_ridge: 9e-06, 
+ mmi_length:4.7e-05,
+ taper_width=3.6e-06,
+ delta_y:-9.999999999999989e-08
+2025-12-03 12:47:02,150 - INFO - width_eff: 9e-06
+2025-12-03 12:47:02,150 - INFO - mmi_pi_length: 0.00013909703225806452

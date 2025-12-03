@@ -128,3 +128,55 @@
 2025-12-01 15:36:36,850 - INFO - T_cross: {'lambda': array([[1.55e-06]]), 'f': array([[1.93414489e+14]]), 'T': array([1.03544361e-05]), 'Lumerical_dataset': {'parameters': [['lambda', 'f']], 'attributes': ['T']}}, T_bar: {'lambda': array([[1.55e-06]]), 'f': array([[1.93414489e+14]]), 'T': array([1.03544368e-05]), 'Lumerical_dataset': {'parameters': [['lambda', 'f']], 'attributes': ['T']}}
 2025-12-01 15:36:54,831 - INFO - T_cross: {'lambda': array([[1.55e-06]]), 'f': array([[1.93414489e+14]]), 'T': array([1.10110592e-05]), 'Lumerical_dataset': {'parameters': [['lambda', 'f']], 'attributes': ['T']}}, T_bar: {'lambda': array([[1.55e-06]]), 'f': array([[1.93414489e+14]]), 'T': array([1.10110586e-05]), 'Lumerical_dataset': {'parameters': [['lambda', 'f']], 'attributes': ['T']}}
 2025-12-01 15:37:12,843 - INFO - T_cross: {'lambda': array([[1.55e-06]]), 'f': array([[1.93414489e+14]]), 'T': array([1.39239988e-05]), 'Lumerical_dataset': {'parameters': [['lambda', 'f']], 'attributes': ['T']}}, T_bar: {'lambda': array([[1.55e-06]]), 'f': array([[1.93414489e+14]]), 'T': array([1.39239992e-05]), 'Lumerical_dataset': {'parameters': [['lambda', 'f']], 'attributes': ['T']}}
+2025-12-03 11:14:35,408 - INFO - Starting Width sweep
+ Width_span: [9.0e-06 9.1e-06 9.2e-06 9.3e-06 9.4e-06 9.5e-06 9.6e-06 9.7e-06 9.8e-06
+ 9.9e-06 1.0e-05], 
+ width_ridge: 9.5e-06, 
+ mmi_length:4.7e-05,
+ taper_width=3.6e-06
+2025-12-03 12:12:26,070 - INFO - Starting Width sweep
+ Width_span: [9.0e-06 9.1e-06 9.2e-06 9.3e-06 9.4e-06 9.5e-06 9.6e-06 9.7e-06 9.8e-06
+ 9.9e-06 1.0e-05], 
+ width_ridge: 9.5e-06, 
+ mmi_length:4.7e-05,
+ taper_width=3.6e-06
+2025-12-03 12:37:20,448 - INFO - T_cross: 0, T_bar: 0
+2025-12-03 12:37:44,696 - INFO - Starting Width sweep
+ Width_span: [9.0e-06 9.1e-06 9.2e-06 9.3e-06 9.4e-06 9.5e-06 9.6e-06 9.7e-06 9.8e-06
+ 9.9e-06 1.0e-05], 
+ width_ridge: 9.5e-06, 
+ mmi_length:4.7e-05,
+ taper_width=3.6e-06
+2025-12-03 12:38:21,720 - INFO - Starting Width sweep
+ Width_span: [9.0e-06 9.1e-06 9.2e-06 9.3e-06 9.4e-06 9.5e-06 9.6e-06 9.7e-06 9.8e-06
+ 9.9e-06 1.0e-05], 
+ width_ridge: 9.5e-06, 
+ mmi_length:4.7e-05,
+ taper_width=3.6e-06
+2025-12-03 12:39:24,109 - INFO - T_cross: 0, T_bar: 0
+2025-12-03 12:42:23,037 - INFO - Starting Width sweep
+ Width_span: [9.0e-06 9.1e-06 9.2e-06 9.3e-06 9.4e-06 9.5e-06 9.6e-06 9.7e-06 9.8e-06
+ 9.9e-06 1.0e-05], 
+ width_ridge: 9.5e-06, 
+ mmi_length:4.7e-05,
+ taper_width=3.6e-06
+2025-12-03 12:42:36,395 - INFO - T_cross: 0, T_bar: 0
+2025-12-03 12:43:00,667 - INFO - Starting Width sweep
+ Width_span: [9.0e-06 9.1e-06 9.2e-06 9.3e-06 9.4e-06 9.5e-06 9.6e-06 9.7e-06 9.8e-06
+ 9.9e-06 1.0e-05], 
+ width_ridge: 9.5e-06, 
+ mmi_length:4.7e-05,
+ taper_width=3.6e-06
+2025-12-03 12:43:12,922 - INFO - T_cross: 0, T_bar: 0
+2025-12-03 12:43:59,709 - INFO - Starting Width sweep
+ Width_span: [9.0e-06 9.1e-06 9.2e-06 9.3e-06 9.4e-06 9.5e-06 9.6e-06 9.7e-06 9.8e-06
+ 9.9e-06 1.0e-05], 
+ width_ridge: 9.5e-06, 
+ mmi_length:4.7e-05,
+ taper_width=3.6e-06
+2025-12-03 12:46:57,929 - INFO - Starting Width sweep
+ Width_span: [9.0e-06 9.1e-06 9.2e-06 9.3e-06 9.4e-06 9.5e-06 9.6e-06 9.7e-06 9.8e-06
+ 9.9e-06 1.0e-05], 
+ width_ridge: 9.5e-06, 
+ mmi_length:4.7e-05,
+ taper_width=3.6e-06

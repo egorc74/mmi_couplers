@@ -102,7 +102,8 @@ def fdtd_solver(sim,Radius,filename,y,width_ridge,mmi_length,wg_length,wg_width,
     sim.set("z min",Zmin) 
     sim.set("z max",Zmax) 
 
-    sim.adddftmonitor()
+    sim.addmovie()
+    sim.set("monitor type",3) 
     sim.set("x span",200e-6)
     sim.set("y span",20e-6)
     sim.set("x",0)
@@ -110,7 +111,12 @@ def fdtd_solver(sim,Radius,filename,y,width_ridge,mmi_length,wg_length,wg_width,
     sim.set("z",0)
 
 
+    sim.select("FDTD::ports")
+    sim.set("source port", "source_port")
+
+
     sim.save(f"{filename}.fsp")
+    
     
     #run fdtd
 
