@@ -4,7 +4,7 @@ from fdtd_solver import *
 log = setup_logger("speedio", "logging/speedio.log")
 
 def Y_sweep(sim):
-
+    sweep_name="y_sweep"
     filename="speedio_test"
     wg_length=15e-6
     wg_width=1.6e-6
@@ -34,12 +34,12 @@ def Y_sweep(sim):
     for y in Y_span:
         if os.path.isfile(f"{filename}.fsp"):
             T_cross,T_bar=fdtd_solver(sim=sim,filename=filename,wg_length=wg_length,Radius=Radius,wg_width=wg_width,width_ridge=width_ridge,
-                mmi_length=mmi_length,taper_width=taper_width,taper_width_in=taper_width_in,ratio=ratio,y=y,mesh_accuracy=mesh_accuracy,cut_angle=cut_angle,delta_y=delta_y,twist_angle=None)
+                mmi_length=mmi_length,taper_width=taper_width,taper_width_in=taper_width_in,ratio=ratio,y=y,mesh_accuracy=mesh_accuracy,cut_angle=cut_angle,delta_y=delta_y,twist_angle=None,sweep_name=sweep_name)
             log.info(f"T_cross: {T_cross}, T_bar: {T_bar}")
 
         else:
             T_cross,T_bar=fdtd_solver(sim=lumapi.FDTD(),Radius=Radius,filename=filename,wg_length=wg_length,wg_width=wg_width,width_ridge=width_ridge,
-                mmi_length=mmi_length,taper_width=taper_width,taper_width_in=taper_width_in,ratio=ratio,y=y,mesh_accuracy=mesh_accuracy,cut_angle=cut_angle,delta_y=delta_y,twist_angle=None)
+                mmi_length=mmi_length,taper_width=taper_width,taper_width_in=taper_width_in,ratio=ratio,y=y,mesh_accuracy=mesh_accuracy,cut_angle=cut_angle,delta_y=delta_y,twist_angle=None,sweep_name=sweep_name)
             log.info(f"T_cross: {T_cross}, T_bar: {T_bar}")
 
         T_cross_values.append(T_cross)
@@ -47,7 +47,7 @@ def Y_sweep(sim):
     np.savez('data/Y_sweep.npz', Y_span=Y_span,T_cross_values=T_cross_values, T_bar_values=T_bar_values)
 
 def Length_sweep(sim):
-
+    sweep_name="length_sweep"
     filename="speedio_test"
     wg_length=15e-6
     wg_width=1.6e-6
@@ -79,12 +79,12 @@ def Length_sweep(sim):
     for mmi_length in Lengths:
         if os.path.isfile(f"{filename}.fsp"):
             T_cross,T_bar=fdtd_solver(sim=sim,filename=filename,wg_length=wg_length,Radius=Radius,wg_width=wg_width,width_ridge=width_ridge,
-                mmi_length=mmi_length,taper_width=taper_width,taper_width_in=taper_width_in,ratio=ratio,y=y,mesh_accuracy=mesh_accuracy,cut_angle=cut_angle,delta_y=delta_y,twist_angle=None)
+                mmi_length=mmi_length,taper_width=taper_width,taper_width_in=taper_width_in,ratio=ratio,y=y,mesh_accuracy=mesh_accuracy,cut_angle=cut_angle,delta_y=delta_y,twist_angle=None,sweep_name=sweep_name)
             log.info(f"T_cross: {T_cross}, T_bar: {T_bar}")
             
         else:
             T_cross,T_bar=fdtd_solver(sim=lumapi.FDTD(),Radius=Radius,filename=filename,wg_length=wg_length,wg_width=wg_width,width_ridge=width_ridge,
-                mmi_length=mmi_length,taper_width=taper_width,taper_width_in=taper_width_in,ratio=ratio,y=y,mesh_accuracy=mesh_accuracy,cut_angle=cut_angle,delta_y=delta_y,twist_angle=None)
+                mmi_length=mmi_length,taper_width=taper_width,taper_width_in=taper_width_in,ratio=ratio,y=y,mesh_accuracy=mesh_accuracy,cut_angle=cut_angle,delta_y=delta_y,twist_angle=None,sweep_name=sweep_name)
             log.info(f"T_cross: {T_cross}, T_bar: {T_bar}")
 
         T_cross_values.append(T_cross)
@@ -94,6 +94,7 @@ def Length_sweep(sim):
 
 
 def Width_sweep(sim):
+    sweep_name="width_sweep"
     filename="speedio_test"
     wg_length=15e-6
     wg_width=1.6e-6
@@ -125,12 +126,12 @@ def Width_sweep(sim):
         delta_y=(width_ridge/3-1.1e-6-taper_width)/2
         if os.path.isfile(f"{filename}.fsp"):
             T_cross,T_bar=fdtd_solver(sim=sim,filename=filename,wg_length=wg_length,Radius=Radius,wg_width=wg_width,width_ridge=width_ridge,
-                mmi_length=mmi_length,taper_width=taper_width,taper_width_in=taper_width_in,ratio=ratio,y=y,mesh_accuracy=mesh_accuracy,cut_angle=cut_angle,delta_y=delta_y,twist_angle=None)
+                mmi_length=mmi_length,taper_width=taper_width,taper_width_in=taper_width_in,ratio=ratio,y=y,mesh_accuracy=mesh_accuracy,cut_angle=cut_angle,delta_y=delta_y,twist_angle=None,sweep_name=sweep_name)
             log.info(f"T_cross: {T_cross}, T_bar: {T_bar}")
 
         else:
             T_cross,T_bar=fdtd_solver(sim=lumapi.FDTD(),Radius=Radius,filename=filename,wg_length=wg_length,wg_width=wg_width,width_ridge=width_ridge,
-                mmi_length=mmi_length,taper_width=taper_width,taper_width_in=taper_width_in,ratio=ratio,y=y,mesh_accuracy=mesh_accuracy,cut_angle=cut_angle,delta_y=delta_y,twist_angle=None)
+                mmi_length=mmi_length,taper_width=taper_width,taper_width_in=taper_width_in,ratio=ratio,y=y,mesh_accuracy=mesh_accuracy,cut_angle=cut_angle,delta_y=delta_y,twist_angle=None,sweep_name=sweep_name)
             log.info(f"T_cross: {T_cross}, T_bar: {T_bar}")
 
         T_cross_values.append(T_cross)
@@ -140,6 +141,7 @@ def Width_sweep(sim):
 
 
 def Twist_angle_sweep(sim):
+    sweep_name="twist_angle"
     filename="speedio_test"
     wg_length=15e-6
     wg_width=1.6e-6
@@ -183,12 +185,12 @@ def Twist_angle_sweep(sim):
     for twist_angle in Twist_angles:
         if os.path.isfile(f"{filename}.fsp"):
             T_cross,T_bar=fdtd_solver(sim=sim,filename=filename,wg_length=wg_length,Radius=Radius,wg_width=wg_width,width_ridge=width_ridge,
-                mmi_length=mmi_length,taper_width=taper_width,taper_width_in=taper_width_in,ratio=ratio,y=y,mesh_accuracy=mesh_accuracy,cut_angle=cut_angle,delta_y=delta_y,twist_angle=twist_angle)
+                mmi_length=mmi_length,taper_width=taper_width,taper_width_in=taper_width_in,ratio=ratio,y=y,mesh_accuracy=mesh_accuracy,cut_angle=cut_angle,delta_y=delta_y,twist_angle=twist_angle,sweep_name=sweep_name)
             log.info(f"T_cross: {T_cross}, T_bar: {T_bar}")
 
         else:
             T_cross,T_bar=fdtd_solver(sim=lumapi.FDTD(),Radius=Radius,filename=filename,wg_length=wg_length,wg_width=wg_width,width_ridge=width_ridge,
-                mmi_length=mmi_length,taper_width=taper_width,taper_width_in=taper_width_in,ratio=ratio,y=y,mesh_accuracy=mesh_accuracy,cut_angle=cut_angle,delta_y=delta_y,twist_angle=twist_angle)
+                mmi_length=mmi_length,taper_width=taper_width,taper_width_in=taper_width_in,ratio=ratio,y=y,mesh_accuracy=mesh_accuracy,cut_angle=cut_angle,delta_y=delta_y,twist_angle=twist_angle,sweep_name=sweep_name)
             log.info(f"T_cross: {T_cross}, T_bar: {T_bar}")
 
         T_cross_values.append(T_cross)

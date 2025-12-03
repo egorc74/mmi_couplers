@@ -1,7 +1,7 @@
 from variables import *
 from fdtd_geometry import geometry
 import plotly.graph_objects as go
-def fdtd_solver(sim,Radius,filename,y,width_ridge,mmi_length,wg_length,wg_width,taper_width,taper_width_in,ratio,mesh_accuracy,cut_angle,delta_y,twist_angle=None):
+def fdtd_solver(sim,Radius,filename,y,width_ridge,mmi_length,wg_length,wg_width,taper_width,taper_width_in,ratio,mesh_accuracy,cut_angle,delta_y,twist_angle=None,sweep_name=None):
 
     log = setup_logger("fdtd_solver", "logging/fdtd_solver.log")
 
@@ -92,7 +92,6 @@ def fdtd_solver(sim,Radius,filename,y,width_ridge,mmi_length,wg_length,wg_width,
 
     ##Cross port 
     sim.addport()
-    sim.set("monitor type",3) 
     sim.set("name","cross_port")
     sim.set("injection axis","x-axis")
     sim.set("direction","backward")
@@ -104,6 +103,7 @@ def fdtd_solver(sim,Radius,filename,y,width_ridge,mmi_length,wg_length,wg_width,
 
     sim.addmovie()
     sim.set("monitor type",3) 
+    sim.set("name",f"{filename}_{sweep_name}") 
     sim.set("x span",200e-6)
     sim.set("y span",20e-6)
     sim.set("x",0)

@@ -1,7 +1,7 @@
 from variables import *
 from geometry import geometry
 import plotly.graph_objects as go
-def fdtd_solver(sim,filename,width_ridge,mmi_length,taper_width,taper_width_in,mesh_accuracy,delta_y):
+def fdtd_solver(sim,filename,width_ridge,mmi_length,taper_width,taper_width_in,mesh_accuracy,delta_y,sweep_name=None):
 
     log = setup_logger("fdtd_solver", "logging/fdtd_solver.log")
 
@@ -75,7 +75,6 @@ def fdtd_solver(sim,filename,width_ridge,mmi_length,taper_width,taper_width_in,m
     sim.set("z max",Zmax)
 
 
-
     ##Through port
 
     sim.addport()
@@ -103,7 +102,8 @@ def fdtd_solver(sim,filename,width_ridge,mmi_length,taper_width,taper_width_in,m
     sim.set("z max",Zmax) 
 
     sim.addmovie()
-    sim.set("monitor type",3) 
+    sim.set("monitor type",3)
+    sim.set("name",f"{filename}_{sweep_name}") 
     sim.set("x span",200e-6)
     sim.set("y span",20e-6)
     sim.set("x",0)
@@ -118,7 +118,7 @@ def fdtd_solver(sim,filename,width_ridge,mmi_length,taper_width,taper_width_in,m
     
     #run fdtd
 
-    # sim.run()
+    sim.run()
 
     # #get results from both monitors
     m1_name="FDTD::ports::cross_port"
@@ -133,7 +133,7 @@ def fdtd_solver(sim,filename,width_ridge,mmi_length,taper_width,taper_width_in,m
         T_bar=0
         log.error(f"Error occured: {e} Obtained T_cross {T_cross} and T_bar={T_bar}")
 
-    input("Press Enter to continue...")
+    # input("Press Enter to continue...")
 
     sim.save(f"{filename}.fsp")
 

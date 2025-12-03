@@ -6,7 +6,7 @@ log = setup_logger("speedio", "logging/speedio.log")
 
 
 def Length_sweep(sim):
-
+    sweep_name="length_sweep"
     filename="speedio_test"
     wg_length=20e-6
     wg_width=1.6e-6
@@ -29,14 +29,14 @@ def Length_sweep(sim):
     for mmi_length in Lengths:
         if os.path.isfile(f"{filename}.fsp"):
             T_cross,T_bar=fdtd_solver(sim=lumapi.FDTD(filename),filename=filename,width_ridge=width_ridge,
-             mmi_length=mmi_length,taper_width=taper_width,taper_width_in=taper_width_in,mesh_accuracy=mesh_accuracy,delta_y=delta_y)
+             mmi_length=mmi_length,taper_width=taper_width,taper_width_in=taper_width_in,mesh_accuracy=mesh_accuracy,delta_y=delta_y,sweep_name=sweep_name)
             log.info(f"T_cross: {T_cross}, T_bar: {T_bar}")
 
 
             
         else:
             T_cross,T_bar=fdtd_solver(sim=lumapi.FDTD(),filename=filename,width_ridge=width_ridge,
-             mmi_length=mmi_length,taper_width=taper_width,taper_width_in=taper_width_in,mesh_accuracy=mesh_accuracy,delta_y=delta_y)
+             mmi_length=mmi_length,taper_width=taper_width,taper_width_in=taper_width_in,mesh_accuracy=mesh_accuracy,delta_y=delta_y,sweep_name=sweep_name)
             log.info(f"T_cross: {T_cross}, T_bar: {T_bar}")
 
         T_cross_values.append(T_cross)
@@ -46,6 +46,7 @@ def Length_sweep(sim):
 
 
 def Width_sweep(sim):
+    sweep_name="width_sweep"
     filename="speedio_test"
     wg_length=20e-6
     wg_width=1.6e-6
@@ -61,6 +62,7 @@ def Width_sweep(sim):
     mesh_accuracy=3
     
     Widths=np.linspace(width_ridge-0.5e-6,width_ridge+0.5e-6,11)
+    
     T_cross_values=[]
     T_bar_values=[]
     log.info(f"Starting Width sweep\n Width_span: {Widths}, \n width_ridge: {width_ridge}, \n mmi_length:{mmi_length},\n taper_width={taper_width}")
@@ -71,13 +73,13 @@ def Width_sweep(sim):
         delta_y=(width_ridge/2-1.1e-6-taper_width)/2
         if os.path.isfile(f"{filename}.fsp"):
             T_cross,T_bar=fdtd_solver(sim=lumapi.FDTD(filename),filename=filename,width_ridge=width_ridge,
-             mmi_length=mmi_length,taper_width=taper_width,taper_width_in=taper_width_in,mesh_accuracy=mesh_accuracy,delta_y=delta_y)
+             mmi_length=mmi_length,taper_width=taper_width,taper_width_in=taper_width_in,mesh_accuracy=mesh_accuracy,delta_y=delta_y,sweep_name=sweep_name)
             log.info(f"T_cross: {T_cross}, T_bar: {T_bar}")
 
             
         else:
             T_cross,T_bar=fdtd_solver(sim=lumapi.FDTD(),filename=filename,width_ridge=width_ridge,
-             mmi_length=mmi_length,taper_width=taper_width,taper_width_in=taper_width_in,mesh_accuracy=mesh_accuracy,delta_y=delta_y)
+             mmi_length=mmi_length,taper_width=taper_width,taper_width_in=taper_width_in,mesh_accuracy=mesh_accuracy,delta_y=delta_y,sweep_name=sweep_name)
             log.info(f"T_cross: {T_cross}, T_bar: {T_bar}")
 
         T_cross_values.append(T_cross)
@@ -87,6 +89,7 @@ def Width_sweep(sim):
 
 
 def Taper_width_sweep(sim):
+    sweep_name="taper_width"
     filename="speedio_test"
     wg_length=20e-6
     wg_width=1.6e-6
@@ -113,13 +116,13 @@ def Taper_width_sweep(sim):
         taper_width_in=taper
         if os.path.isfile(f"{filename}.fsp"):
             T_cross,T_bar=fdtd_solver(sim=lumapi.FDTD(filename),filename=filename,width_ridge=width_ridge,
-             mmi_length=mmi_length,taper_width=taper_width,taper_width_in=taper_width_in,mesh_accuracy=mesh_accuracy,delta_y=delta_y)
+             mmi_length=mmi_length,taper_width=taper_width,taper_width_in=taper_width_in,mesh_accuracy=mesh_accuracy,delta_y=delta_y,sweep_name=sweep_name)
             log.info(f"T_cross: {T_cross}, T_bar: {T_bar}")
 
             
         else:
             T_cross,T_bar=fdtd_solver(sim=lumapi.FDTD(),filename=filename,width_ridge=width_ridge,
-             mmi_length=mmi_length,taper_width=taper_width,taper_width_in=taper_width_in,mesh_accuracy=mesh_accuracy,delta_y=delta_y)
+             mmi_length=mmi_length,taper_width=taper_width,taper_width_in=taper_width_in,mesh_accuracy=mesh_accuracy,delta_y=delta_y,sweep_name=sweep_name)
             log.info(f"T_cross: {T_cross}, T_bar: {T_bar}")
 
         T_cross_values.append(T_cross)
