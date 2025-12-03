@@ -986,3 +986,69 @@
  taper_width=2.5e-06,
  ratio:0.85
 2025-12-03 13:38:36,799 - ERROR - Error occured: "Can not find result 'T' in the result provider 'FDTD::ports::cross_port'" Obtained T_cross 0 and T_bar=0
+2025-12-03 17:59:43,516 - INFO - Starting fdtd_solver() 
+ width_ridge: 1.1e-05, 
+ mmi_length:0.000158,
+ taper_width=2.5e-06,
+ ratio:0.85
+2025-12-03 18:00:11,273 - ERROR - Error occured: "Can not find result 'T' in the result provider 'FDTD::ports::cross_port'" Obtained T_cross 0 and T_bar=0
+2025-12-03 18:00:31,664 - INFO - Starting fdtd_solver() 
+ width_ridge: 1.1e-05, 
+ mmi_length:0.000158,
+ taper_width=2.5e-06,
+ ratio:0.85
+2025-12-03 18:00:57,643 - ERROR - Error occured: "Can not find result 'T' in the result provider 'FDTD::ports::cross_port'" Obtained T_cross 0 and T_bar=0
+2025-12-03 23:25:55,254 - INFO - Starting fdtd_solver() 
+ width_ridge: 1e-06, 
+ mmi_length:1e-06,
+ taper_width=1e-06,
+ ratio:0.85
+2025-12-03 23:26:35,080 - INFO - Obtained T_cross {'lambda': array([[1.55e-06]]), 'f': array([[1.93414489e+14]]), 'T': array([0.03434587]), 'Lumerical_dataset': {'parameters': [['lambda', 'f']], 'attributes': ['T']}} and T_bar={'lambda': array([[1.55e-06]]), 'f': array([[1.93414489e+14]]), 'T': array([0.00606615]), 'Lumerical_dataset': {'parameters': [['lambda', 'f']], 'attributes': ['T']}}, E_lateral: 7
+2025-12-03 23:26:35,261 - INFO - Starting fdtd_solver() 
+ width_ridge: 1e-06, 
+ mmi_length:1e-06,
+ taper_width=1e-06,
+ ratio:0.85
+2025-12-03 23:27:13,453 - INFO - Obtained T_cross {'lambda': array([[1.55e-06]]), 'f': array([[1.93414489e+14]]), 'T': array([0.00036716]), 'Lumerical_dataset': {'parameters': [['lambda', 'f']], 'attributes': ['T']}} and T_bar={'lambda': array([[1.55e-06]]), 'f': array([[1.93414489e+14]]), 'T': array([0.00151335]), 'Lumerical_dataset': {'parameters': [['lambda', 'f']], 'attributes': ['T']}}, E_lateral: 7
+2025-12-03 23:29:35,860 - INFO - Starting fdtd_solver() 
+ width_ridge: 1e-06, 
+ mmi_length:9e-07,
+ taper_width=1e-06,
+ ratio:0.85
+2025-12-03 23:30:16,639 - ERROR - Error occured: "Can not find result 'T' in the result provider 'FDTD::ports::cross_port'" Obtained T_cross 0 and T_bar=0 and E_lateral=0
+2025-12-03 23:30:34,248 - INFO - Starting fdtd_solver() 
+ width_ridge: 1e-06, 
+ mmi_length:9e-07,
+ taper_width=1e-06,
+ ratio:0.85
+2025-12-03 23:31:14,253 - INFO - Obtained T_cross {'lambda': array([[1.55e-06]]), 'f': array([[1.93414489e+14]]), 'T': array([0.00769735]), 'Lumerical_dataset': {'parameters': [['lambda', 'f']], 'attributes': ['T']}} and T_bar={'lambda': array([[1.55e-06]]), 'f': array([[1.93414489e+14]]), 'T': array([0.04260598]), 'Lumerical_dataset': {'parameters': [['lambda', 'f']], 'attributes': ['T']}}, E_lateral: 7
+2025-12-03 23:33:07,260 - INFO - Starting fdtd_solver() 
+ width_ridge: 9.9e-07, 
+ mmi_length:1e-06,
+ taper_width=1e-06,
+ ratio:0.85
+2025-12-03 23:33:43,486 - INFO - Obtained T_cross {'lambda': array([[1.55e-06]]), 'f': array([[1.93414489e+14]]), 'T': array([0.00028631]), 'Lumerical_dataset': {'parameters': [['lambda', 'f']], 'attributes': ['T']}} and T_bar={'lambda': array([[1.55e-06]]), 'f': array([[1.93414489e+14]]), 'T': array([0.00973491]), 'Lumerical_dataset': {'parameters': [['lambda', 'f']], 'attributes': ['T']}}, E_lateral: 7
+2025-12-03 23:33:43,660 - INFO - Starting fdtd_solver() 
+ width_ridge: 1.0099999999999999e-06, 
+ mmi_length:1e-06,
+ taper_width=1e-06,
+ ratio:0.85
+2025-12-03 23:34:21,803 - INFO - Obtained T_cross {'lambda': array([[1.55e-06]]), 'f': array([[1.93414489e+14]]), 'T': array([0.00028128]), 'Lumerical_dataset': {'parameters': [['lambda', 'f']], 'attributes': ['T']}} and T_bar={'lambda': array([[1.55e-06]]), 'f': array([[1.93414489e+14]]), 'T': array([0.01017195]), 'Lumerical_dataset': {'parameters': [['lambda', 'f']], 'attributes': ['T']}}, E_lateral: 7
+2025-12-03 23:36:03,864 - INFO - Starting fdtd_solver() 
+ width_ridge: 1e-06, 
+ mmi_length:1e-06,
+ taper_width=1e-06,
+ ratio:0.85
+2025-12-03 23:36:32,032 - INFO - Obtained T_cross {'lambda': array([[1.55e-06]]), 'f': array([[1.93414489e+14]]), 'T': array([0.0026271]), 'Lumerical_dataset': {'parameters': [['lambda', 'f']], 'attributes': ['T']}} and T_bar={'lambda': array([[1.55e-06]]), 'f': array([[1.93414489e+14]]), 'T': array([0.00355391]), 'Lumerical_dataset': {'parameters': [['lambda', 'f']], 'attributes': ['T']}}, E_lateral: 7
+2025-12-03 23:36:32,223 - INFO - Starting fdtd_solver() 
+ width_ridge: 1e-06, 
+ mmi_length:1e-06,
+ taper_width=1e-06,
+ ratio:0.85
+2025-12-03 23:37:00,237 - INFO - Obtained T_cross {'lambda': array([[1.55e-06]]), 'f': array([[1.93414489e+14]]), 'T': array([0.00262212]), 'Lumerical_dataset': {'parameters': [['lambda', 'f']], 'attributes': ['T']}} and T_bar={'lambda': array([[1.55e-06]]), 'f': array([[1.93414489e+14]]), 'T': array([0.00355522]), 'Lumerical_dataset': {'parameters': [['lambda', 'f']], 'attributes': ['T']}}, E_lateral: 7
+2025-12-03 23:39:13,644 - INFO - Starting fdtd_solver() 
+ width_ridge: 1.1e-05, 
+ mmi_length:0.000158,
+ taper_width=2.5e-06,
+ ratio:0.85
+2025-12-03 23:39:26,613 - ERROR - Error occured: "Can not find result 'T' in the result provider 'FDTD::ports::cross_port'" Obtained T_cross 0 and T_bar=0 and E_lateral=0

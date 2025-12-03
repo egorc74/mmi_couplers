@@ -28,7 +28,9 @@ wg_length=15e-6
 wg_width=1.6e-6
 thick_Clad=2.0e-6
 thick_Si3N4=0.3e-6
-thick_BOX=1.5e-6
+# thick_BOX=1.5e-6
+thick_BOX=3e-6
+
 thick_Slab=0
 thick_Substrate=2.0e-6
 material_Clad="SiO2 (Glass) - Palik"

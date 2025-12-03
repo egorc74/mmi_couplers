@@ -24,24 +24,27 @@ def Length_sweep(sim):
     Lengths=np.linspace(mmi_length-5e-6,mmi_length+5e-6,11)
     T_cross_values=[]
     T_bar_values=[]
+    E_lateral_values=[]
     log.info(f"Starting Length Sweep \n Length_span: {Lengths}, \n width_ridge: {width_ridge}, \n mmi_length:{mmi_length},\n taper_width={taper_width}")
 
     for mmi_length in Lengths:
         if os.path.isfile(f"{filename}.fsp"):
-            T_cross,T_bar=fdtd_solver(sim=lumapi.FDTD(filename),filename=filename,width_ridge=width_ridge,
+            T_cross,T_bar,E_lateral=fdtd_solver(sim=lumapi.FDTD(filename),filename=filename,width_ridge=width_ridge,
              mmi_length=mmi_length,taper_width=taper_width,taper_width_in=taper_width_in,mesh_accuracy=mesh_accuracy,delta_y=delta_y,sweep_name=sweep_name)
-            log.info(f"T_cross: {T_cross}, T_bar: {T_bar}")
+            log.info(f"T_cross: {T_cross}, T_bar: {T_bar}, E_lateral:{E_lateral}")
 
 
             
         else:
-            T_cross,T_bar=fdtd_solver(sim=lumapi.FDTD(),filename=filename,width_ridge=width_ridge,
+            T_cross,T_bar,E_lateral=fdtd_solver(sim=lumapi.FDTD(),filename=filename,width_ridge=width_ridge,
              mmi_length=mmi_length,taper_width=taper_width,taper_width_in=taper_width_in,mesh_accuracy=mesh_accuracy,delta_y=delta_y,sweep_name=sweep_name)
-            log.info(f"T_cross: {T_cross}, T_bar: {T_bar}")
+            log.info(f"T_cross: {T_cross}, T_bar: {T_bar}, E_lateral:{E_lateral}")
+
 
         T_cross_values.append(T_cross)
         T_bar_values.append(T_bar)
-    np.savez('data/Length_sweep.npz', Lengths=Lengths,T_cross_values=T_cross_values, T_bar_values=T_bar_values)
+        E_lateral_values.append(E_lateral)
+    np.savez('data/Length_sweep.npz', Lengths=Lengths,T_cross_values=T_cross_values, T_bar_values=T_bar_values,E_lateral_values=E_lateral_values)
 
 
 
@@ -65,6 +68,7 @@ def Width_sweep(sim):
     
     T_cross_values=[]
     T_bar_values=[]
+    E_lateral_values=[]
     log.info(f"Starting Width sweep\n Width_span: {Widths}, \n width_ridge: {width_ridge}, \n mmi_length:{mmi_length},\n taper_width={taper_width}")
 
 
@@ -72,19 +76,21 @@ def Width_sweep(sim):
         ###move tapers so that the gap is kept as 1.1um
         delta_y=(width_ridge/2-1.1e-6-taper_width)/2
         if os.path.isfile(f"{filename}.fsp"):
-            T_cross,T_bar=fdtd_solver(sim=lumapi.FDTD(filename),filename=filename,width_ridge=width_ridge,
+            T_cross,T_bar,E_lateral=fdtd_solver(sim=lumapi.FDTD(filename),filename=filename,width_ridge=width_ridge,
              mmi_length=mmi_length,taper_width=taper_width,taper_width_in=taper_width_in,mesh_accuracy=mesh_accuracy,delta_y=delta_y,sweep_name=sweep_name)
-            log.info(f"T_cross: {T_cross}, T_bar: {T_bar}")
+            log.info(f"T_cross: {T_cross}, T_bar: {T_bar}, E_lateral:{E_lateral}")
 
             
         else:
-            T_cross,T_bar=fdtd_solver(sim=lumapi.FDTD(),filename=filename,width_ridge=width_ridge,
+            T_cross,T_bar,E_lateral=fdtd_solver(sim=lumapi.FDTD(),filename=filename,width_ridge=width_ridge,
              mmi_length=mmi_length,taper_width=taper_width,taper_width_in=taper_width_in,mesh_accuracy=mesh_accuracy,delta_y=delta_y,sweep_name=sweep_name)
-            log.info(f"T_cross: {T_cross}, T_bar: {T_bar}")
+            log.info(f"T_cross: {T_cross}, T_bar: {T_bar}, E_lateral:{E_lateral}")
 
         T_cross_values.append(T_cross)
         T_bar_values.append(T_bar)
-    np.savez('data/Width_sweep.npz', Widths=Widths,T_cross_values=T_cross_values, T_bar_values=T_bar_values)
+        E_lateral_values.append(E_lateral)
+    np.savez('data/Width_sweep.npz', Widths=Widths,T_cross_values=T_cross_values, T_bar_values=T_bar_values,E_lateral_values=E_lateral_values)
+
 
 
 
@@ -107,6 +113,7 @@ def Taper_width_sweep(sim):
     Taper_widths=np.linspace(taper_width-0.5e-6,taper_width+0.5e-6,11)
     T_cross_values=[]
     T_bar_values=[]
+    E_lateral_values=[]
     log.info(f"Starting Width sweep\n Width_span: {Taper_widths}, \n width_ridge: {width_ridge}, \n mmi_length:{mmi_length},\n taper_width={taper_width}")
 
 
@@ -115,19 +122,20 @@ def Taper_width_sweep(sim):
         taper_width=taper
         taper_width_in=taper
         if os.path.isfile(f"{filename}.fsp"):
-            T_cross,T_bar=fdtd_solver(sim=lumapi.FDTD(filename),filename=filename,width_ridge=width_ridge,
+            T_cross,T_bar,E_lateral=fdtd_solver(sim=lumapi.FDTD(filename),filename=filename,width_ridge=width_ridge,
              mmi_length=mmi_length,taper_width=taper_width,taper_width_in=taper_width_in,mesh_accuracy=mesh_accuracy,delta_y=delta_y,sweep_name=sweep_name)
-            log.info(f"T_cross: {T_cross}, T_bar: {T_bar}")
+            log.info(f"T_cross: {T_cross}, T_bar: {T_bar}, E_lateral:{E_lateral}")
 
             
         else:
-            T_cross,T_bar=fdtd_solver(sim=lumapi.FDTD(),filename=filename,width_ridge=width_ridge,
+            T_cross,T_bar,E_lateral=fdtd_solver(sim=lumapi.FDTD(),filename=filename,width_ridge=width_ridge,
              mmi_length=mmi_length,taper_width=taper_width,taper_width_in=taper_width_in,mesh_accuracy=mesh_accuracy,delta_y=delta_y,sweep_name=sweep_name)
-            log.info(f"T_cross: {T_cross}, T_bar: {T_bar}")
+            log.info(f"T_cross: {T_cross}, T_bar: {T_bar}, E_lateral:{E_lateral}")
 
         T_cross_values.append(T_cross)
         T_bar_values.append(T_bar)
-    np.savez('data/Taper_width_sweep.npz', Taper_widths=Taper_widths,T_cross_values=T_cross_values, T_bar_values=T_bar_values)
+        E_lateral_values.append(E_lateral)
+    np.savez('data/Taper_width_sweep.npz', Taper_widths=Taper_widths,T_cross_values=T_cross_values, T_bar_values=T_bar_values, E_lateral_values=E_lateral_values)
 
 
 

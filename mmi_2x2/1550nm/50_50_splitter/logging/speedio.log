@@ -192,3 +192,108 @@
  mmi_length:0.000158,
  taper_width=2.5e-06,
  ratio:0.5
+2025-12-03 22:48:54,567 - INFO - Starting Y_sweep 
+ Y_span: [0.e+00 1.e-05], 
+ width_ridge: 1e-06, 
+ mmi_length:1e-06,
+ taper_width=1e-06,
+ ratio:0.5
+2025-12-03 22:49:44,577 - INFO - Starting Y_sweep 
+ Y_span: [0.e+00 1.e-05], 
+ width_ridge: 1e-06, 
+ mmi_length:1e-06,
+ taper_width=1e-06,
+ ratio:0.5
+2025-12-03 22:50:28,446 - INFO - T_cross: {'lambda': array([[1.55e-06]]), 'f': array([[1.93414489e+14]]), 'T': array([0.00303273]), 'Lumerical_dataset': {'parameters': [['lambda', 'f']], 'attributes': ['T']}}, T_bar: {'lambda': array([[1.55e-06]]), 'f': array([[1.93414489e+14]]), 'T': array([0.00342122]), 'Lumerical_dataset': {'parameters': [['lambda', 'f']], 'attributes': ['T']}}, E_lateral= 7
+2025-12-03 22:51:10,794 - INFO - T_cross: {'lambda': array([[1.55e-06]]), 'f': array([[1.93414489e+14]]), 'T': array([8.67627594e-05]), 'Lumerical_dataset': {'parameters': [['lambda', 'f']], 'attributes': ['T']}}, T_bar: {'lambda': array([[1.55e-06]]), 'f': array([[1.93414489e+14]]), 'T': array([0.00011193]), 'Lumerical_dataset': {'parameters': [['lambda', 'f']], 'attributes': ['T']}}, E_lateral= 7
+2025-12-03 22:55:37,936 - INFO - Starting Y_sweep 
+ Y_span: [0.e+00 1.e-06 2.e-06 3.e-06 4.e-06 5.e-06 6.e-06 7.e-06 8.e-06 9.e-06
+ 1.e-05], 
+ width_ridge: 1.1e-05, 
+ mmi_length:0.000158,
+ taper_width=2.5e-06,
+ ratio:0.5
+2025-12-03 22:57:34,824 - INFO - Starting Length Sweep 
+ Length_span: [9.0e-07 1.1e-06], 
+ width_ridge: 1e-06, 
+ mmi_length:1e-06,
+ taper_width=1e-06,
+ ratio:0.5
+2025-12-03 22:58:23,646 - INFO - Starting Length Sweep 
+ Length_span: [9.0e-07 1.1e-06], 
+ width_ridge: 1e-06, 
+ mmi_length:1e-06,
+ taper_width=1e-06,
+ ratio:0.5
+2025-12-03 22:59:04,285 - INFO - T_cross: {'lambda': array([[1.55e-06]]), 'f': array([[1.93414489e+14]]), 'T': array([0.00169721]), 'Lumerical_dataset': {'parameters': [['lambda', 'f']], 'attributes': ['T']}}, T_bar: {'lambda': array([[1.55e-06]]), 'f': array([[1.93414489e+14]]), 'T': array([0.00156329]), 'Lumerical_dataset': {'parameters': [['lambda', 'f']], 'attributes': ['T']}}, E_lateral= 7
+2025-12-03 22:59:42,705 - INFO - T_cross: {'lambda': array([[1.55e-06]]), 'f': array([[1.93414489e+14]]), 'T': array([0.0020078]), 'Lumerical_dataset': {'parameters': [['lambda', 'f']], 'attributes': ['T']}}, T_bar: {'lambda': array([[1.55e-06]]), 'f': array([[1.93414489e+14]]), 'T': array([0.00145791]), 'Lumerical_dataset': {'parameters': [['lambda', 'f']], 'attributes': ['T']}}, E_lateral= 7
+2025-12-03 23:00:44,737 - INFO - Starting Length Sweep 
+ Length_span: [9.0e-07 1.1e-06], 
+ width_ridge: 1e-06, 
+ mmi_length:1e-06,
+ taper_width=1e-06,
+ ratio:0.5
+2025-12-03 23:01:21,301 - INFO - T_cross: {'lambda': array([[1.55e-06]]), 'f': array([[1.93414489e+14]]), 'T': array([0.00169721]), 'Lumerical_dataset': {'parameters': [['lambda', 'f']], 'attributes': ['T']}}, T_bar: {'lambda': array([[1.55e-06]]), 'f': array([[1.93414489e+14]]), 'T': array([0.0015633]), 'Lumerical_dataset': {'parameters': [['lambda', 'f']], 'attributes': ['T']}}, E_lateral= 7
+2025-12-03 23:02:02,078 - INFO - T_cross: {'lambda': array([[1.55e-06]]), 'f': array([[1.93414489e+14]]), 'T': array([0.0020078]), 'Lumerical_dataset': {'parameters': [['lambda', 'f']], 'attributes': ['T']}}, T_bar: {'lambda': array([[1.55e-06]]), 'f': array([[1.93414489e+14]]), 'T': array([0.00145791]), 'Lumerical_dataset': {'parameters': [['lambda', 'f']], 'attributes': ['T']}}, E_lateral= 7
+2025-12-03 23:03:43,608 - INFO - Starting Length Sweep 
+ Length_span: [0.000148 0.000149 0.00015  0.000151 0.000152 0.000153 0.000154 0.000155
+ 0.000156 0.000157 0.000158 0.000159 0.00016  0.000161 0.000162 0.000163
+ 0.000164 0.000165 0.000166 0.000167 0.000168], 
+ width_ridge: 1.1e-05, 
+ mmi_length:0.000158,
+ taper_width=2.5e-06,
+ ratio:0.5
+2025-12-03 23:04:27,567 - INFO - Starting Width sweep
+ Width_span: [9.90e-07 1.01e-06], 
+ width_ridge: 1e-06, 
+ mmi_length:1e-06,
+ taper_width=1e-06,
+ ratio:0.5
+2025-12-03 23:05:07,401 - INFO - T_cross: {'lambda': array([[1.55e-06]]), 'f': array([[1.93414489e+14]]), 'T': array([0.00016332]), 'Lumerical_dataset': {'parameters': [['lambda', 'f']], 'attributes': ['T']}}, T_bar: {'lambda': array([[1.55e-06]]), 'f': array([[1.93414489e+14]]), 'T': array([0.0038259]), 'Lumerical_dataset': {'parameters': [['lambda', 'f']], 'attributes': ['T']}}, E_lateral: 7
+2025-12-03 23:05:47,780 - INFO - T_cross: {'lambda': array([[1.55e-06]]), 'f': array([[1.93414489e+14]]), 'T': array([0.0001058]), 'Lumerical_dataset': {'parameters': [['lambda', 'f']], 'attributes': ['T']}}, T_bar: {'lambda': array([[1.55e-06]]), 'f': array([[1.93414489e+14]]), 'T': array([0.00318533]), 'Lumerical_dataset': {'parameters': [['lambda', 'f']], 'attributes': ['T']}}, E_lateral: 7
+2025-12-03 23:08:29,321 - INFO - Starting Twist angle sweep 
+ Twist_angles_span: [0.35201369 0.35211369 0.35221369 0.35231369 0.35241369 0.35251369
+ 0.35261369 0.35271369 0.35281369 0.35291369 0.35301369], 
+ width_ridge: 1e-06, 
+ mmi_length:1e-06,
+ taper_width=1e-06,
+ ratio:0.5
+2025-12-03 23:09:07,089 - INFO - Starting Twist angle sweep 
+ Twist_angles_span: [0.35201369 0.35211369 0.35221369 0.35231369 0.35241369 0.35251369
+ 0.35261369 0.35271369 0.35281369 0.35291369 0.35301369], 
+ width_ridge: 1e-06, 
+ mmi_length:1e-06,
+ taper_width=1e-06,
+ ratio:0.5
+2025-12-03 23:09:53,085 - INFO - Starting Twist angle sweep 
+ Twist_angles_span: [0.35201369 0.35211369 0.35221369 0.35231369 0.35241369 0.35251369
+ 0.35261369 0.35271369 0.35281369 0.35291369 0.35301369], 
+ width_ridge: 1e-06, 
+ mmi_length:1e-06,
+ taper_width=1e-06,
+ ratio:0.5
+2025-12-03 23:10:31,739 - INFO - Starting Twist angle sweep 
+ Twist_angles_span: [0.35201369 0.35211369 0.35221369 0.35231369 0.35241369 0.35251369
+ 0.35261369 0.35271369 0.35281369 0.35291369 0.35301369], 
+ width_ridge: 1e-06, 
+ mmi_length:1e-06,
+ taper_width=1e-06,
+ ratio:0.5
+2025-12-03 23:11:00,094 - INFO - T_cross: {'lambda': array([[1.55e-06]]), 'f': array([[1.93414489e+14]]), 'T': array([0.00185595]), 'Lumerical_dataset': {'parameters': [['lambda', 'f']], 'attributes': ['T']}}, T_bar: {'lambda': array([[1.55e-06]]), 'f': array([[1.93414489e+14]]), 'T': array([0.00203962]), 'Lumerical_dataset': {'parameters': [['lambda', 'f']], 'attributes': ['T']}}, E_lateral: 7
+2025-12-03 23:11:28,983 - INFO - T_cross: {'lambda': array([[1.55e-06]]), 'f': array([[1.93414489e+14]]), 'T': array([0.00185578]), 'Lumerical_dataset': {'parameters': [['lambda', 'f']], 'attributes': ['T']}}, T_bar: {'lambda': array([[1.55e-06]]), 'f': array([[1.93414489e+14]]), 'T': array([0.00203923]), 'Lumerical_dataset': {'parameters': [['lambda', 'f']], 'attributes': ['T']}}, E_lateral: 7
+2025-12-03 23:11:50,588 - INFO - T_cross: {'lambda': array([[1.55e-06]]), 'f': array([[1.93414489e+14]]), 'T': array([2.21382533e-07]), 'Lumerical_dataset': {'parameters': [['lambda', 'f']], 'attributes': ['T']}}, T_bar: {'lambda': array([[1.55e-06]]), 'f': array([[1.93414489e+14]]), 'T': array([2.06324168e-07]), 'Lumerical_dataset': {'parameters': [['lambda', 'f']], 'attributes': ['T']}}, E_lateral: 7
+2025-12-03 23:12:05,951 - INFO - Starting Twist angle sweep 
+ Twist_angles_span: [0.35201369 0.35301369], 
+ width_ridge: 1e-06, 
+ mmi_length:1e-06,
+ taper_width=1e-06,
+ ratio:0.5
+2025-12-03 23:12:34,015 - INFO - T_cross: {'lambda': array([[1.55e-06]]), 'f': array([[1.93414489e+14]]), 'T': array([0.00185595]), 'Lumerical_dataset': {'parameters': [['lambda', 'f']], 'attributes': ['T']}}, T_bar: {'lambda': array([[1.55e-06]]), 'f': array([[1.93414489e+14]]), 'T': array([0.00203962]), 'Lumerical_dataset': {'parameters': [['lambda', 'f']], 'attributes': ['T']}}, E_lateral: 7
+2025-12-03 23:13:00,924 - INFO - T_cross: {'lambda': array([[1.55e-06]]), 'f': array([[1.93414489e+14]]), 'T': array([0.00185343]), 'Lumerical_dataset': {'parameters': [['lambda', 'f']], 'attributes': ['T']}}, T_bar: {'lambda': array([[1.55e-06]]), 'f': array([[1.93414489e+14]]), 'T': array([0.00203474]), 'Lumerical_dataset': {'parameters': [['lambda', 'f']], 'attributes': ['T']}}, E_lateral: 7
+2025-12-03 23:14:47,217 - INFO - Starting Twist angle sweep 
+ Twist_angles_span: [0.03293115 0.03303115 0.03313115 0.03323115 0.03333115 0.03343115
+ 0.03353115 0.03363115 0.03373115 0.03383115 0.03393115], 
+ width_ridge: 1.1e-05, 
+ mmi_length:0.000158,
+ taper_width=2.5e-06,
+ ratio:0.5

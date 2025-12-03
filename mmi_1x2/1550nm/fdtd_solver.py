@@ -1,7 +1,7 @@
 from variables import *
 from geometry import geometry
 import plotly.graph_objects as go
-def fdtd_solver(sim,filename,width_ridge,mmi_length,taper_width,taper_width_in,mesh_accuracy,delta_y,sweep_name=None):
+def fdtd_solver(sim,filename,width_ridge,mmi_length,taper_width,taper_width_in,mesh_accuracy,delta_y=0,sweep_name=None):
 
     log = setup_logger("fdtd_solver", "logging/fdtd_solver.log")
 
@@ -12,12 +12,12 @@ def fdtd_solver(sim,filename,width_ridge,mmi_length,taper_width,taper_width_in,m
 
     ##### FDTD dimensions #######
     margin=10e-6
-    height_margin=0.5e-6
+    height_margin=1e-6
     Xmin=-(mmi_length+2*wg_length+margin)/2 
     Xmax=(mmi_length+2*wg_length+margin)/2
-    Zmin=-0.8e-6
+    Zmin=-1e-6
     Zmax=thick_Si3N4 + height_margin
-    width_margin=0.5e-6
+    width_margin=1e-6
 
     Y_span=2*width_margin + width_ridge 
     Ymin=-Y_span/2 
@@ -38,8 +38,8 @@ def fdtd_solver(sim,filename,width_ridge,mmi_length,taper_width,taper_width_in,m
     sim.set("x max",Xmax)
     sim.set("y",0)
     sim.set("y span",Y_span+2e-6)
-    sim.set("z min",-0.5e-6)
-    sim.set("z max",0.5e-6)
+    sim.set("z min",Zmin)
+    sim.set("z max",Zmax)
     sim.set("mesh accuracy", mesh_accuracy)
     sim.set("x min bc","PML")  
     sim.set("x max bc","PML")
@@ -102,8 +102,17 @@ def fdtd_solver(sim,filename,width_ridge,mmi_length,taper_width,taper_width_in,m
     sim.set("z max",Zmax) 
 
     sim.addmovie()
-    sim.set("monitor type",3)
+    sim.set("monitor type","2D Z-normal")
     sim.set("name",f"{filename}_{sweep_name}") 
+    sim.set("x span",200e-6)
+    sim.set("y span",20e-6)
+    sim.set("x",0)
+    sim.set("y",0)
+    sim.set("z",0)
+
+    sim.addpower()
+    sim.set("monitor type","2D Z-normal")
+    sim.set("name","lateral_monitor") 
     sim.set("x span",200e-6)
     sim.set("y span",20e-6)
     sim.set("x",0)
@@ -123,21 +132,27 @@ def fdtd_solver(sim,filename,width_ridge,mmi_length,taper_width,taper_width_in,m
     # #get results from both monitors
     m1_name="FDTD::ports::cross_port"
     m2_name="FDTD::ports::through_port"
+    m3_name="lateral_monitor"
     try:
         T_cross = sim.getresult(m1_name,"T")
         T_bar = sim.getresult(m2_name,"T")
-        log.info(f"Obtained T_cross {T_cross} and T_bar={T_bar}")
+        E_lateral = sim.getresult(m3_name,"E")
+        log.info(f"Obtained T_cross {T_cross} and T_bar={T_bar}, E_lateral={len(E_lateral)}")
 
     except Exception as e:
         T_cross=0
         T_bar=0
-        log.error(f"Error occured: {e} Obtained T_cross {T_cross} and T_bar={T_bar}")
+        E_lateral=0
+        log.error(f"Error occured: {e} Obtained T_cross {T_cross} and T_bar={T_bar} and E_lateral=0")
 
     # input("Press Enter to continue...")
 
+
     sim.save(f"{filename}.fsp")
 
-    return T_cross,T_bar
+    
+
+    return T_cross,T_bar,E_lateral
 
 
 
