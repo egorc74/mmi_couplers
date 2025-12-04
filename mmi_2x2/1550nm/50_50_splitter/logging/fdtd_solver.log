@@ -543,3 +543,15 @@
  taper_width=2.5e-06,
  ratio:0.5
 2025-12-03 23:15:01,506 - ERROR - Error occured: "Can not find result 'T' in the result provider 'FDTD::ports::cross_port'" Obtained T_cross 0 and T_bar=0 and E_lateral=0
+2025-12-04 10:25:16,942 - INFO - Starting fdtd_solver() 
+ width_ridge: 1.1e-05, 
+ mmi_length:0.000158,
+ taper_width=2.5e-06,
+ ratio:0.5
+2025-12-04 10:26:13,033 - ERROR - Error occured: "Can not find result 'T' in the result provider 'FDTD::ports::cross_port'" Obtained T_cross 0 and T_bar=0 and E_lateral=0
+2025-12-04 10:27:13,004 - INFO - Starting fdtd_solver() 
+ width_ridge: 1.1e-05, 
+ mmi_length:0.000158,
+ taper_width=2.5e-06,
+ ratio:0.5
+2025-12-04 10:27:42,815 - ERROR - Error occured: "Can not find result 'T' in the result provider 'FDTD::ports::cross_port'" Obtained T_cross 0 and T_bar=0 and E_lateral=0

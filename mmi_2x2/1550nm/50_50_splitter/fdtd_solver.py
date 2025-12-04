@@ -16,11 +16,11 @@ def fdtd_solver(sim,Radius,filename,y,width_ridge,mmi_length,wg_length,wg_width,
     Xmin=-(mmi_length+2*wg_length+margin)/2 
     Xmax=(mmi_length+2*wg_length+margin)/2
     Zmin=-1e-6
-    Zmax=thick_Si3N4 + height_margin
-    width_margin=1e-6
+    Zmax=height_margin
+    width_margin=5e-6
 
     rotation_margin=(mmi_length+wg_length)*np.sin(twist_angle)
-    Y_span=2*width_margin + width_ridge + rotation_margin 
+    Y_span=width_margin + width_ridge + rotation_margin 
     Ymin=-Y_span/2 
     Ymax=-Ymin
     
@@ -38,7 +38,7 @@ def fdtd_solver(sim,Radius,filename,y,width_ridge,mmi_length,wg_length,wg_width,
     sim.set("x min",Xmin)
     sim.set("x max",Xmax)
     sim.set("y",0)
-    sim.set("y span",Y_span+2e-6)
+    sim.set("y span",Y_span)
     sim.set("z min",Zmin)
     sim.set("z max",Zmax)
     sim.set("mesh accuracy", mesh_accuracy)
@@ -147,7 +147,7 @@ def fdtd_solver(sim,Radius,filename,y,width_ridge,mmi_length,wg_length,wg_width,
 
     # input("Press Enter to continue...")
 
-    # sim.save(f"{filename}.fsp")
+    sim.save(f"{filename}.fsp")
 
     return T_cross,T_bar,E_lateral
 

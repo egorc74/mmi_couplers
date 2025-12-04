@@ -1131,3 +1131,9 @@
  mmi_length:4.7e-05,
  taper_width=3.6e-06
 2025-12-03 21:45:35,675 - INFO - T_cross: 0, T_bar: 0, E_lateral:0
+2025-12-04 10:16:55,656 - INFO - Starting Width sweep
+ Width_span: [9.0e-06 9.1e-06 9.2e-06 9.3e-06 9.4e-06 9.5e-06 9.6e-06 9.7e-06 9.8e-06
+ 9.9e-06 1.0e-05], 
+ width_ridge: 9.5e-06, 
+ mmi_length:4.7e-05,
+ taper_width=3.6e-06

@@ -942,3 +942,9 @@
  mmi_length:4.7e-05,
  taper_width=3.6e-06,
  
+2025-12-04 10:16:59,202 - INFO - Starting fdtd_solver() 
+ width_ridge: 9e-06, 
+ mmi_length:4.7e-05,
+ taper_width=3.6e-06,
+ 
+2025-12-04 10:17:10,212 - ERROR - Error occured: "Can not find result 'T' in the result provider 'FDTD::ports::cross_port'" Obtained T_cross 0 and T_bar=0 and E_lateral=0

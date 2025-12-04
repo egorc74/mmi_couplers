@@ -9050,3 +9050,21 @@
  delta_y:0.0
 2025-12-03 23:14:47,242 - INFO - width_eff: 1.1e-05
 2025-12-03 23:14:47,242 - INFO - mmi_pi_length: 0.00020778692473118277
+2025-12-04 10:25:16,949 - INFO - Starting geometry() built 
+ width_ridge: 1.1e-05, 
+ mmi_length:0.000158,
+ taper_width=2.5e-06,
+ delta_y:0.0
+2025-12-04 10:25:17,021 - INFO - width_eff: 1.1e-05
+2025-12-04 10:25:17,021 - INFO - mmi_pi_length: 0.00020778692473118277
+2025-12-04 10:25:17,021 - INFO - phase must be achieved, to get ratio 0.5 : 1.5707963267948966
+2025-12-04 10:25:29,782 - INFO - Angle of twist is calculated: 0.03331467901407731
+2025-12-04 10:27:13,008 - INFO - Starting geometry() built 
+ width_ridge: 1.1e-05, 
+ mmi_length:0.000158,
+ taper_width=2.5e-06,
+ delta_y:0.0
+2025-12-04 10:27:13,089 - INFO - width_eff: 1.1e-05
+2025-12-04 10:27:13,089 - INFO - mmi_pi_length: 0.00020778692473118277
+2025-12-04 10:27:13,090 - INFO - phase must be achieved, to get ratio 0.5 : 1.5707963267948966
+2025-12-04 10:27:25,692 - INFO - Angle of twist is calculated: 0.033314679014077295

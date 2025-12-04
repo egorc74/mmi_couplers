@@ -16,10 +16,10 @@ def fdtd_solver(sim,filename,width_ridge,mmi_length,taper_width,taper_width_in,m
     Xmin=-(mmi_length+2*wg_length+margin)/2 
     Xmax=(mmi_length+2*wg_length+margin)/2
     Zmin=-1e-6
-    Zmax=thick_Si3N4 + height_margin
-    width_margin=1e-6
+    Zmax=height_margin
+    width_margin=5e-6
 
-    Y_span=2*width_margin + width_ridge 
+    Y_span=width_margin + width_ridge 
     Ymin=-Y_span/2 
     Ymax=-Ymin
     
@@ -37,7 +37,7 @@ def fdtd_solver(sim,filename,width_ridge,mmi_length,taper_width,taper_width_in,m
     sim.set("x min",Xmin)
     sim.set("x max",Xmax)
     sim.set("y",0)
-    sim.set("y span",Y_span+2e-6)
+    sim.set("y span",Y_span)
     sim.set("z min",Zmin)
     sim.set("z max",Zmax)
     sim.set("mesh accuracy", mesh_accuracy)
@@ -145,7 +145,7 @@ def fdtd_solver(sim,filename,width_ridge,mmi_length,taper_width,taper_width_in,m
         E_lateral=0
         log.error(f"Error occured: {e} Obtained T_cross {T_cross} and T_bar={T_bar} and E_lateral=0")
 
-    # input("Press Enter to continue...")
+    input("Press Enter to continue...")
 
 
     sim.save(f"{filename}.fsp")

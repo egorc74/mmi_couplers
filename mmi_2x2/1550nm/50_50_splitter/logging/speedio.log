@@ -297,3 +297,10 @@
  mmi_length:0.000158,
  taper_width=2.5e-06,
  ratio:0.5
+2025-12-04 10:27:12,999 - INFO - Starting Y_sweep 
+ Y_span: [0.e+00 1.e-06 2.e-06 3.e-06 4.e-06 5.e-06 6.e-06 7.e-06 8.e-06 9.e-06
+ 1.e-05], 
+ width_ridge: 1.1e-05, 
+ mmi_length:0.000158,
+ taper_width=2.5e-06,
+ ratio:0.5
