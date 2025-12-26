@@ -194,11 +194,3 @@ if __name__=="__main__":
     else:
         fdtd_solver(sim=lumapi.FDTD(),filename=filename,wg_width=wg_width,width_ridge=width_ridge,
              mmi_length=mmi_length,taper_width=taper_width,taper_width_in=taper_width_in,mesh_accuracy=mesh_accuracy)
-
-
-
-
-
-
-
-
