@@ -1,0 +1,5 @@
+#setmaterial(addmaterial("(n,k) Material"), "name", "air");  
+
+# set the material properties
+setmaterial("air", {"Refractive Index": 1, "Imaginary Refractive Index": 0});
+setmaterial("air", "color",[0; 0; 0; 0] );
