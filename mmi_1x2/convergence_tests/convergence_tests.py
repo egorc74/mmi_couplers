@@ -383,7 +383,7 @@ if __name__=="__main__":
         "z_span": z_span,
         "y_span": None,
         "mesh_accuracy": 3,
-        "port_size":3e-6,
+        "port_size":None,
         "TM_mode":None, 
 
     }
@@ -398,11 +398,12 @@ if __name__=="__main__":
     y_span=np.linspace(min_y_span,max_y_span,10)
 
     args = {
-        "z_span": 5e-6,
+        "z_span": None,
         "y_span": y_span,
-        "mesh_accuracy": 1,
-        "port_size":0.5e-6,
+        "mesh_accuracy": 3,
+        "port_size": None,
         "TM_mode":None,
+
 
     }
 
@@ -446,7 +447,7 @@ if __name__=="__main__":
         "z_span": z_span,
         "y_span": None,
         "mesh_accuracy": 3,
-        "port_size":3e-6,
+        "port_size":None,
         "TM_mode":True, 
 
     }
@@ -463,10 +464,10 @@ if __name__=="__main__":
     y_span=np.linspace(min_y_span,max_y_span,10)
 
     args = {
-        "z_span": 5e-6,
+        "z_span": None,
         "y_span": y_span,
-        "mesh_accuracy": 1,
-        "port_size":0.5e-6,
+        "mesh_accuracy": 3,
+        "port_size": None,
         "TM_mode":True,
 
     }
