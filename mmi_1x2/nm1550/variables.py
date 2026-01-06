@@ -23,7 +23,7 @@ def setup_logger(name, log_file, level=logging.INFO):
     return logger
 
 wavelength=1.55e-6
-wg_length=40e-6 
+wg_length=20e-6 
 
 
 wg_width=1.6e-6
@@ -56,3 +56,15 @@ opt_wg_length=20e-6
 opt_width_ridge=9.5e-6
 opt_mmi_length=47e-6
 opt_taper_width=3.6e-6 
+opt_wg_width=1.6e-6 
+
+minimal_output_distance=1.1e-6
+
+##Monitor Data
+frequency_points=5
+wavelength_span=0.1e-6
+
+
+
+#file names
+filename_fdtd="../nm1550/mmi_1x2_fdtd"

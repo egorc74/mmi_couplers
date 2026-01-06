@@ -3,7 +3,7 @@ sys.path.append("..")
 from nm1550.variables import *
 from nm1550.geometry import geometry
 import plotly.graph_objects as go
-def fdtd_solver(sim,filename,width_ridge,mmi_length,taper_width,taper_width_in,mesh_accuracy,delta_y=0,sweep_name=None,FDTD_z_span=None,FDTD_y_span=None,Port_size=None,TM_MODE=None):
+def fdtd_solver(sim,filename,width_ridge,mmi_length,taper_width,taper_width_in,mesh_accuracy,delta_y=0,sweep_name=None,FDTD_z_span=None,FDTD_y_span=None,Port_size=None):
 
     log = setup_logger("fdtd_solver", "logging/fdtd_solver.log")
 
@@ -30,11 +30,26 @@ def fdtd_solver(sim,filename,width_ridge,mmi_length,taper_width,taper_width_in,m
     distance_wg=width_eff/4  ##effective distance
 
 
+    sim.addrect()
+    sim.set("name","Clad") 
+    sim.set("material",material_Clad)
+    sim.set("y",0)         
+    sim.set("y span",Y_span+5e-6)
+    sim.set("z min",-thick_Si3N4/2)     
+    sim.set("z max", thick_Clad)
+    sim.set("x min",-200e-6)  
+    sim.set("x max",200e-6)
+    sim.set("alpha",0.05)
+    sim.set("override mesh order from material database",1)
+    sim.set("mesh order",4)
+
+
 
 
     
     ##Add fdtd
     sim.addfdtd()
+    fdtd_margin=2e-6
     sim.set("x min",Xmin)
     sim.set("x max",Xmax)
     sim.set("y",0)
@@ -57,9 +72,8 @@ def fdtd_solver(sim,filename,width_ridge,mmi_length,taper_width,taper_width_in,m
     sim.set("x max bc","PML")
     sim.set("y min bc","PML") 
     sim.set("y max bc","PML")
-    sim.set("z min bc","PML") 
+    sim.set("z min bc","Symmetric") 
     sim.set("z max bc","PML")
-    sim.set("simulation time",(Xmax-Xmin)*2*2/3e8)
 
 
 
@@ -71,35 +85,27 @@ def fdtd_solver(sim,filename,width_ridge,mmi_length,taper_width,taper_width_in,m
     sim.setglobalsource("wavelength stop",wavelength+0.05e-6)
     
     sim.setglobalmonitor("use source limits",1)
-    sim.setglobalmonitor("frequency points",50)
+    sim.setglobalmonitor("frequency points",frequency_points)
 
-
-
-    
 
     #Input port
     sim.addport()
     sim.set("name","source_port")
     sim.set("injection axis","x-axis")
     sim.set("direction","forward")
-    if TM_MODE!=None:
-        sim.set("mode selection","fundamental TM mode")
-    else:
-        sim.set("mode selection","fundamental TE mode")
+    sim.set("mode selection","fundamental TE mode")
 
     sim.set("y",0) 
     wg_spacing=width_ridge/3
     if(Port_size):
+        print(Port_size)
         sim.set("y span",Port_size)
     else:
         sim.set("y span",wg_spacing)
     sim.set("x",Xmin+2e-6) 
-    if FDTD_z_span:
-        sim.set("z",0)
-        sim.set("z span",FDTD_z_span)
-    else:
-        sim.set("z min",Zmin)
-        sim.set("z max",Zmax)
+    sim.set("z min",Zmin) 
+    sim.set("z max",Zmax)
+
 
     ##Through port
 
@@ -107,11 +113,6 @@ def fdtd_solver(sim,filename,width_ridge,mmi_length,taper_width,taper_width_in,m
     sim.set("name","through_port")
     sim.set("injection axis","x-axis")
     sim.set("direction","backward")
-    if TM_MODE!=None:
-        sim.set("mode selection","fundamental TM mode")
-    else:
-        sim.set("mode selection","fundamental TE mode")
-
     
             
     sim.set("y span",wg_spacing)
@@ -121,13 +122,8 @@ def fdtd_solver(sim,filename,width_ridge,mmi_length,taper_width,taper_width_in,m
     else:
         sim.set("y span",wg_spacing)
     sim.set("x",Xmax-2e-6) 
-
-    if FDTD_z_span:
-        sim.set("z",0)
-        sim.set("z span",FDTD_z_span)
-    else:
-        sim.set("z min",Zmin)
-        sim.set("z max",Zmax)
+    sim.set("z min",Zmin) 
+    sim.set("z max",Zmax)
 
     ##Cross port 
     sim.addport()
@@ -140,19 +136,8 @@ def fdtd_solver(sim,filename,width_ridge,mmi_length,taper_width,taper_width_in,m
         sim.set("y span",wg_spacing)
     sim.set("y",distance_wg-delta_y) 
     sim.set("x",Xmax-2e-6)
-
-    if FDTD_z_span:
-        sim.set("z",0)
-        sim.set("z span",FDTD_z_span)
-    else:
-        sim.set("z min",Zmin)
-        sim.set("z max",Zmax)
-    if TM_MODE!=None:
-        sim.set("mode selection","fundamental TM mode")
-    else:
-        sim.set("mode selection","fundamental TE mode")
-
-    
+    sim.set("z min",Zmin) 
+    sim.set("z max",Zmax) 
 
     sim.addmovie()
     sim.set("monitor type","2D Z-normal")
@@ -163,8 +148,8 @@ def fdtd_solver(sim,filename,width_ridge,mmi_length,taper_width,taper_width_in,m
     sim.set("y",0)
     sim.set("z",0)
 
-    sim.addpower()
-    # sim.adddftmonitor()
+    # sim.addpower()
+    sim.adddftmonitor()
     sim.set("monitor type","2D Z-normal")
     sim.set("name","lateral_monitor") 
     sim.set("x span",200e-6)
@@ -180,8 +165,8 @@ def fdtd_solver(sim,filename,width_ridge,mmi_length,taper_width,taper_width_in,m
     sim.save(f"{filename}.fsp")
     
     #run fdtd
-    
-    sim.run()
+
+    # sim.run()
 
     # #get results from both monitors
     m1_name="FDTD::ports::cross_port"
@@ -194,15 +179,17 @@ def fdtd_solver(sim,filename,width_ridge,mmi_length,taper_width,taper_width_in,m
         log.info(f"Obtained T_cross {T_cross} and T_bar={T_bar}, E_lateral={len(E_lateral)}")
 
     except Exception as e:
-        T_cross=0
-        T_bar=0
-        E_lateral=0
+        T_cross=[1,2123,3]
+        T_bar=[1,2123,3]
+        E_lateral=[1,2123,3]
         log.error(f"Error occured: {e} Obtained T_cross {T_cross} and T_bar={T_bar} and E_lateral=0")
 
 
 
     sim.save(f"{filename}.fsp")
-    # input("fdtd_solver iterration finished press enter ")
+
+    
+    # input("enter")
     return T_cross,T_bar,E_lateral
 
 
@@ -214,6 +201,7 @@ if __name__=="__main__":
     import os
 
     filename="mmi_1x2_fdtd"
+    wg_length=15e-6
     wg_width=1.6e-6
     width_ridge=11e-6
     mmi_length=61e-6

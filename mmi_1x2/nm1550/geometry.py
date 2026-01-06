@@ -1,3 +1,5 @@
+import sys
+sys.path.append("..")
 from nm1550.variables import *
 def geometry(sim, filename,width_ridge,mmi_length,taper_width,taper_width_in, delta_y):
     log = setup_logger("geometry", "logging/geometry.log")
@@ -156,7 +158,7 @@ def geometry(sim, filename,width_ridge,mmi_length,taper_width,taper_width_in, de
     sim.set("material",material_BOX)
     sim.set("y",0)         
     sim.set("y span",Y_span+5e-6)
-    sim.set("z min",-thick_BOX)     
+    sim.set("z min",-thick_BOX-thick_Si3N4)     
     sim.set("z max", 0-thick_Si3N4/2)
     sim.set("x min",Xmin_waffer-4e-6)  
     sim.set("x max",Xmax_waffer+4e-6)
@@ -168,8 +170,8 @@ def geometry(sim, filename,width_ridge,mmi_length,taper_width,taper_width_in, de
     sim.set("material",material_Si)
     sim.set("y",0)         
     sim.set("y span",Y_span+5e-6)
-    sim.set("z min",-thick_BOX-thick_Substrate)     
-    sim.set("z max", -thick_BOX)
+    sim.set("z min",-thick_BOX-thick_Si3N4-thick_Substrate)     
+    sim.set("z max", -thick_BOX-thick_Si3N4)
     sim.set("x min",Xmin_waffer-4e-6)  
     sim.set("x max",Xmax_waffer+4e-6)
     sim.set("alpha",0.1)
