@@ -51,6 +51,7 @@ def mode_solver(sim,filename,width_ridge=1.6e-6,FDE_z_span=None,FDE_y_span=None,
 
 if __name__=="__main__":
     filename="waveguide_width"
-    widths=np.linspace(1.6e-6,2.5e-6,10)
-    for w in widths:
-        mode_solver(sim=lumapi.MODE(filename),filename=filename,width_ridge=w)
+    mode_solver(sim=lumapi.MODE(filename),filename=filename,width_ridge=0.9e-6)
+    # widths=np.linspace(1.6e-6,2.5e-6,10)
+    # for w in widths:
+    #     mode_solver(sim=lumapi.MODE(filename),filename=filename,width_ridge=w)

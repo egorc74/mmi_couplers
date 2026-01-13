@@ -57,8 +57,8 @@ def evaluate(datafile,theoretical_value=None):
 
     plt.show()
 if __name__=="__main__":
-    datafile="data/FDE_y_span"
+    # datafile="data/FDE_y_span"
     datafile="data/FDE_z_span"
-    datafile="data/Mesh_accuracy_z"
+    # datafile="data/Mesh_accuracy_z"
 
     evaluate(datafile=datafile)

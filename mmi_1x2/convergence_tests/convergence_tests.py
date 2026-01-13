@@ -373,15 +373,20 @@ if __name__=="__main__":
 
 
 
+    ## Define optimal fixed spans (distance of 1 wl from the structure / e-8 field intensity at PML )
+
+    opt_z_span=thick_Si3N4+2*wavelength #(one wavelength far from the structure)
+    opt_y_span=opt_width_ridge+5e-6     #(field intensity is ~e-8)
+    
 
     ############ TE MODE ################
     #  1) distance to PML (in z direction)     
 
-    z_span=np.linspace(1.8e-6,2.5e-6,10)
+    z_span=np.linspace(1.8e-6,3e-6,10)
 
     args = {
         "z_span": z_span,
-        "y_span": None,
+        "y_span": opt_y_span,
         "mesh_accuracy": 3,
         "port_size":None,
         "TM_mode":None, 
@@ -398,7 +403,7 @@ if __name__=="__main__":
     y_span=np.linspace(min_y_span,max_y_span,10)
 
     args = {
-        "z_span": None,
+        "z_span": opt_z_span,
         "y_span": y_span,
         "mesh_accuracy": 3,
         "port_size": None,
@@ -413,8 +418,8 @@ if __name__=="__main__":
     #   3) Mesh Accuracy from 1 to 6
 
     args = {
-        "z_span": None,
-        "y_span": None,
+        "z_span": opt_z_span,
+        "y_span": opt_y_span,
         "mesh_accuracy": None,  #default from 1 to 6 (change span inside the function)
         "port_size":None,
         "TM_mode":None
@@ -425,8 +430,8 @@ if __name__=="__main__":
 
     # #   4) Port size
     args = {
-        "z_span": None,
-        "y_span": None,
+        "z_span": opt_z_span,
+        "y_span": opt_y_span,
         "mesh_accuracy": 3, 
         "port_size":None,    #default from wg_width+0.5e-6 to half the distance between output ports(change span inside the function)
         "TM_mode":None,
@@ -441,11 +446,11 @@ if __name__=="__main__":
 
     #  1) distance to PML (in z direction)     
 
-    z_span=np.linspace(1.8e-6,2.5e-6,10)+0.5e-6
+    z_span=np.linspace(1.8e-6,3e-6,10)+0.5e-6
 
     args = {
         "z_span": z_span,
-        "y_span": None,
+        "y_span": opt_y_span,
         "mesh_accuracy": 3,
         "port_size":None,
         "TM_mode":True, 
@@ -464,7 +469,7 @@ if __name__=="__main__":
     y_span=np.linspace(min_y_span,max_y_span,10)
 
     args = {
-        "z_span": None,
+        "z_span": opt_z_span,
         "y_span": y_span,
         "mesh_accuracy": 3,
         "port_size": None,
@@ -478,8 +483,8 @@ if __name__=="__main__":
     #   3) Mesh Accuracy from 1 to 6
 
     args = {
-        "z_span": None,
-        "y_span": None,
+        "z_span": opt_z_span,
+        "y_span": opt_y_span,
         "mesh_accuracy": None,  #default from 1 to 6 (change span inside the function)
         "port_size":None,
         "TM_mode":True,
@@ -490,8 +495,8 @@ if __name__=="__main__":
 
     # #   4) Port size
     args = {
-        "z_span": None,
-        "y_span": None,
+        "z_span": opt_z_span,
+        "y_span": opt_y_span,
         "mesh_accuracy": 3, 
         "port_size":None,    #default from wg_width+0.5e-6 to half the distance between output ports(change span inside the function)
         "TM_mode":True,
