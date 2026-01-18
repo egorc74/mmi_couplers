@@ -25,10 +25,12 @@ def setup_logger(name, log_file, level=logging.INFO):
 wavelength=1.55e-6
 wg_length=15e-6 
 
-wg_width=1.6e-6
+wg_width=1.2e-6
 thick_Clad=2.0e-6
 thick_Si3N4=0.3e-6
+# thick_BOX=1.5e-6
 thick_BOX=3e-6
+
 thick_Slab=0
 thick_Substrate=2.0e-6
 material_Clad="SiO2 (Glass) - Palik"
@@ -45,8 +47,8 @@ with_mesh=0
 N_in=2
 N_out=2
 
-width_margin = 2.0e-6
-height_margin = 1.0e-6
+width_margin = 4.0e-6
+height_margin = 0.8e-6
 
 
 

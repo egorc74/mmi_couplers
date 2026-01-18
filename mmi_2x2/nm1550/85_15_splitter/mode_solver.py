@@ -71,7 +71,6 @@ def mode_solver(sim,filename,width_ridge):
     sim.cleardcard()
     n=sim.findmodes()
     Neff = np.real(sim.getdata('FDE::data::mode1','neff')[0]) 
-    print(f"Effective index of first TE launching mode{Neff}")
     sim.save(filename)
     return Neff
 

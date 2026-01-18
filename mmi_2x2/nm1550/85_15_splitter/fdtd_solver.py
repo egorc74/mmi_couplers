@@ -68,7 +68,7 @@ def fdtd_solver(sim,Radius,filename,y,width_ridge,mmi_length,wg_length,wg_width,
     sim.set("direction","forward")
     sim.set("mode selection","fundamental TE mode")
 
-    sim.set("y",(Xmin+3e-6)*np.sin(twist_angle)+distance_wg-delta_y) 
+    sim.set("y",(Xmin+3e-6)*np.sin(twist_angle)+distance_wg+delta_y) 
     wg_spacing=width_ridge/3
     sim.set("y span",wg_spacing)
     sim.set("x",Xmin+2e-6) 
@@ -85,7 +85,7 @@ def fdtd_solver(sim,Radius,filename,y,width_ridge,mmi_length,wg_length,wg_width,
     sim.set("direction","backward")
             
     sim.set("y span",wg_spacing)
-    sim.set("y",(Xmin+3e-6)*np.sin(twist_angle)+distance_wg-delta_y) 
+    sim.set("y",(Xmin+3e-6)*np.sin(twist_angle)+distance_wg+delta_y) 
     sim.set("y span",wg_spacing)
     sim.set("x",Xmax-2e-6) 
     sim.set("z min",Zmin) 
@@ -97,7 +97,7 @@ def fdtd_solver(sim,Radius,filename,y,width_ridge,mmi_length,wg_length,wg_width,
     sim.set("injection axis","x-axis")
     sim.set("direction","backward")
     sim.set("y span",wg_spacing)
-    sim.set("y",(Xmin+3e-6)*np.sin(twist_angle)-distance_wg+delta_y) 
+    sim.set("y",(Xmin+3e-6)*np.sin(twist_angle)-distance_wg-delta_y) 
     sim.set("x",Xmax-2e-6)
     sim.set("z min",Zmin) 
     sim.set("z max",Zmax) 
@@ -114,6 +114,8 @@ def fdtd_solver(sim,Radius,filename,y,width_ridge,mmi_length,wg_length,wg_width,
 
 
     sim.addpower()
+    # sim.adddftmonitor()
+
     sim.set("monitor type","2D Z-normal") 
     sim.set("name","lateral_monitor") 
     sim.set("x span",200e-6)
@@ -147,8 +149,13 @@ def fdtd_solver(sim,Radius,filename,y,width_ridge,mmi_length,wg_length,wg_width,
         log.info(f"Obtained T_cross {T_cross} and T_bar={T_bar}, E_lateral: {len(E_lateral)}")
 
     except Exception as e:
+        # T_cross=np.random.rand(3, 4) 
+        # T_bar=np.random.rand(3, 4) 
+        # E_lateral=np.random.rand(3, 4)
         T_cross=0
-        T_bar=0
+        T_bar=0 
+        E_lateral=0
+
         log.error(f"Error occured: {e} Obtained T_cross {T_cross} and T_bar={T_bar} and E_lateral=0")
 
     # input("Press Enter to continue...")
