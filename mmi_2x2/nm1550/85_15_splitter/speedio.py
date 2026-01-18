@@ -406,8 +406,8 @@ def Width_sweep(sim,span,args=None,RUN_AGAIN=False):
 if __name__ =="__main__":
     filename="speedio_test"
 
+    ######################
     #1) Y_sweep
-
     SIMULATION_NAME="y_sweep"
     Y_span=np.linspace(0,10,11)*1e-6
     args = {
@@ -421,7 +421,7 @@ if __name__ =="__main__":
         OPT_Y=5e-6  #default value
 
 
-   
+    ###################
     #2) Length_sweep
     SIMULATION_NAME="length_sweep"
     opt_mmi_length=79*2e-6
@@ -440,7 +440,7 @@ if __name__ =="__main__":
 
 
 
-
+    ######################
     #3) Twist_angle_span
    
     SIMULATION_NAME="twist_angle_sweep"
@@ -458,6 +458,7 @@ if __name__ =="__main__":
 
 
 
+    ######################
     #4) Width_sweep
     SIMULATION_NAME="width_sweep"
 
