@@ -59,6 +59,7 @@ def fdtd_solver(sim,filename,width_ridge,mmi_length,taper_width,taper_width_in,m
     sim.set("y max bc","PML")
     sim.set("z min bc","PML") 
     sim.set("z max bc","PML")
+    
     sim.set("simulation time",(Xmax-Xmin)*2*2/3e8)
 
 

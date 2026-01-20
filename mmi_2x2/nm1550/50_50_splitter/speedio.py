@@ -195,8 +195,8 @@ def Twist_angle_sweep(sim):
 
 
 
-    Twist_angles=np.linspace(twist_angle-0.0005,twist_angle+0.0005,11)
-    
+    # Twist_angles=np.linspace(twist_angle-0.0005,twist_angle+0.0005,11)
+    Twist_angles=[twist_angle]    
 
     T_cross_values=[]
     T_bar_values=[]
@@ -228,12 +228,12 @@ if __name__ =="__main__":
         # Y_sweep(sim=lumapi.FDTD(filename))
         # Length_sweep(sim=lumapi.FDTD(filename))
         # Width_sweep(sim=lumapi.FDTD(filename))
-        # Twist_angle_sweep(sim=lumapi.FDTD())
+        Twist_angle_sweep(sim=lumapi.FDTD())
 
         pass
     else:
         # Y_sweep(sim=lumapi.FDTD())
         # Length_sweep(sim=lumapi.FDTD())
         # Width_sweep(sim=lumapi.FDTD())
-        # Twist_angle_sweep(sim=lumapi.FDTD())
+        Twist_angle_sweep(sim=lumapi.FDTD())
         pass

@@ -48,6 +48,7 @@ def fdtd_solver(sim,Radius,filename,y,width_ridge,mmi_length,wg_length,wg_width,
     sim.set("y max bc","PML")
     sim.set("z min bc","PML") 
     sim.set("z max bc","PML")
+    sim.set("simulation time",2e-12)
 
 
 
