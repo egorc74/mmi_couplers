@@ -195,8 +195,8 @@ def Twist_angle_sweep(sim):
 
 
 
-    # Twist_angles=np.linspace(twist_angle-0.0005,twist_angle+0.0005,11)
-    Twist_angles=[twist_angle]    
+    Twist_angles=np.linspace(twist_angle-0.0005,twist_angle+0.0005,11)
+    # Twist_angles=[twist_angle]    
 
     T_cross_values=[]
     T_bar_values=[]

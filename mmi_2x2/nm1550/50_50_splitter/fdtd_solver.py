@@ -113,8 +113,8 @@ def fdtd_solver(sim,Radius,filename,y,width_ridge,mmi_length,wg_length,wg_width,
     sim.set("y",0)
     sim.set("z",0)
 
-    # sim.addpower()
-    sim.adddftmonitor()
+    sim.addpower()
+    # sim.adddftmonitor()
     sim.set("monitor type","2D Z-normal") 
     sim.set("name","lateral_monitor") 
     sim.set("x span",200e-6)
@@ -132,7 +132,7 @@ def fdtd_solver(sim,Radius,filename,y,width_ridge,mmi_length,wg_length,wg_width,
     
     # run fdtd
 
-    # sim.run()
+    sim.run()
 
     # #get results from both monitors
     m1_name="FDTD::ports::cross_port"
@@ -149,7 +149,7 @@ def fdtd_solver(sim,Radius,filename,y,width_ridge,mmi_length,wg_length,wg_width,
         T_bar=0
         log.error(f"Error occured: {e} Obtained T_cross {T_cross} and T_bar={T_bar} and E_lateral=0")
 
-    input("Press Enter to continue...")
+    # input("Press Enter to continue...")
 
     sim.save(f"{filename}.fsp")
 
