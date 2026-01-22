@@ -28,9 +28,7 @@ wg_length=15e-6
 wg_width=1.2e-6
 thick_Clad=2.0e-6
 thick_Si3N4=0.3e-6
-# thick_BOX=1.5e-6
 thick_BOX=3e-6
-
 thick_Slab=0
 thick_Substrate=2.0e-6
 material_Clad="SiO2 (Glass) - Palik"
@@ -47,9 +45,32 @@ with_mesh=0
 N_in=2
 N_out=2
 
-width_margin = 4.0e-6
-height_margin = 0.8e-6
+width_margin = 2.0e-6
+height_margin = 1.0e-6
 
 
 
+
+opt_width_ridge=11e-6
+mmi_ratio=50/100
+d_phase=2*np.arccos(np.sqrt(mmi_ratio)) #phase calculation
+S=opt_width_ridge/3
+N_eff=1.580     #Neff of 1st order(average), if W=W_taper
+k_0=2*np.pi/wavelength*N_eff
+opt_twist_angle=np.arctan(d_phase/(2*S*k_0))    #use n_eff
+
+
+# ph=np.tan(opt_twist_angle-0.0010)
+# phase=ph*(2*S*k_0)
+# ratio=np.cos(phase/2)**2
+# print(ratio)
+
+# ph=np.tan(opt_twist_angle+0.0010)
+# phase=ph*(2*S*k_0)
+# ratio=np.cos(phase/2)**2
+# print(ratio)
+
+
+
+filename_fdtd="mmi_2x2_fdtd"
 

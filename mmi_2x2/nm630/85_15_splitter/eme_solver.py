@@ -9,8 +9,7 @@ def eme_solver_prep(sim, filename,width_ridge,mmi_length,taper_width,taper_width
 
 
         geometry(sim=sim,filename=filename,width_ridge=width_ridge,
-                mmi_length=mmi_length,taper_width=taper_width,taper_width_in=taper_width_in,
-                    delta_y=delta_y)
+                mmi_length=mmi_length,taper_width=taper_width,taper_width_in=taper_width_in)
 
 
         ##### Additional variables #######
@@ -250,10 +249,10 @@ def find_optimal_length(sim,plot=None):
 
 if __name__=="__main__":
     filename="mmi_simulations_2x2"
-    width_ridge=11e-6
-    mmi_length=306/2e-6
-    taper_width=2.5e-6
-    taper_width_in=2.5e-6
+    width_ridge=9e-6
+    mmi_length=100/2e-6
+    taper_width=1.9e-6
+    taper_width_in=1.9e-6
     delta_y=0e-6
     import os
     if os.path.isfile(f"{filename}.lms"):

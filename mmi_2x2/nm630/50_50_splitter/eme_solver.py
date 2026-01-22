@@ -255,10 +255,10 @@ if __name__=="__main__":
     # taper_width=8e-6
     # taper_width_in=8e-6
     # delta_y=0e-6
-    width_ridge=11e-6
-    mmi_length=478e-6
-    taper_width=2.5e-6
-    taper_width_in=2.5e-6
+    width_ridge=6.3e-6
+    mmi_length=200e-6
+    taper_width=1e-6
+    taper_width_in=1e-6
     delta_y=0e-6
     sim=lumapi.MODE(filename)
     eme_solver_prep(sim=sim,filename=filename,width_ridge=width_ridge,

@@ -444,7 +444,7 @@ if __name__ =="__main__":
     #3) Twist_angle_span
    
     SIMULATION_NAME="twist_angle_sweep"
-    Twist_angles=np.linspace(opt_twist_angle-0.0005,opt_twist_angle+0.0005,11)
+    Twist_angles=np.linspace(opt_twist_angle-0.0015,opt_twist_angle+0.0015,11)
     args = {
         "y":OPT_Y,
         "mmi_length": OPT_LENGTH,

@@ -1,8 +1,7 @@
 from variables import *
 from mode_solver import mode_solver
-def geometry(sim, filename,y,width_ridge,Radius,mmi_length,wg_length,wg_width,taper_width,taper_width_in,ratio,cut_angle,twist_angle=None):
+def geometry(sim, filename,y,width_ridge,Radius,mmi_length,wg_length,wg_width,taper_width,taper_width_in,ratio,cut_angle,delta_y,twist_angle=None):
     #Loger setup
-    delta_y=0
     log = setup_logger("geometry", "logging/geometry.log")
     log.info(f"Starting geometry() built \n width_ridge: {width_ridge}, \n mmi_length:{mmi_length},\n taper_width={taper_width},\n delta_y:{delta_y}")
     #Clean

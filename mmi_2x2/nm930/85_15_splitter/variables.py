@@ -24,10 +24,11 @@ def setup_logger(name, log_file, level=logging.INFO):
 
 wavelength=0.93e-6
 wg_length=40e-6 
+
 wg_width=0.8e-6
 thick_Clad=2.0e-6
 thick_Si3N4=0.3e-6
-thick_BOX=1.5e-6
+thick_BOX=3e-6
 thick_Slab=0
 thick_Substrate=2.0e-6
 material_Clad="SiO2 (Glass) - Palik"
@@ -35,7 +36,7 @@ material_BOX="SiO2 (Glass) - Palik"
 material_Si="Si (Silicon) - Palik"
 material_Si3N4="Si3N4 (Silicon Nitride) - Phillip"
 
-n_core=2.0168
+n_core=1.9963
 n_clad=1.444
 cladding=0
 
@@ -50,3 +51,28 @@ height_margin = 1.0e-6
 
 
 
+opt_width_ridge=11e-6
+mmi_ratio=85/100
+d_phase=2*np.arccos(np.sqrt(mmi_ratio)) #phase calculation
+S=opt_width_ridge/3
+N_eff=1.760307     #Neff of 1st order(average), if W=W_taper
+# N_eff=1.769167     #Neff of 1st order(average), if W=MMI_width
+
+k_0=2*np.pi/wavelength*N_eff
+opt_twist_angle=np.arctan(d_phase/(2*S*k_0))    #use n_eff
+
+# ph=np.tan(opt_twist_angle-0.001)
+# phase=ph*(2*S*k_0)
+# ratio=np.cos(phase/2)**2
+# print(ratio)
+
+# ph=np.tan(opt_twist_angle+0.001)
+# phase=ph*(2*S*k_0)
+# ratio=np.cos(phase/2)**2
+# print(ratio)
+
+
+
+
+
+filename_fdtd="mmi_2x2_fdtd"
