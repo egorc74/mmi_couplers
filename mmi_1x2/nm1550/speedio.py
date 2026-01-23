@@ -4,7 +4,6 @@ from fdtd_solver import *
 log = setup_logger("speedio", "logging/speedio.log")
 
 
-
 def Length_sweep(sim):
     sweep_name="length_sweep"
     filename="speedio_test"

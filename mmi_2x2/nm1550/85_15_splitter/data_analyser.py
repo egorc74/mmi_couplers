@@ -4,7 +4,6 @@ from variables import *
 
 log = setup_logger("speedio", "logging/speedio.log")
 
-
 def data_analysis(dataset,measurement):
     #Load data
     try:

@@ -5,6 +5,12 @@ import sys
 import glob
 import os
 
+# Get the directory where this script is located
+SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
+# Create necessary directories relative to script location
+os.makedirs(os.path.join(SCRIPT_DIR, "chunks"), exist_ok=True)
+os.makedirs(os.path.join(SCRIPT_DIR, "data"), exist_ok=True)
+os.makedirs(os.path.join(SCRIPT_DIR, "logging"), exist_ok=True)
 
 log = setup_logger("speedio", "logging/speedio.log")
 
@@ -13,9 +19,13 @@ log = setup_logger("speedio", "logging/speedio.log")
 
 #Recover data from chunks
 def Recover_data(sim_name,span):
-    files = sorted(glob.glob(f"chunks/{sim_name}*.npz"))
-    log.info(f"recovering data with span length: {len(span)}")
+    log.info(f"Recovering data for {sim_name}")
+
+    chunks_dir = os.path.join(SCRIPT_DIR, "chunks")
+    data_dir = os.path.join(SCRIPT_DIR, "data")
+    files = sorted(glob.glob(os.path.join(chunks_dir, f"{sim_name}*.npz")))
     if files:  # make sure the list is not empty
+        log.info(f"Recovering data: Files found")
         last_file = files[-1]
         Zero_counter=0
         with np.load(last_file) as data:
@@ -23,19 +33,24 @@ def Recover_data(sim_name,span):
                 T_bar_values=data["T_bar_values"]
                 E_lateral_values=data["E_lateral_values"]
                 Span=data["Span"]
+                log.info(f"Recovering data: Values are found {len(T_cross_values)}")
+
                 #count results that were ommitted    
                 Zero_counter = len(span) -len(T_cross_values)
                 #save to a npz file
-                np.savez(f'data/{sim_name}.npz',Span=Span,T_cross_values=T_cross_values, T_bar_values=T_bar_values,E_lateral_values=E_lateral_values)
-                
-                #delete previous chunks
+                log.info(f"Recovering data: Saving files")
+                np.savez(os.path.join(data_dir, f'{sim_name}.npz'),Span=Span,T_cross_values=T_cross_values, T_bar_values=T_bar_values,E_lateral_values=E_lateral_values)
+                log.info(f"Recovering data: Files saved")
 
-        number_of_deleted=Delete_chunks(sim_name=sim_name)        
+        log.info(f"Recovering data: Delete previous Chunks")
+        number_of_deleted=Delete_chunks(sim_name=sim_name)   
+        log.info(f"Recovering data: Chunks were deleted")
+
         log.info(f"Missing Results: {Zero_counter} and  Deleted Chunks: {number_of_deleted} in summ they must be {len(span)}") 
 
     else:
         last_file = None
-        log.info("No files found in the recovery")
+        log.info("Recovering data:No files found in the recovery")
         Zero_counter=0
         #As there is n
     #Count every zero in Result values
@@ -44,7 +59,8 @@ def Recover_data(sim_name,span):
 
 #Delete Recovered chunks
 def Delete_chunks(sim_name):
-    files = sorted(glob.glob(f"chunks/{sim_name}*.npz"))
+    chunks_dir = os.path.join(SCRIPT_DIR, "chunks")
+    files = sorted(glob.glob(os.path.join(chunks_dir, f"{sim_name}*.npz")))
     for f in files:
         os.remove(f)
     return len(files)
@@ -69,7 +85,7 @@ def Y_sweep(sim,span,args=None,RUN_AGAIN=False):
 
 
     SIMULATION_NAME="y_sweep"
-    filename="speedio_fdtd_mmi"
+    filename = os.path.join(SCRIPT_DIR, "speedio_fdtd_mmi")
     wg_length=20e-6
     wg_width=1.2e-6
     width_ridge=11e-6
@@ -92,13 +108,18 @@ def Y_sweep(sim,span,args=None,RUN_AGAIN=False):
 
     log.info(f"Starting Y_sweep \n span: {span}, \n width_ridge: {width_ridge}, \n mmi_length:{mmi_length},\n taper_width={taper_width},\n ratio:{ratio}")
     
+    data_dir = os.path.join(SCRIPT_DIR, "data")
+    chunks_dir = os.path.join(SCRIPT_DIR, "chunks")
     starting_point=0
 
     if RUN_AGAIN:
+        log.info(f"RUN AGAIN option is activated, first start recoverering data")
+
         #if run again is used -> recover data and find last itteration, where to start.
         Recover_data(SIMULATION_NAME,span=span)
-        if os.path.exists(f"data/{SIMULATION_NAME}.npz"):
-            check_data=np.load(f'data/{SIMULATION_NAME}.npz', allow_pickle=True)
+        data_file = os.path.join(data_dir, f"{SIMULATION_NAME}.npz")
+        if os.path.exists(data_file):
+            check_data=np.load(data_file, allow_pickle=True)
             #load Results
             T_cross_values=list(check_data['T_cross_values'])
             T_bar_values=list(check_data['T_bar_values'])
@@ -123,10 +144,14 @@ def Y_sweep(sim,span,args=None,RUN_AGAIN=False):
             T_cross_values.append(T_cross)
             T_bar_values.append(T_bar)
             E_lateral_values.append(E_lateral)
-            np.savez(f'chunks/{SIMULATION_NAME}_{ii+starting_point}_itteration.npz',Span=span,T_cross_values=T_cross_values, T_bar_values=T_bar_values,E_lateral_values=E_lateral_values)
-       
+            log.info(f"save chunks to {os.path.join(chunks_dir, f'{SIMULATION_NAME}_{ii+starting_point}_itteration.npz')}")
+
+            np.savez(os.path.join(chunks_dir, f'{SIMULATION_NAME}_{ii+starting_point}_itteration.npz'),Span=span,T_cross_values=T_cross_values, T_bar_values=T_bar_values,E_lateral_values=E_lateral_values)
+            log.info(f"Files were saved")
         else:
-            np.savez(f'data/{SIMULATION_NAME}.npz',Span=span,T_cross_values=T_cross_values, T_bar_values=T_bar_values,E_lateral_values=E_lateral_values)
+            log.info(f"save whole dataset to {os.path.join(data_dir, f'{SIMULATION_NAME}.npz')}")
+
+            np.savez(os.path.join(data_dir, f'{SIMULATION_NAME}.npz'),Span=span,T_cross_values=T_cross_values, T_bar_values=T_bar_values,E_lateral_values=E_lateral_values)
             Delete_chunks(SIMULATION_NAME)      
                    
                                    
@@ -154,7 +179,7 @@ def Length_sweep(sim,span,args=None,RUN_AGAIN=False):
         twist_angle = defaults["twist_angle"]
 
     SIMULATION_NAME="length_sweep"
-    filename="speedio_fdtd_mmi"
+    filename = os.path.join(SCRIPT_DIR, "speedio_fdtd_mmi")
     wg_length=20e-6
     wg_width=1.2e-6
     width_ridge=11e-6
@@ -175,13 +200,18 @@ def Length_sweep(sim,span,args=None,RUN_AGAIN=False):
 
     log.info(f"Starting {SIMULATION_NAME} \n span: {span}, \n width_ridge: {width_ridge}, \n mmi_length:{mmi_length},\n taper_width={taper_width},\n y:{y},\n ratio:{ratio}")
     
+    data_dir = os.path.join(SCRIPT_DIR, "data")
+    chunks_dir = os.path.join(SCRIPT_DIR, "chunks")
     starting_point=0
 
     if RUN_AGAIN:
+        log.info(f"RUN AGAIN option is activated, first start recoverering data")
+
         #if run again is used -> recover data and find last itteration, where to start.
         Recover_data(SIMULATION_NAME,span=span)
-        if os.path.exists(f"data/{SIMULATION_NAME}.npz"):
-            check_data=np.load(f'data/{SIMULATION_NAME}.npz', allow_pickle=True)
+        data_file = os.path.join(data_dir, f"{SIMULATION_NAME}.npz")
+        if os.path.exists(data_file):
+            check_data=np.load(data_file, allow_pickle=True)
             #load Results
             T_cross_values=list(check_data['T_cross_values'])
             T_bar_values=list(check_data['T_bar_values'])
@@ -206,10 +236,14 @@ def Length_sweep(sim,span,args=None,RUN_AGAIN=False):
             T_cross_values.append(T_cross)
             T_bar_values.append(T_bar)
             E_lateral_values.append(E_lateral)
-            np.savez(f'chunks/{SIMULATION_NAME}_{ii+starting_point}_itteration.npz',Span=span,T_cross_values=T_cross_values, T_bar_values=T_bar_values,E_lateral_values=E_lateral_values)
-       
+            log.info(f"save chunks to {os.path.join(chunks_dir, f'{SIMULATION_NAME}_{ii+starting_point}_itteration.npz')}")
+
+            np.savez(os.path.join(chunks_dir, f'{SIMULATION_NAME}_{ii+starting_point}_itteration.npz'),Span=span,T_cross_values=T_cross_values, T_bar_values=T_bar_values,E_lateral_values=E_lateral_values)
+            log.info(f"Files were saved")
+
         else:
-            np.savez(f'data/{SIMULATION_NAME}.npz',Span=span,T_cross_values=T_cross_values, T_bar_values=T_bar_values,E_lateral_values=E_lateral_values)
+            log.info(f"save whole dataset to {os.path.join(data_dir, f'{SIMULATION_NAME}.npz')}")
+            np.savez(os.path.join(data_dir, f'{SIMULATION_NAME}.npz'),Span=span,T_cross_values=T_cross_values, T_bar_values=T_bar_values,E_lateral_values=E_lateral_values)
             Delete_chunks(SIMULATION_NAME)      
                    
                                    
@@ -239,7 +273,7 @@ def Twist_angle_sweep(sim,span,args=None,RUN_AGAIN=False):
 
 
     SIMULATION_NAME="twist_angle_sweep"
-    filename="speedio_fdtd_mmi"
+    filename = os.path.join(SCRIPT_DIR, "speedio_fdtd_mmi")
     wg_length=20e-6
     wg_width=1.2e-6
     width_ridge=11e-6
@@ -260,13 +294,16 @@ def Twist_angle_sweep(sim,span,args=None,RUN_AGAIN=False):
 
     log.info(f"Starting {SIMULATION_NAME} \n span: {span}, \n width_ridge: {width_ridge}, \n mmi_length:{mmi_length},\n taper_width={taper_width},\n y:{y},\n ratio:{ratio}")
     
+    data_dir = os.path.join(SCRIPT_DIR, "data")
+    chunks_dir = os.path.join(SCRIPT_DIR, "chunks")
     starting_point=0
 
     if RUN_AGAIN:
         #if run again is used -> recover data and find last itteration, where to start.
         Recover_data(SIMULATION_NAME,span=span)
-        if os.path.exists(f"data/{SIMULATION_NAME}.npz"):
-            check_data=np.load(f'data/{SIMULATION_NAME}.npz', allow_pickle=True)
+        data_file = os.path.join(data_dir, f"{SIMULATION_NAME}.npz")
+        if os.path.exists(data_file):
+            check_data=np.load(data_file, allow_pickle=True)
             #load Results
             T_cross_values=list(check_data['T_cross_values'])
             T_bar_values=list(check_data['T_bar_values'])
@@ -291,10 +328,15 @@ def Twist_angle_sweep(sim,span,args=None,RUN_AGAIN=False):
             T_cross_values.append(T_cross)
             T_bar_values.append(T_bar)
             E_lateral_values.append(E_lateral)
-            np.savez(f'chunks/{SIMULATION_NAME}_{ii+starting_point}_itteration.npz',Span=span,T_cross_values=T_cross_values, T_bar_values=T_bar_values,E_lateral_values=E_lateral_values)
-       
+            log.info(f"save chunks to {os.path.join(chunks_dir, f'{SIMULATION_NAME}_{ii+starting_point}_itteration.npz')}")
+
+            np.savez(os.path.join(chunks_dir, f'{SIMULATION_NAME}_{ii+starting_point}_itteration.npz'),Span=span,T_cross_values=T_cross_values, T_bar_values=T_bar_values,E_lateral_values=E_lateral_values)
+            log.info(f"Files were saved")
+
         else:
-            np.savez(f'data/{SIMULATION_NAME}.npz',Span=span,T_cross_values=T_cross_values, T_bar_values=T_bar_values,E_lateral_values=E_lateral_values)
+            log.info(f"save whole dataset to {os.path.join(data_dir, f'{SIMULATION_NAME}.npz')}")
+
+            np.savez(os.path.join(data_dir, f'{SIMULATION_NAME}.npz'),Span=span,T_cross_values=T_cross_values, T_bar_values=T_bar_values,E_lateral_values=E_lateral_values)
             Delete_chunks(SIMULATION_NAME)      
                    
                                    
@@ -321,7 +363,7 @@ def Width_sweep(sim,span,args=None,RUN_AGAIN=False):
         twist_angle = defaults["twist_angle"]
 
     SIMULATION_NAME="width_sweep"
-    filename="speedio_fdtd_mmi"
+    filename = os.path.join(SCRIPT_DIR, "speedio_fdtd_mmi")
     wg_length=20e-6
     wg_width=1.2e-6
     width_ridge=11e-6
@@ -345,13 +387,16 @@ def Width_sweep(sim,span,args=None,RUN_AGAIN=False):
 
     log.info(f"Starting {SIMULATION_NAME} \n span: {span}, \n width_ridge: {width_ridge}, \n mmi_length:{mmi_length},\n taper_width={taper_width},\n y:{y},\n twist angle:{twist_angle},\n ratio:{ratio}")
     
+    data_dir = os.path.join(SCRIPT_DIR, "data")
+    chunks_dir = os.path.join(SCRIPT_DIR, "chunks")
     starting_point=0
 
     if RUN_AGAIN:
         #if run again is used -> recover data and find last itteration, where to start.
         Recover_data(SIMULATION_NAME,span=span)
-        if os.path.exists(f"data/{SIMULATION_NAME}.npz"):
-            check_data=np.load(f'data/{SIMULATION_NAME}.npz', allow_pickle=True)
+        data_file = os.path.join(data_dir, f"{SIMULATION_NAME}.npz")
+        if os.path.exists(data_file):
+            check_data=np.load(data_file, allow_pickle=True)
             #load Results
             T_cross_values=list(check_data['T_cross_values'])
             T_bar_values=list(check_data['T_bar_values'])
@@ -379,10 +424,13 @@ def Width_sweep(sim,span,args=None,RUN_AGAIN=False):
             T_cross_values.append(T_cross)
             T_bar_values.append(T_bar)
             E_lateral_values.append(E_lateral)
-            np.savez(f'chunks/{SIMULATION_NAME}_{ii+starting_point}_itteration.npz',Span=span,T_cross_values=T_cross_values, T_bar_values=T_bar_values,E_lateral_values=E_lateral_values)
-       
+            log.info(f"save chunks to {os.path.join(chunks_dir, f'{SIMULATION_NAME}_{ii+starting_point}_itteration.npz')}")
+            np.savez(os.path.join(chunks_dir, f'{SIMULATION_NAME}_{ii+starting_point}_itteration.npz'),Span=span,T_cross_values=T_cross_values, T_bar_values=T_bar_values,E_lateral_values=E_lateral_values)
+            log.info(f"Files were saved")
+
         else:
-            np.savez(f'data/{SIMULATION_NAME}.npz',Span=span,T_cross_values=T_cross_values, T_bar_values=T_bar_values,E_lateral_values=E_lateral_values)
+            log.info(f"save whole dataset to {os.path.join(data_dir, f'{SIMULATION_NAME}.npz')}")
+            np.savez(os.path.join(data_dir, f'{SIMULATION_NAME}.npz'),Span=span,T_cross_values=T_cross_values, T_bar_values=T_bar_values,E_lateral_values=E_lateral_values)
             Delete_chunks(SIMULATION_NAME)      
                    
                                    
@@ -397,14 +445,8 @@ def Width_sweep(sim,span,args=None,RUN_AGAIN=False):
 
 
 
-
-
-
-
-
-
 if __name__ =="__main__":
-    filename="speedio_test"
+
 
     ######################
     #1) Y_sweep
@@ -416,7 +458,7 @@ if __name__ =="__main__":
         "twist_angle": None,
     }
     Y_sweep(sim=lumapi.FDTD(),span=Y_span,args=args,RUN_AGAIN=False)
-    OPT_Y=data_analysis(dataset=f"data/{SIMULATION_NAME}",measurement="max_transmission")  #extract optimal value
+    OPT_Y=data_analysis(dataset=os.path.join(SCRIPT_DIR, "data", SIMULATION_NAME),measurement="max_transmission")  #extract optimal value
     if OPT_Y==None:
         OPT_Y=5e-6  #default value
 
@@ -434,14 +476,14 @@ if __name__ =="__main__":
     }
 
     Length_sweep(sim=lumapi.FDTD(),span=Lengths,args=args,RUN_AGAIN=False)
-    OPT_LENGTH=data_analysis(dataset=f"data/{SIMULATION_NAME}",measurement="max_transmission") #extract optimal value
+    OPT_LENGTH=data_analysis(dataset=os.path.join(SCRIPT_DIR, "data", SIMULATION_NAME),measurement="max_transmission") #extract optimal value
     if OPT_LENGTH==None:
         OPT_LENGTH=79*2e-6  #default value
 
 
 
     ######################
-    #3) Twist_angle_span (0.47 -> 0.52 ratios)
+    #3) Twist_angle_span
    
     SIMULATION_NAME="twist_angle_sweep"
     Twist_angles=np.linspace(opt_twist_angle-0.0010,opt_twist_angle+0.0010,11)
@@ -452,7 +494,7 @@ if __name__ =="__main__":
     }
 
     Twist_angle_sweep(sim=lumapi.FDTD(),span=Twist_angles,args=args,RUN_AGAIN=False)
-    OPT_ANGLE=data_analysis(dataset=f"data/{SIMULATION_NAME}",measurement="optimal_angle")
+    OPT_ANGLE=data_analysis(dataset=os.path.join(SCRIPT_DIR, "data", SIMULATION_NAME),measurement="optimal_angle")
     if OPT_ANGLE==None:
         OPT_ANGLE=None     #default value
 
@@ -471,7 +513,7 @@ if __name__ =="__main__":
     opt_width_ridge=11e-6
     Widths=np.linspace(opt_width_ridge-0.5e-6,opt_width_ridge+0.5e-6,11)
     Width_sweep(sim=lumapi.FDTD(),span=Widths,args=args,RUN_AGAIN=False)
-    OPT_WIDTH=data_analysis(dataset=f"data/{SIMULATION_NAME}",measurement="optimal_angle") #closest value to a defined ratio
+    OPT_WIDTH=data_analysis(dataset=os.path.join(SCRIPT_DIR, "data", SIMULATION_NAME),measurement="optimal_angle") #closest value to a defined ratio
 
 
     log.info(f"Sweeps have been completed, optimal values: \n OPT_Y: {OPT_Y} \n OPT_LENGTH: {OPT_LENGTH} \n OPT_ANGLE: {OPT_ANGLE} \n OPT_WIDTH: {OPT_WIDTH} ")

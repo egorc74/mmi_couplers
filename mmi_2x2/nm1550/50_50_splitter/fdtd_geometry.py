@@ -1,5 +1,8 @@
 from variables import *
 from mode_solver import mode_solver
+import os
+SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
+
 def geometry(sim, filename,y,width_ridge,Radius,mmi_length,wg_length,wg_width,taper_width,taper_width_in,ratio,cut_angle,delta_y,twist_angle=None):
     #Loger setup
     log = setup_logger("geometry", "logging/geometry.log")
@@ -28,8 +31,7 @@ def geometry(sim, filename,y,width_ridge,Radius,mmi_length,wg_length,wg_width,ta
         S=width_ridge/3
 
         # Calculate neff of launching mode
-        filename_mode="mode_effective_index"
-        import os
+        filename_mode = os.path.join(SCRIPT_DIR, "mode_effective_index")
         if os.path.isfile(f"{filename_mode}.lms"):
             MODE_SIMULATION=lumapi.MODE(filename=filename_mode)
         else:
@@ -493,7 +495,7 @@ if __name__=="__main__":
     y=10e-6
     
 
-    import os
+    
     if os.path.isfile(f"{filename}.fsp"):
         geometry(sim=lumapi.FDTD(filename),filename=filename,wg_length=wg_length,wg_width=wg_width,width_ridge=width_ridge,
              mmi_length=mmi_length,taper_width=taper_width,taper_width_in=taper_width_in,ratio=ratio,y=y)

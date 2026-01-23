@@ -3,15 +3,22 @@ import sys
 import glob
 import os
 
-sys.path.append("..")
-# from nm1550.fdtd_solver import fdtd_solver
+SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
+sys.path.insert(0, os.path.dirname(SCRIPT_DIR))
+
 from nm1550.variables import *
 from nm1550.fdtd_solver_convergence import fdtd_solver
 from evaluate import evaluate
+os.makedirs(os.path.join(SCRIPT_DIR, "chunks"), exist_ok=True)
+os.makedirs(os.path.join(SCRIPT_DIR, "data"), exist_ok=True)
+os.makedirs(os.path.join(SCRIPT_DIR, "logging"), exist_ok=True)
+
 
 
 def Recover_data(sim_name,span):
-    files = sorted(glob.glob(f"chunks/{sim_name}*.npz"))
+    chunks_dir = os.path.join(SCRIPT_DIR, "chunks")
+    data_dir = os.path.join(SCRIPT_DIR, "data")
+    files = sorted(glob.glob(os.path.join(chunks_dir, f"{sim_name}*.npz")))
     print(f"recovering data with span length: {len(span)}")
     if files:  # make sure the list is not empty
         last_file = files[-1]
@@ -23,7 +30,9 @@ def Recover_data(sim_name,span):
                 #count results that were ommitted    
                 Zero_counter = len(span) -len(T_cross_values)
                 #save to a npz file
-                np.savez(f'data/{sim_name}.npz',Span=Span,T_cross_values=T_cross_values, T_bar_values=T_bar_values)
+                    # Create necessary directories
+
+                np.savez(os.path.join(data_dir, f'{sim_name}.npz'),Span=Span,T_cross_values=T_cross_values, T_bar_values=T_bar_values)
                 
                 #delete previous chunks
 
@@ -41,7 +50,8 @@ def Recover_data(sim_name,span):
 
 
 def Delete_chunks(sim_name):
-    files = sorted(glob.glob(f"chunks/{sim_name}*.npz"))
+    chunks_dir = os.path.join(SCRIPT_DIR, "chunks")
+    files = sorted(glob.glob(os.path.join(chunks_dir, f"{sim_name}*.npz")))
     for f in files:
         os.remove(f)
     return len(files)
@@ -67,8 +77,10 @@ def PML_distance_z_span(sim,RUN_AGAIN=False,args=None):
     port_size = defaults["port_size"]
     TM_mode = defaults["TM_mode"]
 
+    data_dir = os.path.join(SCRIPT_DIR, "data")
+    chunks_dir = os.path.join(SCRIPT_DIR, "chunks")
 
-    log = setup_logger("pml_distance_z_span", "logging/pml_distance_z_span.log")
+    log = setup_logger("pml_distance_z_span", os.path.join(SCRIPT_DIR, "logging", "pml_distance_z_span.log"))
     log.info(f"Starting with args {defaults}")
 
     wg_length=opt_wg_length
@@ -90,8 +102,9 @@ def PML_distance_z_span(sim,RUN_AGAIN=False,args=None):
     if RUN_AGAIN:
         #if run again is used -> recover data and find last itteration, where to start.
         Recover_data(SIMULATION_NAME,span=z_span)
-        if os.path.exists(f"data/{SIMULATION_NAME}.npz"):
-            check_data=np.load(f'data/{SIMULATION_NAME}.npz', allow_pickle=True)
+        data_file = os.path.join(data_dir, f"{SIMULATION_NAME}.npz")
+        if os.path.exists(data_file):
+            check_data=np.load(data_file, allow_pickle=True)
             #load Results
             T_cross_values=list(check_data['T_cross_values'])
             T_bar_values=list(check_data['T_bar_values'])
@@ -114,10 +127,14 @@ def PML_distance_z_span(sim,RUN_AGAIN=False,args=None):
             T_cross_values.append(T_cross)
             T_bar_values.append(T_bar)
             log.info(f"T_cross:{T_cross},T_bar: {T_bar}")
-            np.savez(f'chunks/{SIMULATION_NAME}_{ii+starting_point}_itteration.npz',Span=z_span,T_cross_values=T_cross_values, T_bar_values=T_bar_values)
-       
+            log.info(f"save chunks to {os.path.join(chunks_dir, f'{SIMULATION_NAME}_{ii+starting_point}_itteration.npz')}")
+
+            np.savez(os.path.join(chunks_dir, f'{SIMULATION_NAME}_{ii+starting_point}_itteration.npz'),Span=z_span,T_cross_values=T_cross_values, T_bar_values=T_bar_values)
+            log.info(f"Files were saved")
+
         else:
-            np.savez(f'data/{SIMULATION_NAME}.npz',Span=z_span,T_cross_values=T_cross_values, T_bar_values=T_bar_values)
+
+            np.savez(os.path.join(data_dir, f'{SIMULATION_NAME}.npz'),Span=z_span,T_cross_values=T_cross_values, T_bar_values=T_bar_values)
             Delete_chunks(SIMULATION_NAME)      
                    
                                    
@@ -147,8 +164,10 @@ def PML_distance_y_span(sim,RUN_AGAIN=False,args=None):
     port_size = defaults["port_size"]
     TM_mode = defaults["TM_mode"]
 
+    data_dir = os.path.join(SCRIPT_DIR, "data")
+    chunks_dir = os.path.join(SCRIPT_DIR, "chunks")
 
-    log = setup_logger("pml_distance_y_span", "logging/pml_distance_y_span.log")
+    log = setup_logger("pml_distance_y_span", os.path.join(SCRIPT_DIR, "logging", "pml_distance_y_span.log"))
     log.info(f"Starting with args {defaults}")
 
     wg_length=opt_wg_length
@@ -171,8 +190,9 @@ def PML_distance_y_span(sim,RUN_AGAIN=False,args=None):
     if RUN_AGAIN:
         #if run again is used -> recover data and find last itteration, where to start.
         Recover_data(SIMULATION_NAME,span=y_span)
-        if os.path.exists(f"data/{SIMULATION_NAME}.npz"):
-            check_data=np.load(f'data/{SIMULATION_NAME}.npz', allow_pickle=True)
+        data_file = os.path.join(data_dir, f"{SIMULATION_NAME}.npz")
+        if os.path.exists(data_file):
+            check_data=np.load(data_file, allow_pickle=True)
             #load Results
             T_cross_values=list(check_data['T_cross_values'])
             T_bar_values=list(check_data['T_bar_values'])
@@ -194,10 +214,12 @@ def PML_distance_y_span(sim,RUN_AGAIN=False,args=None):
             T_cross_values.append(T_cross)
             T_bar_values.append(T_bar)
             log.info(f"T_cross:{T_cross},T_bar: {T_bar}")
-            np.savez(f'chunks/{SIMULATION_NAME}_{ii+starting_point}_itteration.npz',Span=y_span,T_cross_values=T_cross_values, T_bar_values=T_bar_values)
-       
+            log.info(f"save chunks to {os.path.join(chunks_dir, f'{SIMULATION_NAME}_{ii+starting_point}_itteration.npz')}")
+            np.savez(os.path.join(chunks_dir, f'{SIMULATION_NAME}_{ii+starting_point}_itteration.npz'),Span=y_span,T_cross_values=T_cross_values, T_bar_values=T_bar_values)
+            log.info(f"Files were saved")
+
         else:
-            np.savez(f'data/{SIMULATION_NAME}.npz',Span=y_span,T_cross_values=T_cross_values, T_bar_values=T_bar_values)
+            np.savez(os.path.join(data_dir, f'{SIMULATION_NAME}.npz'),Span=y_span,T_cross_values=T_cross_values, T_bar_values=T_bar_values)
             Delete_chunks(SIMULATION_NAME)                                     
     
     except Exception as e:        
@@ -224,10 +246,11 @@ def Mesh_accuracy(sim,RUN_AGAIN=False,args=None):
     port_size = defaults["port_size"]
     TM_mode = defaults["TM_mode"]
 
-
+    data_dir = os.path.join(SCRIPT_DIR, "data")
+    chunks_dir = os.path.join(SCRIPT_DIR, "chunks")
 
     mesh_span=np.linspace(1,6,6)
-    log = setup_logger("mesh_accuracy", "logging/mesh_accuracy.log")
+    log = setup_logger("mesh_accuracy", os.path.join(SCRIPT_DIR, "logging", "mesh_accuracy.log"))
     log.info(f"Starting with args {defaults}")
 
     wg_length=opt_wg_length
@@ -251,8 +274,9 @@ def Mesh_accuracy(sim,RUN_AGAIN=False,args=None):
     if RUN_AGAIN:
         #if run again is used -> recover data and find last itteration, where to start.
         Recover_data(SIMULATION_NAME,span=mesh_span)
-        if os.path.exists(f"data/{SIMULATION_NAME}.npz"):
-            check_data=np.load(f'data/{SIMULATION_NAME}.npz', allow_pickle=True)
+        data_file = os.path.join(data_dir, f"{SIMULATION_NAME}.npz")
+        if os.path.exists(data_file):
+            check_data=np.load(data_file, allow_pickle=True)
             #load Results
             T_cross_values=list(check_data['T_cross_values'])
             T_bar_values=list(check_data['T_bar_values'])
@@ -272,10 +296,13 @@ def Mesh_accuracy(sim,RUN_AGAIN=False,args=None):
             T_cross_values.append(T_cross)
             T_bar_values.append(T_bar)
             log.info(f"T_cross:{T_cross},T_bar: {T_bar}")
-            np.savez(f'chunks/{SIMULATION_NAME}_{ii+starting_point}_itteration.npz',Span=y_span,T_cross_values=T_cross_values, T_bar_values=T_bar_values)
-       
+            log.info(f"save chunks to {os.path.join(chunks_dir, f'{SIMULATION_NAME}_{ii+starting_point}_itteration.npz')}")
+
+            np.savez(os.path.join(chunks_dir, f'{SIMULATION_NAME}_{ii+starting_point}_itteration.npz'),Span=y_span,T_cross_values=T_cross_values, T_bar_values=T_bar_values)
+            log.info(f"Files were saved")
+
         else:
-            np.savez(f'data/{SIMULATION_NAME}.npz',Span=mesh_span,T_cross_values=T_cross_values, T_bar_values=T_bar_values)
+            np.savez(os.path.join(data_dir, f'{SIMULATION_NAME}.npz'),Span=mesh_span,T_cross_values=T_cross_values, T_bar_values=T_bar_values)
             Delete_chunks(SIMULATION_NAME)                                     
     
     except Exception as e:        
@@ -302,8 +329,10 @@ def Port_size(sim,RUN_AGAIN=False,args=None):
     port_size = defaults["port_size"]
     TM_mode = defaults["TM_mode"]
 
+    data_dir = os.path.join(SCRIPT_DIR, "data")
+    chunks_dir = os.path.join(SCRIPT_DIR, "chunks")
 
-    log = setup_logger("port_size", "logging/port_size.log")
+    log = setup_logger("port_size", os.path.join(SCRIPT_DIR, "logging", "port_size.log"))
     log.info(f"Starting with args {defaults}")
 
     port_distance=minimal_output_distance+opt_taper_width
@@ -332,8 +361,9 @@ def Port_size(sim,RUN_AGAIN=False,args=None):
     if RUN_AGAIN:
         #if run again is used -> recover data and find last itteration, where to start.
         Recover_data(SIMULATION_NAME,span=port_span)
-        if os.path.exists(f"data/{SIMULATION_NAME}.npz"):
-            check_data=np.load(f'data/{SIMULATION_NAME}.npz', allow_pickle=True)
+        data_file = os.path.join(data_dir, f"{SIMULATION_NAME}.npz")
+        if os.path.exists(data_file):
+            check_data=np.load(data_file, allow_pickle=True)
             #load Results
             T_cross_values=list(check_data['T_cross_values'])
             T_bar_values=list(check_data['T_bar_values'])
@@ -353,10 +383,13 @@ def Port_size(sim,RUN_AGAIN=False,args=None):
             T_cross_values.append(T_cross)
             T_bar_values.append(T_bar)
             log.info(f"T_cross:{T_cross},T_bar: {T_bar}")
-            np.savez(f'chunks/{SIMULATION_NAME}_{ii+starting_point}_itteration.npz',Span=port_span,T_cross_values=T_cross_values, T_bar_values=T_bar_values)
-       
+            log.info(f"save chunks to {os.path.join(chunks_dir, f'{SIMULATION_NAME}_{ii+starting_point}_itteration.npz')}")
+
+            np.savez(os.path.join(chunks_dir, f'{SIMULATION_NAME}_{ii+starting_point}_itteration.npz'),Span=port_span,T_cross_values=T_cross_values, T_bar_values=T_bar_values)
+            log.info(f"Files were saved")
+
         else:
-            np.savez(f'data/{SIMULATION_NAME}.npz',Span=port_span,T_cross_values=T_cross_values, T_bar_values=T_bar_values)
+            np.savez(os.path.join(data_dir, f'{SIMULATION_NAME}.npz'),Span=port_span,T_cross_values=T_cross_values, T_bar_values=T_bar_values)
             Delete_chunks(SIMULATION_NAME)                                     
     
     except Exception as e:        
@@ -459,7 +492,7 @@ if __name__=="__main__":
 
     PML_distance_z_span(sim=lumapi.FDTD(),RUN_AGAIN=False, args=args)
     # Evaluate achieved results
-    evaluate(datafile="data/dataset_PML_distance_z_span")
+    evaluate(datafile=os.path.join(SCRIPT_DIR, "data", "dataset_PML_distance_z_span"))
    
     #   2) distance to PML (in y direction)
 
