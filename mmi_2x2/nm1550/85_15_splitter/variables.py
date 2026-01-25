@@ -86,7 +86,7 @@ opt_width_ridge=11e-6
 mmi_ratio=85/100
 d_phase=2*np.arccos(np.sqrt(mmi_ratio)) #phase calculation
 S=opt_width_ridge/3
-N_eff=1.580     #Neff of 1st order(average), if W=W_taper
+N_eff=1.5885528      #Neff of 1st order(average), if W=W_taper
 k_0=2*np.pi/wavelength*N_eff
 opt_twist_angle=np.arctan(d_phase/(2*S*k_0))    #use n_eff
 
@@ -99,7 +99,7 @@ opt_twist_angle=np.arctan(d_phase/(2*S*k_0))    #use n_eff
 # phase=ph*(2*S*k_0)
 # ratio=np.cos(phase/2)**2
 # print(ratio)
-
+# print(opt_twist_angle)
 
 
 

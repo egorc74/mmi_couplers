@@ -130,6 +130,7 @@ def find_optimal_length(sim):
             max_trans = trans
             max_length = opt_length
     log.info(f"In find_optimal_length: Optimal length : {max_length} , with max transmission {max_trans}")
+    
     return max_length
 
 
@@ -138,5 +139,5 @@ def find_optimal_length(sim):
 if __name__=="__main__":
     filename="taper_length_span"
     taper_length=62e-6
-    taper_width=2.5e-6
+    taper_width=1e-6
     eme_solver_prep(sim=lumapi.MODE(filename),filename=filename,taper_width=taper_width,taper_length=taper_length)

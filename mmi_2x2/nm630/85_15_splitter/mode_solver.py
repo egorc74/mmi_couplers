@@ -71,7 +71,6 @@ def mode_solver(sim,filename,width_ridge):
     sim.cleardcard()
     n=sim.findmodes()
     Neff = np.real(sim.getdata('FDE::data::mode1','neff')[0]) 
-    print(f"Effective index of first TE launching mode{Neff}")
     sim.save(filename)
     return Neff
 
@@ -83,3 +82,7 @@ if __name__=="__main__":
     taper_width=2.5e-6
     width_ridge=8e-6
     mode_solver(sim=lumapi.MODE(filename),width_ridge=width_ridge,filename=filename)
+
+
+
+    

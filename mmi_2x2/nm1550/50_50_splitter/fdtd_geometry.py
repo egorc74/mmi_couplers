@@ -166,7 +166,7 @@ def geometry(sim, filename,y,width_ridge,Radius,mmi_length,wg_length,wg_width,ta
     for ii in range(N_out):
         sim.addpoly()
         sim.set("x",x)
-        sim.set("y",(distance_wg-delta_y)*(-1)**ii)
+        sim.set("y",(distance_wg+delta_y)*(-1)**ii)
         sim.set("z",z)
         sim.set("z span",z_span)
         sim.set("vertices",V)
@@ -188,7 +188,7 @@ def geometry(sim, filename,y,width_ridge,Radius,mmi_length,wg_length,wg_width,ta
         sim.addring()
         sim.set("name",f"bent_output_wg{ii}") 
         sim.set("material",material_Si3N4)
-        sim.set("y",(distance_wg-delta_y)*(-1)**ii+Radius)  
+        sim.set("y",(distance_wg+delta_y)*(-1)**ii+Radius)  
         outer_radius=Radius+wg_width/2
         inner_radius=Radius-wg_width/2
         sim.set("outer radius",outer_radius)
@@ -204,7 +204,7 @@ def geometry(sim, filename,y,width_ridge,Radius,mmi_length,wg_length,wg_width,ta
         sim.addrect() 
         sim.set("name",f"output_wg{ii}") 
         sim.set("material",material_Si3N4)
-        sim.set("y",(distance_wg-delta_y)*(-1)**ii+wg_length/2*np.tan(twist_angle)+Radius/2*np.tan(twist_angle)*np.sin(twist_angle))         
+        sim.set("y",(distance_wg+delta_y)*(-1)**ii+wg_length/2*np.tan(twist_angle)+Radius/2*np.tan(twist_angle)*np.sin(twist_angle))         
         sim.set("y span",wg_width)
         sim.set("z",0)     
         sim.set("z span", thick_Si3N4)
@@ -344,7 +344,7 @@ def geometry(sim, filename,y,width_ridge,Radius,mmi_length,wg_length,wg_width,ta
     for ii in range(N_out):
         sim.addpoly()
         sim.set("x",x)
-        sim.set("y",(distance_wg-delta_y)*(-1)**ii)
+        sim.set("y",(distance_wg+delta_y)*(-1)**ii)
         sim.set("z",z)
         sim.set("z span",z_span)
         sim.set("vertices",V)
@@ -364,7 +364,7 @@ def geometry(sim, filename,y,width_ridge,Radius,mmi_length,wg_length,wg_width,ta
         sim.addring()
         sim.set("name",f"bent_output_wg{ii}") 
         sim.set("material",material_Si3N4)
-        sim.set("y",(distance_wg-delta_y)*(-1)**ii-Radius)  
+        sim.set("y",(distance_wg+delta_y)*(-1)**ii-Radius)  
         outer_radius=Radius+wg_width/2
         inner_radius=Radius-wg_width/2
         sim.set("outer radius",outer_radius)
@@ -381,7 +381,7 @@ def geometry(sim, filename,y,width_ridge,Radius,mmi_length,wg_length,wg_width,ta
         sim.addrect() 
         sim.set("name",f"output_wg{ii}") 
         sim.set("material",material_Si3N4)
-        sim.set("y",-((distance_wg-delta_y)*(-1)**ii+wg_length/2*np.tan(twist_angle)+Radius/2*np.tan(twist_angle)*np.sin(twist_angle)))         
+        sim.set("y",-((distance_wg+delta_y)*(-1)**ii+wg_length/2*np.tan(twist_angle)+Radius/2*np.tan(twist_angle)*np.sin(twist_angle)))         
         sim.set("y span",wg_width)
         sim.set("z",0)     
         sim.set("z span", thick_Si3N4)

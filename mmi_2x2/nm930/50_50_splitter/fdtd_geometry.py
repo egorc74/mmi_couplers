@@ -1,5 +1,8 @@
 from variables import *
 from mode_solver import mode_solver
+import os
+SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
+
 def geometry(sim, filename,y,width_ridge,Radius,mmi_length,wg_length,wg_width,taper_width,taper_width_in,ratio,cut_angle,delta_y,twist_angle=None):
     #Loger setup
     log = setup_logger("geometry", "logging/geometry.log")
@@ -28,8 +31,7 @@ def geometry(sim, filename,y,width_ridge,Radius,mmi_length,wg_length,wg_width,ta
         S=width_ridge/3
 
         # Calculate neff of launching mode
-        filename_mode="mode_effective_index"
-        import os
+        filename_mode = os.path.join(SCRIPT_DIR, "mode_effective_index")
         if os.path.isfile(f"{filename_mode}.lms"):
             MODE_SIMULATION=lumapi.MODE(filename=filename_mode)
         else:
@@ -164,7 +166,7 @@ def geometry(sim, filename,y,width_ridge,Radius,mmi_length,wg_length,wg_width,ta
     for ii in range(N_out):
         sim.addpoly()
         sim.set("x",x)
-        sim.set("y",(distance_wg-delta_y)*(-1)**ii)
+        sim.set("y",(distance_wg+delta_y)*(-1)**ii)
         sim.set("z",z)
         sim.set("z span",z_span)
         sim.set("vertices",V)
@@ -186,7 +188,7 @@ def geometry(sim, filename,y,width_ridge,Radius,mmi_length,wg_length,wg_width,ta
         sim.addring()
         sim.set("name",f"bent_output_wg{ii}") 
         sim.set("material",material_Si3N4)
-        sim.set("y",(distance_wg-delta_y)*(-1)**ii+Radius)  
+        sim.set("y",(distance_wg+delta_y)*(-1)**ii+Radius)  
         outer_radius=Radius+wg_width/2
         inner_radius=Radius-wg_width/2
         sim.set("outer radius",outer_radius)
@@ -202,7 +204,7 @@ def geometry(sim, filename,y,width_ridge,Radius,mmi_length,wg_length,wg_width,ta
         sim.addrect() 
         sim.set("name",f"output_wg{ii}") 
         sim.set("material",material_Si3N4)
-        sim.set("y",(distance_wg-delta_y)*(-1)**ii+wg_length/2*np.tan(twist_angle)+Radius/2*np.tan(twist_angle)*np.sin(twist_angle))         
+        sim.set("y",(distance_wg+delta_y)*(-1)**ii+wg_length/2*np.tan(twist_angle)+Radius/2*np.tan(twist_angle)*np.sin(twist_angle))         
         sim.set("y span",wg_width)
         sim.set("z",0)     
         sim.set("z span", thick_Si3N4)
@@ -342,7 +344,7 @@ def geometry(sim, filename,y,width_ridge,Radius,mmi_length,wg_length,wg_width,ta
     for ii in range(N_out):
         sim.addpoly()
         sim.set("x",x)
-        sim.set("y",(distance_wg-delta_y)*(-1)**ii)
+        sim.set("y",(distance_wg+delta_y)*(-1)**ii)
         sim.set("z",z)
         sim.set("z span",z_span)
         sim.set("vertices",V)
@@ -362,7 +364,7 @@ def geometry(sim, filename,y,width_ridge,Radius,mmi_length,wg_length,wg_width,ta
         sim.addring()
         sim.set("name",f"bent_output_wg{ii}") 
         sim.set("material",material_Si3N4)
-        sim.set("y",(distance_wg-delta_y)*(-1)**ii-Radius)  
+        sim.set("y",(distance_wg+delta_y)*(-1)**ii-Radius)  
         outer_radius=Radius+wg_width/2
         inner_radius=Radius-wg_width/2
         sim.set("outer radius",outer_radius)
@@ -379,7 +381,7 @@ def geometry(sim, filename,y,width_ridge,Radius,mmi_length,wg_length,wg_width,ta
         sim.addrect() 
         sim.set("name",f"output_wg{ii}") 
         sim.set("material",material_Si3N4)
-        sim.set("y",-((distance_wg-delta_y)*(-1)**ii+wg_length/2*np.tan(twist_angle)+Radius/2*np.tan(twist_angle)*np.sin(twist_angle)))         
+        sim.set("y",-((distance_wg+delta_y)*(-1)**ii+wg_length/2*np.tan(twist_angle)+Radius/2*np.tan(twist_angle)*np.sin(twist_angle)))         
         sim.set("y span",wg_width)
         sim.set("z",0)     
         sim.set("z span", thick_Si3N4)
@@ -493,7 +495,7 @@ if __name__=="__main__":
     y=10e-6
     
 
-    import os
+    
     if os.path.isfile(f"{filename}.fsp"):
         geometry(sim=lumapi.FDTD(filename),filename=filename,wg_length=wg_length,wg_width=wg_width,width_ridge=width_ridge,
              mmi_length=mmi_length,taper_width=taper_width,taper_width_in=taper_width_in,ratio=ratio,y=y)

@@ -413,8 +413,10 @@ def Width_sweep(sim,span,args=None,RUN_AGAIN=False):
     #run simmulation 
     try:
         for ii,width_ridge in enumerate(span):
+            dist=opt_width_ridge/3-taper_width
+            delta_y=dist/2+taper_width/2-width_ridge/6
 
-            delta_y=1.1e-6/2+taper_width/2-width_ridge/6
+
 
             T_cross,T_bar,E_lateral=fdtd_solver(sim=sim,Radius=Radius,filename=filename,wg_length=wg_length,wg_width=wg_width,width_ridge=width_ridge,
                 mmi_length=mmi_length,taper_width=taper_width,taper_width_in=taper_width_in,ratio=ratio,y=y,mesh_accuracy=mesh_accuracy,cut_angle=cut_angle,delta_y=delta_y,twist_angle=twist_angle,sweep_name=SIMULATION_NAME)
@@ -497,8 +499,7 @@ if __name__ =="__main__":
     OPT_ANGLE=data_analysis(dataset=os.path.join(SCRIPT_DIR, "data", SIMULATION_NAME),measurement="optimal_angle")
     if OPT_ANGLE==None:
         OPT_ANGLE=None     #default value
-
-
+ 
 
     ######################
     #4) Width_sweep

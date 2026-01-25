@@ -37,8 +37,8 @@ def fdtd_solver(sim,Radius,filename,y,width_ridge,mmi_length,wg_length,wg_width,
     fdtd_margin=2e-6
     sim.set("x min",Xmin)
     sim.set("x max",Xmax)
-    sim.set("y",0)
-    sim.set("y span",Y_span)
+    sim.set("y max",width_ridge/2+width_margin/2)
+    sim.set("y min",-(width_ridge/2+width_margin/2+rotation_margin/2))
     sim.set("z min",Zmin)
     sim.set("z max",Zmax)
     sim.set("mesh accuracy", mesh_accuracy)
@@ -69,8 +69,8 @@ def fdtd_solver(sim,Radius,filename,y,width_ridge,mmi_length,wg_length,wg_width,
     sim.set("direction","forward")
     sim.set("mode selection","fundamental TE mode")
 
-    sim.set("y",(Xmin+3e-6)*np.sin(twist_angle)+distance_wg+delta_y) 
-    wg_spacing=width_ridge/3
+    sim.set("y",-((mmi_length-y)/2+wg_length)*np.sin(twist_angle)+distance_wg+delta_y) 
+    wg_spacing=width_ridge/3+delta_y*2
     sim.set("y span",wg_spacing)
     sim.set("x",Xmin+2e-6) 
     sim.set("z min",Zmin) 
@@ -86,7 +86,7 @@ def fdtd_solver(sim,Radius,filename,y,width_ridge,mmi_length,wg_length,wg_width,
     sim.set("direction","backward")
             
     sim.set("y span",wg_spacing)
-    sim.set("y",(Xmin+3e-6)*np.sin(twist_angle)+distance_wg+delta_y) 
+    sim.set("y",-((mmi_length-y)/2+wg_length)*np.sin(twist_angle)+distance_wg+delta_y) 
     sim.set("y span",wg_spacing)
     sim.set("x",Xmax-2e-6) 
     sim.set("z min",Zmin) 
@@ -98,7 +98,7 @@ def fdtd_solver(sim,Radius,filename,y,width_ridge,mmi_length,wg_length,wg_width,
     sim.set("injection axis","x-axis")
     sim.set("direction","backward")
     sim.set("y span",wg_spacing)
-    sim.set("y",(Xmin+3e-6)*np.sin(twist_angle)-distance_wg-delta_y) 
+    sim.set("y",-((mmi_length-y)/2+wg_length)*np.sin(twist_angle)-distance_wg-delta_y) 
     sim.set("x",Xmax-2e-6)
     sim.set("z min",Zmin) 
     sim.set("z max",Zmax) 
