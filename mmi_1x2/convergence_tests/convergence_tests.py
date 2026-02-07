@@ -484,7 +484,7 @@ if __name__=="__main__":
     #  1) distance to PML (in z direction)     
 
     z_span_expansion=np.linspace(0,1,11)*1e-6
-    opt_z_span=1.5e-6+thick_Si3N4/2-0.9e-6
+    opt_z_span=1.5e-6+thick_Si3N4/2-1.15e-6
     args = {
         "z_span": z_span_expansion,
         "y_span": opt_y_span,
@@ -498,7 +498,7 @@ if __name__=="__main__":
     #   2) distance to PML (in y direction)
 
     min_y_span=opt_width_ridge+1e-6
-    max_y_span=opt_width_ridge+3e-6
+    max_y_span=opt_width_ridge+3.5e-6
     
     y_span=np.linspace(min_y_span,max_y_span,10)
 

@@ -5,7 +5,7 @@ from nm1550.geometry import geometry
 import plotly.graph_objects as go
 def fdtd_solver(sim,filename,width_ridge,mmi_length,taper_width,taper_width_in,mesh_accuracy,delta_y=0,sweep_name=None,FDTD_z_span=None,FDTD_y_span=None,Port_size=None,TM_MODE=None):
     
-    if TM_MODE and (-0.9e-6-FDTD_z_span)>=(-1.5e-6-thick_Si3N4/2) :
+    if TM_MODE and (-1.15e-6-FDTD_z_span)>=(-1.5e-6-thick_Si3N4/2) :
         thick_BOX=3e-6
     else:
         thick_BOX=1.5e-6
@@ -24,8 +24,8 @@ def fdtd_solver(sim,filename,width_ridge,mmi_length,taper_width,taper_width_in,m
     Xmin=-(mmi_length+2*wg_length+margin)/2 
     Xmax=(mmi_length+2*wg_length+margin)/2
     if TM_MODE:
-        Zmin=-0.9e-6-FDTD_z_span
-        Zmax=0.7e-6+FDTD_z_span
+        Zmin=-1.15e-6-FDTD_z_span
+        Zmax=0.6e-6+FDTD_z_span
     else:
         Zmin=-1e-6
         Zmax=height_margin
