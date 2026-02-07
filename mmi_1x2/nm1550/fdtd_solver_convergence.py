@@ -4,12 +4,18 @@ from nm1550.variables import *
 from nm1550.geometry import geometry
 import plotly.graph_objects as go
 def fdtd_solver(sim,filename,width_ridge,mmi_length,taper_width,taper_width_in,mesh_accuracy,delta_y=0,sweep_name=None,FDTD_z_span=None,FDTD_y_span=None,Port_size=None,TM_MODE=None):
+    
+    if TM_MODE and (-0.9e-6-FDTD_z_span)>=(-1.5e-6-thick_Si3N4/2) :
+        thick_BOX=3e-6
+    else:
+        thick_BOX=1.5e-6
+        
 
     log = setup_logger("fdtd_solver", "logging/fdtd_solver.log")
 
     log.info(f"Starting fdtd_solver() \n width_ridge: {width_ridge}, \n mmi_length:{mmi_length},\n taper_width={taper_width},\n ")
     geometry(sim=sim,filename=filename,width_ridge=width_ridge,
-            mmi_length=mmi_length,taper_width=taper_width,taper_width_in=taper_width_in,delta_y=delta_y)
+            mmi_length=mmi_length,taper_width=taper_width,taper_width_in=taper_width_in,delta_y=delta_y,thick_BOX=thick_BOX)
   
 
     ##### FDTD dimensions #######
@@ -17,8 +23,13 @@ def fdtd_solver(sim,filename,width_ridge,mmi_length,taper_width,taper_width_in,m
     height_margin=1e-6
     Xmin=-(mmi_length+2*wg_length+margin)/2 
     Xmax=(mmi_length+2*wg_length+margin)/2
-    Zmin=-1e-6
-    Zmax=height_margin
+    if TM_MODE:
+        Zmin=-0.9e-6-FDTD_z_span
+        Zmax=0.7e-6+FDTD_z_span
+    else:
+        Zmin=-1e-6
+        Zmax=height_margin
+
     width_margin=5e-6
 
     Y_span=width_margin + width_ridge 
@@ -52,6 +63,10 @@ def fdtd_solver(sim,filename,width_ridge,mmi_length,taper_width,taper_width_in,m
         sim.set("z min",Zmin)
         sim.set("z max",Zmax)
 
+    if TM_MODE:
+        sim.set("z min",Zmin)
+        sim.set("z max",Zmax)
+    
     sim.set("mesh accuracy", mesh_accuracy)
     sim.set("x min bc","PML")  
     sim.set("x max bc","PML")
@@ -76,9 +91,12 @@ def fdtd_solver(sim,filename,width_ridge,mmi_length,taper_width,taper_width_in,m
 
 
 
-    
+
 
     #Input port
+    Zmin_port=Zmin
+    if Zmin<=(-thick_BOX-thick_Si3N4/2):
+        Zmin_port=-thick_BOX-thick_Si3N4/2
     sim.addport()
     sim.set("name","source_port")
     sim.set("injection axis","x-axis")
@@ -101,6 +119,12 @@ def fdtd_solver(sim,filename,width_ridge,mmi_length,taper_width,taper_width_in,m
     else:
         sim.set("z min",Zmin)
         sim.set("z max",Zmax)
+    if TM_MODE:
+        sim.set("z min",Zmin_port)
+        sim.set("z max",Zmax)
+
+
+
 
     ##Through port
 
@@ -129,7 +153,9 @@ def fdtd_solver(sim,filename,width_ridge,mmi_length,taper_width,taper_width_in,m
     else:
         sim.set("z min",Zmin)
         sim.set("z max",Zmax)
-
+    if TM_MODE:
+        sim.set("z min",Zmin_port)
+        sim.set("z max",Zmax)
     ##Cross port 
     sim.addport()
     sim.set("name","cross_port")
@@ -147,6 +173,9 @@ def fdtd_solver(sim,filename,width_ridge,mmi_length,taper_width,taper_width_in,m
         sim.set("z span",FDTD_z_span)
     else:
         sim.set("z min",Zmin)
+        sim.set("z max",Zmax)
+    if TM_MODE:
+        sim.set("z min",Zmin_port)
         sim.set("z max",Zmax)
     if TM_MODE!=None:
         sim.set("mode selection","fundamental TM mode")

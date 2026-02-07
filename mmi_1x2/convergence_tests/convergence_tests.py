@@ -406,70 +406,70 @@ if __name__=="__main__":
 
 
 
-    ## Define optimal fixed spans (distance of 1 wl from the structure / e-8 field intensity at PML )
+    # ## Define optimal fixed spans (distance of 1 wl from the structure / e-8 field intensity at PML )
 
     opt_z_span=thick_Si3N4+2*wavelength #(one wavelength far from the structure)
     opt_y_span=opt_width_ridge+5e-6     #(field intensity is ~e-8)
     
 
-    ############ TE MODE ################
-    #  1) distance to PML (in z direction)     
+    # ############ TE MODE ################
+    # #  1) distance to PML (in z direction)     
 
-    z_span=np.linspace(1.8e-6,3e-6,10)
+    # z_span=np.linspace(1.8e-6,3e-6,10)
 
-    args = {
-        "z_span": z_span,
-        "y_span": opt_y_span,
-        "mesh_accuracy": 3,
-        "port_size":None,
-        "TM_mode":None, 
+    # args = {
+    #     "z_span": z_span,
+    #     "y_span": opt_y_span,
+    #     "mesh_accuracy": 3,
+    #     "port_size":None,
+    #     "TM_mode":None, 
 
-    }
+    # }
 
-    PML_distance_z_span(sim=lumapi.FDTD(),RUN_AGAIN=False, args=args)
+    # PML_distance_z_span(sim=lumapi.FDTD(),RUN_AGAIN=False, args=args)
    
-    #   2) distance to PML (in y direction)
+    # #   2) distance to PML (in y direction)
 
-    min_y_span=opt_width_ridge+2e-6
-    max_y_span=opt_width_ridge+6e-6
+    # min_y_span=opt_width_ridge+2e-6
+    # max_y_span=opt_width_ridge+6e-6
     
-    y_span=np.linspace(min_y_span,max_y_span,10)
+    # y_span=np.linspace(min_y_span,max_y_span,10)
 
-    args = {
-        "z_span": opt_z_span,
-        "y_span": y_span,
-        "mesh_accuracy": 3,
-        "port_size": None,
-        "TM_mode":None,
+    # args = {
+    #     "z_span": opt_z_span,
+    #     "y_span": y_span,
+    #     "mesh_accuracy": 3,
+    #     "port_size": None,
+    #     "TM_mode":None,
 
 
-    }
+    # }
 
     
-    PML_distance_y_span(sim=lumapi.FDTD(),RUN_AGAIN=False,args=args)
+    # PML_distance_y_span(sim=lumapi.FDTD(),RUN_AGAIN=False,args=args)
 
-    #   3) Mesh Accuracy from 1 to 6
+    # #   3) Mesh Accuracy from 1 to 6
 
-    args = {
-        "z_span": opt_z_span,
-        "y_span": opt_y_span,
-        "mesh_accuracy": None,  #default from 1 to 6 (change span inside the function)
-        "port_size":None,
-        "TM_mode":None
+    # args = {
+    #     "z_span": opt_z_span,
+    #     "y_span": opt_y_span,
+    #     "mesh_accuracy": None,  #default from 1 to 6 (change span inside the function)
+    #     "port_size":None,
+    #     "TM_mode":None
 
-    }
-    Mesh_accuracy(sim=lumapi.FDTD(),RUN_AGAIN=False,args=args)
+    # }
+    # Mesh_accuracy(sim=lumapi.FDTD(),RUN_AGAIN=False,args=args)
 
 
-    # #   4) Port size
-    args = {
-        "z_span": opt_z_span,
-        "y_span": opt_y_span,
-        "mesh_accuracy": 3, 
-        "port_size":None,    #default from wg_width+0.5e-6 to half the distance between output ports(change span inside the function)
-        "TM_mode":None,
-    }
-    Port_size(sim=lumapi.FDTD(),RUN_AGAIN=False,args=args)
+    # # #   4) Port size
+    # args = {
+    #     "z_span": opt_z_span,
+    #     "y_span": opt_y_span,
+    #     "mesh_accuracy": 3, 
+    #     "port_size":None,    #default from wg_width+0.5e-6 to half the distance between output ports(change span inside the function)
+    #     "TM_mode":None,
+    # }
+    # Port_size(sim=lumapi.FDTD(),RUN_AGAIN=False,args=args)
        
        
        
@@ -477,27 +477,28 @@ if __name__=="__main__":
        
     ############ TM MODE ################
 
+    opt_z_span=thick_Si3N4+2*wavelength #(one wavelength far from the structure)
+    opt_y_span=opt_width_ridge+3e-6     #(field intensity is ~e-8)
+    opt_port_size=minimal_output_distance+opt_taper_width
+
     #  1) distance to PML (in z direction)     
 
-    z_span=np.linspace(1.8e-6,3e-6,10)+0.5e-6
-
+    z_span_expansion=np.linspace(0,1,11)*1e-6
+    opt_z_span=1.5e-6+thick_Si3N4/2-0.9e-6
     args = {
-        "z_span": z_span,
+        "z_span": z_span_expansion,
         "y_span": opt_y_span,
         "mesh_accuracy": 3,
-        "port_size":None,
+        "port_size":opt_port_size,
         "TM_mode":True, 
-
     }
 
     PML_distance_z_span(sim=lumapi.FDTD(),RUN_AGAIN=False, args=args)
-    # Evaluate achieved results
-    evaluate(datafile=os.path.join(SCRIPT_DIR, "data", "dataset_PML_distance_z_span"))
    
     #   2) distance to PML (in y direction)
 
-    min_y_span=opt_width_ridge+2e-6
-    max_y_span=opt_width_ridge+6e-6
+    min_y_span=opt_width_ridge+1e-6
+    max_y_span=opt_width_ridge+3e-6
     
     y_span=np.linspace(min_y_span,max_y_span,10)
 
@@ -505,11 +506,10 @@ if __name__=="__main__":
         "z_span": opt_z_span,
         "y_span": y_span,
         "mesh_accuracy": 3,
-        "port_size": None,
+        "port_size": opt_port_size,
         "TM_mode":True,
 
     }
-
     
     PML_distance_y_span(sim=lumapi.FDTD(),RUN_AGAIN=False,args=args)
 
@@ -519,7 +519,7 @@ if __name__=="__main__":
         "z_span": opt_z_span,
         "y_span": opt_y_span,
         "mesh_accuracy": None,  #default from 1 to 6 (change span inside the function)
-        "port_size":None,
+        "port_size":opt_port_size,
         "TM_mode":True,
 
     }
