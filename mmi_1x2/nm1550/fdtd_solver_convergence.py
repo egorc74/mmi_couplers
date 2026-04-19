@@ -232,7 +232,7 @@ def fdtd_solver(sim,filename,width_ridge,mmi_length,taper_width,taper_width_in,m
 
 
     sim.save(f"{filename}.fsp")
-    # input("fdtd_solver iterration finished press enter ")
+    input("fdtd_solver iterration finished press enter ")
     return T_cross,T_bar,E_lateral
 
 

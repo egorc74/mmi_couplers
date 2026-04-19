@@ -5,7 +5,7 @@ def eme_solver_prep(sim, filename,taper_length,taper_width):
         log = setup_logger("eme_solver", "logging/eme_solver.log")
 
 
-        taper_geometry(sim=sim,filename=filename,taper_length=taper_length,taper_width=taper_width)
+        taper_geometry(sim=sim,filename=filename,taper_length=taper_length,taper_width=taper_width,straight_section=True)
 
         ##### Additional variables #######
         Xmin=-taper_length/2 
@@ -32,14 +32,14 @@ def eme_solver_prep(sim, filename,taper_length,taper_width):
         sim.set("y span",Y_span)
         sim.set("x min",Xmin) 
 
-        sim.set("number of cell groups",1)
+        sim.set("number of cell groups",2)
         sim.set("display cells",1)
         sim.set("number of modes for all cell groups",20)
         sim.set("number of periodic groups",1)
         sim.set("energy conservation","make passive")
-        sim.set("subcell method",np.array([1]))
-        sim.set("cells",np.array([20]))
-        sim.set("group spans",np.array([taper_length]))
+        sim.set("subcell method",np.array([1,0]))
+        sim.set("cells",np.array([20,1]))
+        sim.set("group spans",np.array([taper_length,taper_length]))
         sim.set("y min bc","Metal")
         sim.set("z min bc","Metal")
         sim.set("y max bc","Metal")
@@ -49,7 +49,7 @@ def eme_solver_prep(sim, filename,taper_length,taper_width):
         sim.set("modes",np.array([20,50,20]))
         mesh_cells_y=int((Y_span+1e-6)/wavelength*10)
         sim.set("mesh cells y",mesh_cells_y)
-        sim.set("mesh cells z",20)
+        sim.set("mesh cells z",30)
 
         #ports
         #### input 1 #####
@@ -139,5 +139,5 @@ if __name__=="__main__":
     filename="taper_length_span"
     taper_length=30e-6
     taper_width=3e-6
-    eme_solver_prep(sim=lumapi.MODE(filename),filename=filename,taper_width=taper_width,taper_length=taper_length)
+    eme_solver_prep(sim=lumapi.MODE(),filename=filename,taper_width=taper_width,taper_length=taper_length)
     input("enter to continue")

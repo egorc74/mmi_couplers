@@ -483,7 +483,9 @@ if __name__=="__main__":
 
     #  1) distance to PML (in z direction)     
 
-    z_span_expansion=np.linspace(0,1,11)*1e-6
+    # z_span_expansion=np.linspace(0,1,2)*1e-6
+    z_span_expansion=np.array([0, 1])*1e-6
+
     opt_z_span=1.5e-6+thick_Si3N4/2-1.15e-6
     args = {
         "z_span": z_span_expansion,

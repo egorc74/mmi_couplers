@@ -24,7 +24,7 @@ def geometry(sim, filename,width_ridge):
     sim.set("material",material_BOX)
     sim.set("y",0)         
     sim.set("y span",width_ridge+100e-6)
-    sim.set("z min",-thick_BOX)     
+    sim.set("z min",-thick_BOX-thick_Si3N4/2)     
     sim.set("z max", 0-thick_Si3N4/2)
     sim.set("x min",Xmin)  
     sim.set("x max",Xmax)

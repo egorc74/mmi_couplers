@@ -15,8 +15,10 @@ def eme_solver_prep(sim, filename,width_ridge,mmi_length,taper_width,taper_width
         ##### Additional variables #######
         Xmin=-mmi_length/2 
         Xmax=mmi_length/2 #length of wg 4um
-        Zmin=-height_margin 
-        Zmax=thick_Si3N4 + height_margin
+        Z_span=thick_Si3N4+2*height_margin
+        Zmin=-thick_Si3N4/2-height_margin
+        Zmax=thick_Si3N4/2+height_margin
+        
         Y_span=2*width_margin + width_ridge 
         Ymin=-Y_span/2 
         Ymax=-Ymin
@@ -35,12 +37,12 @@ def eme_solver_prep(sim, filename,width_ridge,mmi_length,taper_width,taper_width
         center_z_offset=thick_Si3N4
         sim.set("wavelength",wavelength)
         sim.set("index",1)
-        sim.set("z min",-height_margin/2)
-        sim.set("z max", height_margin/2)
+        sim.set("z min",-height_margin-thick_Si3N4/2)
+        sim.set("z max", height_margin+thick_Si3N4/2)
             
 
         sim.set("y",0)         
-        sim.set("y span",Y_span+1e-6)
+        sim.set("y span",Y_span)
         sim.set("x min",Xmin_waffer+4e-6) 
         sim.set("number of cell groups",3)
         sim.set("display cells",1)
@@ -57,9 +59,11 @@ def eme_solver_prep(sim, filename,width_ridge,mmi_length,taper_width,taper_width
 
         sim.set("allow custom eigensolver settings",1)
         sim.set("modes",np.array([20,50,20]))
-        mesh_cells_y=int((Y_span+1e-6)/wavelength*10)
+        mesh_cells_y=int((Y_span)/wavelength*10)
+        mesh_cells_z=int((Z_span)/wavelength*20)
+
         sim.set("mesh cells y",mesh_cells_y)
-        sim.set("mesh cells z",20)
+        sim.set("mesh cells z",mesh_cells_z)
 
         if(with_mesh==1):
             #input mesh 1
@@ -125,26 +129,26 @@ def eme_solver_prep(sim, filename,width_ridge,mmi_length,taper_width,taper_width
         #ports
         #### input 1 #####
         sim.setnamed("EME::Ports::port_1","y",0)
-        sim.setnamed("EME::Ports::port_1","y span",wg_width+2e-6)
-        sim.setnamed("EME::Ports::port_1","z min",-height_margin/2)
-        sim.setnamed("EME::Ports::port_1","z max",height_margin/2)
+        sim.setnamed("EME::Ports::port_1","y span",Y_span)
+        sim.setnamed("EME::Ports::port_1","z min",Zmin)
+        sim.setnamed("EME::Ports::port_1","z max",Zmax)
         sim.setnamed("EME::Ports::port_1","mode selection","fundamental TE mode")
         sim.setnamed("EME::Ports::port_1","use full simulation span",0)
 
 
         sim.setnamed("EME::Ports::port_2","y",(distance_wg+delta_y)*(-1))
-        sim.setnamed("EME::Ports::port_2","y span",wg_width+2e-6)
-        sim.setnamed("EME::Ports::port_2","z min",-height_margin/2)
-        sim.setnamed("EME::Ports::port_2","z max",height_margin/2)
+        sim.setnamed("EME::Ports::port_2","y span",taper_width+1.1e-6)
+        sim.setnamed("EME::Ports::port_2","z min",Zmin)
+        sim.setnamed("EME::Ports::port_2","z max",Zmax)
         sim.setnamed("EME::Ports::port_2","mode selection","fundamental TE mode")
         sim.setnamed("EME::Ports::port_2","use full simulation span",0)
 
         sim.addemeport()
         sim.set("port location","right")
         sim.setnamed("EME::Ports::port_3","y",(distance_wg+delta_y)*(1))
-        sim.setnamed("EME::Ports::port_3","y span",wg_width+2e-6)
-        sim.setnamed("EME::Ports::port_3","z min",-height_margin/2)
-        sim.setnamed("EME::Ports::port_3","z max",height_margin/2)
+        sim.setnamed("EME::Ports::port_3","y span",taper_width+1.1e-6)
+        sim.setnamed("EME::Ports::port_3","z min",Zmin)
+        sim.setnamed("EME::Ports::port_3","z max",Zmax)
         sim.setnamed("EME::Ports::port_3","mode selection","fundamental TE mode")
         sim.setnamed("EME::Ports::port_3","use full simulation span",0)
 
@@ -163,6 +167,7 @@ def eme_solver_prep(sim, filename,width_ridge,mmi_length,taper_width,taper_width
 
         sim.save(filename)
         sim.run()
+        input("Press Enter...")
     except Exception as e:
         log.info(f"Error occured: {e}")
 
@@ -176,8 +181,8 @@ def find_optimal_length(sim):
 
     sim.emepropagate()
     
-    start_len = 40e-6  # common start length
-    stop_len  = 120e-6   # common stop length
+    start_len = 100e-6  # common start length
+    stop_len  = 180e-6   # common stop length
     # configure EME analysis
     sim.setemeanalysis("override wavelength", 1)
     sim.setemeanalysis("wavelength", wavelength)
@@ -214,21 +219,14 @@ def find_optimal_length(sim):
 
 
 if __name__=="__main__":
-    import os
-
-    filename = "mmi_simulations_1x2"
-    # Get the directory where the current script is located
-    script_dir = os.path.dirname(os.path.abspath(__file__))
-    # Join the directory with your filename
-    filepath = os.path.join(script_dir, filename)
-
-    width_ridge=8.3e-6
-    mmi_length=50e-6
-    taper_width=2.5e-6
-    taper_width_in=2.5e-6
+    filename="mmi_simulations_1x2"
+    width_ridge=9.5e-6
+    mmi_length=37e-6
+    taper_width=width_ridge/2-1.1e-6
+    taper_width_in=taper_width
     delta_y=0e-6
 
     eme_solver_prep(sim=lumapi.MODE(filename),filename=filename,width_ridge=width_ridge,
                     mmi_length=mmi_length,taper_width=taper_width,taper_width_in=taper_width_in,
                         delta_y=delta_y)
-    print(find_optimal_length(sim=lumapi.MODE(filename=filename)))
+  

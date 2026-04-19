@@ -29,7 +29,7 @@ wg_length=40e-6
 wg_width=1.6e-6
 thick_Clad=2.0e-6
 thick_Si3N4=0.3e-6
-thick_BOX=3e-6
+thick_BOX=1.5e-6
 thick_Slab=0
 thick_Substrate=2.0e-6
 material_Clad="SiO2 (Glass) - Palik"
@@ -56,3 +56,5 @@ opt_wg_length=20e-6
 opt_width_ridge=9.5e-6
 opt_mmi_length=47e-6
 opt_taper_width=3.6e-6 
+
+filename="waveguide_width"

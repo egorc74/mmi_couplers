@@ -1,6 +1,6 @@
 from variables import *
 from geometry import geometry
-def mode_solver(sim,filename,width_ridge=1.6e-6,FDE_z_span=None,FDE_y_span=None,mesh_z=None,mesh_y=None):
+def mode_solver(sim,filename,width_ridge=1.2e-6,FDE_z_span=None,FDE_y_span=None,mesh_z=None,mesh_y=None):
     geometry(sim=sim,filename=filename,width_ridge=width_ridge)
     meshsize=0.02e-6
     sim.addfde()

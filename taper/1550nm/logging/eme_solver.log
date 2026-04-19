@@ -1,3 +1,5 @@
 2025-11-13 14:05:51,711 - INFO - Error occured: "in set, the requested property 'x max' is inactive"
 2025-11-13 14:06:29,001 - INFO - Error occured: "in set, the requested property 'x max' is inactive"
 2025-11-13 14:07:40,713 - INFO - Error occured: "in set, the requested property 'x max' is inactive"
+2026-04-06 19:40:35,980 - INFO - Error occured: Field elements must be 2- or 3-tuples, got '1'
+2026-04-06 20:31:07,580 - INFO - Error occured: "in set, the value supplied is not acceptable for the property 'cells', it may be out of range, have incorrect dimensions or not be found in the list of choices\n  Expected type is: Matrix."

@@ -5,3 +5,7 @@
 *.log
 *.npz
 *.m1v
+*.s3p
+*.npy
+*.ldf
+
