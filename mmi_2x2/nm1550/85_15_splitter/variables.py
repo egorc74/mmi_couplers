@@ -90,6 +90,8 @@ N_eff=1.5885528      #Neff of 1st order(average), if W=W_taper
 k_0=2*np.pi/wavelength*N_eff
 opt_twist_angle=np.arctan(d_phase/(2*S*k_0))    #use n_eff
 
+
+
 # ph=np.tan(opt_twist_angle-0.0015)
 # phase=ph*(2*S*k_0)
 # ratio=np.cos(phase/2)**2

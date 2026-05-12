@@ -11,7 +11,7 @@ def fdtd_solver(sim,Radius,filename,y,width_ridge,mmi_length,wg_length,wg_width,
   
 
     ##### FDTD dimensions #######
-    margin=10e-6
+    margin=12e-6
     height_margin=1e-6
     Xmin=-(mmi_length+2*wg_length+margin)/2 
     Xmax=(mmi_length+2*wg_length+margin)/2
@@ -159,7 +159,6 @@ def fdtd_solver(sim,Radius,filename,y,width_ridge,mmi_length,wg_length,wg_width,
 
         log.error(f"Error occured: {e} Obtained T_cross {T_cross} and T_bar={T_bar} and E_lateral=0")
 
-    input("Press Enter to continue...")
 
     sim.save(f"{filename}.fsp")
 
@@ -175,7 +174,7 @@ if __name__=="__main__":
 
     filename="mmi_2x2_fdtd"
     wg_length=11e-6
-    wg_width=1.6e-6
+    wg_width=1.2e-6
     width_ridge=11e-6
     mmi_length=79*2e-6
     taper_width=2.5e-6

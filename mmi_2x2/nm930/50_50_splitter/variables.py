@@ -55,8 +55,9 @@ def setup_logger(name, log_file, level=logging.INFO):
 
 wavelength=0.93e-6
 wg_length=5e-6 
+wg_length=50e-6 
 
-wg_width=0.8e-6
+wg_width=1.2e-6
 thick_Clad=2.0e-6
 thick_Si3N4=0.3e-6
 thick_BOX=3e-6
@@ -92,14 +93,11 @@ opt_twist_angle=np.arctan(d_phase/(2*S*k_0))    #use n_eff
 
 ph=np.tan(opt_twist_angle-0.0015)
 phase=ph*(2*S*k_0)
-ratio=np.cos(phase/2)**2
-print(ratio)
+# ratio=np.cos(phase/2)**2
 
 ph=np.tan(opt_twist_angle+0.0015)
 phase=ph*(2*S*k_0)
-ratio=np.cos(phase/2)**2
-print(ratio)
-print(opt_twist_angle)
+# ratio=np.cos(phase/2)**2
 
 
 

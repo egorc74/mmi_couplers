@@ -24,7 +24,7 @@ def setup_logger(name, log_file, level=logging.INFO):
 
 wavelength=0.93e-6
 wg_length=40e-6 
-wg_width=0.8e-6
+wg_width=1.2e-6
 thick_Clad=2.0e-6
 thick_Si3N4=0.3e-6
 thick_BOX=1.5e-6

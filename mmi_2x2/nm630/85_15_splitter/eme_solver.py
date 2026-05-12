@@ -1,5 +1,5 @@
 from variables import *
-from geometry import geometry
+from eme_geometry import geometry
 import plotly.graph_objects as go
 def eme_solver_prep(sim, filename,width_ridge,mmi_length,taper_width,taper_width_in, delta_y):
     try:
@@ -18,6 +18,7 @@ def eme_solver_prep(sim, filename,width_ridge,mmi_length,taper_width,taper_width
         Xmax=mmi_length/2 #length of wg 4um
         Zmin=-height_margin 
         Zmax=thick_Si3N4 + height_margin
+        Z_span=Zmax-Zmin
         Y_span=2*width_margin + width_ridge 
         Ymin=-Y_span/2 
         Ymax=-Ymin
@@ -27,7 +28,7 @@ def eme_solver_prep(sim, filename,width_ridge,mmi_length,taper_width,taper_width
         # width_eff=width_ridge+(wavelength/3.141592654)*(n_core**2-n_clad**2)**(-1/2)
         width_eff=width_ridge
 
-        distance_wg=width_eff/6  ##effective distance
+        distance_wg=width_eff/4  ##effective distance
 
 
 
@@ -37,8 +38,8 @@ def eme_solver_prep(sim, filename,width_ridge,mmi_length,taper_width,taper_width
         center_z_offset=thick_Si3N4
         sim.set("wavelength",wavelength)
         sim.set("index",1)
-        sim.set("z min",-height_margin/2)
-        sim.set("z max", height_margin/2)
+        sim.set("z min",Zmin)
+        sim.set("z max", Zmax)
             
 
         sim.set("y",0)         
@@ -50,18 +51,23 @@ def eme_solver_prep(sim, filename,width_ridge,mmi_length,taper_width,taper_width
         sim.set("number of periodic groups",1)
         sim.set("energy conservation","make passive")
         sim.set("subcell method",np.array([1,0,1]))
-        sim.set("cells",np.array([15,1,15]))
+        sim.set("cells",np.array([25,1,25]))
         sim.set("group spans",np.array([wg_length,mmi_length,wg_length]))
         sim.set("y min bc","Metal")
         sim.set("z min bc","Metal")
         sim.set("y max bc","Metal")
         sim.set("z max bc","metal")
+        
 
         sim.set("allow custom eigensolver settings",1)
         sim.set("modes",np.array([20,50,20]))
-        mesh_cells_y=int((Y_span+1e-6)/wavelength*10)
+
+        
+        mesh_cells_y=int((Y_span)/wavelength*10)
+        mesh_cells_z=int((Z_span)/wavelength*20)
+
         sim.set("mesh cells y",mesh_cells_y)
-        sim.set("mesh cells z",20)
+        sim.set("mesh cells z",mesh_cells_z)
 
         if(with_mesh==1):
             #input mesh 1
@@ -127,35 +133,35 @@ def eme_solver_prep(sim, filename,width_ridge,mmi_length,taper_width,taper_width
         #ports
         #### input 1 #####
         sim.setnamed("EME::Ports::port_1","y",(distance_wg+delta_y)*(1))
-        sim.setnamed("EME::Ports::port_1","y span",wg_width+1e-6)
-        sim.setnamed("EME::Ports::port_1","z min",-height_margin/2)
-        sim.setnamed("EME::Ports::port_1","z max",height_margin/2)
+        sim.setnamed("EME::Ports::port_1","y span",(distance_wg+delta_y)*2)
+        sim.setnamed("EME::Ports::port_1","z min",Zmin)
+        sim.setnamed("EME::Ports::port_1","z max",Zmax)
         sim.setnamed("EME::Ports::port_1","mode selection","fundamental TE mode")
         sim.setnamed("EME::Ports::port_1","use full simulation span",0)
 
         sim.addemeport()
         sim.set("port location","right")
         sim.setnamed("EME::Ports::port_3","y",(distance_wg+delta_y)*(1))
-        sim.setnamed("EME::Ports::port_3","y span",wg_width+1e-6)
-        sim.setnamed("EME::Ports::port_3","z min",-height_margin/2)
-        sim.setnamed("EME::Ports::port_3","z max",height_margin/2)
+        sim.setnamed("EME::Ports::port_3","y span",(distance_wg+delta_y)*2)
+        sim.setnamed("EME::Ports::port_3","z min",Zmin)
+        sim.setnamed("EME::Ports::port_3","z max",Zmax)
         sim.setnamed("EME::Ports::port_3","mode selection","fundamental TE mode")
         sim.setnamed("EME::Ports::port_3","use full simulation span",0)      
 
         sim.setnamed("EME::Ports::port_2","port location","left")
         sim.setnamed("EME::Ports::port_2","y",(distance_wg+delta_y)*(-1))
-        sim.setnamed("EME::Ports::port_2","y span",wg_width+1e-6)
-        sim.setnamed("EME::Ports::port_2","z min",-height_margin/2)
-        sim.setnamed("EME::Ports::port_2","z max",height_margin/2)
+        sim.setnamed("EME::Ports::port_2","y span",(distance_wg+delta_y)*2)
+        sim.setnamed("EME::Ports::port_2","z min",Zmin)
+        sim.setnamed("EME::Ports::port_2","z max",Zmax)
         sim.setnamed("EME::Ports::port_2","mode selection","fundamental TE mode")
         sim.setnamed("EME::Ports::port_2","use full simulation span",0)
 
         sim.addemeport()
         sim.set("port location","right")
         sim.setnamed("EME::Ports::port_4","y",(distance_wg+delta_y)*(-1))
-        sim.setnamed("EME::Ports::port_4","y span",wg_width+1e-6)
-        sim.setnamed("EME::Ports::port_4","z min",-height_margin/2)
-        sim.setnamed("EME::Ports::port_4","z max",height_margin/2)
+        sim.setnamed("EME::Ports::port_4","y span",(distance_wg+delta_y)*2)
+        sim.setnamed("EME::Ports::port_4","z min",Zmin)
+        sim.setnamed("EME::Ports::port_4","z max",Zmax)
         sim.setnamed("EME::Ports::port_4","mode selection","fundamental TE mode")
         sim.setnamed("EME::Ports::port_4","use full simulation span",0)
 
@@ -167,12 +173,13 @@ def eme_solver_prep(sim, filename,width_ridge,mmi_length,taper_width,taper_width
         sim.set("z",0)
 
         sim.set("y",0)         
-        sim.set("y span",Y_span+5e-6)
+        sim.set("y span",Y_span+2e-6)
         sim.set("x min",Xmin_waffer)  
         sim.set("x max",Xmax_waffer)
 
         sim.save(filename)
         sim.run()
+        # input("Enter something")
     except Exception as e:
         log.info(f"Error occured: {e}")
 
@@ -250,18 +257,17 @@ def find_optimal_length(sim,plot=None):
 
 if __name__=="__main__":
     filename="mmi_simulations_2x2"
-    width_ridge=11e-6
-    mmi_length=50e-6
-    taper_width=2.5e-6
-    taper_width_in=2.5e-6
+    #### for W_mmi = 11 e-6 ######
+    width_ridge=12e-6
+    mmi_length=472e-6
+    taper_width=width_ridge/2-1.1e-6
+    taper_width_in=taper_width
+    
     delta_y=0e-6
-    import os
-    if os.path.isfile(f"{filename}.lms"):
-            sim=lumapi.MODE(filename)
-    else:
-            sim=lumapi.MODE()            
+    sim=lumapi.MODE(filename)
     eme_solver_prep(sim=sim,filename=filename,width_ridge=width_ridge,
                     mmi_length=mmi_length,taper_width=taper_width,taper_width_in=taper_width_in,
                         delta_y=delta_y)
-    # find_optimal_length(sim=sim,plot=1)
-  
+    input("press")
+    # print(find_optimal_length(sim=sim,plot=1))
+    

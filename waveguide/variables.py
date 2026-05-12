@@ -26,7 +26,7 @@ wavelength=1.55e-6
 wg_length=40e-6 
 
 
-wg_width=1.6e-6
+wg_width=1.2e-6
 thick_Clad=2.0e-6
 thick_Si3N4=0.3e-6
 thick_BOX=1.5e-6

@@ -24,8 +24,8 @@ def eme_solver_prep(sim, filename,taper_length,taper_width):
         center_z_offset=thick_Si3N4
         sim.set("wavelength",wavelength)
         sim.set("index",1)
-        sim.set("z min",-height_margin/2)
-        sim.set("z max", height_margin/2)
+        sim.set("z min",Zmin)
+        sim.set("z max", Zmax)
             
 
         sim.set("y",0)         
@@ -49,22 +49,24 @@ def eme_solver_prep(sim, filename,taper_length,taper_width):
         sim.set("modes",np.array([20,50,20]))
         mesh_cells_y=int((Y_span+1e-6)/wavelength*10)
         sim.set("mesh cells y",mesh_cells_y)
-        sim.set("mesh cells z",20)
+        mesh_cells_z=int((Zmax-Zmin)/wavelength*10)
+
+        sim.set("mesh cells z",mesh_cells_z)
 
         #ports
         #### input 1 #####
         sim.setnamed("EME::Ports::port_1","y",0)
-        sim.setnamed("EME::Ports::port_1","y span",taper_width+2e-6)
-        sim.setnamed("EME::Ports::port_1","z min",-height_margin/2)
-        sim.setnamed("EME::Ports::port_1","z max",height_margin/2)
+        sim.setnamed("EME::Ports::port_1","y span",Y_span)
+        sim.setnamed("EME::Ports::port_1","z min",Zmin)
+        sim.setnamed("EME::Ports::port_1","z max",Zmax)
         sim.setnamed("EME::Ports::port_1","mode selection","fundamental TE mode")
         sim.setnamed("EME::Ports::port_1","use full simulation span",0)
 
         #### input 1 #####
         sim.setnamed("EME::Ports::port_2","y",0)
-        sim.setnamed("EME::Ports::port_2","y span",taper_width+2e-6)
-        sim.setnamed("EME::Ports::port_2","z min",-height_margin/2)
-        sim.setnamed("EME::Ports::port_2","z max",height_margin/2)
+        sim.setnamed("EME::Ports::port_2","y span",Y_span)
+        sim.setnamed("EME::Ports::port_2","z min",Zmin)
+        sim.setnamed("EME::Ports::port_2","z max",Zmax)
         sim.setnamed("EME::Ports::port_2","mode selection","fundamental TE mode")
         sim.setnamed("EME::Ports::port_2","use full simulation span",0)
 
@@ -137,6 +139,7 @@ def find_optimal_length(sim):
 
 if __name__=="__main__":
     filename="taper_length_span"
-    taper_length=10e-6
-    taper_width=1e-6
+    taper_length=100e-6
+    taper_width=6.9e-6
     eme_solver_prep(sim=lumapi.MODE(filename),filename=filename,taper_width=taper_width,taper_length=taper_length)
+    input("enter to continue")

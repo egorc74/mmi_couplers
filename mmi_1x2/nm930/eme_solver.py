@@ -50,7 +50,7 @@ def eme_solver_prep(sim, filename,width_ridge,mmi_length,taper_width,taper_width
         sim.set("number of periodic groups",1)
         sim.set("energy conservation","make passive")
         sim.set("subcell method",np.array([1,0,1]))
-        sim.set("cells",np.array([15,1,15]))
+        sim.set("cells",np.array([25,1,25]))
         sim.set("group spans",np.array([wg_length,mmi_length,wg_length]))
         sim.set("y min bc","Metal")
         sim.set("z min bc","Metal")
@@ -221,7 +221,7 @@ def find_optimal_length(sim):
 if __name__=="__main__":
     filename="mmi_simulations_1x2"
     width_ridge=9.5e-6
-    mmi_length=37e-6
+    mmi_length=128e-6
     taper_width=width_ridge/2-1.1e-6
     taper_width_in=taper_width
     delta_y=0e-6

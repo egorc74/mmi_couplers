@@ -11,7 +11,7 @@ def fdtd_solver(sim,Radius,filename,y,width_ridge,mmi_length,wg_length,wg_width,
   
 
     ##### FDTD dimensions #######
-    margin=10e-6
+    margin=12e-6
     height_margin=1e-6
     Xmin=-(mmi_length+2*wg_length+margin)/2 
     Xmax=(mmi_length+2*wg_length+margin)/2

@@ -451,37 +451,37 @@ def Width_sweep(sim,span,args=None,RUN_AGAIN=False):
 if __name__ =="__main__":
 
 
-    ######################
-    #1) Y_sweep
-    SIMULATION_NAME="y_sweep"
-    Y_span=np.linspace(0,10,11)*1e-6
-    args = {
-        "y":5e-6,
-        "mmi_length": 79*2e-6,
-        "twist_angle": None,
-    }
-    Y_sweep(sim=lumapi.FDTD(),span=Y_span,args=args,RUN_AGAIN=False)
-    OPT_Y=data_analysis(dataset=os.path.join(SCRIPT_DIR, "data", SIMULATION_NAME),measurement="max_transmission")  #extract optimal value
-    if OPT_Y==None:
-        OPT_Y=5e-6  #default value
+    # ######################
+    # #1) Y_sweep
+    # SIMULATION_NAME="y_sweep"
+    # Y_span=np.linspace(0,10,11)*1e-6
+    # args = {
+    #     "y":5e-6,
+    #     "mmi_length": 84*2e-6,
+    #     "twist_angle": None,
+    # }
+    # Y_sweep(sim=lumapi.FDTD(),span=Y_span,args=args,RUN_AGAIN=False)
+    # OPT_Y=data_analysis(dataset=os.path.join(SCRIPT_DIR, "data", SIMULATION_NAME),measurement="max_transmission")  #extract optimal value
+    # if OPT_Y==None:
+    #     OPT_Y=5e-6  #default value
 
 
-    ###################
-    #2) Length_sweep
-    SIMULATION_NAME="length_sweep"
-    opt_mmi_length=79*2e-6
-    Lengths=np.linspace(opt_mmi_length-5e-6,opt_mmi_length+5e-6,11)
+    # ###################
+    # #2) Length_sweep
+    # SIMULATION_NAME="length_sweep"
+    # opt_mmi_length=79*2e-6
+    # Lengths=np.linspace(opt_mmi_length-5e-6,opt_mmi_length+5e-6,11)
     
-    args = {
-        "y":OPT_Y,
-        "mmi_length": 79*2e-6,
-        "twist_angle": None,
-    }
+    # args = {
+    #     "y":OPT_Y,
+    #     "mmi_length": 79*2e-6,
+    #     "twist_angle": None,
+    # }
 
-    Length_sweep(sim=lumapi.FDTD(),span=Lengths,args=args,RUN_AGAIN=False)
-    OPT_LENGTH=data_analysis(dataset=os.path.join(SCRIPT_DIR, "data", SIMULATION_NAME),measurement="max_transmission") #extract optimal value
-    if OPT_LENGTH==None:
-        OPT_LENGTH=79*2e-6  #default value
+    # Length_sweep(sim=lumapi.FDTD(),span=Lengths,args=args,RUN_AGAIN=False)
+    # OPT_LENGTH=data_analysis(dataset=os.path.join(SCRIPT_DIR, "data", SIMULATION_NAME),measurement="max_transmission") #extract optimal value
+    # if OPT_LENGTH==None:
+    #     OPT_LENGTH=79*2e-6  #default value
 
 
 
@@ -489,10 +489,14 @@ if __name__ =="__main__":
     #3) Twist_angle_span
    
     SIMULATION_NAME="twist_angle_sweep"
-    Twist_angles=np.linspace(opt_twist_angle-0.0015,opt_twist_angle+0.0015,11)
+
+    Twist_angles=np.linspace(opt_twist_angle-0.0015,opt_twist_angle+0.0015,5)
+    angle_5_95=0.05691452131619776
+    angle_1_99=0.06220441142841729
+    Twist_angles = np.append(Twist_angles, [angle_5_95,angle_1_99])
     args = {
-        "y":OPT_Y,
-        "mmi_length": OPT_LENGTH,
+        "y":0,
+        "mmi_length": 84*2e-6,
         "twist_angle": None,
     }
 
@@ -501,7 +505,8 @@ if __name__ =="__main__":
     if OPT_ANGLE==None:
         OPT_ANGLE=None     #default value
 
-
+    OPT_Y=0e-6
+    OPT_LENGTH=84*2e-6
     # OPT_Y=5e-6
     # OPT_LENGTH=79*2e-6
     # OPT_ANGLE=None    
@@ -516,7 +521,7 @@ if __name__ =="__main__":
     }
     
     opt_width_ridge=11e-6
-    Widths=np.linspace(opt_width_ridge-0.5e-6,opt_width_ridge+0.5e-6,11)
+    Widths=np.linspace(opt_width_ridge-0.5e-6,opt_width_ridge+0.5e-6,7)
     Width_sweep(sim=lumapi.FDTD(),span=Widths,args=args,RUN_AGAIN=False)
     OPT_WIDTH=data_analysis(dataset=os.path.join(SCRIPT_DIR, "data", SIMULATION_NAME),measurement="optimal_angle") #closest value to a defined ratio
 

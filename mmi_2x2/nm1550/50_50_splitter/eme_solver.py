@@ -16,8 +16,9 @@ def eme_solver_prep(sim, filename,width_ridge,mmi_length,taper_width,taper_width
         ##### Additional variables #######
         Xmin=-mmi_length/2 
         Xmax=mmi_length/2 #length of wg 4um
-        Zmin=-height_margin 
-        Zmax=thick_Si3N4 + height_margin
+        Zmin=-height_margin-thick_Si3N4/2
+        Zmax=thick_Si3N4/2 + height_margin
+        Z_span=Zmax-Zmin
         Y_span=2*width_margin + width_ridge 
         Ymin=-Y_span/2 
         Ymax=-Ymin
@@ -50,7 +51,7 @@ def eme_solver_prep(sim, filename,width_ridge,mmi_length,taper_width,taper_width
         sim.set("number of periodic groups",1)
         sim.set("energy conservation","make passive")
         sim.set("subcell method",np.array([1,0,1]))
-        sim.set("cells",np.array([15,1,15]))
+        sim.set("cells",np.array([25,1,25]))
         sim.set("group spans",np.array([wg_length,mmi_length,wg_length]))
         sim.set("y min bc","Metal")
         sim.set("z min bc","Metal")
@@ -58,10 +59,12 @@ def eme_solver_prep(sim, filename,width_ridge,mmi_length,taper_width,taper_width
         sim.set("z max bc","metal")
 
         sim.set("allow custom eigensolver settings",1)
-        sim.set("modes",np.array([20,50,20]))
-        mesh_cells_y=int((Y_span+1e-6)/wavelength*10)
+        sim.set("modes",np.array([15,50,15]))
+        mesh_cells_y=int((Y_span)/wavelength*20)
+        mesh_cells_z=int((Z_span)/wavelength*40)
+
         sim.set("mesh cells y",mesh_cells_y)
-        sim.set("mesh cells z",20)
+        sim.set("mesh cells z",mesh_cells_z)
 
         if(with_mesh==1):
             #input mesh 1
@@ -259,8 +262,8 @@ if __name__=="__main__":
 
 
     #### for W_mmi = 8.1 e-6 ######
-    width_ridge=19e-6
-    mmi_length=248e-6
+    width_ridge=11e-6
+    mmi_length=79e-6
     taper_width=width_ridge/3-1.1e-6
 
 
