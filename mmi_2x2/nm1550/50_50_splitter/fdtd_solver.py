@@ -159,7 +159,7 @@ def fdtd_solver(sim,Radius,filename,y,width_ridge,mmi_length,wg_length,wg_width,
 
         log.error(f"Error occured: {e} Obtained T_cross {T_cross} and T_bar={T_bar} and E_lateral=0")
 
-    input("Press Enter to continue...")
+    # input("Press Enter to continue...")
 
     sim.save(f"{filename}.fsp")
 
