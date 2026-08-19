@@ -34,15 +34,19 @@ def mode_solver(sim,filename,width_ridge):
     n=sim.findmodes()
     print(n)
     Neffs=[]
+    Ngroups=[]
     for n in range(int(n)):
         Neff = np.real(sim.getdata(f'FDE::data::mode{n+1}','neff')[0]) 
         mode_polarization=sim.getdata(f'FDE::data::mode{n+1}','TE polarization fraction')
+        n_group= np.real(sim.getdata(f'FDE::data::mode{n+1}','ng')[0]) 
         # select first TE mode
         if mode_polarization>0.5:  
             Neffs.append(Neff[0])
+            Ngroups.append(n_group[0])
             print(f"Effective index of first TE launching mode{Neff} with width ridge={width_ridge} and polarization = {mode_polarization}")
+            print(f"Group index of first TE launching mode{Ngroups} with width ridge={width_ridge} and polarization = {mode_polarization}")
     sim.save(filename)
-    return Neffs
+    return Neffs,Ngroups
 
 def width_sweep(sim, widths, filename,plot=False):
     results = {
@@ -53,16 +57,17 @@ def width_sweep(sim, widths, filename,plot=False):
         "mode_4": [],
         
     }
-
+    N_groups=[]
 
     for width in widths:
         # Assuming mode_solver returns a list of Neff values
-        neffs = mode_solver(sim=sim,filename=filename, width_ridge=width)
+        neffs,ngroups = mode_solver(sim=sim,filename=filename, width_ridge=width)
         
         # Capture the first mode if it exists, else None or 0
         m1 = neffs[0] if len(neffs) > 0 else 0
         results["mode_1"].append(m1)
-        
+        N_groups.append(ngroups[0])
+
         # Capture the second mode safely using length check
         m2 = neffs[1] if len(neffs) > 1 else 0
         results["mode_2"].append(m2)
@@ -104,11 +109,29 @@ def width_sweep(sim, widths, filename,plot=False):
         # Adjust layout and show
         plt.tight_layout()
         plt.show()
+
+        """Plot group indices """
+        plt.figure(figsize=(8, 6))
+        
+        # Plot Mode 1 - using .real to ensure we plot magnitude/real index
+        plt.plot(widths * 1e6,N_groups, 
+                 'o-', label='Fundamental Mode (TE00)', markersize=4)
+
+        # Formatting
+        plt.xlabel("Waveguide Width [µm]")
+        plt.ylabel("Group index Index ($n_{eff}$)")
+        plt.title("Width Sweep: Mode group index")
+        plt.grid(True, which="both", linestyle=':', alpha=0.7)
+        plt.legend()
+        
+        # Adjust layout and show
+        plt.tight_layout()
+        plt.show()
     return results
 
 
 
 
 if __name__=="__main__":
-    widths=np.linspace(1.5,3,16)*1e-6
+    widths=np.linspace(1,1.6,32)*1e-6
     width_sweep(sim=lumapi.MODE(filename),filename=filename,widths=widths,plot=True)

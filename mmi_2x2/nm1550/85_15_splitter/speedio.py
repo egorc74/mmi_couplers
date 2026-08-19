@@ -492,11 +492,12 @@ if __name__ =="__main__":
 
     Twist_angles=np.linspace(opt_twist_angle-0.0015,opt_twist_angle+0.0015,5)
     angle_5_95=0.05691452131619776
+    angle_3_97=0.0600
     angle_1_99=0.06220441142841729
-    Twist_angles = np.append(Twist_angles, [angle_5_95,angle_1_99])
+    Twist_angles = np.append(Twist_angles, [angle_5_95,angle_3_97,angle_1_99])
     args = {
-        "y":0,
-        "mmi_length": 84*2e-6,
+        "y":5e-6,
+        "mmi_length": 85*2e-6,
         "twist_angle": None,
     }
 
@@ -505,8 +506,8 @@ if __name__ =="__main__":
     if OPT_ANGLE==None:
         OPT_ANGLE=None     #default value
 
-    OPT_Y=0e-6
-    OPT_LENGTH=84*2e-6
+    OPT_Y=5e-6
+    OPT_LENGTH=85*2e-6
     # OPT_Y=5e-6
     # OPT_LENGTH=79*2e-6
     # OPT_ANGLE=None    

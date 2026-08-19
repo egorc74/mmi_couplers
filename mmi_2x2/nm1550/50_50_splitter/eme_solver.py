@@ -269,7 +269,7 @@ if __name__=="__main__":
 
     
     delta_y=0e-6
-    sim=lumapi.MODE(filename)
+    sim=lumapi.MODE()
     eme_solver_prep(sim=sim,filename=filename,width_ridge=width_ridge,
                     mmi_length=mmi_length,taper_width=taper_width,taper_width_in=taper_width,
                         delta_y=delta_y)

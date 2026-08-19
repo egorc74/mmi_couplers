@@ -258,8 +258,8 @@ def find_optimal_length(sim,plot=None):
 if __name__=="__main__":
     filename="mmi_simulations_2x2"
     #### for W_mmi = 11 e-6 ######
-    width_ridge=11e-6
-    mmi_length=175e-6*3
+    width_ridge=13e-6
+    mmi_length=528e-6
     taper_width=width_ridge/2-1.1e-6
     taper_width_in=taper_width
 
